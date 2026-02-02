@@ -13,6 +13,7 @@ InnoPick Manager is accessed through a standard web browser at your operator ter
 1. **Open a web browser** (Chrome, Firefox, or Edge recommended)
 
 2. **Navigate to the InnoPick Manager address**
+
    - Enter the web address provided by your system administrator
 
 3. **The login page will appear**
@@ -20,6 +21,7 @@ InnoPick Manager is accessed through a standard web browser at your operator ter
    <img src="../images/login/image5.png" width="800" alt="InnoPick Manager Login Page">
 
 4. **Enter your credentials**
+
    - Username: Your assigned username
    - Password: Your assigned password
 

@@ -15,15 +15,18 @@ After logging in, you'll see the InnoPick Manager interface with a navigation me
 Six main navigation buttons are always accessible on the left side:
 
 1. **[Home Page](../main-screens/home-page.md)**
+
    - System overview and real-time status
    - Visual representation of cases and conveyors
    - Current alerts and production progress
 
 2. **[Alerts](../main-screens/alerts-page.md)**
+
    - Current and historical alert listing
    - Alert filtering and search functionality
 
 3. **[Inventory](../main-screens/inventory-section.md)**
+
    - Replenishments management
    - Product configuration
    - Lane inventory tracking
@@ -31,10 +34,12 @@ Six main navigation buttons are always accessible on the left side:
    - Product statistics
 
 4. **[Case Sequence](../main-screens/case-sequence.md)**
+
    - Order of cases exiting InnoPick
    - Case tracking and filtering
 
 5. **[Administration](../main-screens/administration.md)**
+
    - System configuration (authorized users only)
    - Manual operations
    - User management
@@ -42,6 +47,7 @@ Six main navigation buttons are always accessible on the left side:
    - Operations Settings
 
 6. **[User Settings](../main-screens/administration.md#user-settings)**
+
    - Personal preferences
    - Account settings
 
@@ -52,20 +58,24 @@ Six main navigation buttons are always accessible on the left side:
 Each screen in InnoPick Manager follows a consistent layout:
 
 ### Top Section
+
 - User information and logout option
 - Current system date/time
 - Navigation breadcrumbs (on some pages)
 
 ### Left Sidebar
+
 - Main navigation buttons
 - Quick access to all major sections
 
 ### Main Content Area
+
 - Primary information display
 - Interactive controls and buttons
 - Data tables and visualizations
 
 ### Bottom Section
+
 - Action buttons (Clear Alerts, Save, Cancel, etc.)
 - Status indicators
 
@@ -86,12 +96,14 @@ Each screen in InnoPick Manager follows a consistent layout:
 ### Interactive Elements
 
 **Clickable Icons and Buttons**:
+
 - Colored level numbers can be clicked to change mode
 - Three-dot menus (⋮) reveal additional actions
 - Blue hyperlinks navigate to related information
 - Hover tooltips provide additional details
 
 **Data Tables**:
+
 - Column headers can often be clicked to sort
 - Search bars filter table contents
 - Action columns contain buttons for specific operations

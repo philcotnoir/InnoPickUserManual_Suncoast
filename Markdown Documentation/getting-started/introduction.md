@@ -70,7 +70,7 @@ InnoPick consists of:
 ## Getting the Most from This Manual
 
 **For New Users:**
-test
+
 - Read through Getting Started and Daily Operations sections first
 - Practice navigating the screens in Guest mode if available
 - Ask questions and take notes as you learn

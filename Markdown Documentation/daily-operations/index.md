@@ -23,6 +23,7 @@ Complete checklist for beginning operations each day, including visual inspectio
 Before powering up or enabling the system, conduct a thorough visual inspection of InnoPick:
 
 **Check for:**
+
 - Cases that are out of place or fallen
 - Maintenance tools or equipment left on the machine
 - Damaged cases or debris on conveyors
@@ -51,16 +52,19 @@ See [Logging In](../getting-started/login.md) for detailed instructions if neede
 Once logged in, you'll see the [Home Page](../main-screens/home-page.md):
 
 1. **Check for existing alerts**
+   
    - Review the Alerts List on the Home Page
    - If alerts are present, see [Resolving Alerts](../troubleshooting/alert-guidelines.md)
    - Clear any alerts from previous shift
 
 2. **Check level statuses**
+   
    - All levels should show their current mode (Manual/Auto/Fault)
    - Verify the system is in the expected state
    - Each level must be in Manual mode (Yellow) in order for it to be put into Auto mode.
 
 3. **Review disabled lanes**
+   
    - Check for disabled lanes on all levels
    - Check with maintenance staff if any disabled lanes can be put re-enabled following maintenance work.
 
@@ -77,6 +81,7 @@ Once you've verified the system is ready:
 2. **Verify the level(s) turn green** indicating Automatic mode
 
 **Important**: Only enable Automatic mode if:
+
 - Visual inspection is complete
 - No unresolved alerts exist
 - All safety devices are functional
@@ -116,6 +121,7 @@ If the system has been shut down for more than 24 hours:
 ##### System Won't Enter Automatic Mode
 
 **Possible Causes:**
+
 - Active alerts must be cleared first
   - If no alerts appear at first, go to Alerts Page and remove all filters to see *all* alerts. 
   - Because InnoPick automatically filters out alerts it thinks are not critical, sometimes an important alert is not immediately visible. 
@@ -149,11 +155,13 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
 #### Continuous Monitoring Tasks
 
 **Every 15-30 Minutes:**
+
 - Glance at level status indicators (all should be green)
 - Check for new alerts
 - Verify production progress is advancing
 
 **Every 1-2 Hours:**
+
 - Check replenishment statuses
 - See if any level seems to be starved of inbound cases and investigate cause
 - See if any level is not scheduling output cases and investigate cause
@@ -166,16 +174,20 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
 Be aware of these settings and their effects:
 
 **[Build Inventory Mode](../main-screens/administration.md#build-inventory)**
+
 - When ON: Prioritizes storing replenishment cases over outputting cases
 - When OFF: Balances input and output for maximum throughput
 
 **Destination (Merge) Enabled/Disabled**
+
 - If a Merge is disabled, all cases route to the other merge(s)
 
 ---
 
 ### Shutdown
+
 Proper procedures for ending the shift and securing the system.
+
 #### 1. Verify Production is Complete
 
 Check that there are no:
@@ -186,10 +198,13 @@ Check that there are no:
 - **Active Replenishments**: Replenishments currently inducting or in progress
 
 **If production is not complete:**
+
 - Coordinate with supervision about completing or postponing remaining orders
 - Allow system to finish current work before proceeding
 - Document any incomplete work for the next shift
+
 ---
+
 #### 2. Put InnoPick into Manual Mode
 
 1. On the [Home Page](../main-screens/home-page.md), click the **Manual** button
@@ -199,6 +214,7 @@ Check that there are no:
 2. Verify all level indicators turn **Yellow** (Manual mode)
 
 **Why Manual Mode?**
+
 - Prevents the system from automatically starting new moves
 - Allows safe inspection and shutdown
 - Ensures system won't start unexpectedly
@@ -210,12 +226,14 @@ Check that there are no:
 Perform a walk-around inspection of InnoPick:
 
 **Check for:**
+
 - Cases out of place or fallen
 - Cases left on conveyors
 - Any damage to equipment or cases
 - Spills or debris that need cleanup
 
 **Document any issues:**
+
 - Report safety concerns or mechanical issues to supervision
 
 ---
@@ -231,6 +249,7 @@ Perform a walk-around inspection of InnoPick:
 ---
 
 #### 5. Suggested: Open an InnoPick Door
+
 - It is recommended to request access to an InnoPick door, as this removes all latent electrical and pneumatic energy from the system
 - This puts the system into a state equivalent to E-Stop
 - Reduces wear on certain components
@@ -242,16 +261,19 @@ Perform a walk-around inspection of InnoPick:
 To effectively operate InnoPick, you should be familiar with:
 
 1. **System Status Monitoring**
+   
    - Understanding level status colors (Green/Yellow/Red)
    - Reading the inventory graph
    - Monitoring production progress
 
 2. **Alert Management**
+   
    - Recognizing common alerts
    - Basic alert resolution
    - When to escalate to maintenance or support
 
 3 **Inventory Awareness**
+
    - Monitoring lane levels
    - Understanding replenishment status
    - Recognizing abnormal low inventory situations
