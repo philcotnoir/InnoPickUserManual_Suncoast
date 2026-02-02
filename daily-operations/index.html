@@ -1,0 +1,2171 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Order Preparation Solutions - Operator Documentation">
+      
+      
+      
+      
+        <link rel="prev" href="../getting-started/interface-overview.html">
+      
+      
+        <link rel="next" href="monitoring.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Overview - InnoPick Manager Operations Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#daily-operations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-header__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InnoPick Manager Operations Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-nav__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    InnoPick Manager Operations Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/login.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/interface-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Daily Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="index.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daily-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Daily Procedures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Daily Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Startup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-startup-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Startup Checklist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-Startup Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startup Procedure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Startup Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-access-innopick-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Access InnoPick Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-review-system-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Review System Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-put-innopick-into-automatic-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Put InnoPick into Automatic Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-monitor-initial-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Monitor Initial Operation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup-after-extended-downtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startup After Extended Downtime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-startup-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Startup Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Startup Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-wont-enter-automatic-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Won't Enter Automatic Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Production
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring Production">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-monitoring-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary Monitoring Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-monitoring-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Monitoring Tasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-system-settings-that-affect-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding System Settings That Affect Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shutdown
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shutdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-verify-production-is-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Verify Production is Complete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-put-innopick-into-manual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Put InnoPick into Manual Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-conduct-visual-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Conduct Visual Inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-log-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Log Out
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-suggested-open-an-innopick-door" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Suggested: Open an InnoPick Door
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-skills-for-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essential Skills for Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety-reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety Reminders
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Screens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Main Screens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/home-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/alerts-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/inventory-section.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Section
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/case-sequence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Sequence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/administration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/common-issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/alert-guidelines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/alert-reference.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/deadlocks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deadlocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/case-replacement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Replacement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/casecentering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Centering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/disabledlane.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabled Lane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/alert-codes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daily-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Daily Procedures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Daily Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Startup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-startup-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Startup Checklist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-Startup Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visual Inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startup Procedure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Startup Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-access-innopick-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Access InnoPick Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-review-system-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Review System Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-put-innopick-into-automatic-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Put InnoPick into Automatic Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-monitor-initial-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Monitor Initial Operation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup-after-extended-downtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Startup After Extended Downtime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-startup-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Startup Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Startup Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-wont-enter-automatic-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Won't Enter Automatic Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Production
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring Production">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primary-monitoring-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary Monitoring Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-monitoring-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Monitoring Tasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-system-settings-that-affect-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding System Settings That Affect Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shutdown
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shutdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-verify-production-is-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Verify Production is Complete
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-put-innopick-into-manual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Put InnoPick into Manual Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-conduct-visual-inspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Conduct Visual Inspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-log-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Log Out
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-suggested-open-an-innopick-door" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Suggested: Open an InnoPick Door
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-skills-for-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essential Skills for Operators
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety-reminders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Safety Reminders
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="daily-operations">Daily Operations<a class="headerlink" href="#daily-operations" title="Permanent link">&para;</a></h1>
+<p><strong><a href="../index.html">Home</a> &gt; Daily Operations</strong></p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This section covers the standard procedures for operating InnoPick Manager on a daily basis, including startup, monitoring, and shutdown procedures.</p>
+<hr />
+<h2 id="daily-procedures">Daily Procedures<a class="headerlink" href="#daily-procedures" title="Permanent link">&para;</a></h2>
+<h3 id="startup">Startup<a class="headerlink" href="#startup" title="Permanent link">&para;</a></h3>
+<p>Complete checklist for beginning operations each day, including visual inspection, login, and enabling automatic mode.</p>
+<h4 id="pre-startup-checklist">Pre-Startup Checklist<a class="headerlink" href="#pre-startup-checklist" title="Permanent link">&para;</a></h4>
+<h5 id="visual-inspection">Visual Inspection<a class="headerlink" href="#visual-inspection" title="Permanent link">&para;</a></h5>
+<p>Before powering up or enabling the system, conduct a thorough visual inspection of InnoPick:</p>
+<p><strong>Check for:</strong>
+- Cases that are out of place or fallen
+- Maintenance tools or equipment left on the machine
+- Damaged cases or debris on conveyors
+- Any unusual conditions or spills
+- All safety guards and doors are properly closed
+- E-Stop buttons are in the released (pulled out) position</p>
+<p><strong>Action</strong>: Remove any foreign objects and correct any unsafe conditions before proceeding.</p>
+<hr />
+<h4 id="startup-procedure">Startup Procedure<a class="headerlink" href="#startup-procedure" title="Permanent link">&para;</a></h4>
+<h5 id="1-access-innopick-manager">1. Access InnoPick Manager<a class="headerlink" href="#1-access-innopick-manager" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Open a web browser at your operator terminal</li>
+<li>Navigate to the InnoPick Manager web address</li>
+<li>Log in using your username and password</li>
+</ol>
+<p>See <a href="../getting-started/login.html">Logging In</a> for detailed instructions if needed.</p>
+<hr />
+<h5 id="2-review-system-status">2. Review System Status<a class="headerlink" href="#2-review-system-status" title="Permanent link">&para;</a></h5>
+<p>Once logged in, you'll see the <a href="../main-screens/home-page.html">Home Page</a>:</p>
+<ol>
+<li><strong>Check for existing alerts</strong></li>
+<li>Review the Alerts List on the Home Page</li>
+<li>If alerts are present, see <a href="../troubleshooting/alert-guidelines.html">Resolving Alerts</a></li>
+<li>
+<p>Clear any alerts from previous shift</p>
+</li>
+<li>
+<p><strong>Check level statuses</strong></p>
+</li>
+<li>All levels should show their current mode (Manual/Auto/Fault)</li>
+<li>Verify the system is in the expected state</li>
+<li>
+<p>Each level must be in Manual mode (Yellow) in order for it to be put into Auto mode.</p>
+</li>
+<li>
+<p><strong>Review disabled lanes</strong></p>
+</li>
+<li>Check for disabled lanes on all levels</li>
+<li>Check with maintenance staff if any disabled lanes can be put re-enabled following maintenance work.</li>
+</ol>
+<hr />
+<h5 id="3-put-innopick-into-automatic-mode">3. Put InnoPick into Automatic Mode<a class="headerlink" href="#3-put-innopick-into-automatic-mode" title="Permanent link">&para;</a></h5>
+<p>Once you've verified the system is ready:</p>
+<ol>
+<li><strong>Click the Auto button</strong> to put all levels into Auto mode</li>
+</ol>
+<p><img src="../images/home/image10.png" width="800" alt="Level Status Controls"></p>
+<ol>
+<li><strong>Verify the level(s) turn green</strong> indicating Automatic mode</li>
+</ol>
+<p><strong>Important</strong>: Only enable Automatic mode if:
+- Visual inspection is complete
+- No unresolved alerts exist
+- All safety devices are functional
+- Nobody is inside the InnoPick safety fence
+- You're ready to begin production</p>
+<hr />
+<h5 id="4-monitor-initial-operation">4. Monitor Initial Operation<a class="headerlink" href="#4-monitor-initial-operation" title="Permanent link">&para;</a></h5>
+<p>After enabling Automatic mode:</p>
+<ol>
+<li><strong>Watch the first few cycles</strong> to ensure smooth operation</li>
+<li><strong>Listen for unusual sounds</strong> that might indicate problems</li>
+<li><strong>Check the Inventory Graph</strong> to verify cases are moving as expected on all levels</li>
+<li><strong>Monitor for new alerts</strong> </li>
+</ol>
+<p>See <a href="index.html#monitoring-production">Monitoring Production</a> for ongoing monitoring procedures.</p>
+<hr />
+<h4 id="startup-after-extended-downtime">Startup After Extended Downtime<a class="headerlink" href="#startup-after-extended-downtime" title="Permanent link">&para;</a></h4>
+<p>If the system has been shut down for more than 24 hours:</p>
+<ol>
+<li>Perform a more thorough visual inspection</li>
+<li>Verify all utilities are functioning (power, air pressure, network)</li>
+<li>Check with maintenance that all scheduled work is complete</li>
+<li>Manually jog any lanes or sequence conveyor chains that have had maintenance work done on them</li>
+<li>Allow a few minutes for systems to initialize</li>
+<li>Test one level in Automatic mode before enabling all levels</li>
+</ol>
+<hr />
+<h4 id="troubleshooting-startup-issues">Troubleshooting Startup Issues<a class="headerlink" href="#troubleshooting-startup-issues" title="Permanent link">&para;</a></h4>
+<h5 id="system-wont-enter-automatic-mode">System Won't Enter Automatic Mode<a class="headerlink" href="#system-wont-enter-automatic-mode" title="Permanent link">&para;</a></h5>
+<p><strong>Possible Causes:</strong>
+- Active alerts must be cleared first
+  - If no alerts appear at first, go to Alerts Page and remove all filters to see <em>all</em> alerts. 
+  - Because InnoPick automatically filters out alerts it thinks are not critical, sometimes an important alert is not immediately visible. 
+- E-Stop or door is open
+- Upstream or downstream systems not ready</p>
+<p><strong>Solution:</strong> Check the <a href="../main-screens/alerts-page.html">Alerts Page</a> for details</p>
+<hr />
+<h3 id="monitoring-production">Monitoring Production<a class="headerlink" href="#monitoring-production" title="Permanent link">&para;</a></h3>
+<p>How to monitor system status during operation, including inventory levels, alerts, and production progress.</p>
+<h4 id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Permanent link">&para;</a></h4>
+<p>During production, operators should actively monitor InnoPick Manager to ensure smooth operation, catch problems early, and maintain production efficiency.</p>
+<hr />
+<h4 id="primary-monitoring-dashboard">Primary Monitoring Dashboard<a class="headerlink" href="#primary-monitoring-dashboard" title="Permanent link">&para;</a></h4>
+<p>The <a href="../main-screens/home-page.html">Home Page</a> provides all essential information for monitoring production at a glance.</p>
+<ol>
+<li><strong><a href="../main-screens/home-page.html#level-statuses--auto--manual-controls">Level Status Indicators</a></strong></li>
+<li><strong><a href="../main-screens/home-page.html#inventory-graph">Inventory Graph</a></strong></li>
+<li><strong><a href="../main-screens/home-page.html#alerts-list">Alerts List</a></strong></li>
+<li><strong><a href="../main-screens/home-page.html#production-graph">Production Graph</a></strong></li>
+</ol>
+<hr />
+<h4 id="continuous-monitoring-tasks">Continuous Monitoring Tasks<a class="headerlink" href="#continuous-monitoring-tasks" title="Permanent link">&para;</a></h4>
+<p><strong>Every 15-30 Minutes:</strong>
+- Glance at level status indicators (all should be green)
+- Check for new alerts
+- Verify production progress is advancing</p>
+<p><strong>Every 1-2 Hours:</strong>
+- Check replenishment statuses
+- See if any level seems to be starved of inbound cases and investigate cause
+- See if any level is not scheduling output cases and investigate cause
+- Listen for unusual mechanical sounds</p>
+<hr />
+<h4 id="understanding-system-settings-that-affect-operations">Understanding System Settings That Affect Operations<a class="headerlink" href="#understanding-system-settings-that-affect-operations" title="Permanent link">&para;</a></h4>
+<p>Be aware of these settings and their effects:</p>
+<p><strong><a href="../main-screens/administration.html#build-inventory">Build Inventory Mode</a></strong>
+- When ON: Prioritizes storing replenishment cases over outputting cases
+- When OFF: Balances input and output for maximum throughput</p>
+<p><strong>Destination (Merge) Enabled/Disabled</strong>
+- If a Merge is disabled, all cases route to the other merge(s)</p>
+<hr />
+<h3 id="shutdown">Shutdown<a class="headerlink" href="#shutdown" title="Permanent link">&para;</a></h3>
+<p>Proper procedures for ending the shift and securing the system.</p>
+<h4 id="1-verify-production-is-complete">1. Verify Production is Complete<a class="headerlink" href="#1-verify-production-is-complete" title="Permanent link">&para;</a></h4>
+<p>Check that there are no:</p>
+<ul>
+<li><strong>In Progress Cases</strong>: Cases currently being processed on sequence conveyors</li>
+<li><strong>Incomplete Cases</strong>: Cases scheduled but not yet completed</li>
+<li><strong>Pending Cases</strong>: Cases in the case sequence waiting to be processed</li>
+<li><strong>Active Replenishments</strong>: Replenishments currently inducting or in progress</li>
+</ul>
+<p><strong>If production is not complete:</strong>
+- Coordinate with supervision about completing or postponing remaining orders
+- Allow system to finish current work before proceeding
+- Document any incomplete work for the next shift</p>
+<hr />
+<h4 id="2-put-innopick-into-manual-mode">2. Put InnoPick into Manual Mode<a class="headerlink" href="#2-put-innopick-into-manual-mode" title="Permanent link">&para;</a></h4>
+<ol>
+<li>On the <a href="../main-screens/home-page.html">Home Page</a>, click the <strong>Manual</strong> button</li>
+</ol>
+<p><img src="../images/home/image10.png" width="800" alt="Manual Mode Button"></p>
+<ol>
+<li>Verify all level indicators turn <strong>Yellow</strong> (Manual mode)</li>
+</ol>
+<p><strong>Why Manual Mode?</strong>
+- Prevents the system from automatically starting new moves
+- Allows safe inspection and shutdown
+- Ensures system won't start unexpectedly</p>
+<hr />
+<h4 id="3-conduct-visual-inspection">3. Conduct Visual Inspection<a class="headerlink" href="#3-conduct-visual-inspection" title="Permanent link">&para;</a></h4>
+<p>Perform a walk-around inspection of InnoPick:</p>
+<p><strong>Check for:</strong>
+- Cases out of place or fallen
+- Cases left on conveyors
+- Any damage to equipment or cases
+- Spills or debris that need cleanup</p>
+<p><strong>Document any issues:</strong>
+- Report safety concerns or mechanical issues to supervision</p>
+<hr />
+<h4 id="4-log-out">4. Log Out<a class="headerlink" href="#4-log-out" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Click on your username or logout button</li>
+<li>Confirm logout</li>
+<li>Close the browser</li>
+</ol>
+<p><strong>Security Note</strong>: Always log out when leaving your workstation to prevent unauthorized access.</p>
+<hr />
+<h4 id="5-suggested-open-an-innopick-door">5. Suggested: Open an InnoPick Door<a class="headerlink" href="#5-suggested-open-an-innopick-door" title="Permanent link">&para;</a></h4>
+<ul>
+<li>It is recommended to request access to an InnoPick door, as this removes all latent electrical and pneumatic energy from the system</li>
+<li>This puts the system into a state equivalent to E-Stop</li>
+<li>Reduces wear on certain components</li>
+</ul>
+<hr />
+<h2 id="essential-skills-for-operators">Essential Skills for Operators<a class="headerlink" href="#essential-skills-for-operators" title="Permanent link">&para;</a></h2>
+<p>To effectively operate InnoPick, you should be familiar with:</p>
+<ol>
+<li><strong>System Status Monitoring</strong></li>
+<li>Understanding level status colors (Green/Yellow/Red)</li>
+<li>Reading the inventory graph</li>
+<li>
+<p>Monitoring production progress</p>
+</li>
+<li>
+<p><strong>Alert Management</strong></p>
+</li>
+<li>Recognizing common alerts</li>
+<li>Basic alert resolution</li>
+<li>When to escalate to maintenance or support</li>
+</ol>
+<p>3 <strong>Inventory Awareness</strong>
+   - Monitoring lane levels
+   - Understanding replenishment status
+   - Recognizing abnormal low inventory situations</p>
+<hr />
+<h2 id="safety-reminders">Safety Reminders<a class="headerlink" href="#safety-reminders" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Always perform visual inspections before starting equipment</li>
+<li>Never bypass safety interlocks or E-stops</li>
+<li>Ensure all personnel are clear before resuming automatic operation</li>
+<li>Report any unsafe conditions to your supervisor</li>
+</ul>
+<hr />
+<p><strong>Navigation:</strong> <a href="../getting-started/index.html">← Getting Started</a> | <a href="../main-screens/index.html">Next: Main Screens →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

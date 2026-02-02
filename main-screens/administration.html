@@ -1,0 +1,3515 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Order Preparation Solutions - Operator Documentation">
+      
+      
+      
+      
+        <link rel="prev" href="case-sequence.html">
+      
+      
+        <link rel="next" href="../troubleshooting/index.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Administration - InnoPick Manager Operations Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#administration-pages" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-header__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InnoPick Manager Operations Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Administration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-nav__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    InnoPick Manager Operations Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/login.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/interface-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Daily Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-operations/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-operations/monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Screens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Main Screens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="home-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="alerts-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="inventory-section.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Section
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="case-sequence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Sequence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="administration.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administration-section-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administration Section Pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-motion-control-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual motion control Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual motion control Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#four-main-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Four Main Sections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lane-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lane Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lane Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controls_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-lane-saga-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level &amp; Lane Saga Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level &amp; Lane Saga Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-innopick-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup InnoPick Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup InnoPick Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#site-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Site Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gap-between-cases-in-millimeters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap Between Cases in Millimeters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-replenishment-empty-lanes-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Replenishment Empty Lanes Threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-dynamic-replenishment-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Dynamic Replenishment Quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-consecutive-output-cases-per-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Max Consecutive Output Cases Per Destination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-conveyor-acceleration-deceleration-in-gs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequence Conveyor Acceleration / Deceleration in Gs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Configuration Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion Controller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buffer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Number Of Cases To Exit Merge In The Accumulation LookAhead
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer Enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Inventory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-operation-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Operation Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-inventory-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Inventory Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-a-b-accumulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destination A / B Accumulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulator-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulator Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algo-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algo Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algo Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clerk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clerk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminal-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminal User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a New User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-existing-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Existing Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recovery-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-action-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Action Groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery Action Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-controller_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion Controller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-recovery-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Recovery Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#most-commonly-used-recovery-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Most Commonly Used Recovery Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Most Commonly Used Recovery Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-case-pending-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set case pending completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-incaslen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set InCasLen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-ouxfena1-for-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set OuXfEna=1 for level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-alarm-on-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clear alarm on level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-level-processor-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clear level processor error
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#level-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merges-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merges state
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merges state">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-a-b-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge A / B Enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-assignment-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destination assignment mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-user-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing User Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/common-issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/alert-guidelines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/alert-reference.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/deadlocks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deadlocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/case-replacement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Replacement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/casecentering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Centering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/disabledlane.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabled Lane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/alert-codes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administration-section-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administration Section Pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-motion-control-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual motion control Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual motion control Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#four-main-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Four Main Sections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lane-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lane Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lane Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controls_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level-lane-saga-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level &amp; Lane Saga Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level &amp; Lane Saga Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-innopick-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup InnoPick Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup InnoPick Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#site-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Site Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gap-between-cases-in-millimeters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap Between Cases in Millimeters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-replenishment-empty-lanes-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Replenishment Empty Lanes Threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-dynamic-replenishment-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Dynamic Replenishment Quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-consecutive-output-cases-per-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Max Consecutive Output Cases Per Destination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-conveyor-acceleration-deceleration-in-gs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequence Conveyor Acceleration / Deceleration in Gs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Configuration Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#site-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Levels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masking
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion Controller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buffer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Number Of Cases To Exit Merge In The Accumulation LookAhead
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer Enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Inventory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-operation-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Operation Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-inventory-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Inventory Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-a-b-accumulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destination A / B Accumulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulator-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulator Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algo-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Algo Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algo Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Roles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Admin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clerk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clerk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminal-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminal User
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating a New User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-existing-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Managing Existing Users
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recovery-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-action-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Action Groups
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery Action Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motion-controller_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion Controller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-recovery-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Recovery Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#most-commonly-used-recovery-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Most Commonly Used Recovery Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Most Commonly Used Recovery Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-case-pending-completion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set case pending completion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-incaslen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set InCasLen
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-ouxfena1-for-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set OuXfEna=1 for level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-alarm-on-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clear alarm on level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-level-processor-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clear level processor error
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#level-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merges-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merges state
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merges state">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-a-b-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge A / B Enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-assignment-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destination assignment mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-user-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing User Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="administration-pages">Administration Pages<a class="headerlink" href="#administration-pages" title="Permanent link">&para;</a></h1>
+<p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Main Screens</a> &gt; Administration</strong></p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The Administration section contains system configuration, advanced troubleshooting tools, and user management features. Access to these pages is typically restricted to Admin and Manager roles.</p>
+<p><img src="../images/administration/image41.png" width="800" alt="Administration Menu"></p>
+<hr />
+<h2 id="administration-section-pages">Administration Section Pages<a class="headerlink" href="#administration-section-pages" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#manual-motion-control-page">Manual motion control</a> - Manual jog controls for troubleshooting</li>
+<li><a href="#setup-innopick-page">Setup InnoPick</a> - System configuration parameters</li>
+<li><a href="#algo-parameters">Algo Parameters</a> - Algorithm tuning</li>
+<li><a href="#user-manager">User Manager</a> - Create and manage user accounts</li>
+<li><a href="#recovery-actions">Recovery Actions</a> - Advanced troubleshooting tools</li>
+<li><a href="#operations">Operations</a> - Level and Merge statuses / controls</li>
+<li><a href="#user-settings">User Settings</a> - Personal preferences</li>
+</ol>
+<hr />
+<h2 id="manual-motion-control-page">Manual motion control Page<a class="headerlink" href="#manual-motion-control-page" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a>
+<img src="../images/administration/image42.png" width="800" alt="Manual motion control page"></p>
+<p>The Manual motion control page provides manual control of InnoPick conveyors for troubleshooting and maintenance purposes.</p>
+<h3 id="four-main-sections">Four Main Sections<a class="headerlink" href="#four-main-sections" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Level Operations - Control sequence conveyors</li>
+<li>Lane Operations - Control individual buffer lanes</li>
+<li>Level Saga Operations - Pre-program multiple sequence conveyor moves</li>
+<li>Lane Saga Operations - Pre-program multiple buffer lane moves</li>
+</ol>
+<h3 id="level-operations">Level Operations<a class="headerlink" href="#level-operations" title="Permanent link">&para;</a></h3>
+<p><img src="../images/administration/image43.png" width="800" alt="Level Operations"></p>
+<p>Manually jog the sequence conveyor of a selected level.</p>
+<h4 id="controls">Controls<a class="headerlink" href="#controls" title="Permanent link">&para;</a></h4>
+<p><strong>Select Level:</strong>
+- Choose which level to control</p>
+<p><strong>Jog Distance:</strong>
+- Default: 558mm (22 inches) - standard move
+- Can be customized as needed
+- Measured in millimeters</p>
+<p><strong>Acceleration:</strong>
+- Set in g's (gravitational force)
+- Controls how quickly the conveyor accelerates and decelerates</p>
+<p><strong>Direction:</strong>
+- Forward or reverse
+- Typically moves toward outfeed (forward)</p>
+<h4 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Troubleshooting positioning issues</li>
+<li>Manual case positioning after alerts</li>
+<li>Testing conveyor operation</li>
+<li>Maintenance and setup</li>
+</ul>
+<p><strong>Important</strong>: Only use in Manual mode when production is stopped.</p>
+<h3 id="lane-operations">Lane Operations<a class="headerlink" href="#lane-operations" title="Permanent link">&para;</a></h3>
+<p><img src="../images/administration/image44.png" width="800" alt="Lane Operations"></p>
+<p>Manually control individual storage lanes and clutch assemblies.</p>
+<h4 id="controls_1">Controls<a class="headerlink" href="#controls_1" title="Permanent link">&para;</a></h4>
+<p><strong>Level and Lane Selection:</strong>
+- Drop-down menus to select specific lane</p>
+<p><strong>Pop Up / Down:</strong>
+- Forces the lane's pop-up assembly to move up or down
+- Used for manual case handling</p>
+<p><strong>Distance:</strong>
+- Default: Width of product in lane (if present), otherwise 0mm
+- If "Fix Distance" option is unchecked, the system will automatically set the Jog lane distance to according to the product in the lane (if applicable)</p>
+<p><strong>Directions:</strong>
+- <strong>Storage</strong>: Move into the lane (backward)
+- <strong>Dispense</strong>: Move toward sequence conveyor (forward)</p>
+<h4 id="when-to-use_1">When to Use<a class="headerlink" href="#when-to-use_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Clearing jammed cases</li>
+<li>Manual case positioning</li>
+<li>Testing lane operation</li>
+<li>Maintenance procedures</li>
+</ul>
+<p><strong>Caution</strong>: Be aware of case positions before jogging lanes.</p>
+<h3 id="level-lane-saga-operations">Level &amp; Lane Saga Operations<a class="headerlink" href="#level-lane-saga-operations" title="Permanent link">&para;</a></h3>
+<p><img src="../images/administration/image45.png" width="800" alt="Saga Operations"></p>
+<p>These interfaces allow pre-programming multiple moves in sequence.
+To use these controls,
+- Enter in the # of iterations and specify the level(s) &amp; lane(s), as well as a delay.
+- The delay is necessary to allow the system to complete the manual move before the next move in the sequence is commanded.
+- While the manual moves are being executed, the page will display something like this:
+<img src="../images/administration/jogging1.png" width="800" alt="Saga Operations"></p>
+<h4 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Execute a series of moves</li>
+<li>Testing and validation after mechanical work</li>
+<li>Break-in of equipment at installation</li>
+<li>Advanced troubleshooting scenarios</li>
+</ul>
+<h4 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h4>
+<p>Primarily used by:
+- System integrators
+- Advanced maintenance personnel
+- During commissioning and testing</p>
+<hr />
+<h2 id="setup-innopick-page">Setup InnoPick Page<a class="headerlink" href="#setup-innopick-page" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a>
+<img src="../images/administration/image46.png" width="800" alt="Setup InnoPick Page"></p>
+<p>Sub-Sections:
+- <a href="#site-settings">Site Settings</a>
+- <a href="#site-levels">Site Levels</a>
+- <a href="#packages">Packages</a>
+- <a href="#masking">Masking</a>
+- <a href="#motion-controller">Motion Controller</a>
+- <a href="#buffer">Buffer</a>
+- <a href="#simulator-setup">Simulator Setup</a>
+- <a href="#core-setup">Core Setup</a></p>
+<p>The Setup InnoPick page contains configuration settings for InnoPick's internal operation. Access is typically restricted to Admin users and system integrators.</p>
+<hr />
+<h3 id="site-settings">Site Settings<a class="headerlink" href="#site-settings" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p><img src="../images/administration/image46.png" width="800" alt="Site Settings"></p>
+<p>Critical system-wide configuration parameters.</p>
+<h4 id="gap-between-cases-in-millimeters">Gap Between Cases in Millimeters<a class="headerlink" href="#gap-between-cases-in-millimeters" title="Permanent link">&para;</a></h4>
+<p>The gap InnoPick maintains between cases stored in buffer lanes.</p>
+<p><strong>Purpose:</strong>
+- Prevents cases from pressing together
+- Allows smooth dispensing
+- Accommodates case size variations
+- <strong>Note:</strong> Do not change this parameter unless directed to system expert / remote support.</p>
+<h4 id="manual-replenishment-empty-lanes-threshold">Manual Replenishment Empty Lanes Threshold<a class="headerlink" href="#manual-replenishment-empty-lanes-threshold" title="Permanent link">&para;</a></h4>
+<p>Minimum number of empty lanes required before IPM allows manual replenishment creation.</p>
+<p><strong>Purpose:</strong>
+- Ensures sufficient space for manual replenishments
+- Prevents overfilling storage capacity</p>
+<h4 id="use-dynamic-replenishment-quantities">Use Dynamic Replenishment Quantities<a class="headerlink" href="#use-dynamic-replenishment-quantities" title="Permanent link">&para;</a></h4>
+<p>Enable/disable IPM's ability to dynamically adjust replenishment quantities based on demand patterns.</p>
+<p><strong>When enabled:</strong>
+- IPM analyzes usage patterns
+- Adjusts quantities automatically
+- Optimizes inventory levels</p>
+<p><strong>When disabled:</strong>
+- Uses static configured quantities
+- More predictable but less adaptive</p>
+<p><strong>Note</strong>: Should be managed by system integrators.</p>
+<h4 id="max-consecutive-output-cases-per-destination">Max Consecutive Output Cases Per Destination<a class="headerlink" href="#max-consecutive-output-cases-per-destination" title="Permanent link">&para;</a></h4>
+<p>Limits consecutive cases sent to a single destination (Merge A, B, etc.).</p>
+<p><strong>Purpose:</strong>
+- Balances output across destinations
+- Prevents overwhelming single destination
+- Contingent on other function being enabled</p>
+<p><strong>Note</strong>: Should be managed by system integrators.</p>
+<h4 id="sequence-conveyor-acceleration-deceleration-in-gs">Sequence Conveyor Acceleration / Deceleration in Gs<a class="headerlink" href="#sequence-conveyor-acceleration-deceleration-in-gs" title="Permanent link">&para;</a></h4>
+<p>Acceleration rate for sequence conveyor indexing moves.</p>
+<p><strong>Measured in:</strong> g's (gravitational force)</p>
+<p><strong>Considerations:</strong>
+- Higher = faster moves but more case disturbance
+- Lower = gentler but slower throughput
+- Balance between speed and stability</p>
+<h4 id="additional-configuration-options">Additional Configuration Options<a class="headerlink" href="#additional-configuration-options" title="Permanent link">&para;</a></h4>
+<p>Other settings visible on this page are for:
+- Initial system setup
+- System integration
+- Advanced configuration</p>
+<p><strong>Warning</strong>: Do not change these without consulting system integrators.</p>
+<hr />
+<h3 id="site-levels">Site Levels<a class="headerlink" href="#site-levels" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a>
+<img src="/images/administration/sitelevels.png" width="800" alt="Site Levels Configuration"></p>
+<p>This page contains level-specific configuration settings:
+<strong>Lane Pitch in Millimeters</strong>
+  - Value (in mm) representing the standard distance between storage lanes
+  - <strong>Note</strong>: Values may differ slightly per level due to:
+    - Chain stretch over time
+    - Tensioning adjustments
+    - Mechanical variations
+  - <strong>See the <a href="/troubleshooting/casecentering.md">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </p>
+<p><strong>Center Placement in millimeters</strong>
+  - Controls the initial positioning of a case as it first enters InnoPick infeed.
+  - <strong>See the <a href="/troubleshooting/casecentering.md">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </p>
+<p><strong>Center offset in millimeters</strong>
+  - Adjusts the expected centerpoint of infeed cases.
+  - If there are midpoint alarms being generated despite the cases looking nicely centered, then this parameter needs to be adjusted. 
+  - Contact system integrators if adjustment is needed.</p>
+<p><strong>Length offset in millimeters</strong>
+  - Adjusts the expected length by this amount</p>
+<p><strong>Target offset in millimeters</strong>
+  - Adjusts the final case placement when dispensing a case</p>
+<p><strong>Send variables to Galil</strong>
+- Press this after making a change to one of the variables in this section, followed by the 'Submit' button at the top of the page.</p>
+<hr />
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Product configuration page for system setup.</p>
+<p><strong>Access</strong>: System integrators during initial setup</p>
+<hr />
+<h3 id="masking">Masking<a class="headerlink" href="#masking" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Configuration for masking certain system moves.</p>
+<p><strong>Access</strong>: System integrators during initial setup</p>
+<hr />
+<h3 id="motion-controller">Motion Controller<a class="headerlink" href="#motion-controller" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Connection and configuration for the motion controller.</p>
+<p><strong>Access</strong>: System integrators during initial setup</p>
+<hr />
+<h3 id="buffer">Buffer<a class="headerlink" href="#buffer" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p><img src="../images/administration/image47.png" width="800" alt="Buffer Settings"></p>
+<p>Configuration for accumulation management and output buffering.</p>
+<h4 id="number-of-cases-to-exit-merge-in-the-accumulation-lookahead">Number Of Cases To Exit Merge In The Accumulation LookAhead<a class="headerlink" href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" title="Permanent link">&para;</a></h4>
+<p>How many cases IPM considers when forecasting and scheduling output.</p>
+<p>Impact:
+- <strong>Higher number</strong>: More aggressive scheduling, uses more accumulation
+- <strong>Lower number</strong>: More conservative, leaves accumulation space unused</p>
+<p><em>Too high</em>: Risk of misjudging available space, may block output more often
+<em>Too low</em>: Underutilizes accumulation, reduces throughput
+<em>Recommendation</em>: Determine empirically based on system performance</p>
+<h4 id="buffer-enabled">Buffer Enabled<a class="headerlink" href="#buffer-enabled" title="Permanent link">&para;</a></h4>
+<p>(Default = On)</p>
+<p>When enabled, InnoPick keeps track of the cases in the outbound accumulation to optimize outbound scheduling when space is available and pause outbound scheduling to allow inbound to keep entering when the outbound is full.</p>
+<p><strong>When enabled:</strong>
+- IPM actively manages accumulation
+- Schedules output based on available space
+- Prevents overloading downstream equipment</p>
+<p><strong>When disabled:</strong>
+- IPM schedules output independently of accumulation status
+- Simpler but may cause downstream congestion issues</p>
+<h4 id="build-inventory">Build Inventory<a class="headerlink" href="#build-inventory" title="Permanent link">&para;</a></h4>
+<p>InnoPick can operate in two modes regarding accumulation:</p>
+<h5 id="normal-operation-mode">Normal Operation Mode<a class="headerlink" href="#normal-operation-mode" title="Permanent link">&para;</a></h5>
+<ul>
+<li>IPM schedules as many output cases as possible, using Buffer logic if that option (see above) is enabled</li>
+<li>Assumes downstream conveyors advance at nominal rate</li>
+<li>Maximizes throughput</li>
+<li>May occasionally have to stop if outbound flow stops unexpectedly</li>
+</ul>
+<h5 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h5>
+<ul>
+<li>IPM prioritizes building lane inventory over outputting cases</li>
+<li>Only schedules output cases that will definitely fit in current accumulation space </li>
+<li>More conservative approach</li>
+<li>Level should not have to stop due to full accumulation</li>
+<li>Allows continuous replenishment induction</li>
+</ul>
+<p><strong>When to enable:</strong>
+- Starting production with low inventory
+- Recovering from downstream stoppage
+- Building to nominal inventory levels</p>
+<p><strong>When to disable:</strong>
+- Normal production operations
+- When inventory is at nominal or above
+- To maximize throughput</p>
+<p><strong>Note: Build Inventory Mode can be turned on and off directly from the set of controls that are always visible in the top left corner of the InnoPick Manager screen:</strong>
+<img src="../images/administration/buildinventory2.png" width="800" alt="Build Inventory Mode"></p>
+<p><strong>Destination Decoupling Mode Enabled</strong>
+- Allows InnoPick to schedule cases for multiple destinations in parallel based on downstream accumulation availability and inventory. 
+- If InnoPick cannot schedule the next outbound case for the next priority pallet, it is allowed to look for pallets further down the sequence for other destinations and attempt scheduling them if accumulation and inventory allows it.
+- This mode is affected by the two parameters below:</p>
+<p><strong>Destination decoupling mode max pallet offset</strong>
+- This is configuration parameter for the "Destination Decoupling Mode Enabled" above.
+- See the description beneath the setting.</p>
+<p><strong>Destination decoupling mode max case offset</strong>
+- This is configuration parameter for the "Destination Decoupling Mode Enabled" above.
+- See the description beneath the setting.</p>
+<h4 id="destination-a-b-accumulation">Destination A / B Accumulation<a class="headerlink" href="#destination-a-b-accumulation" title="Permanent link">&para;</a></h4>
+<p><img src="../images/administration/buffer2.png" width="800" alt="Buffer Settings"></p>
+<p>These settings teach InnoPick about various accumulation zones for its algorithmic calculations. </p>
+<p><strong>Shared zone accumulation (# of zones)</strong>
+- This setting teaches InnoPick how many cases can fit between the exit of the merge and the palletizer. </p>
+<p><strong>Level 1 to 5: Accumulation Length in Mm</strong>
+- This setting teaches InnoPick the length of low pressure accumulation where cases are accumulated in a way that they bunch up together with no gaps. </p>
+<p><strong>Level 1 to 5: Zone Accumulation (# of zones)</strong>
+- This setting teaches InnoPick how many individual cases can be accumulated between the exit of InnoPick and the merge. </p>
+<hr />
+<h3 id="simulator-setup">Simulator Setup<a class="headerlink" href="#simulator-setup" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Configuration page for developers and system testing.</p>
+<p><strong>Access</strong>: System integrators and developers</p>
+<hr />
+<h3 id="core-setup">Core Setup<a class="headerlink" href="#core-setup" title="Permanent link">&para;</a></h3>
+<p><a href="/main-screens/administration.md#setup-innopick-page">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Core system parameters for developers.</p>
+<p><strong>Access</strong>: System integrators and developers</p>
+<hr />
+<h2 id="algo-parameters">Algo Parameters<a class="headerlink" href="#algo-parameters" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a>
+<img src="../images/administration/image49.png" width="800" alt="Algo Parameters Page 1"></p>
+<p>The Algo Parameters page lists parameters that control various elements of InnoPick's embedded algorithms.</p>
+<h4 id="purpose_1">Purpose<a class="headerlink" href="#purpose_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Fine-tune system performance</li>
+<li>Adjust algorithm behavior</li>
+<li>Optimize for specific products or operations</li>
+</ul>
+<h4 id="access-level">Access Level<a class="headerlink" href="#access-level" title="Permanent link">&para;</a></h4>
+<p>Parameters are meant to be altered by:
+- System architects
+- System administrators
+- Personnel with deep understanding of InnoPick operation</p>
+<h4 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h4>
+<p>Each parameter includes a description on the page explaining its purpose and effect.</p>
+<p><strong>Note</strong>: Changes to algorithm parameters can significantly affect system behavior. </p>
+<hr />
+<h2 id="user-manager">User Manager<a class="headerlink" href="#user-manager" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a>
+<img src="../images/administration/image51.png" width="800" alt="User Manager Page"></p>
+<p>The User Manager page allows Admin-level users to create and manage user accounts for InnoPick Manager.</p>
+<h3 id="user-roles">User Roles<a class="headerlink" href="#user-roles" title="Permanent link">&para;</a></h3>
+<p>Each user account is assigned one of these roles:</p>
+<h4 id="admin">Admin<a class="headerlink" href="#admin" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Full access to all controls and options</li>
+<li>Can create and manage other user accounts</li>
+<li>Can modify system configuration</li>
+<li>Can access all pages and features</li>
+</ul>
+<h4 id="manager">Manager<a class="headerlink" href="#manager" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Access to all operational settings</li>
+<li>Cannot modify site settings or core configuration</li>
+<li>Can manage production operations</li>
+<li>Can resolve alerts and manage inventory</li>
+</ul>
+<h4 id="clerk">Clerk<a class="headerlink" href="#clerk" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Access necessary to operate system for production</li>
+<li>Cannot change configuration settings</li>
+<li>Can monitor status and clear alerts</li>
+<li>Limited administrative access</li>
+</ul>
+<h4 id="terminal-user">Terminal User<a class="headerlink" href="#terminal-user" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Access only to MixMaster Terminals</li>
+<li>There are no Terminals within InnoPick Manager, but since User Accounts are shared between the systems, the option appears here.</li>
+</ul>
+<h3 id="creating-a-new-user">Creating a New User<a class="headerlink" href="#creating-a-new-user" title="Permanent link">&para;</a></h3>
+<p><img src="../images/administration/image52.png" width="800" alt="Create User Dialog"></p>
+<p>To create a new user account:</p>
+<ol>
+<li>Click "Create New User" or similar button</li>
+<li>Enter required information:</li>
+<li><strong>Username</strong>: Login identifier</li>
+<li><strong>Password</strong>: Initial password</li>
+<li><strong>Full Name</strong>: User's actual name</li>
+<li><strong>Email</strong>: Contact email address</li>
+<li><strong>Role</strong>: Select from Admin, Manager, Clerk, Terminal User</li>
+<li>Save the new user</li>
+</ol>
+<h3 id="managing-existing-users">Managing Existing Users<a class="headerlink" href="#managing-existing-users" title="Permanent link">&para;</a></h3>
+<p>From the User Manager page, you can:
+- View all user accounts
+- Edit user information
+- Change user roles
+- Disable or delete accounts
+- Reset passwords</p>
+<h3 id="security-best-practices">Security Best Practices<a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Assign the minimum necessary role for each user</li>
+<li>Review user accounts periodically</li>
+<li>Disable accounts for personnel no longer needing access</li>
+<li>Use strong passwords</li>
+<li>Change default passwords immediately</li>
+</ul>
+<hr />
+<h2 id="recovery-actions">Recovery Actions<a class="headerlink" href="#recovery-actions" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a>
+<img src="../images/administration/image53.png" width="800" alt="Recovery Actions Page"></p>
+<p>Recovery Actions are built-in features for dealing with specific issues that arise during operation.</p>
+<h3 id="purpose_2">Purpose<a class="headerlink" href="#purpose_2" title="Permanent link">&para;</a></h3>
+<p>Provide operators and support personnel with:
+- Tools for recovering from unusual situations
+- Options for resolving issues that can't be handled through normal procedures
+- Advanced troubleshooting capabilities</p>
+<h3 id="recovery-action-groups">Recovery Action Groups<a class="headerlink" href="#recovery-action-groups" title="Permanent link">&para;</a></h3>
+<h4 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h4>
+<ul>
+<li>System-wide recovery actions</li>
+<li>General troubleshooting tools</li>
+</ul>
+<h4 id="buffer_1">Buffer<a class="headerlink" href="#buffer_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Actions related to accumulation management</li>
+<li>Output buffering issues</li>
+</ul>
+<h4 id="motion-controller_1">Motion Controller<a class="headerlink" href="#motion-controller_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Actions related to conveyor motion</li>
+<li>Drive and motor issues</li>
+</ul>
+<h4 id="core">Core<a class="headerlink" href="#core" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Core system recovery actions</li>
+<li>Advanced system state management</li>
+</ul>
+<h3 id="using-recovery-actions">Using Recovery Actions<a class="headerlink" href="#using-recovery-actions" title="Permanent link">&para;</a></h3>
+<p>Recovery actions include a description of what it does and some of them require the operator to put in some required information (in the Action column). 
+- If a recovery action has an input field for the operator to put in information, it typically will not work unless it has that information.</p>
+<p><strong>Important</strong>: 
+- Understand the action before executing
+- Document which recovery actions were used
+- Consult with support if unsure</p>
+<p><strong>Note</strong>: The list of available Recovery Actions may change depending on:
+- System version
+- Integrator customizations
+- Specific installation needs</p>
+<h3 id="most-commonly-used-recovery-actions">Most Commonly Used Recovery Actions<a class="headerlink" href="#most-commonly-used-recovery-actions" title="Permanent link">&para;</a></h3>
+<h4 id="set-case-pending-completion">Set case pending completion<a class="headerlink" href="#set-case-pending-completion" title="Permanent link">&para;</a></h4>
+<p>This recovery action resends the outfeed case data to the downstream conveyor system. 
+- This is used when recovering from issues at the outbound transition (handshake), when the downstream conveyor system does not have the tracking data for the case currently on the last InnoPick position.</p>
+<h4 id="set-incaslen">Set InCasLen<a class="headerlink" href="#set-incaslen" title="Permanent link">&para;</a></h4>
+<p>This recovery action re-sends the case length to the motion controller for the currently inducting product on a given level. 
+- This is used when after a system restart or some other abnormal stoppage, cases are not entering InnoPick infeed even though everything else is good, and the replenishment is in the <em>Inducting</em> state.</p>
+<h4 id="set-ouxfena1-for-level">Set OuXfEna=1 for level<a class="headerlink" href="#set-ouxfena1-for-level" title="Permanent link">&para;</a></h4>
+<p>This recovery action simulates the "OK to Receive" signal from the downstream conveyor system to InnoPick, which is the last step in the outfeed handshake process. 
+- This can be used when the downstream conveyor system has tracking data for the case, but InnoPick is not advancing the physical case from the last position. </p>
+<h4 id="clear-alarm-on-level">Clear alarm on level<a class="headerlink" href="#clear-alarm-on-level" title="Permanent link">&para;</a></h4>
+<p>This recovery action sends a 'clear alarm' signal to the motion controller for a given level. 
+ - This is used when a fault or alert on the InnoPick system refuses to clear normally, but the underlying conditions that caused the alarm have been resolved (meaning it should be able to clear). </p>
+<h4 id="clear-level-processor-error">Clear level processor error<a class="headerlink" href="#clear-level-processor-error" title="Permanent link">&para;</a></h4>
+<p>This recovery action clears internal processor errors and restarts the level processor for a given level. 
+- This is used after certain critical faults whose descriptions indicate to the operator that the level processor has been stopped. </p>
+<hr />
+<h2 id="operations">Operations<a class="headerlink" href="#operations" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a></p>
+<h3 id="level-status">Level status<a class="headerlink" href="#level-status" title="Permanent link">&para;</a></h3>
+<p><img src="../images/administration/levelstatus.png" width="800" alt="Level status"></p>
+<ul>
+<li>This page provides an overview of each level's various statuses as well as:</li>
+<li>Last case data sent (CaseRef #)</li>
+<li>Last pending completion (CaseRef #)</li>
+</ul>
+<h3 id="merges-state">Merges state<a class="headerlink" href="#merges-state" title="Permanent link">&para;</a></h3>
+<p><img src="../images/administration/mergesstate1.png" width="800" alt="Merge Settings"></p>
+<p>Configuration for downstream merge points (where the different levels combine to a single conveyor that feeds one of the palletizers).</p>
+<h4 id="merge-a-b-enabled">Merge A / B Enabled<a class="headerlink" href="#merge-a-b-enabled" title="Permanent link">&para;</a></h4>
+<p>Enable or disable individual downstream destinations.</p>
+<p><strong>Purpose:</strong>
+- Route all cases to operational Merge if one fails
+- Handle downstream equipment failures
+- Temporary operational adjustments</p>
+<p><strong>Usage:</strong>
+- Last resort when downstream fault cannot be resolved
+- Will not affect cases already on sequence conveyors -- those cases that are already scheduled for a certain destination will retain their destination.
+- High likelihood that remote support interventions will be required if this is changed during production.</p>
+<p><strong>Caution</strong>: <em>Only use when absolutely necessary and coordinate with support. Can have unintended effects and complications.</em></p>
+<h4 id="destination-assignment-mode">Destination assignment mode<a class="headerlink" href="#destination-assignment-mode" title="Permanent link">&para;</a></h4>
+<p><img src="../images/administration/mergesstate2.png" width="800" alt="Merge Settings"></p>
+<p>There are two possible settings for the destination assignment mode:
+1. None
+2. Just-in-time</p>
+<p><strong>None:</strong> This is the regular destination mode:
+- InnoPick will initially load balance pallet assignment when receiving a new case sequence
+- Will never change a destination unless a destination is disabled</p>
+<p><strong>Just in time:</strong> 
+- InnoPick will initially load balance pallet assignment when receiving a new case sequence (like normal)
+- InnoPick may change the destination when the first case of a pallet gets scheduled, based on the remaining accumulation available to load balance assignments "Just-in-Time"
+- In this mode, InnoPick responds dynamically to current accumulation levels and assigns pallets to the destination with the most capacity. </p>
+<hr />
+<h2 id="user-settings">User Settings<a class="headerlink" href="#user-settings" title="Permanent link">&para;</a></h2>
+<p><a href="/main-screens/administration.md#overview">Back to Top - Administration Pages Overview</a>
+<img src="../images/administration/usersettings.png" width="800" alt="User Settings Page"></p>
+<p>The User Settings page contains personal preferences that individual users can configure.</p>
+<h3 id="available-settings">Available Settings<a class="headerlink" href="#available-settings" title="Permanent link">&para;</a></h3>
+<p>Settings include:
+- Language preferences (if applicable)
+- System of units (metric vs imperial)</p>
+<h3 id="accessing-user-settings">Accessing User Settings<a class="headerlink" href="#accessing-user-settings" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Click <strong>User Settings</strong> in the left navigation menu</li>
+<li>Settings are specific to your user account</li>
+</ul>
+<hr />
+<h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../daily-operations/index.html#monitoring-production">Monitoring Production</a> - Using admin tools during operation</li>
+<li><a href="../troubleshooting/index.html">Troubleshooting</a> - When to use recovery actions</li>
+<li><a href="inventory-section.html#products-page">Products Page</a> - Product configuration</li>
+</ul>
+<hr />
+<p><strong>Navigation:</strong> <a href="case-sequence.html">← Case Sequence</a> | <a href="../troubleshooting/index.html">Next: Troubleshooting →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

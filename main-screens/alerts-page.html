@@ -1,0 +1,2393 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Order Preparation Solutions - Operator Documentation">
+      
+      
+      
+      
+        <link rel="prev" href="home-page.html">
+      
+      
+        <link rel="next" href="inventory-section.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Alerts Page - InnoPick Manager Operations Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#alerts-page" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-header__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InnoPick Manager Operations Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Alerts Page
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-nav__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    InnoPick Manager Operations Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/login.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/interface-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Daily Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-operations/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-operations/monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Screens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Main Screens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="home-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts Page
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="alerts-page.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-alerts-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing the Alerts Page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Display
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alerts-page-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alerts Page Columns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alerts Page Columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#severity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Severity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raw Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-search-and-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Search and Filters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Search and Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-filtering-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Filtering Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-all-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing All Alerts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Viewing All Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-view-historical-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why View Historical Alerts?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-alert-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Alert Codes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Alert Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#119-photocell-still-blocked-after-dispensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        119 - Photocell still blocked after dispensing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-photocell-above-lane-never-detected-case-during-storing-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        121 - Photocell above lane never detected case during storing move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-photocell-never-detected-case-during-dispense-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        123 - Photocell never detected case during dispense move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-clutch-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        310 - Clutch Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#515-unexpected-case-entering-infeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        515 - Unexpected case entering infeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#555-e-stop-condition-active" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        555 - E-Stop condition active
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#709-photocell-blocked-plc-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        709 - Photocell blocked (PLC I/O Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with Alerts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-alert-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Alert Progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-clear-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Clear Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-alerts-wont-clear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If Alerts Won't Clear
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alert-troubleshooting-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alert Troubleshooting Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alert Troubleshooting Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-single-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Single Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-repeated-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Repeated Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-multiple-different-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Multiple Different Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#during-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        During Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="inventory-section.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Section
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="case-sequence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Sequence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="administration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/common-issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/alert-guidelines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/alert-reference.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/deadlocks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deadlocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/case-replacement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Replacement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/casecentering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Centering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/disabledlane.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabled Lane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/alert-codes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-alerts-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing the Alerts Page
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Display
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alerts-page-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alerts Page Columns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alerts Page Columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Date
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#severity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Severity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raw Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-search-and-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Search and Filters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Search and Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-filtering-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Filtering Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-all-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Viewing All Alerts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Viewing All Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-view-historical-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why View Historical Alerts?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-alert-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Alert Codes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Alert Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#119-photocell-still-blocked-after-dispensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        119 - Photocell still blocked after dispensing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-photocell-above-lane-never-detected-case-during-storing-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        121 - Photocell above lane never detected case during storing move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-photocell-never-detected-case-during-dispense-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        123 - Photocell never detected case during dispense move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-clutch-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        310 - Clutch Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#515-unexpected-case-entering-infeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        515 - Unexpected case entering infeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#555-e-stop-condition-active" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        555 - E-Stop condition active
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#709-photocell-blocked-plc-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        709 - Photocell blocked (PLC I/O Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with Alerts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-alert-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Alert Progression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-clear-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Clear Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-alerts-wont-clear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If Alerts Won't Clear
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alert-troubleshooting-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alert Troubleshooting Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alert Troubleshooting Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-single-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Single Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-repeated-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Repeated Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-multiple-different-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Multiple Different Alerts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#during-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        During Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="alerts-page">Alerts Page<a class="headerlink" href="#alerts-page" title="Permanent link">&para;</a></h1>
+<p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Main Screens</a> &gt; Alerts Page</strong></p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The Alerts page provides a comprehensive view of current and historical alerts, with powerful search and filtering capabilities to help you identify and resolve issues quickly.</p>
+<p><img src="../images/alerts/image20.png" width="800" alt="Alerts Page"></p>
+<hr />
+<h2 id="accessing-the-alerts-page">Accessing the Alerts Page<a class="headerlink" href="#accessing-the-alerts-page" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Click the <strong>Alerts</strong> button in the left navigation menu</li>
+<li>Available from any screen in InnoPick Manager</li>
+</ul>
+<hr />
+<h2 id="default-display">Default Display<a class="headerlink" href="#default-display" title="Permanent link">&para;</a></h2>
+<p>When the Alerts page first loads:
+- <strong>Only uncleared alerts</strong> are displayed by default
+- Alerts are shown in chronological order (most recent first)</p>
+<hr />
+<h2 id="alerts-page-columns">Alerts Page Columns<a class="headerlink" href="#alerts-page-columns" title="Permanent link">&para;</a></h2>
+<p>The Alerts page displays detailed information about each alert:</p>
+<h3 id="date">Date<a class="headerlink" href="#date" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The date and time when the alert first occurred</li>
+<li>Useful for tracking when issues began</li>
+</ul>
+<h3 id="source">Source<a class="headerlink" href="#source" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Indicates which portion of the software generated the alert</li>
+<li>Examples: Motion Controller, PLC, Core Logic, Buffer Management</li>
+<li>Helps identify which system component detected the issue and what aspect of InnoPick is the problem</li>
+</ul>
+<h3 id="severity">Severity<a class="headerlink" href="#severity" title="Permanent link">&para;</a></h3>
+<p>Alerts are categorized by severity level:
+<img src="../images/alerts/severity.png" width="800" alt="Alerts Page"></p>
+<ul>
+<li><strong>Warning</strong>: Minor alert that may not require immediate action</li>
+<li>System can often continue operating</li>
+<li>Should be monitored for patterns</li>
+<li>
+<p>No audible sound</p>
+</li>
+<li>
+<p><strong>Error</strong>: A standard Alert which stops the affected level and puts it into Manual (Faulted/Red) mode.</p>
+</li>
+<li>Other levels continue operating</li>
+<li>
+<p>The panel Buzzer will sound to alert the operator</p>
+</li>
+<li>
+<p><strong>Critical</strong>: Major system alert requiring attention</p>
+</li>
+<li>Production on all levels may be stopped</li>
+<li>Requires operator intervention</li>
+<li>The panel Buzzer will sound to alert the operator</li>
+</ul>
+<h3 id="raw-code">Raw Code<a class="headerlink" href="#raw-code" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The numeric code associated with the alert</li>
+<li>Used to identify specific alert types</li>
+<li>Reference these codes in the <a href="../troubleshooting/alert-reference.html">Alert Reference Guide</a></li>
+<li>Examples: 119, 121, 515, 555, 709</li>
+</ul>
+<h3 id="level">Level<a class="headerlink" href="#level" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The InnoPick level where the alert occurred</li>
+<li>May be blank for system-wide alerts</li>
+</ul>
+<h3 id="message">Message<a class="headerlink" href="#message" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Descriptive text explaining the nature of the alert</li>
+<li>Written to help operators understand what happened</li>
+<li>May include specific details like lane numbers or photocell locations, as well as contextual information (nearby cases, replenishment details, etc).</li>
+<li>Examples:
+<img src="../images/alerts/message1.png" width="800" alt="Alerts Page">
+<img src="../images/alerts/message2.png" width="800" alt="Alerts Page"></li>
+</ul>
+<hr />
+<h2 id="using-search-and-filters">Using Search and Filters<a class="headerlink" href="#using-search-and-filters" title="Permanent link">&para;</a></h2>
+<p><img src="../images/alerts/filteralarm.png" width="800" alt="Alerts Page"></p>
+<h3 id="searching-alerts">Searching Alerts<a class="headerlink" href="#searching-alerts" title="Permanent link">&para;</a></h3>
+<p>Use the search bar to find specific alerts by:
+- Alert code (e.g., "555")
+- Keywords in message text (e.g., "photocell", "clutch")
+- Level number
+- Date/time information</p>
+<h3 id="common-filtering-strategies">Common Filtering Strategies<a class="headerlink" href="#common-filtering-strategies" title="Permanent link">&para;</a></h3>
+<p><strong>To find all alerts for a specific level:</strong>
+- Sort by the Level column
+- All alerts for each level will be grouped together</p>
+<p><strong>To find recent critical alerts:</strong>
+- Filter by Severity = Critical
+- Sort by Date (most recent first)</p>
+<p><strong>To track a specific type of fault:</strong>
+- Search for the alert code or key message terms
+- Review the pattern and frequency</p>
+<hr />
+<h2 id="viewing-all-alerts">Viewing All Alerts<a class="headerlink" href="#viewing-all-alerts" title="Permanent link">&para;</a></h2>
+<p>To see all alerts:
+- Remove all filters:
+<img src="../images/alerts/filterall.png" width="800" alt="Alerts Page">
+- This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
+- This can be useful when a level seems to be faulted but there is no obvious reason why.</p>
+<h3 id="why-view-historical-alerts">Why View Historical Alerts?<a class="headerlink" href="#why-view-historical-alerts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Identify patterns of recurring issues</li>
+<li>Verify that alerts were properly resolved</li>
+<li>Troubleshoot intermittent problems</li>
+<li>Document issues for maintenance review</li>
+</ul>
+<hr />
+<h2 id="common-alert-codes">Common Alert Codes<a class="headerlink" href="#common-alert-codes" title="Permanent link">&para;</a></h2>
+<p>Here are some frequently encountered alerts (see <a href="../troubleshooting/alert-reference.html">Alert Reference</a> for complete list):</p>
+<h3 id="119-photocell-still-blocked-after-dispensing">119 - Photocell still blocked after dispensing<a class="headerlink" href="#119-photocell-still-blocked-after-dispensing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Photocell for a lane remained blocked after dispense move completed</li>
+<li>Usually indicates a case issue (broken, wrong size, poorly positioned)</li>
+</ul>
+<h3 id="121-photocell-above-lane-never-detected-case-during-storing-move">121 - Photocell above lane never detected case during storing move<a class="headerlink" href="#121-photocell-above-lane-never-detected-case-during-storing-move" title="Permanent link">&para;</a></h3>
+<ul>
+<li>InnoPick tried to store a case but photocell was never blocked</li>
+<li>Usually means no case was present to store</li>
+</ul>
+<h3 id="123-photocell-never-detected-case-during-dispense-move">123 - Photocell never detected case during dispense move<a class="headerlink" href="#123-photocell-never-detected-case-during-dispense-move" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Case expected but not detected during dispense</li>
+<li>Possible causes: missing case, inventory count error</li>
+</ul>
+<h3 id="310-clutch-fault">310 - Clutch Fault<a class="headerlink" href="#310-clutch-fault" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clutch assembly failed to engage properly after multiple attempts</li>
+<li>Usually requires mechanical inspection</li>
+</ul>
+<h3 id="515-unexpected-case-entering-infeed">515 - Unexpected case entering infeed<a class="headerlink" href="#515-unexpected-case-entering-infeed" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Infeed photocell blocked when no case was expected</li>
+<li>Check upstream conveyor system</li>
+</ul>
+<h3 id="555-e-stop-condition-active">555 - E-Stop condition active<a class="headerlink" href="#555-e-stop-condition-active" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Safety system engaged (E-Stop pressed or door open)</li>
+<li>Clear E-Stop condition, then clear alert to resume</li>
+</ul>
+<h3 id="709-photocell-blocked-plc-io-check">709 - Photocell blocked (PLC I/O Check)<a class="headerlink" href="#709-photocell-blocked-plc-io-check" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Photocell unexpectedly blocked during routine monitoring</li>
+<li>Check for debris, damaged cases, or sensor malfunction</li>
+</ul>
+<hr />
+<h2 id="working-with-alerts">Working with Alerts<a class="headerlink" href="#working-with-alerts" title="Permanent link">&para;</a></h2>
+<h3 id="understanding-alert-progression">Understanding Alert Progression<a class="headerlink" href="#understanding-alert-progression" title="Permanent link">&para;</a></h3>
+<p><strong>Typical Alert Lifecycle:</strong>
+1. Issue occurs (sensor detects problem)
+2. Alert generated and logged
+3. System puts affected level in Manual or Fault mode
+4. Alert appears on Home Page and Alerts Page
+5. Operator resolves underlying issue
+6. Operator clears alert
+7. System resumes operation</p>
+<h3 id="when-to-clear-alerts">When to Clear Alerts<a class="headerlink" href="#when-to-clear-alerts" title="Permanent link">&para;</a></h3>
+<p><strong>You should clear alerts only when:</strong>
+- The underlying physical issue has been resolved
+- Cases are in correct positions
+- Sensors are unblocked
+- Mechanical issues are fixed
+- Safety devices are reset</p>
+<p><strong>Do not clear alerts if:</strong>
+- The problem still exists
+- You're unsure what caused the alert
+- Physical conditions don't match expectations
+- Multiple related alerts are occurring</p>
+<h3 id="if-alerts-wont-clear">If Alerts Won't Clear<a class="headerlink" href="#if-alerts-wont-clear" title="Permanent link">&para;</a></h3>
+<p>Some alerts cannot be cleared until specific conditions are met:</p>
+<ol>
+<li><strong>Read the alert message carefully</strong></li>
+<li><strong>Check physical conditions</strong></li>
+<li>Is a photocell still blocked?</li>
+<li>Is an E-Stop still pressed?</li>
+<li>Is a case in the wrong position?</li>
+<li><strong>Resolve the root cause</strong></li>
+<li><strong>Try clearing again</strong><ul>
+<li>Use the <a href="/main-screens/administration.md#most-commonly-used-recovery-actions">Recovery Action: Send Clear Alarm on Level</a>   </li>
+</ul>
+</li>
+<li>The Alert in question is being filtered (not visible).<ul>
+<li><a href="/main-screens/alerts-page.md#viewing-all-alerts">See how to View All Alerts</a></li>
+</ul>
+</li>
+<li><strong>Consult troubleshooting guide</strong> if issue persists</li>
+</ol>
+<p>See <a href="../troubleshooting/alert-guidelines.html">Alert Guidelines</a> for detailed resolution procedures.</p>
+<hr />
+<h2 id="alert-troubleshooting-strategy">Alert Troubleshooting Strategy<a class="headerlink" href="#alert-troubleshooting-strategy" title="Permanent link">&para;</a></h2>
+<h3 id="for-single-alerts">For Single Alerts<a class="headerlink" href="#for-single-alerts" title="Permanent link">&para;</a></h3>
+<p>If an alert occurs once:
+1. Note the alert type and details
+2. Resolve the issue
+3. Clear the alert
+4. Monitor to ensure it doesn't recur</p>
+<h3 id="for-repeated-alerts">For Repeated Alerts<a class="headerlink" href="#for-repeated-alerts" title="Permanent link">&para;</a></h3>
+<p>If the same alert occurs multiple times:
+1. <strong>There's likely an underlying problem</strong> that wasn't fully resolved
+2. Check for:
+   - Damaged cases causing repeated issues
+   - Incorrect inventory quantities
+   - Mechanical problems
+   - Configuration issues
+3. Resolve the root cause, not just the symptom
+4. Document the issue for maintenance review</p>
+<h3 id="for-multiple-different-alerts">For Multiple Different Alerts<a class="headerlink" href="#for-multiple-different-alerts" title="Permanent link">&para;</a></h3>
+<p>If multiple alert types occur in sequence:
+1. <strong>They may be related</strong> - one issue causing cascading effects
+2. Review the <a href="../troubleshooting/alert-guidelines.html">Alert Guidelines</a>
+3. Focus on resolving the earliest alert first
+4. Verify physical conditions match the inventory graph
+5. May indicate a larger system issue requiring maintenance</p>
+<hr />
+<h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<h3 id="during-production">During Production<a class="headerlink" href="#during-production" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Keep the Alerts page open in a second browser tab</li>
+<li>Check regularly for new alerts</li>
+<li>Address warnings before they become critical</li>
+<li>Document recurring issues</li>
+</ul>
+<h3 id="for-troubleshooting">For Troubleshooting<a class="headerlink" href="#for-troubleshooting" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use search to find similar past alerts</li>
+<li>Note the frequency and pattern</li>
+<li>Check if alerts correlate with specific products or lanes</li>
+<li>Share alert history with maintenance personnel</li>
+</ul>
+<hr />
+<h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../troubleshooting/alert-reference.html">Alert Reference Guide</a> - Complete list of all alert codes</li>
+<li><a href="../troubleshooting/alert-guidelines.html">Alert Guidelines</a> - Step-by-step resolution procedures</li>
+<li><a href="home-page.html#alerts-list">Home Page Alerts</a> - Quick alert overview</li>
+<li><a href="../troubleshooting/index.html">Troubleshooting</a> - General problem-solving guidance</li>
+</ul>
+<hr />
+<p><strong>Navigation:</strong> <a href="home-page.html">← Home Page</a> | <a href="inventory-section.html">Next: Inventory Section →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
