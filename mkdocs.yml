@@ -57,6 +57,7 @@ plugins:
 markdown_extensions:
   - tables
   - admonitionsite_name: InnoPick Manager Operations Manual
+  - nl2br
 site_description: Automated Order Preparation Solutions - Operator Documentation
 
 # This tells MkDocs where your markdown files are
