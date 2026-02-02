@@ -101,6 +101,9 @@ The inventory graph shows:
 <img src="../images/home/waitingreplen5.png" width="200" alt="Waiting Replenishment">
 - When a level InnoPick is not able to schedule output cases because it is waiting for a replenishment, an **x** appears at that level.
 - This allows an operator to know immediately why a given level is not scheduling output cases.
+- Hover over the **x** to see which replenishment the level is waiting for.
+<img src="../images/home/waitingreplen6.png" width="200" alt="Waiting Replenishment">
+
 
 ##### Infeed paused
 - [See above](/main-screens/home-page.md#pause--resume-infeed)
