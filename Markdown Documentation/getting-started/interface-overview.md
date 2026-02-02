@@ -8,7 +8,7 @@
 
 After logging in, you'll see the InnoPick Manager interface with a navigation menu on the left side of the screen. This menu is available from any page within the application.
 
-<img src="/images/home/homepage.png" width="800" alt="Home Page">
+<img src="../images/home/homepage.png" width="800" alt="Home Page">
 
 ### Primary Navigation Buttons
 
