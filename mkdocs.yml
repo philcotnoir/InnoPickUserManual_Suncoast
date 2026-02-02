@@ -113,6 +113,9 @@ nav:
 # Enable search
 plugins:
   - search
+  
+site_url: https://philcotnoir.github.io/InnoPickUserManual_Suncoast/
+repo_url: https://github.com/philcotnoir/InnoPickUserManual_Suncoast/
 
 # Markdown extensions for better formatting
 markdown_extensions:
