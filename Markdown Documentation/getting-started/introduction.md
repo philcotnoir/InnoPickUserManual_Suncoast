@@ -70,16 +70,19 @@ InnoPick consists of:
 ## Getting the Most from This Manual
 
 **For New Users:**
+
 - Read through Getting Started and Daily Operations sections first
 - Practice navigating the screens in Guest mode if available
 - Ask questions and take notes as you learn
 
 **For Experienced Users:**
+
 - Use this as a reference when encountering unfamiliar alerts or features
 - Review the Troubleshooting section for efficient problem-solving
 - Bookmark frequently-used pages in your browser
 
 **For Administrators:**
+
 - Pay special attention to the Administration section
 - Review security and access control features
 - Understand the implications of configuration changes
