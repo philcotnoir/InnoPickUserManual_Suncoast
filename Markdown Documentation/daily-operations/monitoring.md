@@ -1,0 +1,182 @@
+# Monitoring Production
+
+**[Home](../index.md) > [Daily Operations](index.md) > Monitoring**
+
+---
+
+## Overview
+
+During production, operators should actively monitor InnoPick Manager to ensure smooth operation, catch problems early, and maintain production efficiency.
+
+---
+
+## Primary Monitoring Dashboard
+
+The [Home Page](../main-screens/home-page.md) provides all essential information for monitoring production at a glance.
+
+### Key Elements to Monitor
+
+1. **[Level Status Indicators](../main-screens/home-page.md#level-statuses--auto--manual-controls)**
+   - **Green**: Level is in Automatic mode and operating normally
+   - **Yellow**: Level is in Manual mode (paused)
+   - **Red**: Level has an active fault
+   - **Dark Red**: E-Stop condition is active
+   - **Blue**: Communication Loss
+
+2. **[Inventory Graph](../main-screens/home-page.md#inventory-graph)**
+   - Visual representation of all cases on sequence conveyors
+   - Squares = Outbound cases (for customer pallets)
+   - Triangles = Inbound cases (replenishments being stored)
+   - Filled shapes = Physical cases present
+   - Hollow shapes = Scheduled case positions
+
+3. **[Alerts List](../main-screens/home-page.md#alerts-list)**
+   - Shows current system alerts
+   - Alerts appear when issues require attention
+   - Go to the Alerts page for more details. 
+
+4. **[Production Graph](../main-screens/home-page.md#production-graph)**
+   - Shows progress of current production run
+   - Green bar = In Progress cases
+   - Orange bar = Completed cases
+   - Red line = Total cases in current orders
+
+5. **[Lane Inventory](../main-screens/home-page.md#lane-inventory)**
+   - Select a level to view storage lane status
+   - Hover over lanes for detailed inventory info
+   - Monitor for abnormal low inventory levels
+
+---
+
+## What to Watch During Production
+
+### Continuous Monitoring Tasks
+
+**Every 15-30 Minutes:**
+- Glance at level status indicators (all should be green)
+- Check for new alerts
+- Verify production progress is advancing
+
+**Every 1-2 Hours:**
+- Check replenishment status
+- Monitor case sequence progress
+
+**Throughout the Shift:**
+- Listen for unusual mechanical sounds
+- Watch for stopped or hesitating conveyors
+- Be aware of downstream system status
+
+---
+
+## Recognizing Normal Operation
+
+When InnoPick is operating correctly:
+
+- All levels show **green** status
+- Cases move smoothly through the system
+- **Inventory Graph** shows cases advancing position by position
+- **Production Graph** shows steady progress
+- **Alerts List** is empty or shows only minor warnings
+- Replenishments are being inducted as needed
+- Output cases are feeding downstream without backing up
+
+---
+
+## Recognizing Problems Early
+
+### Warning Signs to Watch For
+
+**Immediate Attention Required:**
+- Any level turns **Red** (fault condition)
+- E-Stop condition (all levels **Dark Red**)
+- Critical alerts appear
+- Cases stopped on conveyors
+- Unusual sounds or movements
+
+**Monitor Closely:**
+- Repeated alerts of the same type
+- Accumulation building up at outfeed
+- Replenishments not arriving as scheduled
+
+
+---
+
+## Responding to Alerts
+
+When an alert occurs:
+
+1. **Note the alert details**
+   - Which level is affected
+   - What type of alert (code and message)
+   - Time of occurrence
+
+2. **Assess the situation**
+   - Is it a single occurrence or repeating?
+   - Is production stopped or continuing?
+
+3. **Take appropriate action**
+   - For common alerts: Follow [Alert Reference](../troubleshooting/alert-reference.md)
+   - For safety issues: Use E-Stop if necessary.
+   - For unknown issues: Contact supervisor, maintenance, or remote support.
+
+
+See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for detailed alert resolution procedures.
+
+---
+
+## Monitoring Replenishments
+
+Replenishments ensure InnoPick has adequate inventory to fulfill orders.
+
+### What to Monitor
+
+Access the [Replenishments Page](../main-screens/inventory-section.md#replenishments-page) to check:
+
+- **Pending**: Replenishments requested but not yet started
+- **In Progress**: Replenishments being prepared for induction
+- **Inducting**: Replenishments currently entering InnoPick
+- **Completed**: Replenishments fully inducted
+
+### When to Take Action
+
+**Normal**: Replenishments progress from Pending → In Progress → Inducting → Completed
+
+**Problem Indicators:**
+- Inducted Quantity doesn't match expected quantity
+- Replenishments backing up at infeed
+
+**Action**: Coordinate with upstream depalletizing operations or see [Troubleshooting](../troubleshooting/index.md)
+
+---
+
+## Understanding System Settings That Affect Operations
+
+Be aware of these settings and their effects:
+
+**[Build Inventory Mode](../main-screens/administration.md#build-inventory)**
+- When ON: Prioritizes storing replenishment cases over outputting cases
+- When OFF: Balances input and output for maximum throughput
+
+**Destination (Merge) Enabled/Disabled**
+- If a Merge is disabled, all cases route to the other merge(s)
+
+**Manual Mode vs. Automatic Mode**
+- Manual: System won't advance automatically (used during troubleshooting)
+- Auto: System operates autonomously
+
+---
+
+## Shift Handoff Checklist
+
+When ending your shift, review with the next operator:
+
+- [ ] Current system status and any active alerts
+- [ ] Any recurring issues or unusual behavior observed
+- [ ] Replenishments in progress or pending
+- [ ] Any lanes disabled or products having problems
+- [ ] Upcoming scheduled maintenance or system changes
+- [ ] Any instructions from supervision
+
+---
+
+
