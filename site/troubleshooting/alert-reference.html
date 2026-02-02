@@ -1,0 +1,4454 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Order Preparation Solutions - Operator Documentation">
+      
+      
+      
+      
+        <link rel="prev" href="alert-guidelines.html">
+      
+      
+        <link rel="next" href="deadlocks.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Alert Reference - InnoPick Manager Operations Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#alert-reference-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-header__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InnoPick Manager Operations Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Alert Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="InnoPick Manager Operations Manual" class="md-nav__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    InnoPick Manager Operations Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/login.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/interface-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Daily Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-operations/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-operations/monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Screens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Main Screens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/home-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/alerts-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/inventory-section.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Section
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/case-sequence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Sequence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../main-screens/administration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="common-issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="alert-guidelines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Reference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="alert-reference.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Use This Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alert-code-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alert Code Format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alert Code Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#98-servodrive-faulted-while-moving-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        98 - ServoDrive Faulted while Moving (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#99-servodrive-time-out-fault-occurred-during-start-up-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        99 - ServoDrive Time-out Fault occurred during Start-up (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109-photocell-above-lane-was-still-blocked-after-the-end-of-the-storing-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        109 - Photocell above lane was still blocked after the end of the storing move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-117-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-far-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        113 / 117 - Buffer lane tried to dispense a case but the case was too far back
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-close-to-the-front" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        115 - Buffer lane tried to dispense a case but the case was too close to the front
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-photocell-still-blocked-after-dispensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        119 - Photocell still blocked after dispensing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-photocell-above-lane-never-detected-the-case-during-a-storing-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        121 - Photocell above lane never detected the case during a storing move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-124-photocell-above-lane-never-detected-the-case-during-a-dispense-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        123 / 124 - Photocell above lane never detected the case during a dispense move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#130-could-not-execute-a-sequence-conveyor-move-timed-out-waiting-for-a-previous-dispense-move-to-finish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        130 - Could not Execute a Sequence Conveyor Move. Timed Out Waiting for a previous Dispense Move to Finish
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-popup-stayed-down-during-store-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        152 - PopUp stayed down during store (300)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-popup-stayed-down-during-dispense-301" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        153 - PopUp stayed down during dispense (301)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#154-popup-stayed-up-after-dispense-301" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        154 - PopUp stayed up after dispense (301)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#155-popup-never-went-down-before-store-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        155 - PopUp never went down before store (300)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#156-popup-never-went-down-before-dispense-301" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        156 - PopUp never went down before dispense (301)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-clutch-fault-mechanical-engagement-was-not-successfully-completed-after-15-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        310 - Clutch Fault: Mechanical engagement was not successfully completed after 15 attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#320-clutch-fault-calculation-error-in-mechanical-engagement-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        320 - Clutch Fault: Calculation Error in Mechanical Engagement Position
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-warning-actual-sensor-transition-was-not-seen-but-system-is-assuming-clutch-was-engaged-properly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        333 - Warning: Actual sensor transition was not seen, but system is assuming clutch was engaged properly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-clutch-fault-prox-sensor-off-after-mechanical-transition-probably-clutch-mechanism-bounce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        334 - Clutch Fault: Prox sensor off after mechanical transition. Probably clutch mechanism bounce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#340-clutch-fault-mechanical-disengagement-was-not-successfully-completed-after-15-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        340 - Clutch Fault: Mechanical disengagement was not successfully completed after 15 attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#345-warning-clutch-disengaged-the-mechanism-but-the-prox-sensor-is-still-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        345 - Warning: Clutch Disengaged the Mechanism but the Prox Sensor is still Off
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#350-warning-clutch-prox-sensor-changed-status-in-the-middle-of-a-buffer-lane-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        350 - Warning: Clutch Prox Sensor Changed Status in the Middle of a Buffer Lane Move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#371-auxiliary-encoders-at-outfeed-infeed-are-not-aligned-to-each-other-on-the-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        371 - Auxiliary Encoders (at Outfeed &amp; Infeed) are not Aligned to each other on the Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#372-auxiliary-encoder-c-infeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        372 - Auxiliary Encoder C (Infeed side) is not Aligned to Motor Encoder on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#373-auxiliary-encoder-d-outfeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        373 - Auxiliary Encoder D (Outfeed side) is not Aligned to Motor Encoder on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#374-auxiliary-encoders-offsets-have-reached-the-cumulative-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        374 - Auxiliary Encoders Offsets have reached the Cumulative threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#375-auxiliary-encoder-c-infeed-side-coupling-slip-was-detected-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        375 - Auxiliary Encoder C (Infeed side) Coupling Slip was Detected on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#376-auxiliary-encoder-d-outfeed-side-coupling-slip-was-detected-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        376 - Auxiliary Encoder D (Outfeed side) Coupling Slip was Detected on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#377-buffer-motor-gearbox-shaft-slip-detected-critical-fault-inspect-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        377 - Buffer Motor Gearbox / Shaft Slip Detected. Critical Fault. Inspect Mechanics.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#378-buffer-motor-gearbox-shaft-and-coupling-slip-detected-critical-fault-inspect-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        378 - Buffer Motor Gearbox / Shaft and Coupling Slip Detected. Critical Fault. Inspect Mechanics.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#400-401-communication-loopback-timeout-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        400 &amp; 401 - Communication loopback timeout (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#402-timeout-clutch-fault-waiting-for-clutch-to-be-disengaged-to-resume-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        402 - Timeout Clutch Fault - Waiting for Clutch to be Disengaged to Resume (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-infeed-middle-photocell-was-not-blocked-during-an-infeed-case-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        512 - Infeed middle photocell was not blocked during an infeed case move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#515-unexpected-case-entering-onto-the-infeed-belts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        515 - Unexpected case entering onto the infeed belts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#516-infeed-cases-length-too-long" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        516 - Infeed Case's Length Too Long
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#517-infeed-cases-length-too-short" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        517 - Infeed Case's Length Too Short
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#518-infeed-case-on-position-0-is-too-far-downstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        518 - Infeed Case (on position 0) is too far downstream
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#519-infeed-case-on-position-0-is-too-far-upstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        519 - Infeed Case (on position 0) is too far upstream
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#520-infeed-fault-previous-length-check-was-not-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        520 - Infeed Fault: Previous Length Check was not Completed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#525-pop-up-shaft-reached-final-upper-limit-probably-did-not-engage-the-pop-up-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        525 - Pop-up shaft reached final upper limit - probably did not engage the pop-up mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#555-e-stop-condition-active-safety-is-disarmed-door-opened-or-e-stop-pressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        555 - E-Stop condition active - safety is disarmed (door opened or E-Stop pressed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#556-open-door-preventing-return-to-run-status-door-1-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        556 - Open Door Preventing return to RUN Status (Door# 1-4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#570-ups-power-supply-on-battery-power-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        570 - UPS power supply on battery (power loss)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#571-mico-circuit-tripped-24v-short-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        571 - Mico Circuit Tripped (24V Short-Circuit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#572-air-pressure-switch-off-no-air-in-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        572 - Air pressure switch off - no air in system
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#573-inputoutput-murr-module-fault-read-variable-murr_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        573 - Input/Output Murr module fault (read variable Murr_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#575-12-volt-power-supply-for-auxiliary-encoders-not-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        575 - 12-Volt Power Supply for Auxiliary Encoders Not OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#576-warning-ups-battery-faulted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        576 - Warning: UPS Battery Faulted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#577-warning-ups-battery-low" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        577 - Warning: UPS Battery Low
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#660-motion-control-following-error-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        660 - Motion Control Following Error - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#661-motion-control-following-error-axis-a-infeed-conveyor-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        661 - Motion Control Following Error - Axis A (Infeed Conveyor) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#662-motion-control-following-error-axis-b-sequence-conveyor-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        662 - Motion Control Following Error - Axis B (Sequence Conveyor) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#663-motion-control-following-error-axis-c-buffer-conveyor-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        663 - Motion Control Following Error - Axis C (Buffer Conveyor) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#667-motion-control-following-error-axis-a-b-c-all-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        667 - Motion Control Following Error - Axis A B &amp; C (All) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#671-galil-program-thread-command-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        671 - Galil Program Thread Command Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#701-clutch-prox-sensor-not-on-before-starting-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        701 - Clutch Prox / Sensor Not On Before Starting Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#702-clutch-prox-not-off-after-clutch-activation-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        702 - Clutch Prox Not Off after Clutch Activation - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#703-clutch-prox-not-on-after-clutch-de-activation-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        703 - Clutch Prox Not On after clutch De-activation - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#706-missing-y-pop-up-flag-h-after-lift-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        706 - Missing Y Pop-Up Flag (H) after Lift - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#707-z-pop-up-flag-hh-present-after-lift-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        707 - Z Pop-Up Flag (HH) Present after Lift - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#708-missing-w-pop-up-flag-ll-after-pop-up-de-activation-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        708 - Missing W Pop-Up Flag (LL) After Pop-Up De-activation - I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#709-buffer-lane-photocell-blocked-during-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        709 - Buffer Lane Photocell Blocked during Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#715-case-detected-at-far-back-of-buffer-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        715 - Case Detected at Far Back of Buffer Lane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#719-clutch-prox-sensor-off-during-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        719 - Clutch Prox Sensor Off during Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#725-photocell-above-lane-was-blocked-on-activated-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        725 - Photocell above Lane was Blocked on Activated Lane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#781-infeed-motion-control-galil-thread-running-too-long-timeout-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        781 - Infeed Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#782-sequence-conveyor-motion-control-galil-thread-running-too-long-timeout-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        782 - Sequence Conveyor Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#783-buffer-motion-control-galil-thread-running-too-long-timeout-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        783 - Buffer Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#791-motion-control-galil-thread-crashed-while-main-thread-was-waiting-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        791 - Motion control (Galil) thread crashed while main thread was waiting - critical fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#900-warning-back-edge-of-case-was-adjusted-after-the-case-stored" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        900 - Warning: Back Edge of Case was Adjusted after the Case Stored
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#901-warning-back-edge-of-case-was-adjusted-outward-after-case-dispense-back-edge-not-seen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        901 - Warning: Back Edge of Case was Adjusted Outward after Case Dispense (Back Edge not Seen)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#902-warning-back-edge-of-case-was-adjusted-outward-after-case-dispensed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        902 - Warning: Back Edge of Case was Adjusted Outward after Case Dispensed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#903-warning-back-edge-of-case-was-adjusted-inward-after-case-dispensed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        903 - Warning: Back Edge of Case was Adjusted Inward after Case Dispensed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#904-warning-pulled-buffer-lane-cases-inward-after-case-store-photocell-was-blocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        904 - Warning: Pulled Buffer Lane Cases Inward after Case Store (Photocell was Blocked)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#905-warning-pulled-buffer-lane-cases-inward-after-case-dispense-photocell-was-blocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        905 - Warning: Pulled Buffer Lane Cases Inward after Case Dispense (Photocell was Blocked)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outfeed-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outfeed Alerts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outfeed Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expecting-a-case-but-there-is-no-case-present-at-the-outfeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expecting a case but there is no case present at the outfeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-expecting-a-case-but-there-is-a-case-at-the-outfeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not expecting a case but there is a case at the outfeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="deadlocks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deadlocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="case-replacement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Replacement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="casecentering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Centering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="disabledlane.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabled Lane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/alert-codes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Codes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Use This Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alert-code-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alert Code Format
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alert Code Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#98-servodrive-faulted-while-moving-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        98 - ServoDrive Faulted while Moving (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#99-servodrive-time-out-fault-occurred-during-start-up-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        99 - ServoDrive Time-out Fault occurred during Start-up (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#109-photocell-above-lane-was-still-blocked-after-the-end-of-the-storing-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        109 - Photocell above lane was still blocked after the end of the storing move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-117-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-far-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        113 / 117 - Buffer lane tried to dispense a case but the case was too far back
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-close-to-the-front" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        115 - Buffer lane tried to dispense a case but the case was too close to the front
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-photocell-still-blocked-after-dispensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        119 - Photocell still blocked after dispensing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#121-photocell-above-lane-never-detected-the-case-during-a-storing-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        121 - Photocell above lane never detected the case during a storing move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-124-photocell-above-lane-never-detected-the-case-during-a-dispense-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        123 / 124 - Photocell above lane never detected the case during a dispense move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#130-could-not-execute-a-sequence-conveyor-move-timed-out-waiting-for-a-previous-dispense-move-to-finish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        130 - Could not Execute a Sequence Conveyor Move. Timed Out Waiting for a previous Dispense Move to Finish
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-popup-stayed-down-during-store-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        152 - PopUp stayed down during store (300)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-popup-stayed-down-during-dispense-301" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        153 - PopUp stayed down during dispense (301)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#154-popup-stayed-up-after-dispense-301" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        154 - PopUp stayed up after dispense (301)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#155-popup-never-went-down-before-store-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        155 - PopUp never went down before store (300)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#156-popup-never-went-down-before-dispense-301" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        156 - PopUp never went down before dispense (301)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-clutch-fault-mechanical-engagement-was-not-successfully-completed-after-15-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        310 - Clutch Fault: Mechanical engagement was not successfully completed after 15 attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#320-clutch-fault-calculation-error-in-mechanical-engagement-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        320 - Clutch Fault: Calculation Error in Mechanical Engagement Position
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-warning-actual-sensor-transition-was-not-seen-but-system-is-assuming-clutch-was-engaged-properly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        333 - Warning: Actual sensor transition was not seen, but system is assuming clutch was engaged properly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-clutch-fault-prox-sensor-off-after-mechanical-transition-probably-clutch-mechanism-bounce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        334 - Clutch Fault: Prox sensor off after mechanical transition. Probably clutch mechanism bounce
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#340-clutch-fault-mechanical-disengagement-was-not-successfully-completed-after-15-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        340 - Clutch Fault: Mechanical disengagement was not successfully completed after 15 attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#345-warning-clutch-disengaged-the-mechanism-but-the-prox-sensor-is-still-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        345 - Warning: Clutch Disengaged the Mechanism but the Prox Sensor is still Off
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#350-warning-clutch-prox-sensor-changed-status-in-the-middle-of-a-buffer-lane-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        350 - Warning: Clutch Prox Sensor Changed Status in the Middle of a Buffer Lane Move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#371-auxiliary-encoders-at-outfeed-infeed-are-not-aligned-to-each-other-on-the-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        371 - Auxiliary Encoders (at Outfeed &amp; Infeed) are not Aligned to each other on the Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#372-auxiliary-encoder-c-infeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        372 - Auxiliary Encoder C (Infeed side) is not Aligned to Motor Encoder on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#373-auxiliary-encoder-d-outfeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        373 - Auxiliary Encoder D (Outfeed side) is not Aligned to Motor Encoder on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#374-auxiliary-encoders-offsets-have-reached-the-cumulative-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        374 - Auxiliary Encoders Offsets have reached the Cumulative threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#375-auxiliary-encoder-c-infeed-side-coupling-slip-was-detected-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        375 - Auxiliary Encoder C (Infeed side) Coupling Slip was Detected on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#376-auxiliary-encoder-d-outfeed-side-coupling-slip-was-detected-on-buffer-shaft" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        376 - Auxiliary Encoder D (Outfeed side) Coupling Slip was Detected on Buffer Shaft
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#377-buffer-motor-gearbox-shaft-slip-detected-critical-fault-inspect-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        377 - Buffer Motor Gearbox / Shaft Slip Detected. Critical Fault. Inspect Mechanics.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#378-buffer-motor-gearbox-shaft-and-coupling-slip-detected-critical-fault-inspect-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        378 - Buffer Motor Gearbox / Shaft and Coupling Slip Detected. Critical Fault. Inspect Mechanics.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#400-401-communication-loopback-timeout-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        400 &amp; 401 - Communication loopback timeout (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#402-timeout-clutch-fault-waiting-for-clutch-to-be-disengaged-to-resume-sys_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        402 - Timeout Clutch Fault - Waiting for Clutch to be Disengaged to Resume (Sys_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-infeed-middle-photocell-was-not-blocked-during-an-infeed-case-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        512 - Infeed middle photocell was not blocked during an infeed case move
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#515-unexpected-case-entering-onto-the-infeed-belts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        515 - Unexpected case entering onto the infeed belts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#516-infeed-cases-length-too-long" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        516 - Infeed Case's Length Too Long
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#517-infeed-cases-length-too-short" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        517 - Infeed Case's Length Too Short
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#518-infeed-case-on-position-0-is-too-far-downstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        518 - Infeed Case (on position 0) is too far downstream
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#519-infeed-case-on-position-0-is-too-far-upstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        519 - Infeed Case (on position 0) is too far upstream
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#520-infeed-fault-previous-length-check-was-not-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        520 - Infeed Fault: Previous Length Check was not Completed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#525-pop-up-shaft-reached-final-upper-limit-probably-did-not-engage-the-pop-up-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        525 - Pop-up shaft reached final upper limit - probably did not engage the pop-up mechanism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#555-e-stop-condition-active-safety-is-disarmed-door-opened-or-e-stop-pressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        555 - E-Stop condition active - safety is disarmed (door opened or E-Stop pressed)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#556-open-door-preventing-return-to-run-status-door-1-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        556 - Open Door Preventing return to RUN Status (Door# 1-4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#570-ups-power-supply-on-battery-power-loss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        570 - UPS power supply on battery (power loss)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#571-mico-circuit-tripped-24v-short-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        571 - Mico Circuit Tripped (24V Short-Circuit)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#572-air-pressure-switch-off-no-air-in-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        572 - Air pressure switch off - no air in system
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#573-inputoutput-murr-module-fault-read-variable-murr_flt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        573 - Input/Output Murr module fault (read variable Murr_Flt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#575-12-volt-power-supply-for-auxiliary-encoders-not-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        575 - 12-Volt Power Supply for Auxiliary Encoders Not OK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#576-warning-ups-battery-faulted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        576 - Warning: UPS Battery Faulted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#577-warning-ups-battery-low" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        577 - Warning: UPS Battery Low
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#660-motion-control-following-error-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        660 - Motion Control Following Error - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#661-motion-control-following-error-axis-a-infeed-conveyor-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        661 - Motion Control Following Error - Axis A (Infeed Conveyor) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#662-motion-control-following-error-axis-b-sequence-conveyor-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        662 - Motion Control Following Error - Axis B (Sequence Conveyor) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#663-motion-control-following-error-axis-c-buffer-conveyor-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        663 - Motion Control Following Error - Axis C (Buffer Conveyor) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#667-motion-control-following-error-axis-a-b-c-all-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        667 - Motion Control Following Error - Axis A B &amp; C (All) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#671-galil-program-thread-command-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        671 - Galil Program Thread Command Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#701-clutch-prox-sensor-not-on-before-starting-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        701 - Clutch Prox / Sensor Not On Before Starting Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#702-clutch-prox-not-off-after-clutch-activation-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        702 - Clutch Prox Not Off after Clutch Activation - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#703-clutch-prox-not-on-after-clutch-de-activation-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        703 - Clutch Prox Not On after clutch De-activation - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#706-missing-y-pop-up-flag-h-after-lift-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        706 - Missing Y Pop-Up Flag (H) after Lift - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#707-z-pop-up-flag-hh-present-after-lift-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        707 - Z Pop-Up Flag (HH) Present after Lift - Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#708-missing-w-pop-up-flag-ll-after-pop-up-de-activation-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        708 - Missing W Pop-Up Flag (LL) After Pop-Up De-activation - I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#709-buffer-lane-photocell-blocked-during-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        709 - Buffer Lane Photocell Blocked during Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#715-case-detected-at-far-back-of-buffer-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        715 - Case Detected at Far Back of Buffer Lane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#719-clutch-prox-sensor-off-during-routine-io-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        719 - Clutch Prox Sensor Off during Routine I/O Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#725-photocell-above-lane-was-blocked-on-activated-lane" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        725 - Photocell above Lane was Blocked on Activated Lane
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#781-infeed-motion-control-galil-thread-running-too-long-timeout-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        781 - Infeed Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#782-sequence-conveyor-motion-control-galil-thread-running-too-long-timeout-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        782 - Sequence Conveyor Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#783-buffer-motion-control-galil-thread-running-too-long-timeout-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        783 - Buffer Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#791-motion-control-galil-thread-crashed-while-main-thread-was-waiting-critical-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        791 - Motion control (Galil) thread crashed while main thread was waiting - critical fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#900-warning-back-edge-of-case-was-adjusted-after-the-case-stored" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        900 - Warning: Back Edge of Case was Adjusted after the Case Stored
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#901-warning-back-edge-of-case-was-adjusted-outward-after-case-dispense-back-edge-not-seen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        901 - Warning: Back Edge of Case was Adjusted Outward after Case Dispense (Back Edge not Seen)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#902-warning-back-edge-of-case-was-adjusted-outward-after-case-dispensed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        902 - Warning: Back Edge of Case was Adjusted Outward after Case Dispensed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#903-warning-back-edge-of-case-was-adjusted-inward-after-case-dispensed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        903 - Warning: Back Edge of Case was Adjusted Inward after Case Dispensed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#904-warning-pulled-buffer-lane-cases-inward-after-case-store-photocell-was-blocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        904 - Warning: Pulled Buffer Lane Cases Inward after Case Store (Photocell was Blocked)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#905-warning-pulled-buffer-lane-cases-inward-after-case-dispense-photocell-was-blocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        905 - Warning: Pulled Buffer Lane Cases Inward after Case Dispense (Photocell was Blocked)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outfeed-alerts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outfeed Alerts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outfeed Alerts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expecting-a-case-but-there-is-no-case-present-at-the-outfeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expecting a case but there is no case present at the outfeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-expecting-a-case-but-there-is-a-case-at-the-outfeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not expecting a case but there is a case at the outfeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="alert-reference-guide">Alert Reference Guide<a class="headerlink" href="#alert-reference-guide" title="Permanent link">&para;</a></h1>
+<p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Troubleshooting</a> &gt; Alert Reference</strong></p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>This page provides detailed information about every InnoPick alert code, including explanations, common causes, and step-by-step resolution procedures.</p>
+<hr />
+<h2 id="how-to-use-this-reference">How to Use This Reference<a class="headerlink" href="#how-to-use-this-reference" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Find your alert code</strong> in the list below</li>
+<li><strong>Read the explanation</strong> to understand what happened</li>
+<li><strong>Review the possible causes</strong></li>
+<li><strong>Follow the solution steps</strong> to resolve the issue</li>
+<li><strong>Verify resolution</strong> before clearing the alert</li>
+</ol>
+<hr />
+<h2 id="alert-code-format">Alert Code Format<a class="headerlink" href="#alert-code-format" title="Permanent link">&para;</a></h2>
+<p>Each alert entry follows this format:</p>
+<ul>
+<li><strong>Alert Code - Description</strong></li>
+<li><strong>Explanation &amp; Causes</strong></li>
+<li><strong>Solution</strong></li>
+</ul>
+<hr />
+<h3 id="98-servodrive-faulted-while-moving-sys_flt">98 - ServoDrive Faulted while Moving (Sys_Flt)<a class="headerlink" href="#98-servodrive-faulted-while-moving-sys_flt" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The servo drive faulted during a motion operation.</p>
+<p><strong>Common Causes:</strong>
+- Drive overload or overheating
+- Electrical fault in drive
+- Motor connection issue
+- Drive parameter error
+- Excessive load on axis</p>
+<p><strong>Solution:</strong>
+1. Check drive status indicators/LEDs
+2. Verify motor connections
+3. Check for mechanical binding or excessive load
+4. Review drive fault code in servo drive diagnostics
+5. Contact maintenance if drive hardware fault suspected
+6. Clear alert after resolving issue</p>
+<hr />
+<h3 id="99-servodrive-time-out-fault-occurred-during-start-up-sys_flt">99 - ServoDrive Time-out Fault occurred during Start-up (Sys_Flt)<a class="headerlink" href="#99-servodrive-time-out-fault-occurred-during-start-up-sys_flt" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The servo drive did not respond in time during system start-up.</p>
+<p><strong>Common Causes:</strong>
+- Connection issue in plug or cabling
+- Communication timeout
+- Rarely occurs when clearing and resuming from faults</p>
+<p><strong>Solution:</strong>
+1. Attempt to clear the fault
+2. If it clears successfully, safe to put level back in automatic
+3. If fault persists or repeats, contact maintenance
+4. Notify supervisors for maintenance follow-up even if it clears</p>
+<hr />
+<h3 id="109-photocell-above-lane-was-still-blocked-after-the-end-of-the-storing-move">109 - Photocell above lane was still blocked after the end of the storing move<a class="headerlink" href="#109-photocell-above-lane-was-still-blocked-after-the-end-of-the-storing-move" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After storing a case into a buffer lane, the photocell remained blocked when it should be clear.</p>
+<p><strong>Common Causes:</strong>
+- Turned or skewed case
+- Damaged case (torn cardboard, collapsed)
+- Wrong product (different case dimensions)
+- Case dimensions incorrectly referenced in system
+- Case too far forward in lane</p>
+<p><strong>Solution:</strong>
+1. Visually inspect the lane and case
+2. Identify why photocell is still blocked
+3. Correct the issue:
+   - Adjust case position if needed
+   - Replace damaged case
+   - Retrieve correct product if wrong case
+   - Remove case entirely if necessary
+4. Ensure photocell is clear
+5. Verify other cases in lane are properly positioned
+6. Clear the alert
+7. Resume operation</p>
+<hr />
+<h3 id="113-117-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-far-back">113 / 117 - Buffer lane tried to dispense a case but the case was too far back<a class="headerlink" href="#113-117-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-far-back" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+InnoPick tried to dispense a case from buffer lane, but no case blocked the photocell during the dispense move, or case was detected later than expected.</p>
+<p><strong>Common Causes:</strong>
+- No case present in lane (inventory count wrong)
+- Case too far back from front of lane
+- Case fell or was removed
+- Gaps between cases too large
+- Lane position tracking error</p>
+<p><strong>Solution:</strong></p>
+<p><strong>If no case is present:</strong>
+1. Find replacement case with correct product
+2. Place it on the <strong>sequence conveyor</strong> in front of the lane (NOT in the buffer lane)
+3. Verify position matches Inventory Graph
+4. Clear alert</p>
+<p><strong>If case is too far back:</strong>
+1. InnoPick reached maximum programmed advance distance
+2. Either:
+   - Manually adjust cases in lane, OR
+   - Jog the lane forward to fully dispense the case
+3. Ensure case is now on sequence conveyor
+4. Verify position on Inventory Graph
+5. Clear alert</p>
+<hr />
+<h3 id="115-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-close-to-the-front">115 - Buffer lane tried to dispense a case but the case was too close to the front<a class="headerlink" href="#115-buffer-lane-tried-to-dispense-a-case-but-the-case-was-too-close-to-the-front" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Dispense case was detected earlier than expected (case seen too early).</p>
+<p><strong>Common Causes:</strong>
+- Case positioned too far forward in lane
+- Case moved forward unexpectedly
+- Lane position tracking error</p>
+<p><strong>Solution:</strong>
+1. Verify actual case position in lane
+2. Check other cases in lane for proper spacing
+3. Adjust case position if needed
+4. Verify case dimensions match product configuration
+5. Clear alert once position is correct</p>
+<hr />
+<h3 id="119-photocell-still-blocked-after-dispensing">119 - Photocell still blocked after dispensing<a class="headerlink" href="#119-photocell-still-blocked-after-dispensing" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The photocell for that lane remained blocked at the end of the dispense move.</p>
+<p><strong>Common Causes:</strong>
+- Broken case (collapsed, torn cardboard)
+- Ripped cardboard hanging down
+- Crooked or skewed case
+- Wrong case dimensions (didn't fault on storing)
+- Cases poorly referenced with irregular gaps</p>
+<p><strong>Solution:</strong>
+1. Inspect the lane photocell area
+2. Identify what is blocking the photocell
+3. Correct the issue:
+   - Remove damaged cardboard or case parts
+   - Straighten crooked case
+   - Verify dispensed case is properly positioned on sequence conveyor
+4. Check other cases in buffer lane:
+   - Ensure proper positioning
+   - Verify adequate gaps
+   - Confirm ready to dispense next case
+5. Clear photocell completely
+6. Verify on Inventory Graph
+7. Clear alert
+8. Monitor next few dispenses from this lane</p>
+<hr />
+<h3 id="121-photocell-above-lane-never-detected-the-case-during-a-storing-move">121 - Photocell above lane never detected the case during a storing move<a class="headerlink" href="#121-photocell-above-lane-never-detected-the-case-during-a-storing-move" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+InnoPick attempted to store a case, but the photocell was never blocked during the move, indicating there was no case present.</p>
+<p><strong>Common Causes:</strong></p>
+<p><strong>Most Common:</strong>
+- No case present at all
+- Inventory count was wrong
+- Bad recovery from previous infeed issue
+- Case removed and not replaced</p>
+<p><strong>Less Common:</strong>
+- Case snagged or displaced
+- Case in wrong position to be picked up by pop-up
+- Sequence conveyor offset by one or more positions</p>
+<p><strong>Solution:</strong></p>
+<p><strong>If case is simply missing:</strong>
+1. Determine correct product from alert details
+2. Find replacement case
+3. Place on sequence conveyor in expected position
+4. Verify Inventory Graph matches
+5. Clear alert</p>
+<p><strong>If case is displaced:</strong>
+1. Locate the case
+2. Position correctly for pop-up to engage
+3. Retry the store move
+4. Clear alert if successful</p>
+<p><strong>Important:</strong> See <a href="alert-guidelines.html#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom">Alert Guidelines</a> - this is often a symptom of improper previous recovery.</p>
+<hr />
+<h3 id="123-124-photocell-above-lane-never-detected-the-case-during-a-dispense-move">123 / 124 - Photocell above lane never detected the case during a dispense move<a class="headerlink" href="#123-124-photocell-above-lane-never-detected-the-case-during-a-dispense-move" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+No case detected during dispense move when one was expected.</p>
+<p><strong>Common Causes:</strong>
+- Case is missing (inventory count was wrong)
+- Case fell off conveyor
+- Case caught on something
+- Wrong lane actuated
+- Previous storage fault not properly resolved</p>
+<p><strong>Solution:</strong>
+1. Check inventory count for this lane
+2. Locate the missing case or find replacement
+3. Place case in the storage lane at the front
+4. Jog lane forward to dispense case onto sequence conveyor
+5. Verify case position matches Inventory Graph
+6. Update lane inventory count if necessary
+7. Clear alert</p>
+<p><strong>Important:</strong> See <a href="alert-guidelines.html#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom">Alert Guidelines</a> - often indicates inventory tracking issue.</p>
+<hr />
+<h3 id="130-could-not-execute-a-sequence-conveyor-move-timed-out-waiting-for-a-previous-dispense-move-to-finish">130 - Could not Execute a Sequence Conveyor Move. Timed Out Waiting for a previous Dispense Move to Finish<a class="headerlink" href="#130-could-not-execute-a-sequence-conveyor-move-timed-out-waiting-for-a-previous-dispense-move-to-finish" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The sequence conveyor was ready to move but had to wait too long for a buffer lane dispense operation to complete, causing a timeout.</p>
+<p><strong>Common Causes:</strong>
+- Lane dispense move taking excessive time
+- Mechanical issue slowing lane operation
+- Pop-up or clutch not disengaging properly
+- Communication delay between systems
+- Lane conveyor running slowly</p>
+<p><strong>Solution:</strong>
+1. Check which lane was dispensing when timeout occurred
+2. Inspect that lane for:
+   - Mechanical binding or slowness
+   - Pop-up not retracting fully
+   - Clutch not disengaging cleanly
+3. Test lane operation manually if needed
+4. Verify lane motor and drive functioning properly
+5. Clear alert
+6. Monitor lane performance
+7. Contact maintenance if issue persists</p>
+<hr />
+<h3 id="152-popup-stayed-down-during-store-300">152 - PopUp stayed down during store (300)<a class="headerlink" href="#152-popup-stayed-down-during-store-300" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Pop-up assembly was detected in incorrect position (down) when it should have been up during a store operation.</p>
+<p><strong>Common Causes:</strong>
+- Pneumatic system issue
+- Pop-up mechanism mechanical failure
+- Position sensor malfunction
+- Obstruction preventing pop-up from rising</p>
+<p><strong>Solution:</strong>
+1. Verify pneumatic components:
+   - Air pressure adequate
+   - Solenoid valves functioning
+   - Air lines not blocked or leaking
+2. Check mechanical components:
+   - Pop-up shaft moves freely
+   - No obstructions
+   - Linkage intact
+3. Verify position sensors:
+   - Clean sensor faces
+   - Check sensor alignment
+   - Verify sensor wiring
+4. Remove any obstructing objects
+5. Test pop-up operation manually if safe
+6. Clear alert and test
+7. Contact maintenance if issue persists</p>
+<hr />
+<h3 id="153-popup-stayed-down-during-dispense-301">153 - PopUp stayed down during dispense (301)<a class="headerlink" href="#153-popup-stayed-down-during-dispense-301" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Pop-up assembly was detected in incorrect position during dispense operation.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 152 above - same troubleshooting applies.</p>
+<hr />
+<h3 id="154-popup-stayed-up-after-dispense-301">154 - PopUp stayed up after dispense (301)<a class="headerlink" href="#154-popup-stayed-up-after-dispense-301" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Pop-up assembly did not retract after completing dispense operation.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 152 above - same troubleshooting applies, but focus on retraction mechanism and down position sensor.</p>
+<hr />
+<h3 id="155-popup-never-went-down-before-store-300">155 - PopUp never went down before store (300)<a class="headerlink" href="#155-popup-never-went-down-before-store-300" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Pop-up assembly failed to fully retract before a store operation was attempted.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 152 above - same troubleshooting applies, with emphasis on:
+- Air cylinder air release adjustment
+- Solenoid valve operation
+- Down position sensor verification</p>
+<hr />
+<h3 id="156-popup-never-went-down-before-dispense-301">156 - PopUp never went down before dispense (301)<a class="headerlink" href="#156-popup-never-went-down-before-dispense-301" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Pop-up assembly failed to retract before dispense operation.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 152 above - same troubleshooting applies.</p>
+<hr />
+<h3 id="310-clutch-fault-mechanical-engagement-was-not-successfully-completed-after-15-attempts">310 - Clutch Fault: Mechanical engagement was not successfully completed after 15 attempts<a class="headerlink" href="#310-clutch-fault-mechanical-engagement-was-not-successfully-completed-after-15-attempts" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The clutch assembly failed to engage properly after multiple attempts.</p>
+<p><strong>Common Causes:</strong>
+- Mechanical failure in clutch assembly
+- Intermittent mechanical issue
+- Misalignment
+- Worn components
+- Obstruction</p>
+<p><strong>Solution:</strong>
+1. Visually inspect clutch assembly if accessible
+2. Retry the move in Automatic mode while observing clutch
+3. Look for:
+   - Mechanical binding
+   - Worn parts
+   - Obstructions
+   - Misalignment
+4. If engagement seems to work sometimes, note conditions
+5. Document behavior for maintenance
+6. Mechanical intervention may be necessary
+7. Consider deactivating lane if repairs cannot be immediate
+8. Resume production on other lanes
+9. Contact maintenance</p>
+<hr />
+<h3 id="320-clutch-fault-calculation-error-in-mechanical-engagement-position">320 - Clutch Fault: Calculation Error in Mechanical Engagement Position<a class="headerlink" href="#320-clutch-fault-calculation-error-in-mechanical-engagement-position" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The system calculated an incorrect position for clutch mechanical engagement, indicating a software or calibration issue.</p>
+<p><strong>Common Causes:</strong>
+- Clutch calibration drift
+- Position calculation error in software
+- Encoder feedback issue
+- Mechanical wear affecting expected positions
+- System parameters need updating</p>
+<p><strong>Solution:</strong>
+1. Document current clutch position and behavior
+2. Note if this is first occurrence or recurring
+3. Check clutch engagement manually if safe
+4. Verify encoder feedback is working
+5. May require clutch recalibration
+6. Contact system expert or maintenance
+7. System parameters may need adjustment
+8. Clear alert after issue resolved</p>
+<hr />
+<h3 id="333-warning-actual-sensor-transition-was-not-seen-but-system-is-assuming-clutch-was-engaged-properly">333 - Warning: Actual sensor transition was not seen, but system is assuming clutch was engaged properly<a class="headerlink" href="#333-warning-actual-sensor-transition-was-not-seen-but-system-is-assuming-clutch-was-engaged-properly" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Proximity sensor did not detect expected transition, but system continued based on assumptions.</p>
+<p><strong>Common Causes:</strong>
+- Sensor misalignment
+- Intermittent sensor issue
+- Mechanical timing variation
+- Sensor malfunction</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h3 id="334-clutch-fault-prox-sensor-off-after-mechanical-transition-probably-clutch-mechanism-bounce">334 - Clutch Fault: Prox sensor off after mechanical transition. Probably clutch mechanism bounce<a class="headerlink" href="#334-clutch-fault-prox-sensor-off-after-mechanical-transition-probably-clutch-mechanism-bounce" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Proximity sensor turned off after mechanical transition, likely due to clutch mechanism bouncing.</p>
+<p><strong>Common Causes:</strong>
+- Mechanical bounce in clutch engagement
+- Worn clutch components
+- Improper clutch timing
+- Sensor positioning</p>
+<p><strong>Solution:</strong>
+1. Verify clutch assembly condition
+2. Check for worn components
+3. May require mechanical adjustment
+4. Contact maintenance if repeats
+5. Clear alert</p>
+<hr />
+<h3 id="340-clutch-fault-mechanical-disengagement-was-not-successfully-completed-after-15-attempts">340 - Clutch Fault: Mechanical disengagement was not successfully completed after 15 attempts<a class="headerlink" href="#340-clutch-fault-mechanical-disengagement-was-not-successfully-completed-after-15-attempts" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Clutch assembly failed to disengage properly after multiple attempts.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+Similar to alert 310, but focus on disengagement mechanism:
+1. Inspect clutch release mechanism
+2. Verify return spring operation
+3. Check for binding during retraction
+4. Look for obstructions
+5. Contact maintenance
+6. May need to deactivate lane</p>
+<hr />
+<h3 id="345-warning-clutch-disengaged-the-mechanism-but-the-prox-sensor-is-still-off">345 - Warning: Clutch Disengaged the Mechanism but the Prox Sensor is still Off<a class="headerlink" href="#345-warning-clutch-disengaged-the-mechanism-but-the-prox-sensor-is-still-off" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Clutch successfully disengaged mechanically, but the proximity sensor still indicates "off" state when it should be "on".</p>
+<p><strong>Common Causes:</strong>
+- Sensor misalignment
+- Sensor malfunction
+- Wiring issue
+- Sensor dirty or obstructed
+- Mechanical position slightly off from sensor detection range</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong></p>
+<hr />
+<h3 id="350-warning-clutch-prox-sensor-changed-status-in-the-middle-of-a-buffer-lane-move">350 - Warning: Clutch Prox Sensor Changed Status in the Middle of a Buffer Lane Move<a class="headerlink" href="#350-warning-clutch-prox-sensor-changed-status-in-the-middle-of-a-buffer-lane-move" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The clutch proximity sensor unexpectedly changed state during a buffer lane operation when it should have remained stable.</p>
+<p><strong>Common Causes:</strong>
+- Vibration affecting sensor
+- Loose sensor mounting
+- Intermittent wiring connection
+- Mechanical movement or flex during operation
+- Sensor malfunction</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong></p>
+<hr />
+<h3 id="371-auxiliary-encoders-at-outfeed-infeed-are-not-aligned-to-each-other-on-the-buffer-shaft">371 - Auxiliary Encoders (at Outfeed &amp; Infeed) are not Aligned to each other on the Buffer Shaft<a class="headerlink" href="#371-auxiliary-encoders-at-outfeed-infeed-are-not-aligned-to-each-other-on-the-buffer-shaft" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The two auxiliary encoders that monitor the buffer shaft position are showing misalignment, indicating potential mechanical slippage or encoder calibration drift.</p>
+<p><strong>Common Causes:</strong>
+- Coupling slip on one or both encoders
+- Mechanical slippage in shaft system
+- Encoder calibration drift
+- Belt or chain stretch
+- Mounting looseness</p>
+<p><strong>Solution:</strong>
+1. Stop production on affected level
+2. Visually inspect auxiliary encoder couplings
+3. Check for loose mounting
+4. Check shaft for mechanical issues
+5. Contact maintenance - this indicates potential mechanical problem
+6. Clear alert after mechanical verification</p>
+<hr />
+<h3 id="372-auxiliary-encoder-c-infeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft">372 - Auxiliary Encoder C (Infeed side) is not Aligned to Motor Encoder on Buffer Shaft<a class="headerlink" href="#372-auxiliary-encoder-c-infeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The auxiliary encoder on the infeed side of the buffer shaft is out of alignment with the main motor encoder, indicating slippage.</p>
+<p><strong>Common Causes:</strong>
+- Coupling slip on infeed encoder
+- Mechanical slippage between motor and encoder
+- Encoder mounting looseness
+- Belt or coupling issue</p>
+<p><strong>Solution:</strong>
+1. Contact maintenance
+2. Inspect infeed-side auxiliary encoder coupling
+3. Check encoder mounting
+4. Verify mechanical connection to shaft
+5. Check for any slip indicators on coupling
+6. Clear alert after inspection and correction</p>
+<hr />
+<h3 id="373-auxiliary-encoder-d-outfeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft">373 - Auxiliary Encoder D (Outfeed side) is not Aligned to Motor Encoder on Buffer Shaft<a class="headerlink" href="#373-auxiliary-encoder-d-outfeed-side-is-not-aligned-to-motor-encoder-on-buffer-shaft" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The auxiliary encoder on the outfeed side of the buffer shaft is out of alignment with the main motor encoder, indicating slippage.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+Same as alert 372, but for outfeed-side encoder.</p>
+<hr />
+<h3 id="374-auxiliary-encoders-offsets-have-reached-the-cumulative-threshold">374 - Auxiliary Encoders Offsets have reached the Cumulative threshold<a class="headerlink" href="#374-auxiliary-encoders-offsets-have-reached-the-cumulative-threshold" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The cumulative offset errors between encoders have exceeded acceptable threshold, indicating ongoing slippage or calibration drift.</p>
+<p><strong>Common Causes:</strong>
+- Repeated small slippages accumulating over time
+- Gradual mechanical wear
+- Encoder drift
+- Inadequate coupling tension
+- System running near limits</p>
+<p><strong>Alert Maintenance Team when this fault occurs</strong>
+- It is safe to clear and resume operation
+- If the fault returns soon after, a mechanical inspection of shaft couplings and encoder attachment hardware will be necessary.</p>
+<hr />
+<h3 id="375-auxiliary-encoder-c-infeed-side-coupling-slip-was-detected-on-buffer-shaft">375 - Auxiliary Encoder C (Infeed side) Coupling Slip was Detected on Buffer Shaft<a class="headerlink" href="#375-auxiliary-encoder-c-infeed-side-coupling-slip-was-detected-on-buffer-shaft" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Actual slippage detected in the coupling connecting the infeed-side auxiliary encoder to the buffer shaft.</p>
+<p><strong>Common Causes:</strong>
+- Loose coupling
+- Worn coupling
+- Inadequate coupling clamping force
+- Shaft wear
+- Excessive torque or shock loads</p>
+<p><strong>Solution:</strong>
+1. Contact maintenance
+2. Inspect couplings for:
+   - Tightness
+   - Wear
+   - Damage
+   - Proper seating
+3. Tighten or replace coupling as needed
+4. Clear alert after mechanical repair
+5. Monitor closely after resuming</p>
+<hr />
+<h3 id="376-auxiliary-encoder-d-outfeed-side-coupling-slip-was-detected-on-buffer-shaft">376 - Auxiliary Encoder D (Outfeed side) Coupling Slip was Detected on Buffer Shaft<a class="headerlink" href="#376-auxiliary-encoder-d-outfeed-side-coupling-slip-was-detected-on-buffer-shaft" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Actual slippage detected in the coupling connecting the outfeed-side auxiliary encoder to the buffer shaft.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+Same as alert 375, but for outfeed-side encoder coupling.</p>
+<hr />
+<h3 id="377-buffer-motor-gearbox-shaft-slip-detected-critical-fault-inspect-mechanics">377 - Buffer Motor Gearbox / Shaft Slip Detected. Critical Fault. Inspect Mechanics.<a class="headerlink" href="#377-buffer-motor-gearbox-shaft-slip-detected-critical-fault-inspect-mechanics" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Slippage detected between the buffer motor gearbox and the shaft - a critical mechanical fault indicating major component failure or imminent failure.</p>
+<p><strong>Common Causes:</strong>
+- Gearbox internal failure
+- Coupling failure
+- Mounting looseness
+- Major mechanical breakdown</p>
+<p><strong>Solution:</strong>
+1. <strong>Stop production</strong>
+2. <strong>DO NOT attempt to resume</strong> without maintenance inspection
+3. Contact maintenance urgently
+4. Inspect for:
+   - Gearbox condition
+   - Shaft coupling integrity
+   - Any signs of mechanical failure
+5. Clear alert only after repairs completed and verified</p>
+<hr />
+<h3 id="378-buffer-motor-gearbox-shaft-and-coupling-slip-detected-critical-fault-inspect-mechanics">378 - Buffer Motor Gearbox / Shaft and Coupling Slip Detected. Critical Fault. Inspect Mechanics.<a class="headerlink" href="#378-buffer-motor-gearbox-shaft-and-coupling-slip-detected-critical-fault-inspect-mechanics" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Multiple slip points detected simultaneously - gearbox, shaft, and coupling - indicating severe mechanical problem or system-wide failure.</p>
+<p><strong>Common Causes:</strong>
+- Multiple component failures
+- Catastrophic mechanical event
+- System overload
+- Major mechanical breakdown
+- Multiple loose connections</p>
+<p><strong>Solution:</strong>
+1. <strong>Stop production</strong>
+2. <strong>DO NOT attempt to resume</strong> without maintenance inspection
+3. Contact maintenance and supervision urgently
+4. Full mechanical inspection required for:
+   - Gearbox
+   - All couplings
+   - Shaft integrity
+   - Mounting systems
+   - Drive components
+5. Clear alert only after complete repairs and testing</p>
+<hr />
+<h3 id="400-401-communication-loopback-timeout-sys_flt">400 &amp; 401 - Communication loopback timeout (Sys_Flt)<a class="headerlink" href="#400-401-communication-loopback-timeout-sys_flt" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Communication timeout in system loopback check.</p>
+<p><strong>Common Causes:</strong>
+- Network issue
+- Communication module fault
+- Intermittent connection problem</p>
+<p><strong>Solution:</strong>
+1. If this is the first occurrence, safe to clear and resume
+2. If it happens repeatedly, contact support
+3. Most likely indicates network infrastructure issue</p>
+<hr />
+<h3 id="402-timeout-clutch-fault-waiting-for-clutch-to-be-disengaged-to-resume-sys_flt">402 - Timeout Clutch Fault - Waiting for Clutch to be Disengaged to Resume (Sys_Flt)<a class="headerlink" href="#402-timeout-clutch-fault-waiting-for-clutch-to-be-disengaged-to-resume-sys_flt" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+System timed out while waiting for a clutch to fully disengage before resuming operation, indicating clutch is stuck or slow to respond.</p>
+<p><strong>Common Causes:</strong>
+- Clutch mechanically stuck in engaged position
+- Pneumatic system slow or weak
+- Clutch return mechanism failure</p>
+<p><strong>Solution:</strong>
+1. Check clutch physical position
+2. Check for mechanical binding
+3. Contact maintenance if issue persists
+4. Clear alert after clutch verified disengaged</p>
+<hr />
+<h3 id="512-infeed-middle-photocell-was-not-blocked-during-an-infeed-case-move">512 - Infeed middle photocell was not blocked during an infeed case move<a class="headerlink" href="#512-infeed-middle-photocell-was-not-blocked-during-an-infeed-case-move" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The infeed cycle started and initial photocell was blocked by incoming case, but the second photocell (infeed mid photocell) was never blocked.</p>
+<p><strong>Common Causes:</strong>
+- Case jammed between upstream conveyor and InnoPick infeed
+- Case turned 90 degrees
+- Case fell or was displaced
+- Case too short to reach second photocell</p>
+<p><strong>Solution:</strong>
+1. Locate the case
+2. <strong>Important</strong>: System expects a case on infeed belts since cycle started
+3. Clear any jamming condition
+4. Place the proper expected case correctly on infeed belts
+5. Position case carefully to avoid photocell fault during storage
+6. Verify case orientation
+7. Check case dimensions match expected product
+8. Clear alert
+9. Resume operation</p>
+<p><strong>See <a href="alert-guidelines.html#guideline-3-check-replenishment-status-after-any-infeed-alarm">Alert Guidelines</a></strong> for additional infeed troubleshooting steps.</p>
+<hr />
+<h3 id="515-unexpected-case-entering-onto-the-infeed-belts">515 - Unexpected case entering onto the infeed belts<a class="headerlink" href="#515-unexpected-case-entering-onto-the-infeed-belts" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The first infeed photocell was blocked when InnoPick was not expecting to receive a case.</p>
+<p><strong>Common Causes:</strong>
+- Back-to-back cases without gap
+- Upstream conveyor motor advanced case too far
+- Debris blocking photocell
+- Extra case sent by upstream system
+- Tracking error in upstream system</p>
+<p><strong>Solution:</strong>
+1. <strong>Key Point</strong>: InnoPick is NOT expecting this case
+2. Remove whatever is blocking the photocell:
+   - If extra case: Remove from infeed belt
+   - If debris: Clear obstruction
+   - If case sent too far: Pull back or remove
+3. <strong>If removing an extra case:</strong>
+   - Adjust count in upstream system
+   - Document the discrepancy
+   - Verify replenishment quantities
+4. Once photocell is clear, operator can resume production
+5. <strong>Do not</strong> leave unexpected case on infeed belt
+6. Clear alert
+7. Coordinate with upstream system operator</p>
+<p><strong>See <a href="alert-guidelines.html#guideline-3-check-replenishment-status-after-any-infeed-alarm">Alert Guidelines</a></strong> for complete infeed procedures.</p>
+<hr />
+<h3 id="516-infeed-cases-length-too-long">516 - Infeed Case's Length Too Long<a class="headerlink" href="#516-infeed-cases-length-too-long" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The measured case length was greater than expected length plus tolerance during infeed transition.</p>
+<p><strong>How Measurement Works:</strong>
+- Case length measured as it transitions from infeed belts to first sequence conveyor position (position 0)
+- Compared to configured product length
+- Fault if outside tolerance (too long)</p>
+<p><strong>Common Causes:</strong>
+- Wrong product/case
+- Case dimensions incorrectly configured in system
+- Turned case (length and width swapped)
+- Damaged case extended beyond normal dimensions
+- Flaps or damage extending case length</p>
+<p><strong>Solution:</strong>
+1. Inspect the case that triggered the fault
+2. Determine if:
+   - Wrong product → Replace with correct case
+   - Turned case → Orient properly (length should be longer dimension)
+   - Case damaged/extended → Replace with proper case
+   - Dimensions wrong in system → Check <a href="../main-screens/inventory-section.html#products-page">Products Page</a>
+3. Verify case matches expected product for this replenishment
+4. Place correct case on infeed
+5. Adjust replenishment quantity if case was rejected
+6. Clear alert</p>
+<p><strong>See <a href="alert-guidelines.html#guideline-3-check-replenishment-status-after-any-infeed-alarm">Alert Guidelines</a></strong>.</p>
+<hr />
+<h3 id="517-infeed-cases-length-too-short">517 - Infeed Case's Length Too Short<a class="headerlink" href="#517-infeed-cases-length-too-short" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The measured case length was less than expected length minus tolerance during infeed transition.</p>
+<p><strong>How Measurement Works:</strong>
+- Case length measured as it transitions from infeed belts to first sequence conveyor position (position 0)
+- Compared to configured product length
+- Fault if outside tolerance (too short)</p>
+<p><strong>Common Causes:</strong>
+- Damaged or collapsed case
+- Wrong product/case
+- Case dimensions incorrectly configured
+- Turned case</p>
+<p><strong>Solution:</strong>
+1. Inspect the case that triggered the fault
+2. Determine if:
+   - Case is damaged → Replace with proper case
+   - Wrong product → Replace with correct case
+   - Turned case → Orient properly
+3. Verify case matches expected product for this replenishment
+4. Check product dimensions in <a href="../main-screens/inventory-section.html#products-page">Products Page</a>
+5. Place correct case on infeed
+6. Adjust replenishment quantity if case was rejected
+7. Clear alert</p>
+<p><strong>See <a href="alert-guidelines.html#guideline-3-check-replenishment-status-after-any-infeed-alarm">Alert Guidelines</a></strong>.</p>
+<hr />
+<h3 id="518-infeed-case-on-position-0-is-too-far-downstream">518 - Infeed Case (on position 0) is too far downstream<a class="headerlink" href="#518-infeed-case-on-position-0-is-too-far-downstream" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The infeed case on position 0 (first sequence conveyor position) is positioned too far downstream from where it should be.</p>
+<p><strong>Common Causes:</strong>
+- Case advanced too far during infeed transition
+- Timing error in infeed cycle
+- Case slipped or was pushed downstream
+- Conveyor speed mismatch
+- Case measurement started late</p>
+<p><strong>Solution:</strong>
+1. Visually verify case position on position 0
+2. Check if case can be adjusted to correct position
+3. If case is only slightly off, may be safe to continue
+4. If significantly misplaced:
+   - Remove case
+   - Replace with properly positioned case
+   - See <a href="/troubleshooting/casecentering.md">Case Centering Guide</a>
+5. Clear alert
+6. Monitor subsequent cases for repeat
+7. Contact maintenance if issue recurs</p>
+<hr />
+<h3 id="519-infeed-case-on-position-0-is-too-far-upstream">519 - Infeed Case (on position 0) is too far upstream<a class="headerlink" href="#519-infeed-case-on-position-0-is-too-far-upstream" title="Permanent link">&para;</a></h3>
+<p>See Fault 518 above.</p>
+<hr />
+<h3 id="520-infeed-fault-previous-length-check-was-not-completed">520 - Infeed Fault: Previous Length Check was not Completed<a class="headerlink" href="#520-infeed-fault-previous-length-check-was-not-completed" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+A new infeed case arrived before the previous case's length measurement was completed, indicating timing or sequencing issue.</p>
+<p><strong>Common Causes:</strong>
+- Cases too close together at infeed
+- Previous length check taking too long
+- Infeed cycle timing error</p>
+<p><strong>Solution:</strong>
+1. Inspect sensors for proper alignment
+6. Clear alert
+7. Monitor subsequent infeed moves
+8. Contact maintenance if alert re-occurs</p>
+<hr />
+<h3 id="525-pop-up-shaft-reached-final-upper-limit-probably-did-not-engage-the-pop-up-mechanism">525 - Pop-up shaft reached final upper limit - probably did not engage the pop-up mechanism<a class="headerlink" href="#525-pop-up-shaft-reached-final-upper-limit-probably-did-not-engage-the-pop-up-mechanism" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The steel finger measuring pop-up height tripped the uppermost limit photocell, which is higher than the pop-up should normally reach.</p>
+<p><strong>Common Causes:</strong>
+- Air cylinder air release adjustment too slow
+- Solenoid valve malfunctioning
+- Pop-up mechanism not engaging properly
+- Mechanical binding or misalignment</p>
+<p><strong>Solution:</strong>
+1. Check air cylinder settings:
+   - Verify air release adjustment
+   - Ensure proper timing
+2. Test solenoid valve operation
+3. Inspect pop-up mechanism:
+   - Verify engagement
+   - Check for mechanical issues
+4. Adjust timing if needed
+5. Contact maintenance for pneumatic system tuning
+6. Clear alert after resolving</p>
+<hr />
+<h3 id="555-e-stop-condition-active-safety-is-disarmed-door-opened-or-e-stop-pressed">555 - E-Stop condition active - safety is disarmed (door opened or E-Stop pressed)<a class="headerlink" href="#555-e-stop-condition-active-safety-is-disarmed-door-opened-or-e-stop-pressed" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+A safety device is not in the proper 'safe' condition. This puts all levels into E-Stop status (Dark Red).</p>
+<p><strong>Common Causes:</strong>
+- E-Stop button pressed
+- Safety door opened
+- Safety interlock open
+- Safety device malfunction
+- Wiring issue to safety system</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li><strong>Identify the E-Stop condition:</strong></li>
+<li>Check all E-Stop buttons → ensure all are pulled out (released)</li>
+<li>Check all safety doors → ensure all are fully closed</li>
+<li>Check safety interlocks → verify all are engaged</li>
+<li>
+<p>Check guard position switches → ensure guards are in place</p>
+</li>
+<li>
+<p><strong>Clear the E-Stop condition:</strong></p>
+</li>
+<li>Release/rotate E-Stop buttons to reset</li>
+<li>Close all doors completely</li>
+<li>Verify interlocks are engaged</li>
+<li>
+<p>Check safety system indicator lights</p>
+</li>
+<li>
+<p><strong>After E-Stop is cleared:</strong></p>
+</li>
+<li>Press Clear Alerts button</li>
+<li>All levels should return to Manual mode (Yellow)</li>
+<li>Perform visual inspection before resuming</li>
+<li>
+<p>Put levels back into Automatic mode (Green)</p>
+</li>
+<li>
+<p><strong>If E-Stop won't clear:</strong></p>
+</li>
+<li>One or more safety devices still not satisfied</li>
+<li>Systematically check each safety device</li>
+<li>Look for damaged switches or wiring</li>
+<li>
+<p>Contact maintenance if cause not obvious</p>
+</li>
+<li>
+<p><strong>Resume operation:</strong></p>
+</li>
+<li>Only after all safety conditions are satisfied</li>
+<li>Verify safe to restart</li>
+<li>Monitor closely on restart</li>
+</ol>
+<p><strong>Safety Note:</strong> Never bypass E-Stop or safety interlocks. If safety device seems to be malfunctioning, resolve the issue properly or contact maintenance.</p>
+<hr />
+<h3 id="556-open-door-preventing-return-to-run-status-door-1-4">556 - Open Door Preventing return to RUN Status (Door# 1-4)<a class="headerlink" href="#556-open-door-preventing-return-to-run-status-door-1-4" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+A specific safety door (numbered 1-4) is open and preventing the system from returning to RUN status.</p>
+<p><strong>Common Causes:</strong>
+- Door not fully closed
+- Door latch not engaging
+- Door switch malfunction
+- Door misaligned
+- Safety interlock issue</p>
+<p><strong>Solution:</strong>
+1. Locate the problem door
+2. Ensure door is fully closed
+3. Check door latch engages properly
+4. Verify door is properly aligned
+5. Check door safety switch operation
+6. Clear alert after door is secured
+7. If door repeatedly shows open when closed, contact maintenance</p>
+<hr />
+<h3 id="570-ups-power-supply-on-battery-power-loss">570 - UPS power supply on battery (power loss)<a class="headerlink" href="#570-ups-power-supply-on-battery-power-loss" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Loss of main power. InnoPick PC is now running on UPS battery backup.</p>
+<p><strong>Common Causes:</strong>
+- Building power failure
+- Electrical panel issue
+- Power supply fault</p>
+<p><strong>Solution:</strong>
+1. Investigate cause of power loss
+2. Restore main power as soon as possible
+3. UPS battery has limited runtime
+4. If power not restored quickly, perform orderly shutdown
+5. Contact facility maintenance</p>
+<hr />
+<h3 id="571-mico-circuit-tripped-24v-short-circuit">571 - Mico Circuit Tripped (24V Short-Circuit)<a class="headerlink" href="#571-mico-circuit-tripped-24v-short-circuit" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The Mico circuit breaker has tripped, indicating a short circuit in the 24V system.</p>
+<p><strong>Common Causes:</strong>
+- Short circuit in 24V wiring
+- Damaged cable or connector
+- Water or moisture in electrical components
+- Failed 24V device
+- Pinched or crushed wire</p>
+<p><strong>Solution:</strong>
+1. <strong>DO NOT immediately reset</strong> - find cause first
+2. Visually inspect 24V wiring for:
+   - Damaged insulation
+   - Pinched wires
+   - Water or moisture
+   - Burn marks
+3. Check recently moved or adjusted equipment
+4. Disconnect suspect circuits if safe to do so
+5. After finding and correcting short:
+   - Reset Mico circuit breaker
+   - Power up system
+   - Clear alert
+6. Contact maintenance if cause not obvious
+7. <strong>Never bypass</strong> Mico protection</p>
+<hr />
+<h3 id="572-air-pressure-switch-off-no-air-in-system">572 - Air pressure switch off - no air in system<a class="headerlink" href="#572-air-pressure-switch-off-no-air-in-system" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Loss of air pressure in the pneumatic system.</p>
+<p><strong>Common Causes:</strong>
+- E-Stop engaged (normal when doors open)
+- Compressor shut down
+- Air line leak or blockage
+- Pressure switch malfunction</p>
+<p><strong>Solution:</strong>
+1. Check if E-Stop condition is active (doors open, E-Stop pressed)
+2. If E-Stop is cause:
+   - Close all security doors
+   - Clear E-Stop
+   - Power up system
+3. If fault persists after clearing E-Stop:
+   - Check compressor status
+   - Inspect for air leaks
+   - Verify air pressure gauge readings
+   - Contact maintenance if issue not obvious
+4. Clear alert once air pressure is restored</p>
+<hr />
+<h3 id="573-inputoutput-murr-module-fault-read-variable-murr_flt">573 - Input/Output Murr module fault (read variable Murr_Flt)<a class="headerlink" href="#573-inputoutput-murr-module-fault-read-variable-murr_flt" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Loss of communication with Murr Modules (electrical modules mounted on front of InnoPick for every 8-lane section).</p>
+<p><strong>Common Causes:</strong>
+- Communication disruption
+- Module hardware fault
+- Wiring issue
+- E-Stop condition</p>
+<p><strong>Solution:</strong>
+1. Ensure all security doors are closed
+2. Verify E-Stop is cleared
+3. Power up the system
+4. If fault persists:
+   - Perform visual inspection of all Murr Modules for affected level
+   - Check BUS Node Modules
+   - Compare with modules from other levels
+   - Look for any irregularities (LEDs, physical damage)
+5. Contact system expert if issue continues
+6. Document specific module or level affected</p>
+<hr />
+<h3 id="575-12-volt-power-supply-for-auxiliary-encoders-not-ok">575 - 12-Volt Power Supply for Auxiliary Encoders Not OK<a class="headerlink" href="#575-12-volt-power-supply-for-auxiliary-encoders-not-ok" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The 12V power supply that powers the auxiliary encoders is not functioning properly or voltage is out of range.</p>
+<p><strong>Common Causes:</strong>
+- 12V power supply failure
+- Voltage out of specification
+- Wiring issue to encoders
+- Circuit breaker or fuse blown
+- Power supply overload</p>
+<p><strong>Solution:</strong>
+1. Check 12V power supply status indicators
+2. Measure voltage if possible (should be ~12VDC)
+3. Check circuit breakers/fuses for 12V circuit
+4. Inspect wiring to auxiliary encoders
+5. Look for damaged cables or connectors
+6. Contact maintenance - encoder operation critical
+7. May need power supply replacement
+8. Clear alert after power restored and verified</p>
+<hr />
+<h3 id="576-warning-ups-battery-faulted">576 - Warning: UPS Battery Faulted<a class="headerlink" href="#576-warning-ups-battery-faulted" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The UPS (Uninterruptible Power Supply) battery has a fault condition, indicating the battery is failing or has failed.</p>
+<p><strong>Common Causes:</strong>
+- Battery end of life
+- Battery cell failure
+- Internal battery fault
+- Charging system failure
+- Battery disconnected</p>
+<p><strong>Solution:</strong>
+1. Check UPS status indicators
+2. System can continue running on main power
+3. <strong>However</strong>: No backup power protection available
+4. Schedule UPS battery replacement urgently
+5. Avoid intentional power interruptions until battery replaced
+6. Contact maintenance or UPS service provider
+7. Document battery age and fault details
+8. Clear alert after battery replaced and tested</p>
+<hr />
+<h3 id="577-warning-ups-battery-low">577 - Warning: UPS Battery Low<a class="headerlink" href="#577-warning-ups-battery-low" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The UPS battery charge level is low, reducing available backup runtime.</p>
+<p><strong>Common Causes:</strong>
+- Recent power outage depleted battery
+- Battery aging and reduced capacity
+- Charging system not fully recharging battery
+- Battery nearing end of life
+- UPS continuously on battery power</p>
+<p><strong>Solution:</strong>
+1. Check if main power is currently available
+2. If on main power, battery should recharge automatically
+3. Allow several hours for full recharge
+4. If battery remains low after recharge time:
+   - Battery may be failing
+   - Charging system may have issue
+   - Contact maintenance
+5. Monitor battery status
+6. Consider battery replacement if issue persists
+7. Alert may clear automatically after battery recharges</p>
+<hr />
+<h3 id="660-motion-control-following-error-critical-fault">660 - Motion Control Following Error - Critical Fault<a class="headerlink" href="#660-motion-control-following-error-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+A motion control following error has occurred, meaning the actual position of a motor-driven axis has deviated too far from the commanded position. This is a critical fault indicating loss of position control.</p>
+<p><strong>Common Causes:</strong>
+- Mechanical binding or obstruction
+- Motor or drive fault
+- Excessive load on axis
+- Broken belt or coupling
+- Drive tuning issue
+- Encoder failure</p>
+<p><strong>Solution:</strong>
+1. Identify which axis faulted (see specific axis alerts 661-663, 667)
+2. Check for mechanical obstructions or binding
+3. Verify motor and drive operation
+4. Check belts, chains, couplings for breaks
+5. Verify encoder feedback working
+6. Contact maintenance - inspection suggested before restarting
+7. Clear alert</p>
+<hr />
+<h3 id="661-motion-control-following-error-axis-a-infeed-conveyor-critical-fault">661 - Motion Control Following Error - Axis A (Infeed Conveyor) - Critical Fault<a class="headerlink" href="#661-motion-control-following-error-axis-a-infeed-conveyor-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Following error on Axis A (Infeed Conveyor), indicating loss of position control on the infeed system.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 660 above, with specific focus on:
+- Infeed conveyor belt condition
+- Infeed motor and drive
+- Mechanical binding at infeed
+- Encoder on infeed axis</p>
+<hr />
+<h3 id="662-motion-control-following-error-axis-b-sequence-conveyor-critical-fault">662 - Motion Control Following Error - Axis B (Sequence Conveyor) - Critical Fault<a class="headerlink" href="#662-motion-control-following-error-axis-b-sequence-conveyor-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Following error on Axis B (Sequence Conveyor), indicating loss of position control on the main sequence conveyor.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 660 above, with specific focus on:
+- Sequence conveyor chain condition
+- Sequence conveyor motor and drive
+- Mechanical binding on sequence conveyor
+- Encoder on sequence conveyor axis</p>
+<hr />
+<h3 id="663-motion-control-following-error-axis-c-buffer-conveyor-critical-fault">663 - Motion Control Following Error - Axis C (Buffer Conveyor) - Critical Fault<a class="headerlink" href="#663-motion-control-following-error-axis-c-buffer-conveyor-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Following error on Axis C (Buffer/Lane Conveyor), indicating loss of position control on the buffer lane system.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 660 above, with specific focus on:
+- Buffer lane belt/chain condition
+- Buffer motor and drive
+- Mechanical binding in buffer lanes
+- Encoder on buffer axis</p>
+<hr />
+<h3 id="667-motion-control-following-error-axis-a-b-c-all-critical-fault">667 - Motion Control Following Error - Axis A B &amp; C (All) - Critical Fault<a class="headerlink" href="#667-motion-control-following-error-axis-a-b-c-all-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Following error on all axes simultaneously (Infeed, Sequence, and Buffer conveyors), indicating a system-wide motion control failure.</p>
+<p><strong>Common Causes:</strong>
+- Motion controller fault or crash
+- Power loss to all drives
+- Emergency stop activation
+- Communication loss to all drives
+- System-wide mechanical seizure (unlikely)
+- Motion controller program error</p>
+<p><strong>Solution:</strong>
+1. Check motion controller status
+2. This is likely a controller or system-level fault, not mechanical
+3. Contact system expert
+4. May require controller restart or program reload
+5. Verify all mechanical systems after restoration
+6. Clear alert only after full system verification</p>
+<hr />
+<h3 id="671-galil-program-thread-command-error">671 - Galil Program Thread Command Error<a class="headerlink" href="#671-galil-program-thread-command-error" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+An error occurred in the Galil motion controller program thread, indicating a command execution problem or program fault.</p>
+<p><strong>Common Causes:</strong>
+- Invalid command in Galil program
+- Program logic error
+- Variable out of range
+- Array bounds exceeded
+- Syntax error in downloaded program</p>
+<p><strong>Solution:</strong>
+1. Note any recent program changes
+2. Check Galil controller for error code using:
+   - TC1 (Tell Code)
+   - MG _TC (Message Tell Code)
+3. Document the specific error code
+4. Contact system expert or programmer
+5. May require program correction and reload
+6. Verify program version matches expected
+7. Clear alert after program issue corrected
+8. Test operation carefully after program changes</p>
+<hr />
+<h3 id="701-clutch-prox-sensor-not-on-before-starting-routine-io-check">701 - Clutch Prox / Sensor Not On Before Starting Routine I/O Check<a class="headerlink" href="#701-clutch-prox-sensor-not-on-before-starting-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+Before starting the routine I/O check, the clutch proximity sensor was not in the expected "on" state, indicating the clutch may not be in the proper starting position.</p>
+<p><strong>Common Causes:</strong>
+- Clutch not in home/rest position
+- Proximity sensor misaligned
+- Sensor malfunction
+- Clutch mechanism stuck in wrong position
+- Previous move not completed properly</p>
+<p><strong>Solution:</strong>
+1. Check physical clutch position
+2. Verify clutch is in expected rest position
+3. Check proximity sensor alignment
+4. Test sensor operation
+5. May need to manually cycle clutch to home position
+6. Verify clutch returns properly after moves
+7. If the issue cannot be resolved quickly, it is possible to <a href="../main-screens/inventory-section.html#disable--enable-lane-toggle">disable the lane</a> and ignore its sensors. This allows the fault to be cleared and production to resume.
+8. Clear alert after clutch position verified
+9. Contact maintenance if sensor or clutch issue persists</p>
+<hr />
+<h3 id="702-clutch-prox-not-off-after-clutch-activation-routine-io-check">702 - Clutch Prox Not Off after Clutch Activation - Routine I/O Check<a class="headerlink" href="#702-clutch-prox-not-off-after-clutch-activation-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+During routine I/O check, after the clutch was activated (engaged), the proximity sensor did not turn off as expected.</p>
+<p><strong>Common Causes:</strong>
+- Sensor stuck or malfunctioning
+- Clutch not moving fully when activated
+- Mechanical binding preventing full travel
+- Sensor misaligned
+- Wiring issue</p>
+<p><strong>Solution:</strong>
+1. Observe clutch operation during activation
+2. Verify clutch moves fully when activated
+3. Check proximity sensor for proper operation
+4. Verify sensor alignment and mounting
+5. Check wiring and connections
+6. May need sensor adjustment or replacement
+7. Contact maintenance
+8. Clear alert after verification</p>
+<hr />
+<h3 id="703-clutch-prox-not-on-after-clutch-de-activation-routine-io-check">703 - Clutch Prox Not On after clutch De-activation - Routine I/O Check<a class="headerlink" href="#703-clutch-prox-not-on-after-clutch-de-activation-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+During routine I/O check, after the clutch was deactivated (disengaged), the proximity sensor did not turn on as expected.</p>
+<p><strong>Common Causes:</strong>
+- Sensor malfunction
+- Clutch not returning to rest position
+- Return spring weak or broken
+- Mechanical binding
+- Sensor misaligned</p>
+<p><strong>Solution:</strong>
+1. Observe clutch operation during deactivation
+2. Verify clutch returns fully to rest position
+3. Check return spring operation
+4. Check proximity sensor operation
+5. Verify sensor alignment
+6. Look for mechanical binding
+7. Contact maintenance
+8. Clear alert after clutch verified returning properly</p>
+<hr />
+<h3 id="706-missing-y-pop-up-flag-h-after-lift-routine-io-check">706 - Missing Y Pop-Up Flag (H) after Lift - Routine I/O Check<a class="headerlink" href="#706-missing-y-pop-up-flag-h-after-lift-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+During routine I/O check, after the pop-up lifted, the "Y" flag sensor (H - intermediate height) did not detect the expected flag position.</p>
+<p><strong>Common Causes:</strong>
+- Pop-up not lifting to expected height
+- Sensor malfunction
+- Flag missing or damaged
+- Sensor misaligned
+- Pneumatic pressure insufficient</p>
+<p><strong>Solution:</strong>
+1. Check pop-up operation and lift height
+2. Verify air pressure adequate
+3. Check "H" height sensor alignment
+4. Verify flag is present and undamaged
+5. Test sensor operation
+6. May need pneumatic or sensor adjustment
+7. Contact maintenance
+8. Clear alert after pop-up verified reaching proper height</p>
+<hr />
+<h3 id="707-z-pop-up-flag-hh-present-after-lift-routine-io-check">707 - Z Pop-Up Flag (HH) Present after Lift - Routine I/O Check<a class="headerlink" href="#707-z-pop-up-flag-hh-present-after-lift-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+During routine I/O check, after pop-up lift, the "Z" flag sensor (HH - upper limit) is detecting the flag when it shouldn't, indicating pop-up may be going too high.</p>
+<p><strong>Common Causes:</strong>
+- Pop-up lifting too high
+- Air cylinder over-extending
+- Mechanical stop not functioning
+- Sensor misaligned or malfunction
+- Pneumatic pressure too high</p>
+<p><strong>Solution:</strong>
+1. Check pop-up maximum lift height
+2. Verify mechanical stops functioning
+3. Check air pressure - may be too high
+4. Verify "HH" sensor alignment
+5. Check for over-travel conditions
+6. May need pneumatic adjustment
+7. Contact maintenance
+8. Clear alert after pop-up height verified correct</p>
+<hr />
+<h3 id="708-missing-w-pop-up-flag-ll-after-pop-up-de-activation-io-check">708 - Missing W Pop-Up Flag (LL) After Pop-Up De-activation - I/O Check<a class="headerlink" href="#708-missing-w-pop-up-flag-ll-after-pop-up-de-activation-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+During routine I/O check, after the pop-up was deactivated (lowered), the "W" flag sensor (LL - lower limit) did not detect the flag, indicating pop-up may not be fully retracted.</p>
+<p><strong>Common Causes:</strong>
+- Pop-up not fully retracting
+- Air cylinder not fully extending downward
+- Mechanical obstruction
+- Sensor misaligned
+- Flag damaged or missing</p>
+<p><strong>Solution:</strong>
+1. Verify pop-up fully retracts when deactivated
+2. Check for mechanical obstructions
+3. Verify air exhaust functioning properly
+4. Check "LL" sensor alignment and operation
+5. Verify flag present and undamaged
+6. May need pneumatic or mechanical adjustment
+7. Contact maintenance
+8. Clear alert after pop-up verified retracting fully</p>
+<hr />
+<h3 id="709-buffer-lane-photocell-blocked-during-routine-io-check">709 - Buffer Lane Photocell Blocked during Routine I/O Check<a class="headerlink" href="#709-buffer-lane-photocell-blocked-during-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+InnoPick continuously monitors every lane's photocell and clutch proximity sensor inputs. This fault indicates one sensor was in an unexpected state.</p>
+<p><strong>Common Causes:</strong></p>
+<p><strong>For Photocells:</strong>
+- Broken or damaged case
+- Case inducted or dispensed too close to photocell
+- Random debris (plastic, cardboard)
+- Malfunctioning photocell sensor
+- Case positioned incorrectly</p>
+<p><strong>For Clutch Proximity Sensors:</strong>
+- Proximity sensor in wrong state
+- Clutch assembly not in expected position
+- Sensor misalignment
+- Wiring issue</p>
+<p><strong>Solution:</strong>
+1. Note which lane the alert specifies
+2. Inspect that lane:
+   - Check photocell area for obstructions
+   - Look for broken case parts
+   - Verify clutch position (if clutch prox fault)
+3. Clear the obstruction or correct the issue
+4. Verify sensor is now in correct state
+5. Clear alert
+6. Monitor to ensure issue doesn't recur
+7. If the issue cannot be resolved quickly, it is possible to <a href="../main-screens/inventory-section.html#disable--enable-lane-toggle">disable the lane</a> and ignore its sensors. This allows the fault to be cleared and production to resume.</p>
+<hr />
+<h3 id="715-case-detected-at-far-back-of-buffer-lane">715 - Case Detected at Far Back of Buffer Lane<a class="headerlink" href="#715-case-detected-at-far-back-of-buffer-lane" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+A case has been detected at the far back position of a buffer lane, which may indicate the lane is full or a case has moved too far back.</p>
+<p><strong>Common Causes:</strong>
+- Lane is full to capacity
+- Case pushed too far during storage
+- Case slipped backward in lane
+- Photocell at back of lane detecting case</p>
+<p><strong>Solution:</strong>
+1. Visually inspect the affected lane
+2. Remove extra cases or jammed cases
+3. Update lane inventory count if necessary
+4. Clear alert
+5. Monitor lane operation</p>
+<hr />
+<h3 id="719-clutch-prox-sensor-off-during-routine-io-check">719 - Clutch Prox Sensor Off during Routine I/O Check<a class="headerlink" href="#719-clutch-prox-sensor-off-during-routine-io-check" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+During routine I/O monitoring, the clutch proximity sensor is in the "off" state when it should be "on", or vice versa.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 709 above - same troubleshooting applies for clutch proximity sensors.</p>
+<hr />
+<h3 id="725-photocell-above-lane-was-blocked-on-activated-lane">725 - Photocell above Lane was Blocked on Activated Lane<a class="headerlink" href="#725-photocell-above-lane-was-blocked-on-activated-lane" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+When a lane was activated (clutch engaged, ready to operate), the photocell above the lane was already blocked, which is unexpected and may indicate a case is in wrong position.</p>
+<p><strong>Common Causes:</strong>
+- Case positioned too far forward in lane
+- Case or debris blocking photocell
+- Previous dispense did not complete properly
+- Case too tall or irregular
+- Sensor malfunction</p>
+<p><strong>Solution:</strong>
+1. Inspect the affected lane
+2. Check case position in lane
+3. Verify no debris blocking photocell
+4. Ensure cases are properly positioned with gaps
+5. Check if case dimensions match configuration
+6. Adjust case position if needed
+7. Clear photocell obstruction
+8. Clear alert
+9. Monitor subsequent operations on this lane</p>
+<hr />
+<h3 id="781-infeed-motion-control-galil-thread-running-too-long-timeout-critical-fault">781 - Infeed Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault<a class="headerlink" href="#781-infeed-motion-control-galil-thread-running-too-long-timeout-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The infeed motion control thread took too long to complete, exceeding the timeout threshold. This indicates a performance issue or system overload.</p>
+<p><strong>Common Causes:</strong>
+- High system load
+- Motion controller processing delay
+- Communication delay
+- Complex motion calculation taking too long
+- Controller near processing capacity</p>
+<p><strong>Solution:</strong>
+1. Document what was happening when timeout occurred
+2. May be transient - safe to clear if isolated occurrence
+3. If repeated, contact system expert
+4. Clear alert
+5. Monitor for recurrence</p>
+<hr />
+<h3 id="782-sequence-conveyor-motion-control-galil-thread-running-too-long-timeout-critical-fault">782 - Sequence Conveyor Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault<a class="headerlink" href="#782-sequence-conveyor-motion-control-galil-thread-running-too-long-timeout-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The sequence conveyor motion control thread took too long to complete, exceeding the timeout threshold.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 781 above - same troubleshooting applies for sequence conveyor axis.</p>
+<hr />
+<h3 id="783-buffer-motion-control-galil-thread-running-too-long-timeout-critical-fault">783 - Buffer Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault<a class="headerlink" href="#783-buffer-motion-control-galil-thread-running-too-long-timeout-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The buffer lane motion control thread took too long to complete, exceeding the timeout threshold.</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+See alert 781 above - same troubleshooting applies for buffer/lane axis.</p>
+<hr />
+<h3 id="791-motion-control-galil-thread-crashed-while-main-thread-was-waiting-critical-fault">791 - Motion control (Galil) thread crashed while main thread was waiting - critical fault<a class="headerlink" href="#791-motion-control-galil-thread-crashed-while-main-thread-was-waiting-critical-fault" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+The motion controller instruction thread has crashed on the indicated level. This is a serious error that should be adequately documented.</p>
+<p><strong>Common Causes:</strong>
+- Software exception
+- Motion controller communication failure
+- Serious system fault</p>
+<p><strong>Solution:</strong>
+1. Contact System Expert to follow the steps below:
+2. <strong>Capture diagnostic data BEFORE clearing the alert:</strong>
+   - <strong>IMPORTANT</strong>: DMC-4040 motion controllers do NOT store error history
+   - Once alert is cleared, error information is lost forever
+   - System expert should capture information from GalilTools immediately:</p>
+<pre><code>     TC1         # Current error code
+     TB          # Status byte
+     TS          # System status
+     SC          # Stop code
+     MG _SCA     # Axis A stop code
+     MG _SCB     # Axis B stop code
+     MG _SCC     # Axis C stop code
+</code></pre>
+<ol>
+<li><strong>If Alert 791 has already been cleared:</strong></li>
+<li>Error information is no longer available</li>
+<li>Document circumstances and await recurrence</li>
+<li><strong>After capturing data, clear the alarm</strong></li>
+<li><strong>Perform quick visual check:</strong></li>
+<li>Compare affected level to Inventory Graph</li>
+<li>Verify case positions match expected</li>
+<li><strong>When resuming production:</strong></li>
+<li>Pay close attention to affected level</li>
+<li>An instruction may have been missed or duplicated</li>
+<li>Sequence conveyor may be offset by 1 position</li>
+<li>May have extra or missing case</li>
+<li><strong>Monitor closely</strong> for several cycles</li>
+</ol>
+<hr />
+<h3 id="900-warning-back-edge-of-case-was-adjusted-after-the-case-stored">900 - Warning: Back Edge of Case was Adjusted after the Case Stored<a class="headerlink" href="#900-warning-back-edge-of-case-was-adjusted-after-the-case-stored" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After a case was stored in a lane, the system detected the back edge position was not where expected and made an adjustment to the tracking data.</p>
+<p><strong>Common Causes:</strong>
+- Case compressed or shifted during storage
+- Case dimensions slightly different than expected
+- Normal variation in case positioning
+- Gap adjustment in lane</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h3 id="901-warning-back-edge-of-case-was-adjusted-outward-after-case-dispense-back-edge-not-seen">901 - Warning: Back Edge of Case was Adjusted Outward after Case Dispense (Back Edge not Seen)<a class="headerlink" href="#901-warning-back-edge-of-case-was-adjusted-outward-after-case-dispense-back-edge-not-seen" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After dispensing a case, the back edge was not detected where expected, and the system adjusted the position outward (further into the lane).</p>
+<p><strong>Common Causes:</strong>
+- Case back edge not clearly detected
+- Case compressed in lane
+- Photocell timing issue
+- Normal variation</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h3 id="902-warning-back-edge-of-case-was-adjusted-outward-after-case-dispensed">902 - Warning: Back Edge of Case was Adjusted Outward after Case Dispensed<a class="headerlink" href="#902-warning-back-edge-of-case-was-adjusted-outward-after-case-dispensed" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After dispensing a case, the system adjusted the tracked position of the back edge outward (further into the lane).</p>
+<p><strong>Common Causes &amp; Solution:</strong>
+Similar to alert 901 - normal system adjustment.</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h3 id="903-warning-back-edge-of-case-was-adjusted-inward-after-case-dispensed">903 - Warning: Back Edge of Case was Adjusted Inward after Case Dispensed<a class="headerlink" href="#903-warning-back-edge-of-case-was-adjusted-inward-after-case-dispensed" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After dispensing a case, the system adjusted the tracked position of the back edge inward (closer to lane entrance).</p>
+<p><strong>Common Causes:</strong>
+- Case extended further than expected during storage
+- Normal variation in case positioning
+- Gap adjustment
+- System self-correction</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h3 id="904-warning-pulled-buffer-lane-cases-inward-after-case-store-photocell-was-blocked">904 - Warning: Pulled Buffer Lane Cases Inward after Case Store (Photocell was Blocked)<a class="headerlink" href="#904-warning-pulled-buffer-lane-cases-inward-after-case-store-photocell-was-blocked" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After storing a case, the photocell was blocked (indicating insufficient gap to next case), so the system adjusted by pulling all cases in the lane inward to create proper spacing.</p>
+<p><strong>Common Causes:</strong>
+- Case stored closer to previous case than expected
+- Normal gap adjustment
+- Case compressed during storage
+- System maintaining proper spacing</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h3 id="905-warning-pulled-buffer-lane-cases-inward-after-case-dispense-photocell-was-blocked">905 - Warning: Pulled Buffer Lane Cases Inward after Case Dispense (Photocell was Blocked)<a class="headerlink" href="#905-warning-pulled-buffer-lane-cases-inward-after-case-dispense-photocell-was-blocked" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+After dispensing a case, the photocell was still blocked, indicating the next case was too close, so the system adjusted by pulling remaining cases in the lane inward.</p>
+<p><strong>Common Causes:</strong>
+- Next case too close after dispense
+- Normal gap adjustment
+- System maintaining proper spacing
+- Cases compressed in lane</p>
+<p><strong>Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane</strong> </p>
+<hr />
+<h2 id="outfeed-alerts">Outfeed Alerts<a class="headerlink" href="#outfeed-alerts" title="Permanent link">&para;</a></h2>
+<h3 id="expecting-a-case-but-there-is-no-case-present-at-the-outfeed">Expecting a case but there is no case present at the outfeed<a class="headerlink" href="#expecting-a-case-but-there-is-no-case-present-at-the-outfeed" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+InnoPick expects a case on the last sequence conveyor position, but no case is detected there.</p>
+<p><strong>Common Causes:</strong>
+- Case never dispensed from lane
+- Case fell off somewhere
+- Case caught on something earlier in sequence
+- Motion controller thread crashed (see alert 791)
+- Sequence conveyor offset by one position
+- Inventory tracking error</p>
+<p><strong>Solution:</strong>
+1. Review Inventory Graph - what case is supposed to be there?
+2. Inspect the outfeed area and upstream positions
+3. Determine why the case is not present:
+   - <strong>Case is one spot back:</strong> May need to jog conveyor forward
+   - <strong>Case never dispensed:</strong> Check source lane, may need to manually dispense
+   - <strong>Case caught upstream:</strong> Clear obstruction and position case correctly
+   - <strong>Case missing entirely:</strong> Find replacement case</p>
+<ol>
+<li><strong>Place needed case on last position:</strong></li>
+<li>Must be the correct product</li>
+<li>Must match what Inventory Graph expects</li>
+<li>
+<p>Must block the last sensor on InnoPick</p>
+</li>
+<li>
+<p>Verify Inventory Graph matches physical reality</p>
+</li>
+<li>Clear alert</li>
+<li>Resume operation</li>
+<li>Monitor closely to ensure tracking is correct</li>
+</ol>
+<p><strong>Important:</strong> See <a href="alert-guidelines.html#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom">Alert Guidelines</a> - this usually indicates a tracking issue.</p>
+<hr />
+<h3 id="not-expecting-a-case-but-there-is-a-case-at-the-outfeed">Not expecting a case but there is a case at the outfeed<a class="headerlink" href="#not-expecting-a-case-but-there-is-a-case-at-the-outfeed" title="Permanent link">&para;</a></h3>
+<p><strong>Explanation:</strong>
+A case is detected at the last position when InnoPick was not expecting one there.</p>
+<p><strong>Common Causes:</strong>
+- Infeed case not stored properly (see infeed alerts)
+- Issue not resolved properly after previous fault
+- Case advanced without being tracked
+- Manual intervention error</p>
+<p><strong>Solution:</strong>
+1. <strong>Verify the case truly should not be there:</strong>
+   - Check Inventory Graph
+   - Review recent infeed activity
+   - Check if case belongs to current sequence</p>
+<ol>
+<li><strong>Remove the unexpected case:</strong></li>
+<li>Take case off last position</li>
+<li>
+<p>Do not leave it in place</p>
+</li>
+<li>
+<p><strong>Determine where case should go:</strong></p>
+</li>
+<li>Look at which lanes are receiving current replenishment</li>
+<li>Compare lane inventory numbers with physical count</li>
+<li>
+<p>Check <a href="../main-screens/inventory-section.html#replenishments-page">Replenishments Page</a></p>
+</li>
+<li>
+<p><strong>Two options for the case:</strong></p>
+</li>
+</ol>
+<p><strong>Option A - Short the lane:</strong>
+   - If lane is inaccessible or case not needed urgently
+   - Reduce lane count by 1
+   - Update in <a href="../main-screens/inventory-section.html#lane-inventory-page">Lane Inventory Page</a></p>
+<p><strong>Option B - Add to back of lane:</strong>
+   - If lane is accessible
+   - Case may be needed soon
+   - Manually place at back of lane
+   - Update inventory count if needed</p>
+<ol>
+<li>Clear alert</li>
+<li>Resume operation</li>
+<li>Monitor to prevent recurrence</li>
+</ol>
+<p><strong>Important:</strong> See <a href="alert-guidelines.html#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom">Alert Guidelines</a> - usually caused by improper infeed issue resolution.</p>
+<hr />
+<h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="alert-guidelines.html">Alert Guidelines</a> - General principles for successful alert resolution</li>
+<li><a href="../main-screens/alerts-page.html">Alerts Page</a> - Viewing and managing alerts</li>
+<li><a href="common-issues.html">Common Issues</a> - Frequently encountered problems</li>
+<li><a href="case-replacement.html">Case Replacement</a> - Procedures for replacing cases</li>
+</ul>
+<hr />
+<p><strong>Navigation:</strong> <a href="alert-guidelines.html">← Alert Guidelines</a> | <a href="common-issues.html">Next: Common Issues →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.expand", "search.highlight", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
