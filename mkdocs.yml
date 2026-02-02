@@ -56,8 +56,18 @@ plugins:
 # Markdown extensions for better formatting
 markdown_extensions:
   - tables
-  - admonitionsite_name: InnoPick Manager Operations Manual
   - nl2br
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+
 site_description: Automated Order Preparation Solutions - Operator Documentation
 
 # This tells MkDocs where your markdown files are
