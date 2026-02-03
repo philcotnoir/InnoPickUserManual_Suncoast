@@ -1,4 +1,4 @@
-# Alert Reference Guide
+# Alert Reference Page
 
 **[Home](../index.md) > [Troubleshooting](index.md) > Alert Reference**
 
@@ -86,10 +86,10 @@ After storing a case into a buffer lane, the photocell remained blocked when it 
 1. Visually inspect the lane and case
 2. Identify why photocell is still blocked
 3. Correct the issue:
-   - Adjust case position if needed
-   - Replace damaged case
-   - Retrieve correct product if wrong case
-   - Remove case entirely if necessary
+    - Adjust case position if needed
+    - Replace damaged case
+    - Retrieve correct product if wrong case
+    - Remove case entirely if necessary
 4. Ensure photocell is clear
 5. Verify other cases in lane are properly positioned
 6. Clear the alert
@@ -120,8 +120,8 @@ InnoPick tried to dispense a case from buffer lane, but no case blocked the phot
 **If case is too far back:**
 1. InnoPick reached maximum programmed advance distance
 2. Either:
-   - Manually adjust cases in lane, OR
-   - Jog the lane forward to fully dispense the case
+    - Manually adjust cases in lane, OR
+    - Jog the lane forward to fully dispense the case
 3. Ensure case is now on sequence conveyor
 4. Verify position on Inventory Graph
 5. Clear alert
@@ -163,13 +163,13 @@ The photocell for that lane remained blocked at the end of the dispense move.
 1. Inspect the lane photocell area
 2. Identify what is blocking the photocell
 3. Correct the issue:
-   - Remove damaged cardboard or case parts
-   - Straighten crooked case
-   - Verify dispensed case is properly positioned on sequence conveyor
+    - Remove damaged cardboard or case parts
+    - Straighten crooked case
+    - Verify dispensed case is properly positioned on sequence conveyor
 4. Check other cases in buffer lane:
-   - Ensure proper positioning
-   - Verify adequate gaps
-   - Confirm ready to dispense next case
+    - Ensure proper positioning
+    - Verify adequate gaps
+    - Confirm ready to dispense next case
 5. Clear photocell completely
 6. Verify on Inventory Graph
 7. Clear alert
@@ -254,9 +254,9 @@ The sequence conveyor was ready to move but had to wait too long for a buffer la
 **Solution:**
 1. Check which lane was dispensing when timeout occurred
 2. Inspect that lane for:
-   - Mechanical binding or slowness
-   - Pop-up not retracting fully
-   - Clutch not disengaging cleanly
+    - Mechanical binding or slowness
+    - Pop-up not retracting fully
+    - Clutch not disengaging cleanly
 3. Test lane operation manually if needed
 4. Verify lane motor and drive functioning properly
 5. Clear alert
@@ -278,17 +278,17 @@ Pop-up assembly was detected in incorrect position (down) when it should have be
 
 **Solution:**
 1. Verify pneumatic components:
-   - Air pressure adequate
-   - Solenoid valves functioning
-   - Air lines not blocked or leaking
+    - Air pressure adequate
+    - Solenoid valves functioning
+    - Air lines not blocked or leaking
 2. Check mechanical components:
-   - Pop-up shaft moves freely
-   - No obstructions
-   - Linkage intact
+    - Pop-up shaft moves freely
+    - No obstructions
+    - Linkage intact
 3. Verify position sensors:
-   - Clean sensor faces
-   - Check sensor alignment
-   - Verify sensor wiring
+    - Clean sensor faces
+    - Check sensor alignment
+    - Verify sensor wiring
 4. Remove any obstructing objects
 5. Test pop-up operation manually if safe
 6. Clear alert and test
@@ -355,10 +355,10 @@ The clutch assembly failed to engage properly after multiple attempts.
 1. Visually inspect clutch assembly if accessible
 2. Retry the move in Automatic mode while observing clutch
 3. Look for:
-   - Mechanical binding
-   - Worn parts
-   - Obstructions
-   - Misalignment
+    - Mechanical binding
+    - Worn parts
+    - Obstructions
+    - Misalignment
 4. If engagement seems to work sometimes, note conditions
 5. Document behavior for maintenance
 6. Mechanical intervention may be necessary
@@ -561,10 +561,10 @@ Actual slippage detected in the coupling connecting the infeed-side auxiliary en
 **Solution:**
 1. Contact maintenance
 2. Inspect couplings for:
-   - Tightness
-   - Wear
-   - Damage
-   - Proper seating
+    - Tightness
+    - Wear
+    - Damage
+    - Proper seating
 3. Tighten or replace coupling as needed
 4. Clear alert after mechanical repair
 5. Monitor closely after resuming
@@ -597,9 +597,9 @@ Slippage detected between the buffer motor gearbox and the shaft - a critical me
 2. **DO NOT attempt to resume** without maintenance inspection
 3. Contact maintenance urgently
 4. Inspect for:
-   - Gearbox condition
-   - Shaft coupling integrity
-   - Any signs of mechanical failure
+    - Gearbox condition
+    - Shaft coupling integrity
+    - Any signs of mechanical failure
 5. Clear alert only after repairs completed and verified
 
 ---
@@ -621,11 +621,11 @@ Multiple slip points detected simultaneously - gearbox, shaft, and coupling - in
 2. **DO NOT attempt to resume** without maintenance inspection
 3. Contact maintenance and supervision urgently
 4. Full mechanical inspection required for:
-   - Gearbox
-   - All couplings
-   - Shaft integrity
-   - Mounting systems
-   - Drive components
+    - Gearbox
+    - All couplings
+    - Shaft integrity
+    - Mounting systems
+    - Drive components
 5. Clear alert only after complete repairs and testing
 
 ---
@@ -706,13 +706,13 @@ The first infeed photocell was blocked when InnoPick was not expecting to receiv
 **Solution:**
 1. **Key Point**: InnoPick is NOT expecting this case
 2. Remove whatever is blocking the photocell:
-   - If extra case: Remove from infeed belt
-   - If debris: Clear obstruction
-   - If case sent too far: Pull back or remove
+    - If extra case: Remove from infeed belt
+    - If debris: Clear obstruction
+    - If case sent too far: Pull back or remove
 3. **If removing an extra case:**
-   - Adjust count in upstream system
-   - Document the discrepancy
-   - Verify replenishment quantities
+    - Adjust count in upstream system
+    - Document the discrepancy
+    - Verify replenishment quantities
 4. Once photocell is clear, operator can resume production
 5. **Do not** leave unexpected case on infeed belt
 6. Clear alert
@@ -742,10 +742,10 @@ The measured case length was greater than expected length plus tolerance during 
 **Solution:**
 1. Inspect the case that triggered the fault
 2. Determine if:
-   - Wrong product → Replace with correct case
-   - Turned case → Orient properly (length should be longer dimension)
-   - Case damaged/extended → Replace with proper case
-   - Dimensions wrong in system → Check [Products Page](../main-screens/inventory-section.md#products-page)
+    - Wrong product → Replace with correct case
+    - Turned case → Orient properly (length should be longer dimension)
+    - Case damaged/extended → Replace with proper case
+    - Dimensions wrong in system → Check [Products Page](../main-screens/inventory-section.md#products-page)
 3. Verify case matches expected product for this replenishment
 4. Place correct case on infeed
 5. Adjust replenishment quantity if case was rejected
@@ -774,9 +774,9 @@ The measured case length was less than expected length minus tolerance during in
 **Solution:**
 1. Inspect the case that triggered the fault
 2. Determine if:
-   - Case is damaged → Replace with proper case
-   - Wrong product → Replace with correct case
-   - Turned case → Orient properly
+    - Case is damaged → Replace with proper case
+    - Wrong product → Replace with correct case
+    - Turned case → Orient properly
 3. Verify case matches expected product for this replenishment
 4. Check product dimensions in [Products Page](../main-screens/inventory-section.md#products-page)
 5. Place correct case on infeed
@@ -804,9 +804,9 @@ The infeed case on position 0 (first sequence conveyor position) is positioned t
 2. Check if case can be adjusted to correct position
 3. If case is only slightly off, may be safe to continue
 4. If significantly misplaced:
-   - Remove case
-   - Replace with properly positioned case
-   - See [Case Centering Guide](/troubleshooting/casecentering.md)
+    - Remove case
+    - Replace with properly positioned case
+    - See [Case Centering Guide](casecentering.md)
 5. Clear alert
 6. Monitor subsequent cases for repeat
 7. Contact maintenance if issue recurs
@@ -850,12 +850,12 @@ The steel finger measuring pop-up height tripped the uppermost limit photocell, 
 
 **Solution:**
 1. Check air cylinder settings:
-   - Verify air release adjustment
-   - Ensure proper timing
+    - Verify air release adjustment
+    - Ensure proper timing
 2. Test solenoid valve operation
 3. Inspect pop-up mechanism:
-   - Verify engagement
-   - Check for mechanical issues
+    - Verify engagement
+    - Check for mechanical issues
 4. Adjust timing if needed
 5. Contact maintenance for pneumatic system tuning
 6. Clear alert after resolving
@@ -877,33 +877,33 @@ A safety device is not in the proper 'safe' condition. This puts all levels into
 **Solution:**
 
 1. **Identify the E-Stop condition:**
-   - Check all E-Stop buttons → ensure all are pulled out (released)
-   - Check all safety doors → ensure all are fully closed
-   - Check safety interlocks → verify all are engaged
-   - Check guard position switches → ensure guards are in place
+    - Check all E-Stop buttons → ensure all are pulled out (released)
+    - Check all safety doors → ensure all are fully closed
+    - Check safety interlocks → verify all are engaged
+    - Check guard position switches → ensure guards are in place
 
 2. **Clear the E-Stop condition:**
-   - Release/rotate E-Stop buttons to reset
-   - Close all doors completely
-   - Verify interlocks are engaged
-   - Check safety system indicator lights
+    - Release/rotate E-Stop buttons to reset
+    - Close all doors completely
+    - Verify interlocks are engaged
+    - Check safety system indicator lights
 
 3. **After E-Stop is cleared:**
-   - Press Clear Alerts button
-   - All levels should return to Manual mode (Yellow)
-   - Perform visual inspection before resuming
-   - Put levels back into Automatic mode (Green)
+    - Press Clear Alerts button
+    - All levels should return to Manual mode (Yellow)
+    - Perform visual inspection before resuming
+    - Put levels back into Automatic mode (Green)
 
 4. **If E-Stop won't clear:**
-   - One or more safety devices still not satisfied
-   - Systematically check each safety device
-   - Look for damaged switches or wiring
-   - Contact maintenance if cause not obvious
+    - One or more safety devices still not satisfied
+    - Systematically check each safety device
+    - Look for damaged switches or wiring
+    - Contact maintenance if cause not obvious
 
 5. **Resume operation:**
-   - Only after all safety conditions are satisfied
-   - Verify safe to restart
-   - Monitor closely on restart
+    - Only after all safety conditions are satisfied
+    - Verify safe to restart
+    - Monitor closely on restart
 
 **Safety Note:** Never bypass E-Stop or safety interlocks. If safety device seems to be malfunctioning, resolve the issue properly or contact maintenance.
 
@@ -966,16 +966,16 @@ The Mico circuit breaker has tripped, indicating a short circuit in the 24V syst
 **Solution:**
 1. **DO NOT immediately reset** - find cause first
 2. Visually inspect 24V wiring for:
-   - Damaged insulation
-   - Pinched wires
-   - Water or moisture
-   - Burn marks
+    - Damaged insulation
+    - Pinched wires
+    - Water or moisture
+    - Burn marks
 3. Check recently moved or adjusted equipment
 4. Disconnect suspect circuits if safe to do so
 5. After finding and correcting short:
-   - Reset Mico circuit breaker
-   - Power up system
-   - Clear alert
+    - Reset Mico circuit breaker
+    - Power up system
+    - Clear alert
 6. Contact maintenance if cause not obvious
 7. **Never bypass** Mico protection
 
@@ -995,14 +995,14 @@ Loss of air pressure in the pneumatic system.
 **Solution:**
 1. Check if E-Stop condition is active (doors open, E-Stop pressed)
 2. If E-Stop is cause:
-   - Close all security doors
-   - Clear E-Stop
-   - Power up system
+    - Close all security doors
+    - Clear E-Stop
+    - Power up system
 3. If fault persists after clearing E-Stop:
-   - Check compressor status
-   - Inspect for air leaks
-   - Verify air pressure gauge readings
-   - Contact maintenance if issue not obvious
+    - Check compressor status
+    - Inspect for air leaks
+    - Verify air pressure gauge readings
+    - Contact maintenance if issue not obvious
 4. Clear alert once air pressure is restored
 
 ---
@@ -1023,10 +1023,10 @@ Loss of communication with Murr Modules (electrical modules mounted on front of 
 2. Verify E-Stop is cleared
 3. Power up the system
 4. If fault persists:
-   - Perform visual inspection of all Murr Modules for affected level
-   - Check BUS Node Modules
-   - Compare with modules from other levels
-   - Look for any irregularities (LEDs, physical damage)
+    - Perform visual inspection of all Murr Modules for affected level
+    - Check BUS Node Modules
+    - Compare with modules from other levels
+    - Look for any irregularities (LEDs, physical damage)
 5. Contact system expert if issue continues
 6. Document specific module or level affected
 
@@ -1097,9 +1097,9 @@ The UPS battery charge level is low, reducing available backup runtime.
 2. If on main power, battery should recharge automatically
 3. Allow several hours for full recharge
 4. If battery remains low after recharge time:
-   - Battery may be failing
-   - Charging system may have issue
-   - Contact maintenance
+    - Battery may be failing
+    - Charging system may have issue
+    - Contact maintenance
 5. Monitor battery status
 6. Consider battery replacement if issue persists
 7. Alert may clear automatically after battery recharges
@@ -1210,8 +1210,8 @@ An error occurred in the Galil motion controller program thread, indicating a co
 **Solution:**
 1. Note any recent program changes
 2. Check Galil controller for error code using:
-   - TC1 (Tell Code)
-   - MG _TC (Message Tell Code)
+    - TC1 (Tell Code)
+    - MG _TC (Message Tell Code)
 3. Document the specific error code
 4. Contact system expert or programmer
 5. May require program correction and reload
@@ -1389,9 +1389,9 @@ InnoPick continuously monitors every lane's photocell and clutch proximity senso
 **Solution:**
 1. Note which lane the alert specifies
 2. Inspect that lane:
-   - Check photocell area for obstructions
-   - Look for broken case parts
-   - Verify clutch position (if clutch prox fault)
+    - Check photocell area for obstructions
+    - Look for broken case parts
+    - Verify clutch position (if clutch prox fault)
 3. Clear the obstruction or correct the issue
 4. Verify sensor is now in correct state
 5. Clear alert
@@ -1509,9 +1509,9 @@ The motion controller instruction thread has crashed on the indicated level. Thi
 **Solution:**
 1. Contact System Expert to follow the steps below:
 2. **Capture diagnostic data BEFORE clearing the alert:**
-   - **IMPORTANT**: DMC-4040 motion controllers do NOT store error history
-   - Once alert is cleared, error information is lost forever
-   - System expert should capture information from GalilTools immediately:
+    - **IMPORTANT**: DMC-4040 motion controllers do NOT store error history
+    - Once alert is cleared, error information is lost forever
+    - System expert should capture information from GalilTools immediately:
 ```
      TC1         # Current error code
      TB          # Status byte
@@ -1522,17 +1522,17 @@ The motion controller instruction thread has crashed on the indicated level. Thi
      MG _SCC     # Axis C stop code
 ```
 3. **If Alert 791 has already been cleared:**
-   - Error information is no longer available
-   - Document circumstances and await recurrence
+    - Error information is no longer available
+    - Document circumstances and await recurrence
 4. **After capturing data, clear the alarm**
 5. **Perform quick visual check:**
-   - Compare affected level to Inventory Graph
-   - Verify case positions match expected
+    - Compare affected level to Inventory Graph
+    - Verify case positions match expected
 6. **When resuming production:**
-   - Pay close attention to affected level
-   - An instruction may have been missed or duplicated
-   - Sequence conveyor may be offset by 1 position
-   - May have extra or missing case
+    - Pay close attention to affected level
+    - An instruction may have been missed or duplicated
+    - Sequence conveyor may be offset by 1 position
+    - May have extra or missing case
 7. **Monitor closely** for several cycles
 
 ---
@@ -1643,15 +1643,15 @@ InnoPick expects a case on the last sequence conveyor position, but no case is d
 1. Review Inventory Graph - what case is supposed to be there?
 2. Inspect the outfeed area and upstream positions
 3. Determine why the case is not present:
-   - **Case is one spot back:** May need to jog conveyor forward
-   - **Case never dispensed:** Check source lane, may need to manually dispense
-   - **Case caught upstream:** Clear obstruction and position case correctly
-   - **Case missing entirely:** Find replacement case
+    - **Case is one spot back:** May need to jog conveyor forward
+    - **Case never dispensed:** Check source lane, may need to manually dispense
+    - **Case caught upstream:** Clear obstruction and position case correctly
+    - **Case missing entirely:** Find replacement case
 
 4. **Place needed case on last position:**
-   - Must be the correct product
-   - Must match what Inventory Graph expects
-   - Must block the last sensor on InnoPick
+    - Must be the correct product
+    - Must match what Inventory Graph expects
+    - Must block the last sensor on InnoPick
 
 5. Verify Inventory Graph matches physical reality
 6. Clear alert
@@ -1675,31 +1675,31 @@ A case is detected at the last position when InnoPick was not expecting one ther
 
 **Solution:**
 1. **Verify the case truly should not be there:**
-   - Check Inventory Graph
-   - Review recent infeed activity
-   - Check if case belongs to current sequence
+    - Check Inventory Graph
+    - Review recent infeed activity
+    - Check if case belongs to current sequence
 
 2. **Remove the unexpected case:**
-   - Take case off last position
-   - Do not leave it in place
+    - Take case off last position
+    - Do not leave it in place
 
 3. **Determine where case should go:**
-   - Look at which lanes are receiving current replenishment
-   - Compare lane inventory numbers with physical count
-   - Check [Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
+    - Look at which lanes are receiving current replenishment
+    - Compare lane inventory numbers with physical count
+    - Check [Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
 
 4. **Two options for the case:**
 
    **Option A - Short the lane:**
-   - If lane is inaccessible or case not needed urgently
-   - Reduce lane count by 1
-   - Update in [Lane Inventory Page](../main-screens/inventory-section.md#lane-inventory-page)
+    - If lane is inaccessible or case not needed urgently
+    - Reduce lane count by 1
+    - Update in [Lane Inventory Page](../main-screens/inventory-section.md#lane-inventory-page)
 
    **Option B - Add to back of lane:**
-   - If lane is accessible
-   - Case may be needed soon
-   - Manually place at back of lane
-   - Update inventory count if needed
+    - If lane is accessible
+    - Case may be needed soon
+    - Manually place at back of lane
+    - Update inventory count if needed
 
 5. Clear alert
 6. Resume operation

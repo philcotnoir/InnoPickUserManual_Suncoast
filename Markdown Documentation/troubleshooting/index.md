@@ -21,10 +21,10 @@ General principles and best practices for resolving alerts successfully, includi
 
 ### [Alerts Reference](alert-reference.md)
 Complete listing of all InnoPick alerts with:
-- Alert code and description
+- Alert code and description organized by ranges
 - Explanation and common causes
 - Step-by-step resolution procedures
-- Related alerts and patterns
+- Quick navigation by alert code ranges
 
 ### [Common Issues](common-issues.md)
 Frequently encountered problems and their solutions:
@@ -50,13 +50,13 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 ## Quick Reference by Symptom
 
 **System won't start:**
-→ Check for [E-Stop condition](alert-reference.md#555---e-stop-condition-active)
+→ Check for [E-Stop condition](alert-reference.md#555---e-stop-condition-active---safety-is-disarmed-door-opened-or-e-stop-pressed)
 → Verify no [unresolved or hidden alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 
 **Alert won't clear:**
 → See [Alert Guidelines](alert-guidelines.md#when-alerts-wont-clear)
 → Verify physical issue is resolved
-→ Use [Recovery Action](/main-screens/administration.md#recovery-actions) to send a clear alarm to the motion controller. 
+→ Use [Recovery Action](../main-screens/administration/recovery-actions.md) to send a clear alarm to the motion controller. 
 
 **Case missing from sequence:**
 → See [Case Replacement](case-replacement.md)
@@ -144,8 +144,8 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 - [Daily Operations](../daily-operations/index.md) - Preventing issues through proper procedures
 - [Alerts Page](../main-screens/alerts-page.md) - Viewing and filtering alerts
 - [Home Page](../main-screens/home-page.md) - Monitoring system status
-- [Administration](../main-screens/administration.md) - Recovery actions for advanced issues
+- [Administration](../main-screens/administration/index.md) - Recovery actions for advanced issues
 
 ---
 
-**Navigation:** [← Administration](../main-screens/administration.md) | [Next: Alert Guidelines →](alert-guidelines.md)
+**Navigation:** [← User Settings](../main-screens/administration/user-settings.md) | [Alert Guidelines →](alert-guidelines.md)

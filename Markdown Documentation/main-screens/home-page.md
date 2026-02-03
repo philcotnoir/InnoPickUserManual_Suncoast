@@ -8,7 +8,7 @@
 
 The Home Page is your primary dashboard for monitoring InnoPick operations. It provides a real-time snapshot of system status, case locations, alerts, and production progress.
 
-<img src="../images/home/homepage.png" width="800" alt="InnoPick Manager Home Page">
+<img src="../images/home/homepage.png" width="1600" alt="InnoPick Manager Home Page">
 
 ---
 
@@ -34,7 +34,7 @@ The Home Page displays the following key information:
 
 ## Inventory Graph
 
-<img src="../images/home/image7.png" width="800" alt="Inventory Graph">
+<img src="../images/home/image7.png" width="1600" alt="Inventory Graph">
 
 The main visual grid in the center-right of the Home Page provides a quick summary of case positions on InnoPick sequence conveyors.
 
@@ -51,17 +51,19 @@ The main visual grid in the center-right of the Home Page provides a quick summa
   - If a square, it means the case is scheduled to be dispensed on this position
 
 **"Gender Bender" cases:** 
-<img src="../images/home/genderbender.png" width="800" alt="Inventory Graph">
+<img src="../images/home/genderbender.png" width="300" alt="Inventory Graph">
+
 - Some Inbound case positions can be re-used as Outbound case positions when the system determines that the inbound case will be stored in a lane upstream of the outbound case's lane.
 - This is shown via a special border around the inbound case on the Inventory graph (see screenshot above - cases highlighted in blue rectangle)
 - When this case is stored, the triangle will be replaced with a square.
 
 ### Operational Controls on the Inventory Graph
 #### Build Inventory Mode
-<img src="image-1.png" width="200" alt="Pause Infeed Button Location">
+
+<img src="../main-screens/image-1.png" width="200" alt="Pause Infeed Button Location">
 
 - Build Inventory mode prioritizes letting replenishment cases come into InnoPick over scheduling output cases. 
-- [More information on Build Inventory Mode](/main-screens/administration.md#build-inventory) 
+- [More information on Build Inventory Mode](../main-screens/administration/setup-innopick.md#build-inventory) 
 
 #### Pause / Resume Infeed
 <img src="../images/home/pauseinfeed5.png" width="200" alt="Pause Infeed Button Location">
@@ -95,18 +97,21 @@ The inventory graph shows:
 ##### Case ready to transfer
 - When a case is to be transferred from the upstream conveyor system, it appears as a coloured triangle on that level.
 - Hover over the triangle to get more information:
-<img src="../images/home/rdy2transfer6.png" width="200" alt="Infeed Statuses">
+<img src="../images/home/rdy2transfer6.png" width="350" alt="Infeed Statuses">
 
 ##### Waiting replenishment
+
 <img src="../images/home/waitingreplen5.png" width="200" alt="Waiting Replenishment">
+
 - When a level InnoPick is not able to schedule output cases because it is waiting for a replenishment, an **x** appears at that level.
 - This allows an operator to know immediately why a given level is not scheduling output cases.
 - Hover over the **x** to see which replenishment the level is waiting for.
-<img src="../images/home/waitingreplen6.png" width="200" alt="Waiting Replenishment">
+
+<img src="../images/home/waitingreplen6.png" width="400" alt="Waiting Replenishment">
 
 
 ##### Infeed paused
-- [See above](/main-screens/home-page.md#pause--resume-infeed)
+- [See above](#pause--resume-infeed)
 
 #### Statuses at the Outfeed
 <img src="../images/home/outfeedstatus5.png" width="200" alt="Outfeed Statuses">
@@ -126,7 +131,7 @@ The inventory graph shows:
 
 Hover your cursor over any case icon to see additional information:
 
-<img src="../images/home/hoverinfo.png" width="800" alt="Case Hover Detail">
+<img src="../images/home/hoverinfo.png" width="300" alt="Case Hover Detail">
 
 Information includes:
 - Level #, current position #, and lane # (if applicable).
@@ -137,7 +142,9 @@ Information includes:
   - Position: the position of the case in the storage lane; followed by the position of the case in terms of the total replenishment quantity. In the example in the screenshot above, it is case 33 out of 33 in lane 39; and it was the last case of a 36-case replenishment.
   - Replenishment ID (unique GUID); this can be used to identify the replen in InnoPick and MixMaster.
 - If Outbound Case:
-<img src="../images/home/hoverinfo2.png" width="800" alt="Replenishment Link">
+  
+<img src="../images/home/hoverinfo2.png" width="300" alt="Replenishment Link">
+
   - Merge / Spiral destination
   - Client Order PalletID
   - Case reference number
@@ -149,16 +156,16 @@ Users can click on:
 
 For inbound cases (triangles), you can click on the case and see a clickable "View replenishment" link:
 
-<img src="../images/home/hoverinfo3.png" width="800" alt="Replenishment Link">
+<img src="../images/home/hoverinfo3.png" width="400" alt="Replenishment Link">
 
 Clicking this link opens the [Replenishments Page](inventory-section.md#replenishments-page) and displays details for that specific replenishment.
 
 ##### 2. Outbound Case Links
-<img src="../images/home/hoverinfo4.png" width="800" alt="Replenishment Link">
+<img src="../images/home/hoverinfo4.png" width="300" alt="Replenishment Link">
 
 For outbound cases (squares), you can click on the case and see between 2 and 3 clickable links:
 - **Set case pending completion**: This is only clickable if the case if on the last position of InnoPick. If clicked, a second confirmation will be required in order to execute the recovery action.
-  - For detailed information on what this recovery action does, see the [Commonly Used Recovery Actions](../main-screens/administration.md#most-commonly-used-recovery-actions).
+  - For detailed information on what this recovery action does, see the [Commonly Used Recovery Actions](../main-screens/administration/recovery-actions.md#most-commonly-used-recovery-actions).
 - **View in Client**: This will redirect the user to the Case Sequence page in MixMaster where the case can be found.
   - Tip: Right-click and "Open in New Tab" to keep this page open. You may need to login again in the new tab.
 - **View in Case Sequence**: This will redirect the user to the Case Sequece page in InnoPick Manager, with a filter applied so only this case appears.
@@ -168,7 +175,7 @@ For outbound cases (squares), you can click on the case and see between 2 and 3 
 
 ## Level Statuses & Auto / Manual Controls
 
-<img src="../images/home/automode.png" width="800" alt="Level Status Controls">
+<img src="../images/home/automode.png" width="200" alt="Level Status Controls">
 
 The numbered squares in the top left corner indicate the operational status of each InnoPick level.
 
@@ -200,7 +207,7 @@ The numbered squares in the top left corner indicate the operational status of e
 
 ### When Levels Are in Manual Mode
 
-<img src="../images/home/manualmode.png" width="800" alt="Levels in Manual Mode">
+<img src="../images/home/manualmode.png" width="200" alt="Levels in Manual Mode">
 
 When InnoPick has an alarm, the affected level automatically enters Manual (Yellow) or Fault (Red) mode. This pauses production and allows the operator to:
 
@@ -213,19 +220,19 @@ When InnoPick has an alarm, the affected level automatically enters Manual (Yell
 
 ## Alerts List
 
-<img src="../images/home/image12.png" width="800" alt="Alerts Display">
+<img src="../images/home/image12.png" width="1600" alt="Alerts Display">
 
 The Alerts section shows current system alerts that require attention.
 
 ### Clear All Alerts Button
 
-<img src="../images/home/image13.png" width="800" alt="Clear Alerts Button">
+<img src="../images/home/image13.png" width="200" alt="Clear Alerts Button">
 
 
 The **Clear All Alerts** button (bottom right of the inventory graph) attempts to clear all current alerts in the system.
 
 There is also a **Clear Alerts** button always visible just above the Auto and Manual buttons:
-<img src="../images/home/clearalerts.png" width="800" alt="Clear Alerts Button">
+<img src="../images/home/clearalerts.png" width="200" alt="Clear Alerts Button">
 
 
 **Important Notes:**
@@ -243,9 +250,9 @@ There is also a **Clear Alerts** button always visible just above the Auto and M
 2. Resolve the underlying issue
 3. Try clearing alerts again
 4. See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for specific resolution steps
-5. Try using the **Clear alarm on level** [recovery action](/main-screens/administration.md#most-commonly-used-recovery-actions).
-6. Open the [Alerts Page](/main-screens/alerts-page.md) and remove all filters to see if some other alert could be affecting the system. 
-   - Sometimes the system filters out an alert that is still active and cannot be cleared until the underlying issue has been fixed.
+5. Try using the **Clear alarm on level** [recovery action](../main-screens/administration/recovery-actions.md#clear-alarm-on-level).
+6. Open the [Alerts Page](../main-screens/alerts-page.md) and remove all filters to see if some other alert could be affecting the system. 
+    - Sometimes the system filters out an alert that is still active and cannot be cleared until the underlying issue has been fixed.
 
 ### Viewing Complete Alert History
 
@@ -259,13 +266,13 @@ The Lane Inventory display shows the contents of storage lanes for each level.
 
 ### Selecting a Level
 
-<img src="../images/home/image14.png" width="800" alt="Level Selection">
+<img src="../images/home/image14.png" width="300" alt="Level Selection">
 
 Click on a level number to view its lane inventory.
 
 ### Lane Display
 
-<img src="../images/home/image15.png" width="800" alt="Lane Inventory Display">
+<img src="../images/home/image15.png" width="1600" alt="Lane Inventory Display">
 
 Each storage lane is shown as a horizontal bar:
 - Bar length represents relative fullness
@@ -273,7 +280,7 @@ Each storage lane is shown as a horizontal bar:
 
 ### Getting Lane Details
 
-<img src="../images/home/image16.png" width="800" alt="Lane Hover Details">
+<img src="../images/home/image16.png" width="300" alt="Lane Hover Details">
 
 Hover your cursor over any lane to see:
 - Quantity of cases
@@ -287,7 +294,7 @@ For more detailed lane inventory information and editing capabilities, see the [
 
 ## Production Graph
 
-<img src="../images/home/progressbar.png" width="800" alt="Production Graph">
+<img src="../images/home/progressbar.png" width="150" alt="Production Graph">
 
 The Production Graph on the far left of the Home Page shows the current state of the production run.
 
@@ -298,14 +305,14 @@ The Production Graph on the far left of the Home Page shows the current state of
 - This is the production target
 
 **Green Bar:**
-<img src="../images/home/inprogress.png" width="800" alt="In Progress Detail">
+<img src="../images/home/inprogress.png" width="150" alt="In Progress Detail">
 - Represents **In Progress** cases
 - These are cases currently on the sequence conveyors (outbound)
 - Corresponds to the squares (filled and hollow) on the inventory graph
 - Hover to see exact count
 
 **Orange Bar:**
-<img src="../images/home/completed.png" width="800" alt="Completed Detail">
+<img src="../images/home/completed.png" width="150" alt="Completed Detail">
 - Represents **Completed** cases
 - These cases have been output from InnoPick
 - This counter resets periodically as routes/truckloads are completed
@@ -355,4 +362,4 @@ When an alert occurs:
 
 ---
 
-**Navigation:** [← Main Screens](index.md) | [Next: Alerts Page →](alerts-page.md)
+**Navigation:** [← Main Screens](index.md) | [Alerts Page →](alerts-page.md)

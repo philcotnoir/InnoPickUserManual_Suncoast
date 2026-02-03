@@ -2,9 +2,10 @@
 
 **Automated Order Preparation Solutions**
 
-<img src="./images/logos/image1.png" width="800" alt="InnoPick Logo">
+<img src="images/logos/image1.png" width="800" alt="InnoPick Logo">
 
-*Manual Revision 3.0: Published January 2026*
+---
+*Manual Revision 3.0: Published February 2026*
 
 ---
 
@@ -44,7 +45,7 @@ Access to certain features depends on your user role:
 - **Clerk**: Access to operate the system for production
 - **Guest**: View-only access to browse screens
 
-See [User Manager](main-screens/administration.md#user-manager) for more information.
+See [User Manager](main-screens/administration/user-manager.md) for more information.
 
 ---
 
@@ -63,8 +64,8 @@ InnoPick Manager (IPM) is a web-based software interface for controlling and mon
 ## Getting Help
 
 - For operational questions, consult the [Troubleshooting](troubleshooting/index.md) section
-- For alert resolution, see the [Alert Reference Guide](troubleshooting/alert-reference.md)
-- For system configuration, see [Administration Pages](main-screens/administration.md)
+- For alert resolution, see the [Alert Reference Page](troubleshooting/alert-guidelines.md)
+- For system configuration, see [Administration Pages](main-screens/administration/index.md)
 
 ---
 

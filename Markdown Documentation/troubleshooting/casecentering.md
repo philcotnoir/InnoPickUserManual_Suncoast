@@ -17,17 +17,17 @@ This page walks through the proper process for ensuring good case centering.
 ---
 
 ### 2. Adjust the "Center Placement in Millimeters" Parameter
-<img src="/images/administration/sitelevels.png" width="800" alt="Site Levels Configuration">
+<img src="../images/administration/sitelevels.png" width="900" alt="Site Levels Configuration">
 
-On the **Administration > Setup InnoPick > [Site Levels](/main-screens/administration.md#site-levels)** page, adjust the **"Center placement in millimeters"** parameter so that cases are properly centered in front of the first buffer lane (the one closest to the infeed).
+On the **Administration > Setup InnoPick > [Site Levels](../main-screens/administration/setup-innopick.md#site-levels)** page, adjust the **"Center placement in millimeters"** parameter so that cases are properly centered in front of the first buffer lane (the one closest to the infeed).
 
 **Procedure:**
 
 1. Stop InnoPick when a case is positioned in front of the first lane (closest to the infeed).
 2. Calculate the adjustment required to be centered
-   - **Example**: The case is too far in the downstream direction, by 10mm
+    - **Example**: The case is too far in the downstream direction, by 10mm
 3. Modify the **"Center placement in millimeters"** by **-10**, and let a new case enter to re-validate
-   - ⚠️ **Note**: The change will only be applied to the next case that is inducted on the infeed section of the upstream conveyor
+    - ⚠️ **Note**: The change will only be applied to the next case that is inducted on the infeed section of the upstream conveyor
 4. Continue until cases are properly centered in front of the first lane
 
 ---
@@ -36,7 +36,7 @@ On the **Administration > Setup InnoPick > [Site Levels](/main-screens/administr
 
 Next, place a perfectly centered case in front of the first lane, and manually jog the sequence conveyor until the case is in front of the last lane (nearest the outfeed).
 
-[Click here for information on manually jogging InnoPick](/main-screens/administration.md#level-operations)
+[Click here for information on manually jogging InnoPick](../main-screens/administration/manual-motion-control.md#level-operations)
 
 **Important**: When you jog, make sure that the value used for the jogging (on the Manual Motion Controls page) is the same as the **"Lane Pitch in Millimeters"** parameter on the Site Levels page.
 - It is usually necessary to input the correct distance from the Lane Pitch paramater for this exercise, in order to recreate the actual movement distances seen in production.
@@ -49,7 +49,7 @@ Next, place a perfectly centered case in front of the first lane, and manually j
 - Go to the case stopped in front of the last buffer lane.
 - Measure the adjustment necessary for it be properly centered, and divide the adjustment by the number of positions on the sequence conveyor (visible on the inventory graph).
 
-<img src="/images/administration/positions.png" width="800" alt="Site Levels Configuration">
+<img src="../images/administration/positions.png" width="200" alt="Site Levels Configuration">
 - In the example above, there are 71 positions.
 
 ---
@@ -105,4 +105,4 @@ Lane Pitch Adjustment = Total Error (mm) ÷ Number of Positions
 
 
 
-**Navigation:** [← Case Replacement](case-replacement.md) | [Next: Deadlocks →](deadlocks.md)
+**Navigation:** [← Case Replacement](case-replacement.md) | [Disabled Lane →](disabledlane.md)

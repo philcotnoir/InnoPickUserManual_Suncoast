@@ -8,7 +8,7 @@
 
 The Inventory section provides comprehensive tools for managing product replenishments, configuring product parameters, monitoring storage lane contents, tracking accumulation, and analyzing product statistics.
 
-<img src="../images/inventory/image21.png" width="800" alt="Inventory Menu">
+<img src="../images/inventory/image21.png" width="1600" alt="Inventory Menu">
 
 ---
 
@@ -19,15 +19,15 @@ The Inventory section contains five pages:
 1. [Replenishments](#replenishments-page) - Track incoming product replenishments
 2. [Products](#products-page) - Configure product settings and parameters
 3. [Lane Inventory](#lane-inventory-page) - View and edit storage lane contents
-4. [Outbound Accumulations](#accumulations-page) - Monitor outfeed accumulation space
+4. [Outbound Accumulations](#outbound-accumulations-page) - Monitor outfeed accumulation space
 5. [Product Statistics](#product-statistics-page) - Analyze product usage
 
 ---
 
 ## Replenishments Page
-[Back to Top - Inventory Pages Overview](/main-screens/inventory-section.md#overview)
+[Back to Top - Inventory Pages Overview](#overview)
 
-<img src="../images/inventory/image22.png" width="800" alt="Replenishments Page">
+<img src="../images/inventory/image22.png" width="1600" alt="Replenishments Page">
 
 ### What Are Replenishments?
 
@@ -100,7 +100,7 @@ Replenishments can also be **Canceled**
 
 ### Replenishment Actions
 
-<img src="../images/inventory/image23.png" width="800" alt="Replenishment Actions Menu">
+<img src="../images/inventory/image23.png" width="500" alt="Replenishment Actions Menu">
 
 Click the three vertical dots (⋮) on the right side of any replenishment to access these options:
 
@@ -112,7 +112,7 @@ Click the three vertical dots (⋮) on the right side of any replenishment to ac
 
 #### Induct
 
-<img src="../images/inventory/image24.png" width="800" alt="Induct Confirmation">
+<img src="../images/inventory/image24.png" width="300" alt="Induct Confirmation">
 
 - Changes status from **In Progress** to **Inducting**
 - Only works if:
@@ -122,7 +122,7 @@ Click the three vertical dots (⋮) on the right side of any replenishment to ac
 
 #### Alter Quantity
 
-<img src="../images/inventory/image25.png" width="800" alt="Alter Quantity Dialog">
+<img src="../images/inventory/image25.png" width="300" alt="Alter Quantity Dialog">
 
 - Allows manual adjustment of replenishment quantity
 - Use when cases need to be manually removed before reaching InnoPick
@@ -131,9 +131,9 @@ Click the three vertical dots (⋮) on the right side of any replenishment to ac
 ---
 
 ## Products Page
-[Back to Top - Inventory Pages Overview](/main-screens/inventory-section.md#overview)
+[Back to Top - Inventory Pages Overview](#overview)
 
-<img src="../images/inventory/productspage.png" width="800" alt="Products Page">
+<img src="../images/inventory/productspage.png" width="1600" alt="Products Page">
 
 The Products page displays all products in the InnoPick Manager database with their configuration settings.
 
@@ -210,7 +210,7 @@ The Products page displays all products in the InnoPick Manager database with th
 
 ### Editing Products
 
-<img src="../images/inventory/editprod.png" width="800" alt="Product Edit Panel">
+<img src="../images/inventory/editprod.png" width="500" alt="Product Edit Panel">
 
 To edit a product:
 1. Click on the product row in the table
@@ -220,7 +220,7 @@ To edit a product:
 
 #### Example: Manual Level Assignment
 
-<img src="../images/inventory/image28.png" width="800" alt="Manual Level Assignment">
+<img src="../images/inventory/image28.png" width="1000" alt="Manual Level Assignment">
 
 When **Auto Assign** is disabled, you can manually assign the product to specific levels:
 1. Uncheck "Auto Assign Levels"
@@ -232,8 +232,8 @@ When **Auto Assign** is disabled, you can manually assign the product to specifi
 ---
 
 ## Lane Inventory Page
-[Back to Top - Inventory Pages Overview](/main-screens/inventory-section.md#overview)
-<img src="../images/inventory/laneinventory1.png" width="800" alt="Lane Inventory Page">
+[Back to Top - Inventory Pages Overview](#overview)
+<img src="../images/inventory/laneinventory1.png" width="1600" alt="Lane Inventory Page">
 
 The Lane Inventory page is an expanded version of the lane display available on the [Home Page](home-page.md#lane-inventory).
 
@@ -271,27 +271,27 @@ The Lane Inventory page is an expanded version of the lane display available on 
 
 ### Enable/Disable Controls
 
-<img src="../images/inventory/disablelane.png" width="800" alt="Disable Lanes">
+<img src="../images/inventory/disablelane.png" width="300" alt="Disable Lanes">
 
 #### Disable / Enable Lane Toggle
 - Controls whether a specific lane can be used in production
 - **Warning**: Disabling a lane during production may require manual intervention if:
   - Products were already scheduled to store in that lane
   - Products need to be dispensed from that lane
-  - See the **[Disabled Lane Troubleshooting Guide](/troubleshooting/disabledlane.md)** for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.
+  - See the **[Disabled Lane Troubleshooting Guide](../troubleshooting/disabledlane.md)** for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.
 
 #### Ignore Sensors 
 - This option can be enabled only on a disabled lane. 
 - Normally, a sensor in an unexpected state causes an alert continually on that level of InnoPick.
 - When this option is used, the system ignores the unexpected state of the sensors associated with that lane.  
 
-<img src="../images/inventory/ignoresensor.png" width="800" alt="Ignore Sensors">
+<img src="../images/inventory/ignoresensor.png" width="400" alt="Ignore Sensors">
 
 - This option should be used in coordination with maintenance staff responsible for mechanical interventions. 
 
 ### Editing Lane Inventory
 
-<img src="../images/inventory/image33.png" width="800" alt="Edit Lane Inventory">
+<img src="../images/inventory/image33.png" width="600" alt="Edit Lane Inventory">
 
 #### Prerequisites for Editing
 
@@ -318,7 +318,7 @@ When editing a lane, you can:
 
 **Add Cases:**
 
-<img src="../images/inventory/image34.png" width="800" alt="Add Case Button">
+<img src="../images/inventory/image34.png" width="600" alt="Add Case Button">
 
 - Click **+ Add** button on bottom left
 - Creates new cases with "Change quantity operation" as source
@@ -326,7 +326,7 @@ When editing a lane, you can:
 
 **Save Changes:**
 
-<img src="../images/inventory/image35.png" width="800" alt="Save Confirmation">
+<img src="../images/inventory/image35.png" width="400" alt="Save Confirmation">
 
 - Click **Save** button when edits are complete
 - Confirm the changes in the pop-up dialog
@@ -336,14 +336,14 @@ When editing a lane, you can:
 **Use caution when changing lane contents during production:**
 - Inventory may already be committed to the case sequence
 - InnoPick may not always accommodate sudden changes
-- Inventory changes can trigger a [Deadlock -- see here for a troubleshooting guide](/troubleshooting/deadlocks.md).
+- Inventory changes can trigger a [Deadlock -- see here for a troubleshooting guide](../troubleshooting/deadlocks.md).
 
 ---
 
 ## Outbound Accumulations Page
-[Back to Top - Inventory Pages Overview](/main-screens/inventory-section.md#overview)
+[Back to Top - Inventory Pages Overview](#overview)
 
-<img src="../images/inventory/accums.png" width="800" alt="Accumulations Page">
+<img src="../images/inventory/accums.png" width="600" alt="Accumulations Page">
 
 The Accumulations page displays values related to InnoPick's management of the space between InnoPick's exit and the downstream merge point (Merges or equivalent).
 
@@ -389,20 +389,20 @@ Based on these factors, InnoPick decides whether to schedule more output cases.
 
 
 **Note: The degree to which InnoPick schedules output cases is affected by, among other things, whether the *Build Inventory Mode* is active or not.**
-For more information on the Build Inventory Mode, see [Setup InnoPick > Buffer](administration.md#buffer) section
+For more information on the Build Inventory Mode, see [Setup InnoPick > Buffer](administration/setup-innopick.md#buffer) section
 
 ---
 
 ## Product Statistics Page
-[Back to Top - Inventory Pages Overview](/main-screens/inventory-section.md#overview)
+[Back to Top - Inventory Pages Overview](#overview)
 
-<img src="../images/inventory/productstats1.png" width="800" alt="Product Statistics Page">
+<img src="../images/inventory/productstats1.png" width="1600" alt="Product Statistics Page">
 
 The Product Statistics page provides detailed information about how InnoPick uses various products.
 
 ### Product Statistics Columns
 
-<img src="../images/inventory/image38.png" width="800" alt="Product Statistics Columns">
+<img src="../images/inventory/image38.png" width="1600" alt="Product Statistics Columns">
 
 #### Reference
 - Product SKU code
@@ -470,4 +470,4 @@ The Product Statistics page provides detailed information about how InnoPick use
 
 ---
 
-**Navigation:** [← Alerts Page](alerts-page.md) | [Next: Case Sequence →](case-sequence.md)
+**Navigation:** [← Alerts Page](alerts-page.md) | [Case Sequence →](case-sequence.md)

@@ -8,7 +8,9 @@
 
 The Alerts page provides a comprehensive view of current and historical alerts, with powerful search and filtering capabilities to help you identify and resolve issues quickly.
 
-<img src="../images/alerts/image20.png" width="800" alt="Alerts Page">
+**Note:** If you're looking for detailed info on specific Alert Codes, see the [Alert Reference Page](../troubleshooting/alert-reference.md) 
+
+<img src="../images/alerts/image20.png" width="1600" alt="Alerts Page">
 
 ---
 
@@ -42,7 +44,7 @@ The Alerts page displays detailed information about each alert:
 
 ### Severity
 Alerts are categorized by severity level:
-<img src="../images/alerts/severity.png" width="800" alt="Alerts Page">
+<img src="../images/alerts/severity.png" width="150" alt="Alerts Page">
 
 
 - **Warning**: Minor alert that may not require immediate action
@@ -62,7 +64,7 @@ Alerts are categorized by severity level:
 ### Raw Code
 - The numeric code associated with the alert
 - Used to identify specific alert types
-- Reference these codes in the [Alert Reference Guide](../troubleshooting/alert-reference.md)
+- Reference these codes in the [Alert Reference Page](../troubleshooting/alert-reference.md)
 - Examples: 119, 121, 515, 555, 709
 
 ### Level
@@ -80,7 +82,8 @@ Alerts are categorized by severity level:
 
 ## Using Search and Filters
 
-<img src="../images/alerts/filteralarm.png" width="800" alt="Alerts Page">
+<img src="../images/alerts/filteralarm.png" width="400" alt="Alerts Page">
+
 ### Searching Alerts
 
 Use the search bar to find specific alerts by:
@@ -109,7 +112,7 @@ Use the search bar to find specific alerts by:
 
 To see all alerts:
 - Remove all filters:
-<img src="../images/alerts/filterall.png" width="800" alt="Alerts Page">
+<img src="../images/alerts/filterall.png" width="400" alt="Alerts Page">
 - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
 - This can be useful when a level seems to be faulted but there is no obvious reason why.
 
@@ -190,17 +193,17 @@ Some alerts cannot be cleared until specific conditions are met:
 
 1. **Read the alert message carefully**
 2. **Check physical conditions**
-   - Is a photocell still blocked?
-   - Is an E-Stop still pressed?
-   - Is a case in the wrong position?
+    - Is a photocell still blocked?
+    - Is an E-Stop still pressed?
+    - Is a case in the wrong position?
 3. **Resolve the root cause**
 4. **Try clearing again**
-     - Use the [Recovery Action: Send Clear Alarm on Level](/main-screens/administration.md#most-commonly-used-recovery-actions)   
+     - Use the [Recovery Action: Send Clear Alarm on Level](../main-screens/administration/recovery-actions.md#clear-alarm-on-level)   
 5. The Alert in question is being filtered (not visible).
-     - [See how to View All Alerts](/main-screens/alerts-page.md#viewing-all-alerts)
+     - [See how to View All Alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 6. **Consult troubleshooting guide** if issue persists
 
-See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for detailed resolution procedures.
+See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for best Alert resolution practices.
 
 ---
 
@@ -219,10 +222,10 @@ If an alert occurs once:
 If the same alert occurs multiple times:
 1. **There's likely an underlying problem** that wasn't fully resolved
 2. Check for:
-   - Damaged cases causing repeated issues
-   - Incorrect inventory quantities
-   - Mechanical problems
-   - Configuration issues
+    - Damaged cases causing repeated issues
+    - Incorrect inventory quantities
+    - Mechanical problems
+    - Configuration issues
 3. Resolve the root cause, not just the symptom
 4. Document the issue for maintenance review
 
@@ -257,11 +260,11 @@ If multiple alert types occur in sequence:
 
 ## Related Topics
 
-- [Alert Reference Guide](../troubleshooting/alert-reference.md) - Complete list of all alert codes
+- [Alert Reference Page](../troubleshooting/alert-reference.md) - Complete list of all alert codes
 - [Alert Guidelines](../troubleshooting/alert-guidelines.md) - Step-by-step resolution procedures
 - [Home Page Alerts](home-page.md#alerts-list) - Quick alert overview
 - [Troubleshooting](../troubleshooting/index.md) - General problem-solving guidance
 
 ---
 
-**Navigation:** [← Home Page](home-page.md) | [Next: Inventory Section →](inventory-section.md)
+**Navigation:** [← Home Page](home-page.md) | [Inventory Section →](inventory-section.md)

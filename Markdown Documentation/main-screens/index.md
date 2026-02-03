@@ -43,14 +43,15 @@ View the sequence of outgoing cases:
 - Filtering and search tools
 - Case cancellation options
 
-### [Administration Pages](administration.md)
+### [Administration Pages](administration/index.md)
 System configuration and advanced features (authorized users only):
-- **Manual motion control**: Manual jog controls
-- **Setup InnoPick**: System configuration parameters
-- **Algo Parameters**: Algorithm tuning and optimization
-- **User Manager**: Create and manage user accounts
-- **Recovery Actions**: Advanced troubleshooting tools
-- **User Settings**: Personal preferences
+- **[Manual Motion Control](administration/manual-motion-control.md)**: Manual jog controls
+- **[Setup InnoPick](administration/setup-innopick.md)**: System configuration parameters
+- **[Algorithm Parameters](administration/algo-parameters.md)**: Algorithm tuning and optimization
+- **[User Manager](administration/user-manager.md)**: Create and manage user accounts
+- **[Recovery Actions](administration/recovery-actions.md)**: Advanced troubleshooting tools
+- **[Operations](administration/operations.md)**: Level and Merge statuses / controls
+- **[User Settings](administration/user-settings.md)**: Personal preferences
 
 ---
 
@@ -67,12 +68,13 @@ Refer to these screens:
 - [Alerts Page](alerts-page.md) - Identify problems
 - [Lane Inventory](inventory-section.md#lane-inventory-page) - Adjust lane counts
 - [Case Sequence Page](case-sequence.md) - Track specific output cases
-- [Manual motion control](administration.md#manual-motion-control-page) - Jog lanes and conveyors
+- [Manual Motion Control](administration/manual-motion-control.md) - Jog lanes and conveyors
+- Also, see the [Troubleshooting section of this manual](../troubleshooting/index.md)
 
 ### For Administration
 Authorized users should understand:
-- [Setup InnoPick](administration.md#setup-innopick-page) - System configuration
-- [Recovery Actions](administration.md#recovery-actions) - Advanced tools
+- [Setup InnoPick](administration/setup-innopick.md) - System configuration
+- [Recovery Actions](administration/recovery-actions.md) - Advanced tools
 
 ---
 
@@ -84,7 +86,6 @@ Authorized users should understand:
 - Some screens have sub-sections accessed via tabs
 
 **Working with Data Tables:**
-- Click column headers to sort
 - Use search boxes to filter results
 - Look for action menus (three dots ⋮) for additional options
 
@@ -95,4 +96,4 @@ Authorized users should understand:
 
 ---
 
-**Navigation:** [← Daily Operations](../daily-operations/index.md) | [Next: Home Page →](home-page.md)
+**Navigation:** [← Monitoring Production](../daily-operations/monitoring.md) | [Home Page →](home-page.md)

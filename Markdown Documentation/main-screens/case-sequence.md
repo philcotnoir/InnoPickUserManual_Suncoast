@@ -8,7 +8,7 @@
 
 The Case Sequence page displays the order in which cases will exit InnoPick and arrive at the palletizers. This powerful tool allows operators to track individual cases, verify sequencing, and troubleshoot order fulfillment issues.
 
-<img src="../images/case-sequence/image39.png" width="800" alt="Case Sequence Page">
+<img src="../images/case-sequence/image39.png" width="1600" alt="Case Sequence Page">
 
 ---
 
@@ -77,8 +77,9 @@ Cases progress through these states:
 ### Actions
 The only action available on this page is:
 
-- #### Cancel Case
-<img src="../images/case-sequence/cancelcase.png" width="800" alt="Case Sequence Search">
+#### Cancel Case
+<img src="../images/case-sequence/cancelcase.png" width="600" alt="Case Sequence Search">
+
   - Removes the case from the active sequence
   - Changes state to "Cancelled"
   - **Warning**: During normal operations, it should not be necessary to cancel cases from the case sequence. This should only be done as part of a larger recovery effort in coordination with system experts or remote support. 
@@ -88,7 +89,7 @@ The only action available on this page is:
 
 ## Using Search and Filters
 
-<img src="../images/case-sequence/image40.png" width="800" alt="Case Sequence Search">
+<img src="../images/case-sequence/image40.png" width="1600" alt="Case Sequence Search">
 
 The Case Sequence page becomes particularly powerful when filters are applied.
 
@@ -137,19 +138,19 @@ If a case doesn't arrive at the palletizer when expected:
 
 1. **Search for the case** by Pallet ID or Case Ref
 2. **Check the State:**
-   - Pending: Still waiting to be processed (or was somehow missed because of a system glitch)
+    - Pending: Still waiting to be processed (or was somehow missed because of a system glitch)
      - Often, a pending case indicates the system is still waiting for a replenishment to provide that case
-   - In Progress: On conveyor or in lane - check [Home Page Inventory Graph](home-page.md#inventory-graph)
-   - Completed: InnoPick released it - check downstream tracking
-   - Cancelled: Was removed - determine why
+    - In Progress: On conveyor or in lane - check [Home Page Inventory Graph](home-page.md#inventory-graph)
+    - Completed: InnoPick released it - check downstream tracking
+    - Cancelled: Was removed - determine why
 
 3. **Verify the case details:**
-   - Correct product?
-   - Correct destination?
-   - Correct level?
+    - Correct product?
+    - Correct destination?
+    - Correct level?
 
 4. **Take appropriate action** based on findings. 
-   - If a case is stuck in pending mode and no replenishment for that product is on its way, contact support.
+    - If a case is stuck in pending mode and no replenishment for that product is on its way, contact support.
 
 ### Verifying Pallet Completion
 
@@ -157,10 +158,10 @@ To confirm all cases for a pallet have been output:
 
 1. **Search for the Pallet ID**
 2. **Check the State of all cases:**
-   - All should be "Completed" for a finished pallet
-   - If any are Pending or In Progress, pallet is not complete
-   - A pending case usually indicates the system is still waiting for a replenishment to provide that case
-   - Note any Cancelled cases
+    - All should be "Completed" for a finished pallet
+    - If any are Pending or In Progress, pallet is not complete
+    - A pending case usually indicates the system is still waiting for a replenishment to provide that case
+    - Note any Cancelled cases
 
 ### Investigating Sequencing Problems
 
@@ -169,9 +170,9 @@ If cases are arriving in wrong order:
 1. **Compare actual sequence** to expected order
 2. **Filter by Exit Level and Destination**
 3. **Check for:**
-   - Cases from wrong level
-   - Cases routed to wrong destination
-   - Cancelled cases affecting sequence
+    - Cases from wrong level
+    - Cases routed to wrong destination
+    - Cancelled cases affecting sequence
 4. **Correct the sequence** if sequence is incorrect.
 5. *If InnoPick appears to be building an incorrect sequence, or the sequence in InnoPick does not match that of MixMaster, contact support.*
 ---
@@ -183,4 +184,4 @@ If cases are arriving in wrong order:
 
 ---
 
-**Navigation:** [← Inventory Section](inventory-section.md) | [Next: Administration →](administration.md)
+**Navigation:** [← Inventory Section](inventory-section.md) | [Administration →](administration/index.md)

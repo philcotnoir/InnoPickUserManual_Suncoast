@@ -95,4 +95,4 @@ Now that you understand what InnoPick Manager does, proceed to [Logging In](logi
 
 ---
 
-**Navigation:** [← Getting Started](index.md) | [Next: Logging In →](login.md)
+**Navigation:** [← Getting Started](index.md) | [Logging In →](login.md)

@@ -53,20 +53,20 @@ Once logged in, you'll see the [Home Page](../main-screens/home-page.md):
 
 1. **Check for existing alerts**
    
-   - Review the Alerts List on the Home Page
-   - If alerts are present, see [Resolving Alerts](../troubleshooting/alert-guidelines.md)
-   - Clear any alerts from previous shift
+    - Review the Alerts List on the Home Page
+    - If alerts are present, see [Resolving Alerts](../troubleshooting/alert-guidelines.md)
+    - Clear any alerts from previous shift
 
 2. **Check level statuses**
    
-   - All levels should show their current mode (Manual/Auto/Fault)
-   - Verify the system is in the expected state
-   - Each level must be in Manual mode (Yellow) in order for it to be put into Auto mode.
+    - All levels should show their current mode (Manual/Auto/Fault)
+    - Verify the system is in the expected state
+    - Each level must be in Manual mode (Yellow) in order for it to be put into Auto mode.
 
 3. **Review disabled lanes**
    
-   - Check for disabled lanes on all levels
-   - Check with maintenance staff if any disabled lanes can be put re-enabled following maintenance work.
+    - Check for disabled lanes on all levels
+    - Check with maintenance staff if any disabled lanes can be put re-enabled following maintenance work.
 
 ---
 
@@ -76,7 +76,7 @@ Once you've verified the system is ready:
 
 1. **Click the Auto button** to put all levels into Auto mode
 
-   <img src="../images/home/image10.png" width="800" alt="Level Status Controls">
+   <img src="../images/home/image10.png" width="200" alt="Level Status Controls">
 
 2. **Verify the level(s) turn green** indicating Automatic mode
 
@@ -111,7 +111,7 @@ If the system has been shut down for more than 24 hours:
 2. Verify all utilities are functioning (power, air pressure, network)
 3. Check with maintenance that all scheduled work is complete
 4. Manually jog any lanes or sequence conveyor chains that have had maintenance work done on them
-5. Allow a few minutes for systems to initialize
+5. Allow a few moments for systems to initialize
 6. Test one level in Automatic mode before enabling all levels
 
 ---
@@ -129,58 +129,6 @@ If the system has been shut down for more than 24 hours:
 - Upstream or downstream systems not ready
 
 **Solution:** Check the [Alerts Page](../main-screens/alerts-page.md) for details
-
----
-
-### Monitoring Production
-How to monitor system status during operation, including inventory levels, alerts, and production progress.
-
-#### Overview
-
-During production, operators should actively monitor InnoPick Manager to ensure smooth operation, catch problems early, and maintain production efficiency.
-
----
-
-#### Primary Monitoring Dashboard
-
-The [Home Page](../main-screens/home-page.md) provides all essential information for monitoring production at a glance.
-
-1. **[Level Status Indicators](../main-screens/home-page.md#level-statuses--auto--manual-controls)**
-2. **[Inventory Graph](../main-screens/home-page.md#inventory-graph)**
-3. **[Alerts List](../main-screens/home-page.md#alerts-list)**
-4. **[Production Graph](../main-screens/home-page.md#production-graph)**
-
----
-
-#### Continuous Monitoring Tasks
-
-**Every 15-30 Minutes:**
-
-- Glance at level status indicators (all should be green)
-- Check for new alerts
-- Verify production progress is advancing
-
-**Every 1-2 Hours:**
-
-- Check replenishment statuses
-- See if any level seems to be starved of inbound cases and investigate cause
-- See if any level is not scheduling output cases and investigate cause
-- Listen for unusual mechanical sounds
-
----
-
-#### Understanding System Settings That Affect Operations
-
-Be aware of these settings and their effects:
-
-**[Build Inventory Mode](../main-screens/administration.md#build-inventory)**
-
-- When ON: Prioritizes storing replenishment cases over outputting cases
-- When OFF: Balances input and output for maximum throughput
-
-**Destination (Merge) Enabled/Disabled**
-
-- If a Merge is disabled, all cases route to the other merge(s)
 
 ---
 
@@ -209,7 +157,7 @@ Check that there are no:
 
 1. On the [Home Page](../main-screens/home-page.md), click the **Manual** button
 
-   <img src="../images/home/image10.png" width="800" alt="Manual Mode Button">
+   <img src="../images/home/image10.png" width="200" alt="Manual Mode Button">
 
 2. Verify all level indicators turn **Yellow** (Manual mode)
 
@@ -262,22 +210,19 @@ To effectively operate InnoPick, you should be familiar with:
 
 1. **System Status Monitoring**
    
-   - Understanding level status colors (Green/Yellow/Red)
-   - Reading the inventory graph
-   - Monitoring production progress
+    - Understanding level status colors (Green/Yellow/Red)
+    - Reading the inventory graph
+    - Monitoring production progress
 
 2. **Alert Management**
    
-   - Recognizing common alerts
-   - Basic alert resolution
-   - When to escalate to maintenance or support
+    - Recognizing common alerts
+    - Basic alert resolution
+    - When to escalate to maintenance or support
 
-3 **Inventory Awareness**
+3. **Replenishments Awareness**
 
-   - Monitoring lane levels
    - Understanding replenishment status
-   - Recognizing abnormal low inventory situations
-
 ---
 
 ## Safety Reminders
@@ -289,4 +234,4 @@ To effectively operate InnoPick, you should be familiar with:
 
 ---
 
-**Navigation:** [← Getting Started](../getting-started/index.md) | [Next: Main Screens →](../main-screens/index.md)
+**Navigation:** [← Interface Overview](../getting-started/interface-overview.md) | [Monitoring Production →](monitoring.md)

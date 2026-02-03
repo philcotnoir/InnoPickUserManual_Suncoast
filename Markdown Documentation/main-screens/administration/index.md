@@ -1,0 +1,27 @@
+# Administration
+
+**[Home](../../index.md) > [Main Screens](../index.md) > Administration**
+
+---
+
+## Overview
+
+The Administration section contains system configuration, advanced troubleshooting tools, and user management features. Access to these pages is typically restricted to Admin and Manager roles.
+
+<img src="../../images/administration/image41.png" width="1000" alt="Administration Menu">
+
+---
+
+## Administration Pages
+
+1. **[Manual Motion Control](manual-motion-control.md)** - Manual jog controls for troubleshooting
+2. **[Setup InnoPick](setup-innopick.md)** - System configuration parameters
+3. **[Algorithm Parameters](algo-parameters.md)** - Algorithm tuning
+4. **[User Manager](user-manager.md)** - Create and manage user accounts
+5. **[Recovery Actions](recovery-actions.md)** - Advanced troubleshooting tools
+6. **[Operations](operations.md)** - Level and Merge statuses / controls
+7. **[User Settings](user-settings.md)** - Personal preferences
+
+---
+
+**Navigation:** [← Case Sequence](../case-sequence.md) | [Manual Motion Control →](manual-motion-control.md)

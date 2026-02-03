@@ -1,74 +1,7 @@
 site_name: InnoPick Manager Operations Manual
 site_description: Automated Order Preparation Solutions - Operator Documentation
-
-# This tells MkDocs where your markdown files are
-docs_dir: Markdown Documentation
-
-# This is where the built HTML site will go
-site_dir: site
-
-theme:
-  name: material
-  palette:
-    primary: blue
-    accent: light blue
-  features:
-    - navigation.sections
-    - navigation.expand
-    - search.highlight
-    - content.tabs.link
-
-# Navigation structure (matches your folder organization)
-nav:
-  - Home: index.md
-  - Getting Started:
-    - Overview: getting-started/index.md
-    - Introduction: getting-started/introduction.md
-    - Logging In: getting-started/login.md
-    - Interface Overview: getting-started/interface-overview.md
-  - Daily Operations:
-    - Overview: daily-operations/index.md
-    - Monitoring Production: daily-operations/monitoring.md
-  - Main Screens:
-    - Overview: main-screens/index.md
-    - Home Page: main-screens/home-page.md
-    - Alerts Page: main-screens/alerts-page.md
-    - Inventory Section: main-screens/inventory-section.md
-    - Case Sequence: main-screens/case-sequence.md
-    - Administration: main-screens/administration.md
-  - Troubleshooting:
-    - Overview: troubleshooting/index.md
-    - Common Issues: troubleshooting/common-issues.md
-    - Alert Guidelines: troubleshooting/alert-guidelines.md
-    - Alert Reference: troubleshooting/alert-reference.md
-    - Deadlocks: troubleshooting/deadlocks.md
-    - Case Replacement: troubleshooting/case-replacement.md
-    - Case Centering: troubleshooting/casecentering.md
-    - Disabled Lane: troubleshooting/disabledlane.md
-  - Reference:
-    - Overview: reference/index.md
-    - Alert Codes: reference/alert-codes.md
-
-# Enable search
-plugins:
-  - search
-
-# Markdown extensions for better formatting
-markdown_extensions:
-  - tables
-  - nl2br
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - toc:
-      permalink: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-
-
-site_description: Automated Order Preparation Solutions - Operator Documentation
+site_url: https://philcotnoir.github.io/InnoPickUserManual_Suncoast/
+repo_url: https://github.com/philcotnoir/InnoPickUserManual_Suncoast/
 
 # This tells MkDocs where your markdown files are
 docs_dir: Markdown Documentation
@@ -89,8 +22,9 @@ theme:
     - navigation.expand
     - search.highlight
     - content.tabs.link
+    - toc.integrate
 
-# Navigation structure (matches your folder organization)
+# Navigation structure (updated with split pages)
 nav:
   - Home: index.md
   - Getting Started:
@@ -107,7 +41,15 @@ nav:
     - Alerts Page: main-screens/alerts-page.md
     - Inventory Section: main-screens/inventory-section.md
     - Case Sequence: main-screens/case-sequence.md
-    - Administration: main-screens/administration.md
+    - Administration:
+      - Overview: main-screens/administration/index.md
+      - Manual Motion Control: main-screens/administration/manual-motion-control.md
+      - Setup InnoPick: main-screens/administration/setup-innopick.md
+      - Algorithm Parameters: main-screens/administration/algo-parameters.md
+      - User Manager: main-screens/administration/user-manager.md
+      - Recovery Actions: main-screens/administration/recovery-actions.md
+      - Operations: main-screens/administration/operations.md
+      - User Settings: main-screens/administration/user-settings.md
   - Troubleshooting:
     - Overview: troubleshooting/index.md
     - Common Issues: troubleshooting/common-issues.md
@@ -119,20 +61,21 @@ nav:
     - Disabled Lane: troubleshooting/disabledlane.md
   - Reference:
     - Overview: reference/index.md
-    - Alert Codes: reference/alert-codes.md
 
 # Enable search
 plugins:
   - search
-  
-site_url: https://philcotnoir.github.io/InnoPickUserManual_Suncoast/
-repo_url: https://github.com/philcotnoir/InnoPickUserManual_Suncoast/
 
 # Markdown extensions for better formatting
 markdown_extensions:
   - tables
+  - nl2br
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - toc:
       permalink: true
-
-
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true

@@ -17,34 +17,34 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
 ### Key Elements to Monitor
 
 1. **[Level Status Indicators](../main-screens/home-page.md#level-statuses--auto--manual-controls)**
-   - **Green**: Level is in Automatic mode and operating normally
-   - **Yellow**: Level is in Manual mode (paused)
-   - **Red**: Level has an active fault
-   - **Dark Red**: E-Stop condition is active
-   - **Blue**: Communication Loss
+    - **Green**: Level is in Automatic mode and operating normally
+    - **Yellow**: Level is in Manual mode (paused)
+    - **Red**: Level has an active fault
+    - **Dark Red**: E-Stop condition is active
+    - **Blue**: Communication Loss
 
 2. **[Inventory Graph](../main-screens/home-page.md#inventory-graph)**
-   - Visual representation of all cases on sequence conveyors
-   - Squares = Outbound cases (for customer pallets)
-   - Triangles = Inbound cases (replenishments being stored)
-   - Filled shapes = Physical cases present
-   - Hollow shapes = Scheduled case positions
+    - Visual representation of all cases on sequence conveyors
+    - Squares = Outbound cases (for customer pallets)
+    - Triangles = Inbound cases (replenishments being stored)
+    - Filled shapes = Physical cases present
+    - Hollow shapes = Scheduled case positions
 
 3. **[Alerts List](../main-screens/home-page.md#alerts-list)**
-   - Shows current system alerts
-   - Alerts appear when issues require attention
-   - Go to the Alerts page for more details. 
+    - Shows current system alerts
+    - Alerts appear when issues require attention
+    - Go to the Alerts page for more details. 
 
 4. **[Production Graph](../main-screens/home-page.md#production-graph)**
-   - Shows progress of current production run
-   - Green bar = In Progress cases
-   - Orange bar = Completed cases
-   - Red line = Total cases in current orders
+    - Shows progress of current production run
+    - Green bar = In Progress cases
+    - Orange bar = Completed cases
+    - Red line = Total cases in current orders
 
 5. **[Lane Inventory](../main-screens/home-page.md#lane-inventory)**
-   - Select a level to view storage lane status
-   - Hover over lanes for detailed inventory info
-   - Monitor for abnormal low inventory levels
+    - Select a level to view storage lane status
+    - Hover over lanes for detailed inventory info
+    - Monitor for abnormal low inventory levels
 
 ---
 
@@ -106,18 +106,18 @@ When InnoPick is operating correctly:
 When an alert occurs:
 
 1. **Note the alert details**
-   - Which level is affected
-   - What type of alert (code and message)
-   - Time of occurrence
+    - Which level is affected
+    - What type of alert (code and message)
+    - Time of occurrence
 
 2. **Assess the situation**
-   - Is it a single occurrence or repeating?
-   - Is production stopped or continuing?
+    - Is it a single occurrence or repeating?
+    - Is production stopped or continuing?
 
 3. **Take appropriate action**
-   - For common alerts: Follow [Alert Reference](../troubleshooting/alert-reference.md)
-   - For safety issues: Use E-Stop if necessary.
-   - For unknown issues: Contact supervisor, maintenance, or remote support.
+    - For common alerts: Follow [Alert Reference](../troubleshooting/alert-reference.md)
+    - For safety issues: Use E-Stop if necessary.
+    - For unknown issues: Contact supervisor, maintenance, or remote support.
 
 
 See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for detailed alert resolution procedures.
@@ -153,17 +153,13 @@ Access the [Replenishments Page](../main-screens/inventory-section.md#replenishm
 
 Be aware of these settings and their effects:
 
-**[Build Inventory Mode](../main-screens/administration.md#build-inventory)**
+**[Build Inventory Mode](../main-screens/administration/setup-innopick.md#build-inventory)**
 - When ON: Prioritizes storing replenishment cases over outputting cases
 - When OFF: Balances input and output for maximum throughput
 
-**Destination (Merge) Enabled/Disabled**
-- If a Merge is disabled, all cases route to the other merge(s)
-
-**Manual Mode vs. Automatic Mode**
-- Manual: System won't advance automatically (used during troubleshooting)
-- Auto: System operates autonomously
-
+**[Pause Infeed / Pause Outfeed](../main-screens/home-page.md#pause--resume-infeed)**
+- Controls whether cases enter or exit InnoPick
+- Check: [Home Page](../main-screens/home-page.md)
 ---
 
 ## Shift Handoff Checklist
@@ -180,3 +176,5 @@ When ending your shift, review with the next operator:
 ---
 
 
+
+**Navigation:** [← Daily Operations](index.md) | [Main Screens →](../main-screens/index.md)

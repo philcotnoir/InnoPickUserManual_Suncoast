@@ -27,18 +27,18 @@ Common scenarios requiring case replacement:
 ### Before Replacing Any Case
 
 1. **Understand why the case needs replacement**
-   - What happened to the original case?
-   - Is this an isolated incident or pattern?
-   - Will the same issue affect the replacement?
+    - What happened to the original case?
+    - Is this an isolated incident or pattern?
+    - Will the same issue affect the replacement?
 
 2. **Determine the correct product**
-   - Check what product is expected
-   - Verify SKU from alert message or Inventory Graph
-   - Confirm with [Replenishments Page](../main-screens/inventory-section.md#replenishments-page) or [Case Sequence Page](../main-screens/case-sequence.md)
+    - Check what product is expected
+    - Verify SKU from alert message or Inventory Graph
+    - Confirm with [Replenishments Page](../main-screens/inventory-section.md#replenishments-page) or [Case Sequence Page](../main-screens/case-sequence.md)
 
 3. **Know where to place the replacement**
-   - Sequence conveyor vs. storage lane
-   - Specific position on conveyor
+    - Sequence conveyor vs. storage lane
+    - Specific position on conveyor
 
 ---
 
@@ -52,27 +52,27 @@ Common scenarios requiring case replacement:
 ### Procedure
 
 1. **Obtain replacement case:**
-   - Take one from upstream conveyor system
-   - Ensure it's the correct product
+    - Take one from upstream conveyor system
+    - Ensure it's the correct product
 
 2. **Update upstream system:**
-   - Delete 1 Case Data on upstream conveyor HMI
-   - This prevents tracking mismatch
+    - Delete 1 Case Data on upstream conveyor HMI
+    - This prevents tracking mismatch
 
 3. **Short the replenishment in InnoPick Manager:**
-   - Go to [Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
-   - Find the active replenishment
-   - Use **Alter Quantity** action (three dots menu)
-   - Reduce quantity by 1
+    - Go to [Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
+    - Find the active replenishment
+    - Use **Alter Quantity** action (three dots menu)
+    - Reduce quantity by 1
 
 4. **Place replacement case:**
-   - Position on the case exactly where the broken was (or was supposed to be)
-   - Ensure proper orientation
+    - Position on the case exactly where the broken was (or was supposed to be)
+    - Ensure proper orientation
    
 5. **Resume operation:**
-   - Clear any alerts if present
-   - Verify the case stores correctly
-   - Monitor the transition to the next replenishment
+    - Clear any alerts if present
+    - Verify the case stores correctly
+    - Monitor the transition to the next replenishment
 
 ---
 
@@ -94,18 +94,18 @@ Common scenarios requiring case replacement:
 #### Short the Case
 
 1. **Allow the storage move to fault:**
-   - **[Alert 121 (photocell never detected case)](/troubleshooting/alert-reference.md#121---photocell-above-lane-never-detected-the-case-during-a-storing-move)** will occur
-   - System expects to store a case but finds none
+    - **[Alert 121 (photocell never detected case)](../troubleshooting/alert-reference.md#121---photocell-above-lane-never-detected-the-case-during-a-storing-move)** will occur
+    - System expects to store a case but finds none
 
 2. **Jog lane so it is ready to dispense**
-   - Use [Manual motion control > Lane Operations](../main-screens/administration.md#lane-operations)
-   - Jog lane forward so existing cases move up
-   - Front case can now be dispensed
+    - Use [Manual motion control > Lane Operations](../main-screens/administration/manual-motion-control.md#lane-operations)
+    - Jog lane forward so existing cases move up
+    - Front case can now be dispensed
 
 3. **Short the lane inventory:**
-   - Go to [Lane Inventory Page](../main-screens/inventory-section.md#lane-inventory-page)
-   - Find the affected lane
-   - Reduce quantity by 1
+    - Go to [Lane Inventory Page](../main-screens/inventory-section.md#lane-inventory-page)
+    - Find the affected lane
+    - Reduce quantity by 1
 
 4. **Clear alerts and resume**
 
@@ -122,34 +122,34 @@ Common scenarios requiring case replacement:
 ### Procedure
 
 1. **Identify the expected case:**
-   - Check [Inventory Graph](../main-screens/home-page.md#inventory-graph)
-   - Note product SKU and pallet ID
-   - Determine from which lane it should have come
+    - Check [Inventory Graph](../main-screens/home-page.md#inventory-graph)
+    - Note product SKU and pallet ID
+    - Determine from which lane it should have come
 
 2. **Determine why case is missing:**
-   - Was it never dispensed from lane?
-   - Did it fall off somewhere?
-   - Was it incorrectly removed?
-   - Is sequence conveyor offset by one position?
+    - Was it never dispensed from lane?
+    - Did it fall off somewhere?
+    - Was it incorrectly removed?
+    - Is sequence conveyor offset by one position?
 
 3. **Obtain replacement case:**
-   - Must be exact product that was expected
-   - Check case label/markings
+    - Must be exact product that was expected
+    - Check case label/markings
 
 4. **Place case at outfeed position:**
-   - Must block the last sensor on InnoPick
-   - Position correctly for downstream equipment
-   - Verify orientation
+    - Must block the last sensor on InnoPick
+    - Position correctly for downstream equipment
+    - Verify orientation
 
 5. **Verify Inventory Graph:**
-   - Should now show filled square at last position
-   - Matches physical case
+    - Should now show filled square at last position
+    - Matches physical case
 
 6. **Clear alert and resume**
 
 7. **Monitor closely:**
-   - Verify subsequent cases are tracking correctly
-   - Watch for signs of offset sequence conveyor
+    - Verify subsequent cases are tracking correctly
+    - Watch for signs of offset sequence conveyor
 
 ---
 
@@ -199,4 +199,4 @@ After any replacement:
 
 ---
 
-**Navigation:** [← Common Issues](common-issues.md) | [Next: Case Centering →](casecentering.md)
+**Navigation:** [← Deadlocks](deadlocks.md) | [Case Centering →](casecentering.md)

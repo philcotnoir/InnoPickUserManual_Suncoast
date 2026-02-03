@@ -16,15 +16,13 @@ When alerts occur, InnoPick changes the level status indicators to show the seve
 
 ### Level Color Meanings
 
-<img src="../images/home/image10.png" width="800" alt="Level Status Colors">
+<img src="../images/home/image10.png" width="200" alt="Level Status Colors">
 
 - **Green**: Automatic mode - system is operating normally
 - **Yellow**: Manual mode - system is paused
 - **Red**: Fault mode - system has an active alert that stopped operation
 - **Dark Red**: E-Stop active - safety system engaged (door open or E-Stop pressed)
 - **Blue**: Communication Loss
-
-See [Level Status Colors Reference](../reference/level-status-colors.md) for complete details.
 
 ### Alert Progression
 
@@ -87,22 +85,22 @@ Infeed alarms are confusing because they occur where two different systems conne
 #### After Every Infeed Alarm, Check:
 
 1. **Product (SKU) is correct**
-   - Case matches what was expected
-   - Replenishment is for the right product
+    - Case matches what was expected
+    - Replenishment is for the right product
 
 2. **Number of cases inducted (or yet-to-be inducted) is correct**
-   - Go to [Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
-   - Verify inducted quantity
-   - Check that 'quantity to induct' is accurate
+    - Go to [Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
+    - Verify inducted quantity
+    - Check that 'quantity to induct' is accurate
 
 3. **Upstream conveyor system has correct tracking data**
-   - Cases are properly tracked upstream
-   - No missing or extra cases in upstream system
+    - Cases are properly tracked upstream
+    - No missing or extra cases in upstream system
 
 4. **If cases had to be moved, follow Guideline 1**
-   - Resume in Automatic mode for a few moves
-   - Verify case placement on sequence conveyor
-   - Ensure inventory graph matches physical reality
+    - Resume in Automatic mode for a few moves
+    - Verify case placement on sequence conveyor
+    - Ensure inventory graph matches physical reality
 
 ---
 
@@ -152,12 +150,12 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 ##### Build Inventory Mode
 - When ON: Prioritizes storing replenishments over outputting cases
 - When OFF: Balances input and output for maximum throughput
-- Check: [Build Inventory](../main-screens/administration.md#build-inventory)
+- Check: [Build Inventory](../main-screens/administration/setup-innopick.md#build-inventory)
 
 ##### Destination (Merge) A or B Enabled / Disabled
 - Controls which downstream destinations are active
 - If a Merge is disabled, all cases route to other destination(s)
-- Check: [Administration > Setup InnoPick > Merges](../main-screens/administration.md#merges-state)
+- Check: [Administration > Setup InnoPick > Merges](../main-screens/administration/setup-innopick.md#merges-state)
 
 ---
 
@@ -217,14 +215,14 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 - Case still in wrong position
 - Mechanical issue not resolved
 - The Alert in question is being filtered (not visible).
-  - [See how to View All Alerts](/main-screens/alerts-page.md#viewing-all-alerts)
+  - [See how to View All Alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 
 **What to do:**
 1. Read the alert message carefully
 2. Inspect physical conditions
 3. Resolve the actual problem
 4. Try clearing again
-     - Use the [Recovery Action: Send Clear Alarm on Level](/main-screens/administration.md#most-commonly-used-recovery-actions)
+     - Use the [Recovery Action: Send Clear Alarm on Level](../main-screens/administration/recovery-actions.md#most-commonly-used-recovery-actions)
 5. See [Alert Reference](alert-reference.md) for specific alert resolution steps
 
 ---
@@ -275,4 +273,4 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 
 ---
 
-**Navigation:** [← Troubleshooting](index.md) | [Next: Alert Reference →](alert-reference.md)
+**Navigation:** [← Troubleshooting](index.md) | [Alert Reference →](alert-reference.md)

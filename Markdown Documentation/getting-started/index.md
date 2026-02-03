@@ -48,4 +48,4 @@ If you're unsure of your access level, ask your supervisor or system administrat
 
 ---
 
-**Navigation:** [← Home](../index.md) | [Next: Introduction →](introduction.md)
+**Navigation:** [← Home ](../index.md) | [Introduction →](introduction.md)

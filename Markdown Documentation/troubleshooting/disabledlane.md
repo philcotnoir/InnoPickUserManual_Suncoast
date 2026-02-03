@@ -14,7 +14,7 @@ If a mechanical issue renders a lane inoperable during production, it may be nec
 - Once the lane is disabled, the affected inbound cases will be highlighted and a message will appear when you hover over them:
   - **"Target lane was disabled. CASE MUST BE REMOVED MANUALLY"**
 - Failure to remove these cases by hand will certainly cause subsequent issues
-<img src="../images/inventory/disabledlane1.png" width="800" alt="Inbound Cases">
+<img src="../images/inventory/disabledlane1.png" width="700" alt="Inbound Cases">
 
 ---
 ## Outbound Cases
@@ -25,4 +25,4 @@ If a mechanical issue renders a lane inoperable during production, it may be nec
 
 - Failure to place the scheduled outbound cases on the correct sequence conveyor positions will result in faults when those cases are not detected as expected on the last position of InnoPick
 
-**Navigation:** [← Deadlocks](deadlocks.md) | [Next: Reference Section →](../reference/index.md)
+**Navigation:** [← Case Centering](casecentering.md) | [Reference →](../reference/index.md)

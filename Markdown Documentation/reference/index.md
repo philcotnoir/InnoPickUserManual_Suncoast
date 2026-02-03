@@ -137,7 +137,7 @@ Condensed summary of all alert codes for quick lookup:
 | **Photocell/Sensor** | 709, 719 | Sensor monitoring |
 | **Outfeed** | (no code) | Output positioning |
 
-See [Alert Reference](/troubleshooting/alert-reference.md) for complete list with detailed explanations.
+See [Alert Reference](../troubleshooting/alert-reference.md) for complete list with detailed explanations.
 
 ---
 
@@ -150,7 +150,7 @@ See [Alert Reference](/troubleshooting/alert-reference.md) for complete list wit
 | **Clerk** | Production | Monitor and operate, limited config |
 | **Guest** | View-only | Browse screens, no changes |
 
-See [User Manager](../main-screens/administration.md#user-manager) for details.
+See [User Manager](../main-screens/administration/user-manager.md) for details.
 
 ---
 
@@ -163,7 +163,7 @@ See [User Manager](../main-screens/administration.md#user-manager) for details.
 | Check replenishment status | [Inventory > Replenishments](../main-screens/inventory-section.md#replenishments-page) |
 | View lane contents | [Inventory > Lane Inventory](../main-screens/inventory-section.md#lane-inventory-page) |
 | Track specific case | [Case Sequence Page](../main-screens/case-sequence.md) |
-| Change system settings | [Administration](../main-screens/administration.md) |
+| Change system settings | [Administration](../main-screens/administration/index.md) |
 | Resolve an alert | [Troubleshooting > Alert Reference](../troubleshooting/alert-reference.md) |
 | Replace a case | [Troubleshooting > Case Replacement](../troubleshooting/case-replacement.md) |
 
@@ -211,4 +211,4 @@ See [User Manager](../main-screens/administration.md#user-manager) for details.
 
 ---
 
-**Navigation:** [← Case Replacement](../troubleshooting/case-replacement.md) | [Back to Home →](../index.md)
+**Navigation:** [← Disabled Lane](../troubleshooting/disabledlane.md) | [Home →](../index.md)

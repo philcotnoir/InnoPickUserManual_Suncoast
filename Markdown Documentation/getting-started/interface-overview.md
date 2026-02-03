@@ -8,7 +8,7 @@
 
 After logging in, you'll see the InnoPick Manager interface with a navigation menu on the left side of the screen. This menu is available from any page within the application.
 
-<img src="../images/home/homepage.png" width="800" alt="Home Page">
+<img src="../images/home/homepage.png" width="1600" alt="Home Page">
 
 ### Primary Navigation Buttons
 
@@ -16,40 +16,40 @@ Six main navigation buttons are always accessible on the left side:
 
 1. **[Home Page](../main-screens/home-page.md)**
 
-   - System overview and real-time status
-   - Visual representation of cases and conveyors
-   - Current alerts and production progress
+    - System overview and real-time status
+    - Visual representation of cases and conveyors
+    - Current alerts and production progress
 
 2. **[Alerts](../main-screens/alerts-page.md)**
 
-   - Current and historical alert listing
-   - Alert filtering and search functionality
+    - Current and historical alert listing
+    - Alert filtering and search functionality
 
 3. **[Inventory](../main-screens/inventory-section.md)**
 
-   - Replenishments management
-   - Product configuration
-   - Lane inventory tracking
-   - Accumulation monitoring
-   - Product statistics
+    - Replenishments management
+    - Product configuration
+    - Lane inventory tracking
+    - Accumulation monitoring
+    - Product statistics
 
 4. **[Case Sequence](../main-screens/case-sequence.md)**
 
-   - Order of cases exiting InnoPick
-   - Case tracking and filtering
+    - Order of cases exiting InnoPick
+    - Case tracking and filtering
 
-5. **[Administration](../main-screens/administration.md)**
+5. **[Administration](../main-screens/administration/index.md)**
 
-   - System configuration (authorized users only)
-   - Manual operations
-   - User management
-   - Recovery actions
-   - Operations Settings
+    - System configuration (authorized users only)
+    - Manual operations
+    - User management
+    - Recovery actions
+    - Operations Settings
 
-6. **[User Settings](../main-screens/administration.md#user-settings)**
+6. **[User Settings](../main-screens/administration/user-settings.md)**
 
-   - Personal preferences
-   - Account settings
+    - Personal preferences
+    - Account settings
 
 ---
 
@@ -153,4 +153,4 @@ For routine operation, proceed to [Daily Operations: Startup](../daily-operation
 
 ---
 
-**Navigation:** [← Logging In](login.md) | [Next: Daily Operations →](../daily-operations/index.md)
+**Navigation:** [← Logging In](login.md) | [Daily Operations →](../daily-operations/index.md)
