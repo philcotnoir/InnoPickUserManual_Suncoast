@@ -1,0 +1,1963 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Order Preparation Solutions - Operator Documentation">
+      
+      
+      
+        <link rel="canonical" href="https://philcotnoir.github.io/InnoPickUserManual_Suncoast/main-screens/administration/setup-innopick.html">
+      
+      
+        <link rel="prev" href="manual-motion-control.html">
+      
+      
+        <link rel="next" href="algo-parameters.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Setup InnoPick - InnoPick Manager Operations Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#setup-innopick" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="InnoPick Manager Operations Manual" class="md-header__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InnoPick Manager Operations Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Setup InnoPick
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/philcotnoir/InnoPickUserManual_Suncoast/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="InnoPick Manager Operations Manual" class="md-nav__button md-logo" aria-label="InnoPick Manager Operations Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    InnoPick Manager Operations Manual
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/philcotnoir/InnoPickUserManual_Suncoast/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/login.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/interface-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Daily Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../daily-operations/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../daily-operations/monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monitoring Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Main Screens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Main Screens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alerts-page.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alerts Page
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inventory-section.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory Section
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../case-sequence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Sequence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Administration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Administration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="manual-motion-control.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Motion Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup InnoPick
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="setup-innopick.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup InnoPick
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-innopick-sub-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup InnoPick Sub-Sections:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Site Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gap-between-cases-in-millimeters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap Between Cases in Millimeters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-replenishment-empty-lanes-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Replenishment Empty Lanes Threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-dynamic-replenishment-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Dynamic Replenishment Quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-consecutive-output-cases-per-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Max Consecutive Output Cases Per Destination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-conveyor-acceleration-deceleration-in-gs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequence Conveyor Acceleration / Deceleration in Gs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Configuration Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#site-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Site Levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion Controller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buffer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Number Of Cases To Exit Merge In The Accumulation LookAhead
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buffer Enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Inventory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-operation-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Operation Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-inventory-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build Inventory Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-a-b-accumulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destination A / B Accumulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulator-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simulator Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="algo-parameters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithm Parameters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user-manager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="recovery-actions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="operations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user-settings.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/common-issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/alert-guidelines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/alert-reference.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Alert Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/deadlocks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deadlocks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/case-replacement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Replacement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/casecentering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Case Centering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/disabledlane.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disabled Lane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="setup-innopick">Setup InnoPick<a class="headerlink" href="#setup-innopick" title="Permanent link">&para;</a></h1>
+<p><strong><a href="../../index.html">Home</a> &gt; <a href="../index.html">Main Screens</a> &gt; <a href="index.html">Administration</a> &gt; Setup InnoPick</strong></p>
+<hr />
+<p><img src="../../images/administration/image46.png" width="800" alt="Setup InnoPick Page"></p>
+<h3 id="setup-innopick-sub-sections">Setup InnoPick Sub-Sections:<a class="headerlink" href="#setup-innopick-sub-sections" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="#site-settings">Site Settings</a></li>
+<li><a href="#site-levels">Site Levels</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#masking">Masking</a></li>
+<li><a href="#motion-controller">Motion Controller</a></li>
+<li><a href="#buffer">Buffer</a></li>
+<li><a href="#simulator-setup">Simulator Setup</a></li>
+<li><a href="#core-setup">Core Setup</a></li>
+</ul>
+<p>The Setup InnoPick page contains configuration settings for InnoPick's internal operation. Access is typically restricted to Admin users and system integrators.</p>
+<hr />
+<h3 id="site-settings">Site Settings<a class="headerlink" href="#site-settings" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p><img src="../../images/administration/image46.png" width="800" alt="Site Settings"></p>
+<p>Critical system-wide configuration parameters.</p>
+<h4 id="gap-between-cases-in-millimeters">Gap Between Cases in Millimeters<a class="headerlink" href="#gap-between-cases-in-millimeters" title="Permanent link">&para;</a></h4>
+<p>The gap InnoPick maintains between cases stored in buffer lanes.</p>
+<p><strong>Purpose:</strong><br />
+- Prevents cases from pressing together<br />
+- Allows smooth dispensing<br />
+- Accommodates case size variations<br />
+- <strong>Note:</strong> Do not change this parameter unless directed to system expert / remote support.</p>
+<h4 id="manual-replenishment-empty-lanes-threshold">Manual Replenishment Empty Lanes Threshold<a class="headerlink" href="#manual-replenishment-empty-lanes-threshold" title="Permanent link">&para;</a></h4>
+<p>Minimum number of empty lanes required before IPM allows manual replenishment creation.</p>
+<p><strong>Purpose:</strong><br />
+- Ensures sufficient space for manual replenishments<br />
+- Prevents overfilling storage capacity</p>
+<h4 id="use-dynamic-replenishment-quantities">Use Dynamic Replenishment Quantities<a class="headerlink" href="#use-dynamic-replenishment-quantities" title="Permanent link">&para;</a></h4>
+<p>Enable/disable IPM's ability to dynamically adjust replenishment quantities based on demand patterns.</p>
+<p><strong>When enabled:</strong><br />
+- IPM analyzes usage patterns<br />
+- Adjusts quantities automatically<br />
+- Optimizes inventory levels</p>
+<p><strong>When disabled:</strong><br />
+- Uses static configured quantities<br />
+- More predictable but less adaptive</p>
+<p><strong>Note</strong>: Should be managed by system integrators.</p>
+<h4 id="max-consecutive-output-cases-per-destination">Max Consecutive Output Cases Per Destination<a class="headerlink" href="#max-consecutive-output-cases-per-destination" title="Permanent link">&para;</a></h4>
+<p>Limits consecutive cases sent to a single destination (Merge A, B, etc.).</p>
+<p><strong>Purpose:</strong><br />
+- Balances output across destinations<br />
+- Prevents overwhelming single destination<br />
+- Contingent on other function being enabled</p>
+<p><strong>Note</strong>: Should be managed by system integrators.</p>
+<h4 id="sequence-conveyor-acceleration-deceleration-in-gs">Sequence Conveyor Acceleration / Deceleration in Gs<a class="headerlink" href="#sequence-conveyor-acceleration-deceleration-in-gs" title="Permanent link">&para;</a></h4>
+<p>Acceleration rate for sequence conveyor indexing moves.</p>
+<p><strong>Measured in:</strong> g's (gravitational force)</p>
+<p><strong>Considerations:</strong><br />
+- Higher = faster moves but more case disturbance<br />
+- Lower = gentler but slower throughput<br />
+- Balance between speed and stability</p>
+<h4 id="additional-configuration-options">Additional Configuration Options<a class="headerlink" href="#additional-configuration-options" title="Permanent link">&para;</a></h4>
+<p>Other settings visible on this page are for:<br />
+- Initial system setup<br />
+- System integration<br />
+- Advanced configuration</p>
+<p><strong>Warning</strong>: Do not change these without consulting system integrators.</p>
+<hr />
+<h3 id="site-levels">Site Levels<a class="headerlink" href="#site-levels" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p><img src="../../images/administration/sitelevels.png" width="800" alt="Site Levels Configuration"></p>
+<p>This page contains level-specific configuration settings:<br />
+<strong>Lane Pitch in Millimeters</strong><br />
+  - Value (in mm) representing the standard distance between storage lanes<br />
+  - <strong>Note</strong>: Values may differ slightly per level due to:<br />
+    - Chain stretch over time<br />
+    - Tensioning adjustments<br />
+    - Mechanical variations<br />
+  - <strong>See the <a href="../../troubleshooting/casecentering.html">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </p>
+<p><strong>Center Placement in millimeters</strong><br />
+  - Controls the initial positioning of a case as it first enters InnoPick infeed.<br />
+  - <strong>See the <a href="../../troubleshooting/casecentering.html">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </p>
+<p><strong>Center offset in millimeters</strong><br />
+  - Adjusts the expected centerpoint of infeed cases.<br />
+  - If there are midpoint alarms being generated despite the cases looking nicely centered, then this parameter needs to be adjusted. <br />
+  - Contact system integrators if adjustment is needed.</p>
+<p><strong>Length offset in millimeters</strong><br />
+  - Adjusts the expected length by this amount</p>
+<p><strong>Target offset in millimeters</strong><br />
+  - Adjusts the final case placement when dispensing a case</p>
+<p><strong>Send variables to Galil</strong><br />
+- Press this after making a change to one of the variables in this section, followed by the 'Submit' button at the top of the page.</p>
+<hr />
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Product configuration page for system setup.</p>
+<p><strong>Access</strong>: System integrators during initial setup</p>
+<hr />
+<h3 id="masking">Masking<a class="headerlink" href="#masking" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Configuration for masking certain system moves.</p>
+<p><strong>Access</strong>: System integrators during initial setup</p>
+<hr />
+<h3 id="motion-controller">Motion Controller<a class="headerlink" href="#motion-controller" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Connection and configuration for the motion controller.</p>
+<p><strong>Access</strong>: System integrators during initial setup</p>
+<hr />
+<h3 id="buffer">Buffer<a class="headerlink" href="#buffer" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p><img src="../../images/administration/image47.png" width="800" alt="Buffer Settings"></p>
+<p>Configuration for accumulation management and output buffering.</p>
+<h4 id="number-of-cases-to-exit-merge-in-the-accumulation-lookahead">Number Of Cases To Exit Merge In The Accumulation LookAhead<a class="headerlink" href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" title="Permanent link">&para;</a></h4>
+<p>How many cases IPM considers when forecasting and scheduling output.</p>
+<p>Impact:<br />
+- <strong>Higher number</strong>: More aggressive scheduling, uses more accumulation<br />
+- <strong>Lower number</strong>: More conservative, leaves accumulation space unused</p>
+<p><em>Too high</em>: Risk of misjudging available space, may block output more often<br />
+<em>Too low</em>: Underutilizes accumulation, reduces throughput<br />
+<em>Recommendation</em>: Determine empirically based on system performance</p>
+<h4 id="buffer-enabled">Buffer Enabled<a class="headerlink" href="#buffer-enabled" title="Permanent link">&para;</a></h4>
+<p>(Default = On)</p>
+<p>When enabled, InnoPick keeps track of the cases in the outbound accumulation to optimize outbound scheduling when space is available and pause outbound scheduling to allow inbound to keep entering when the outbound is full.</p>
+<p><strong>When enabled:</strong><br />
+- IPM actively manages accumulation<br />
+- Schedules output based on available space<br />
+- Prevents overloading downstream equipment</p>
+<p><strong>When disabled:</strong><br />
+- IPM schedules output independently of accumulation status<br />
+- Simpler but may cause downstream congestion issues</p>
+<h4 id="build-inventory">Build Inventory<a class="headerlink" href="#build-inventory" title="Permanent link">&para;</a></h4>
+<p>InnoPick can operate in two modes regarding accumulation:</p>
+<h5 id="normal-operation-mode">Normal Operation Mode<a class="headerlink" href="#normal-operation-mode" title="Permanent link">&para;</a></h5>
+<ul>
+<li>IPM schedules as many output cases as possible, using Buffer logic if that option (see above) is enabled</li>
+<li>Assumes downstream conveyors advance at nominal rate</li>
+<li>Maximizes throughput</li>
+<li>May occasionally have to stop if outbound flow stops unexpectedly</li>
+</ul>
+<h5 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h5>
+<ul>
+<li>IPM prioritizes building lane inventory over outputting cases</li>
+<li>Only schedules output cases that will definitely fit in current accumulation space </li>
+<li>More conservative approach</li>
+<li>Level should not have to stop due to full accumulation</li>
+<li>Allows continuous replenishment induction</li>
+</ul>
+<p><strong>When to enable:</strong><br />
+- Starting production with low inventory<br />
+- Recovering from downstream stoppage<br />
+- Building to nominal inventory levels</p>
+<p><strong>When to disable:</strong><br />
+- Normal production operations<br />
+- When inventory is at nominal or above<br />
+- To maximize throughput</p>
+<p><strong>Note: Build Inventory Mode can be turned on and off directly from the set of controls that are always visible in the top left corner of the InnoPick Manager screen:</strong><br />
+<img src="../../images/administration/buildinventory2.png" width="250" alt="Build Inventory Mode"></p>
+<p><strong>Destination Decoupling Mode Enabled</strong><br />
+- Allows InnoPick to schedule cases for multiple destinations in parallel based on downstream accumulation availability and inventory. <br />
+- If InnoPick cannot schedule the next outbound case for the next priority pallet, it is allowed to look for pallets further down the sequence for other destinations and attempt scheduling them if accumulation and inventory allows it.<br />
+- This mode is affected by the two parameters below:</p>
+<p><strong>Destination decoupling mode max pallet offset</strong><br />
+- This is configuration parameter for the "Destination Decoupling Mode Enabled" above.<br />
+- See the description beneath the setting.</p>
+<p><strong>Destination decoupling mode max case offset</strong><br />
+- This is configuration parameter for the "Destination Decoupling Mode Enabled" above.<br />
+- See the description beneath the setting.</p>
+<h4 id="destination-a-b-accumulation">Destination A / B Accumulation<a class="headerlink" href="#destination-a-b-accumulation" title="Permanent link">&para;</a></h4>
+<p><img src="../../images/administration/buffer2.png" width="500" alt="Buffer Settings"></p>
+<p>These settings teach InnoPick about various accumulation zones for its algorithmic calculations. </p>
+<p><strong>Shared zone accumulation (# of zones)</strong><br />
+- This setting teaches InnoPick how many cases can fit between the exit of the merge and the palletizer. </p>
+<p><strong>Level 1 to 5: Accumulation Length in Mm</strong><br />
+- This setting teaches InnoPick the length of low pressure accumulation where cases are accumulated in a way that they bunch up together with no gaps. </p>
+<p><strong>Level 1 to 5: Zone Accumulation (# of zones)</strong><br />
+- This setting teaches InnoPick how many individual cases can be accumulated between the exit of InnoPick and the merge. </p>
+<hr />
+<h3 id="simulator-setup">Simulator Setup<a class="headerlink" href="#simulator-setup" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Configuration page for developers and system testing.</p>
+<p><strong>Access</strong>: System integrators and developers</p>
+<hr />
+<h3 id="core-setup">Core Setup<a class="headerlink" href="#core-setup" title="Permanent link">&para;</a></h3>
+<p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
+<p>Core system parameters for developers.</p>
+<p><strong>Access</strong>: System integrators and developers</p>
+<hr />
+<p><strong>Navigation:</strong> <a href="manual-motion-control.html">← Manual Motion Control</a> | <a href="algo-parameters.html">Algorithm Parameters →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "search.highlight", "content.tabs.link", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
