@@ -24,6 +24,10 @@ theme:
     - content.tabs.link
     - toc.integrate
 
+# Custom CSS for better styling
+extra_css:
+  - stylesheets/extra.css
+
 # Navigation structure (updated with split pages)
 nav:
   - Home: index.md
@@ -65,8 +69,6 @@ nav:
 # Enable search
 plugins:
   - search
-
-extra_css: - stylesheets/extra.css
 
 # Markdown extensions for better formatting
 markdown_extensions:
