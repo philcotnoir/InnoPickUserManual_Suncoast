@@ -1911,9 +1911,10 @@
 </ul>
 <hr />
 <h2 id="default-display">Default Display<a class="headerlink" href="#default-display" title="Permanent link">&para;</a></h2>
-<p>When the Alerts page first loads:<br />
-- <strong>Only uncleared alerts</strong> are displayed by default<br />
-- Alerts are shown in chronological order (most recent first)</p>
+<p>When the Alerts page first loads:</p>
+<pre><code>- **Only uncleared alerts** are displayed by default
+- Alerts are shown in chronological order (most recent first)
+</code></pre>
 <hr />
 <h2 id="alerts-page-columns">Alerts Page Columns<a class="headerlink" href="#alerts-page-columns" title="Permanent link">&para;</a></h2>
 <p>The Alerts page displays detailed information about each alert:</p>
@@ -1931,27 +1932,20 @@
 <h3 id="severity">Severity<a class="headerlink" href="#severity" title="Permanent link">&para;</a></h3>
 <p>Alerts are categorized by severity level:<br />
 <img src="../images/alerts/severity.png" width="150" alt="Alerts Page"></p>
-<ul>
-<li><strong>Warning</strong>: Minor alert that may not require immediate action</li>
-<li>System can often continue operating</li>
-<li>Should be monitored for patterns</li>
-<li>
-<p>No audible sound</p>
-</li>
-<li>
+<p><strong>Warning</strong>: Minor alert that may not require immediate action</p>
+<pre><code>- System can often continue operating
+- Should be monitored for patterns
+- No audible sound
+</code></pre>
 <p><strong>Error</strong>: A standard Alert which stops the affected level and puts it into Manual (Faulted/Red) mode.</p>
-</li>
-<li>Other levels continue operating</li>
-<li>
-<p>The panel Buzzer will sound to alert the operator</p>
-</li>
-<li>
+<pre><code>- Other levels continue operating
+- The panel Buzzer will sound to alert the operator
+</code></pre>
 <p><strong>Critical</strong>: Major system alert requiring attention</p>
-</li>
-<li>Production on all levels may be stopped</li>
-<li>Requires operator intervention</li>
-<li>The panel Buzzer will sound to alert the operator</li>
-</ul>
+<pre><code>- Production on all levels may be stopped
+- Requires operator intervention
+- The panel Buzzer will sound to alert the operator
+</code></pre>
 <h3 id="raw-code">Raw Code<a class="headerlink" href="#raw-code" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The numeric code associated with the alert</li>
@@ -1977,21 +1971,25 @@
 <h2 id="using-search-and-filters">Using Search and Filters<a class="headerlink" href="#using-search-and-filters" title="Permanent link">&para;</a></h2>
 <p><img src="../images/alerts/filteralarm.png" width="400" alt="Alerts Page"></p>
 <h3 id="searching-alerts">Searching Alerts<a class="headerlink" href="#searching-alerts" title="Permanent link">&para;</a></h3>
-<p>Use the search bar to find specific alerts by:<br />
-- Alert code (e.g., "555")<br />
-- Keywords in message text (e.g., "photocell", "clutch")<br />
-- Level number<br />
-- Date/time information</p>
+<p>Use the search bar to find specific alerts by:</p>
+<pre><code>- Alert code (e.g., "555")
+- Keywords in message text (e.g., "photocell", "clutch")
+- Level number
+- Date/time information
+</code></pre>
 <h3 id="common-filtering-strategies">Common Filtering Strategies<a class="headerlink" href="#common-filtering-strategies" title="Permanent link">&para;</a></h3>
-<p><strong>To find all alerts for a specific level:</strong><br />
-- Sort by the Level column<br />
-- All alerts for each level will be grouped together</p>
-<p><strong>To find recent critical alerts:</strong><br />
-- Filter by Severity = Critical<br />
-- Sort by Date (most recent first)</p>
-<p><strong>To track a specific type of fault:</strong><br />
-- Search for the alert code or key message terms<br />
-- Review the pattern and frequency</p>
+<p><strong>To find all alerts for a specific level:</strong></p>
+<pre><code>- Sort by the Level column
+- All alerts for each level will be grouped together
+</code></pre>
+<p><strong>To find recent critical alerts:</strong></p>
+<pre><code>- Filter by Severity = Critical
+- Sort by Date (most recent first)
+</code></pre>
+<p><strong>To track a specific type of fault:</strong></p>
+<pre><code>- Search for the alert code or key message terms
+- Review the pattern and frequency
+</code></pre>
 <hr />
 <h2 id="viewing-all-alerts">Viewing All Alerts<a class="headerlink" href="#viewing-all-alerts" title="Permanent link">&para;</a></h2>
 <p>To see all alerts:<br />

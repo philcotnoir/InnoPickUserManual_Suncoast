@@ -41,14 +41,16 @@ The main visual grid in the center-right of the Home Page provides a quick summa
 ### Understanding the Symbols
 
 **Shapes:**
-- **Squares** = Outbound cases (scheduled for customer pallets)
-- **Triangles** = Inbound cases (replenishments being stored in lanes)
+
+    - **Squares** = Outbound cases (scheduled for customer pallets)
+    - **Triangles** = Inbound cases (replenishments being stored in lanes)
 
 **Fill Status:**
-- **Filled shapes** = Physical case is present at that position
-- **Hollow shapes** = Position is empty or case is expected
-  - If a triangle, it means the case has been stored
-  - If a square, it means the case is scheduled to be dispensed on this position
+
+    - **Filled shapes** = Physical case is present at that position
+    - **Hollow shapes** = Position is empty or case is expected
+      - If a triangle, it means the case has been stored
+      - If a square, it means the case is scheduled to be dispensed on this position
 
 **"Gender Bender" cases:** 
 <img src="../images/home/genderbender.png" width="300" alt="Inventory Graph">
@@ -88,8 +90,9 @@ The main visual grid in the center-right of the Home Page provides a quick summa
 ### Interpreting the Display
 
 The inventory graph shows:
-- Cases currently on all sequence conveyor positions, with the storage lanes displayed below the graph, indicating their position vertically.
-- Various statuses of the transition points at both Infeed and Outfeed:
+
+    - Cases currently on all sequence conveyor positions, with the storage lanes displayed below the graph, indicating their position vertically.
+    - Various statuses of the transition points at both Infeed and Outfeed:
 
 #### Statuses at the Infeed
 <img src="../images/home/rdy2transfer5.png" width="200" alt="Infeed Statuses">
@@ -134,14 +137,14 @@ Hover your cursor over any case icon to see additional information:
 <img src="../images/home/hoverinfo.png" width="300" alt="Case Hover Detail">
 
 Information includes:
-- Level #, current position #, and lane # (if applicable).
-- Product SKU and description
-- Origin PalletID / HUID
-- If Inbound case:
-  - Destination lane
-  - Position: the position of the case in the storage lane; followed by the position of the case in terms of the total replenishment quantity. In the example in the screenshot above, it is case 33 out of 33 in lane 39; and it was the last case of a 36-case replenishment.
-  - Replenishment ID (unique GUID); this can be used to identify the replen in InnoPick and MixMaster.
-- If Outbound Case:
+    - Level #, current position #, and lane # (if applicable).
+    - Product SKU and description
+    - Origin PalletID / HUID
+    - If Inbound case:
+      - Destination lane
+      - Position: the position of the case in the storage lane; followed by the position of the case in terms of the total replenishment quantity. In the example in the screenshot above, it is case 33 out of 33 in lane 39; and it was the last case of a 36-case replenishment.
+      - Replenishment ID (unique GUID); this can be used to identify the replen in InnoPick and MixMaster.
+    - If Outbound Case:
   
 <img src="../images/home/hoverinfo2.png" width="300" alt="Replenishment Link">
 
@@ -164,12 +167,13 @@ Clicking this link opens the [Replenishments Page](inventory-section.md#replenis
 <img src="../images/home/hoverinfo4.png" width="300" alt="Replenishment Link">
 
 For outbound cases (squares), you can click on the case and see between 2 and 3 clickable links:
-- **Set case pending completion**: This is only clickable if the case if on the last position of InnoPick. If clicked, a second confirmation will be required in order to execute the recovery action.
-  - For detailed information on what this recovery action does, see the [Commonly Used Recovery Actions](../main-screens/administration/recovery-actions.md#most-commonly-used-recovery-actions).
-- **View in Client**: This will redirect the user to the Case Sequence page in MixMaster where the case can be found.
-  - Tip: Right-click and "Open in New Tab" to keep this page open. You may need to login again in the new tab.
-- **View in Case Sequence**: This will redirect the user to the Case Sequece page in InnoPick Manager, with a filter applied so only this case appears.
-  - Tip: Right-click and "Open in New Tab" to keep this page open. You may need to login again in the new tab.
+
+    - **Set case pending completion**: This is only clickable if the case if on the last position of InnoPick. If clicked, a second confirmation will be required in order to execute the recovery action.
+      - For detailed information on what this recovery action does, see the [Commonly Used Recovery Actions](../main-screens/administration/recovery-actions.md#most-commonly-used-recovery-actions).
+    - **View in Client**: This will redirect the user to the Case Sequence page in MixMaster where the case can be found.
+      - Tip: Right-click and "Open in New Tab" to keep this page open. You may need to login again in the new tab.
+    - **View in Case Sequence**: This will redirect the user to the Case Sequece page in InnoPick Manager, with a filter applied so only this case appears.
+      - Tip: Right-click and "Open in New Tab" to keep this page open. You may need to login again in the new tab.
 
 ---
 
@@ -190,6 +194,7 @@ The numbered squares in the top left corner indicate the operational status of e
 ### Controlling Level Modes
 
 **To change a level's mode:**
+
 1. Click on the colored level number
 2. A pop-up may appear to confirm the mode change
 3. The color will change to reflect the new mode
@@ -275,16 +280,18 @@ Click on a level number to view its lane inventory.
 <img src="../images/home/image15.png" width="1600" alt="Lane Inventory Display">
 
 Each storage lane is shown as a horizontal bar:
-- Bar length represents relative fullness
-- The display adjusts automatically to show all lanes for that level
+
+    - Bar length represents relative fullness
+    - The display adjusts automatically to show all lanes for that level
 
 ### Getting Lane Details
 
 <img src="../images/home/image16.png" width="300" alt="Lane Hover Details">
 
 Hover your cursor over any lane to see:
-- Quantity of cases
-- Product stored (SKU and description)
+
+    - Quantity of cases
+    - Product stored (SKU and description)
 
 ### Complete Lane Management
 
@@ -301,22 +308,25 @@ The Production Graph on the far left of the Home Page shows the current state of
 ### Understanding the Graph
 
 **Red Line at Top:**
-- Represents the total number of cases in currently launched orders
-- This is the production target
+
+    - Represents the total number of cases in currently launched orders
+    - This is the production target
 
 **Green Bar:**
 <img src="../images/home/inprogress.png" width="150" alt="In Progress Detail">
-- Represents **In Progress** cases
-- These are cases currently on the sequence conveyors (outbound)
-- Corresponds to the squares (filled and hollow) on the inventory graph
-- Hover to see exact count
+
+    - Represents **In Progress** cases
+    - These are cases currently on the sequence conveyors (outbound)
+    - Corresponds to the squares (filled and hollow) on the inventory graph
+    - Hover to see exact count
 
 **Orange Bar:**
 <img src="../images/home/completed.png" width="150" alt="Completed Detail">
-- Represents **Completed** cases
-- These cases have been output from InnoPick
-- This counter resets periodically as routes/truckloads are completed
-- Hover to see exact count
+
+    - Represents **Completed** cases
+    - These cases have been output from InnoPick
+    - This counter resets periodically as routes/truckloads are completed
+    - Hover to see exact count
 
 ---
 
@@ -343,13 +353,15 @@ When an alert occurs:
 ### Navigation from Home Page
 
 **To investigate issues further:**
-- Click level numbers → Changes mode or shows level details
-- Click "See replenishment" links → View replenishment details
-- Click alerts → Navigate to Alerts page for more information
+
+    - Click level numbers → Changes mode or shows level details
+    - Click "See replenishment" links → View replenishment details
+    - Click alerts → Navigate to Alerts page for more information
 
 **To access other features:**
-- Use left sidebar navigation buttons
-- See [Main Screens Index](index.md) for all available screens
+
+    - Use left sidebar navigation buttons
+    - See [Main Screens Index](index.md) for all available screens
 
 ---
 

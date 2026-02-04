@@ -41,6 +41,7 @@ Replenishments occur when InnoPick doesn't have sufficient inventory for a parti
 ### Replenishment Quantities
 
 A replenishment can range from:
+
 - **Minimum**: A single layer
 - **Maximum**: An entire pallet
 
@@ -89,10 +90,11 @@ Replenishments can also be **Canceled**
 #### Quantity to Induct
 - Actual number of cases being sent from depalletizer to InnoPick
 - May be less than Desired Quantity if:
-  - Source pallet has fewer layers than requested
-  - Replenishment was shorted by 1 or more layers during depalletization
-  - Cases were rejected at inbound QC station
-  - If quantity is insufficient to fulfill the client orders, another replenishment is automatically created
+
+    - Source pallet has fewer layers than requested
+    - Replenishment was shorted by 1 or more layers during depalletization
+    - Cases were rejected at inbound QC station
+    - If quantity is insufficient to fulfill the client orders, another replenishment is automatically created
 
 #### Inducted Quantity
 - Number of cases successfully inducted to date
@@ -116,6 +118,7 @@ Click the three vertical dots (⋮) on the right side of any replenishment to ac
 
 - Changes status from **In Progress** to **Inducting**
 - Only works if:
+
   - Replenishment is already in "In Progress" state
   - No other replenishment is currently "Inducting" on that level
 - Use if there was a communication problem with MixMaster.
@@ -213,6 +216,7 @@ The Products page displays all products in the InnoPick Manager database with th
 <img src="../images/inventory/editprod.png" width="500" alt="Product Edit Panel">
 
 To edit a product:
+
 1. Click on the product row in the table
 2. Edit panel appears on the right side of the screen
 3. Modify desired parameters
@@ -223,6 +227,7 @@ To edit a product:
 <img src="../images/inventory/image28.png" width="1000" alt="Manual Level Assignment">
 
 When **Auto Assign** is disabled, you can manually assign the product to specific levels:
+
 1. Uncheck "Auto Assign Levels"
 2. Select which levels can store this product
 3. Save the configuration
@@ -257,6 +262,7 @@ The Lane Inventory page is an expanded version of the lane display available on 
 
 #### Sources
 - Indicates how cases entered the lane:
+
   - **Replenishment**: Normal replenishment process
   - **Manual Replenishment**: Manually created replenishment
   - **Change Quantity Operation**: Manually added by operator
@@ -276,9 +282,10 @@ The Lane Inventory page is an expanded version of the lane display available on 
 #### Disable / Enable Lane Toggle
 - Controls whether a specific lane can be used in production
 - **Warning**: Disabling a lane during production may require manual intervention if:
-  - Products were already scheduled to store in that lane
-  - Products need to be dispensed from that lane
-  - See the **[Disabled Lane Troubleshooting Guide](../troubleshooting/disabledlane.md)** for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.
+
+    - Products were already scheduled to store in that lane
+    - Products need to be dispensed from that lane
+    - See the **[Disabled Lane Troubleshooting Guide](../troubleshooting/disabledlane.md)** for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.
 
 #### Ignore Sensors 
 - This option can be enabled only on a disabled lane. 
@@ -296,10 +303,12 @@ The Lane Inventory page is an expanded version of the lane display available on 
 #### Prerequisites for Editing
 
 You can only edit lane contents when the system is in **Manual mode** because:
+
 - Lane contents may be changing in Automatic mode
 - Editing during Automatic could cause synchronization issues
 
 **If you try to edit in Automatic mode:**
+
 - Error message appears: "No modifications are allowed during automatic mode. Please switch to manual mode to update lane inventories."
 
 #### Edit Lane Dialog
@@ -307,9 +316,11 @@ You can only edit lane contents when the system is in **Manual mode** because:
 When editing a lane, you can:
 
 **Change Product Type:**
+
 - Use the drop-down menu at top to select different product
 
 **Manage Individual Cases:**
+
 - Each case shown as a horizontal entry
 - Icons on right allow you to:
   - Move case up in sequence
@@ -334,6 +345,7 @@ When editing a lane, you can:
 #### Important Considerations
 
 **Use caution when changing lane contents during production:**
+
 - Inventory may already be committed to the case sequence
 - InnoPick may not always accommodate sudden changes
 - Inventory changes can trigger a [Deadlock -- see here for a troubleshooting guide](../troubleshooting/deadlocks.md).
@@ -350,6 +362,7 @@ The Accumulations page displays values related to InnoPick's management of the s
 ### How Accumulation Works
 
 InnoPick tracks:
+
 - How many millimeters of cases it has released (if using low-pressure accumulation) or the number of cases (if using zone accumulation)
 - Cases exiting the downstream merge point (Merges)
 - Available accumulation space remaining
@@ -377,8 +390,6 @@ Based on these factors, InnoPick decides whether to schedule more output cases.
 #### Zone A & Zone B
 - How many cases are currently scheduled to be released compared to the number of accumulation zones.
 
-#### 
-
 #### Clear
 - Button to clear the accumulation tracking
 - Tells InnoPick the accumulation space is now empty
@@ -386,7 +397,6 @@ Based on these factors, InnoPick decides whether to schedule more output cases.
   - Downstream conveyors have been cleared
   - Cases have been manually removed
   - Accumulation tracking is out of sync with reality
-
 
 **Note: The degree to which InnoPick schedules output cases is affected by, among other things, whether the *Build Inventory Mode* is active or not.**
 For more information on the Build Inventory Mode, see [Setup InnoPick > Buffer](administration/setup-innopick.md#buffer) section
@@ -454,10 +464,12 @@ The Product Statistics page provides detailed information about how InnoPick use
 ### Using Product Statistics
 
 **For Inventory Management:**
+
 - Find slow-moving products (old Oldest Case Date)
 - Track high-volume products (high Completed Case Percentage)
 
 **For Optimization:**
+
 - Products with high CCC should have adequate lane assignments
 - Products with frequent replenishments may need quantity adjustments
 

@@ -24,8 +24,9 @@ The Alerts page provides a comprehensive view of current and historical alerts, 
 ## Default Display
 
 When the Alerts page first loads:
-- **Only uncleared alerts** are displayed by default
-- Alerts are shown in chronological order (most recent first)
+
+    - **Only uncleared alerts** are displayed by default
+    - Alerts are shown in chronological order (most recent first)
 
 ---
 
@@ -47,19 +48,22 @@ Alerts are categorized by severity level:
 <img src="../images/alerts/severity.png" width="150" alt="Alerts Page">
 
 
-- **Warning**: Minor alert that may not require immediate action
-  - System can often continue operating
-  - Should be monitored for patterns
-  - No audible sound
+**Warning**: Minor alert that may not require immediate action
+
+    - System can often continue operating
+    - Should be monitored for patterns
+    - No audible sound
   
-- **Error**: A standard Alert which stops the affected level and puts it into Manual (Faulted/Red) mode.
-  - Other levels continue operating
-  - The panel Buzzer will sound to alert the operator
+**Error**: A standard Alert which stops the affected level and puts it into Manual (Faulted/Red) mode.
+    
+    - Other levels continue operating
+    - The panel Buzzer will sound to alert the operator
   
-- **Critical**: Major system alert requiring attention
-  - Production on all levels may be stopped
-  - Requires operator intervention
-  - The panel Buzzer will sound to alert the operator
+**Critical**: Major system alert requiring attention
+
+    - Production on all levels may be stopped
+    - Requires operator intervention
+    - The panel Buzzer will sound to alert the operator
 
 ### Raw Code
 - The numeric code associated with the alert
@@ -87,34 +91,39 @@ Alerts are categorized by severity level:
 ### Searching Alerts
 
 Use the search bar to find specific alerts by:
-- Alert code (e.g., "555")
-- Keywords in message text (e.g., "photocell", "clutch")
-- Level number
-- Date/time information
+
+    - Alert code (e.g., "555")
+    - Keywords in message text (e.g., "photocell", "clutch")
+    - Level number
+    - Date/time information
 
 ### Common Filtering Strategies
 
 **To find all alerts for a specific level:**
-- Sort by the Level column
-- All alerts for each level will be grouped together
+
+    - Sort by the Level column
+    - All alerts for each level will be grouped together
 
 **To find recent critical alerts:**
-- Filter by Severity = Critical
-- Sort by Date (most recent first)
+
+    - Filter by Severity = Critical
+    - Sort by Date (most recent first)
 
 **To track a specific type of fault:**
-- Search for the alert code or key message terms
-- Review the pattern and frequency
+
+    - Search for the alert code or key message terms
+    - Review the pattern and frequency
 
 ---
 
 ## Viewing All Alerts
 
 To see all alerts:
-- Remove all filters:
+
+    - Remove all filters:
 <img src="../images/alerts/filterall.png" width="400" alt="Alerts Page">
-- This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
-- This can be useful when a level seems to be faulted but there is no obvious reason why.
+    - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
+    - This can be useful when a level seems to be faulted but there is no obvious reason why.
 
 ### Why View Historical Alerts?
 
@@ -164,6 +173,7 @@ Here are some frequently encountered alerts (see [Alert Reference](../troublesho
 ### Understanding Alert Progression
 
 **Typical Alert Lifecycle:**
+
 1. Issue occurs (sensor detects problem)
 2. Alert generated and logged
 3. System puts affected level in Manual or Fault mode
@@ -175,17 +185,19 @@ Here are some frequently encountered alerts (see [Alert Reference](../troublesho
 ### When to Clear Alerts
 
 **You should clear alerts only when:**
-- The underlying physical issue has been resolved
-- Cases are in correct positions
-- Sensors are unblocked
-- Mechanical issues are fixed
-- Safety devices are reset
+
+    - The underlying physical issue has been resolved
+    - Cases are in correct positions
+    - Sensors are unblocked
+    - Mechanical issues are fixed
+    - Safety devices are reset
 
 **Do not clear alerts if:**
-- The problem still exists
-- You're unsure what caused the alert
-- Physical conditions don't match expectations
-- Multiple related alerts are occurring
+
+    - The problem still exists
+    - You're unsure what caused the alert
+    - Physical conditions don't match expectations
+    - Multiple related alerts are occurring
 
 ### If Alerts Won't Clear
 
@@ -212,6 +224,7 @@ See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for best Alert re
 ### For Single Alerts
 
 If an alert occurs once:
+
 1. Note the alert type and details
 2. Resolve the issue
 3. Clear the alert
@@ -220,18 +233,22 @@ If an alert occurs once:
 ### For Repeated Alerts
 
 If the same alert occurs multiple times:
+
 1. **There's likely an underlying problem** that wasn't fully resolved
 2. Check for:
+
     - Damaged cases causing repeated issues
     - Incorrect inventory quantities
     - Mechanical problems
     - Configuration issues
+
 3. Resolve the root cause, not just the symptom
 4. Document the issue for maintenance review
 
 ### For Multiple Different Alerts
 
 If multiple alert types occur in sequence:
+
 1. **They may be related** - one issue causing cascading effects
 2. Review the [Alert Guidelines](../troubleshooting/alert-guidelines.md)
 3. Focus on resolving the earliest alert first
