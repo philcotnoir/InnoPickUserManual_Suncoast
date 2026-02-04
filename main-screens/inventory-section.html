@@ -1537,17 +1537,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#clear" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2517,9 +2506,11 @@
 <li>Cases are inducted into InnoPick</li>
 </ol>
 <h3 id="replenishment-quantities">Replenishment Quantities<a class="headerlink" href="#replenishment-quantities" title="Permanent link">&para;</a></h3>
-<p>A replenishment can range from:<br />
-- <strong>Minimum</strong>: A single layer<br />
-- <strong>Maximum</strong>: An entire pallet</p>
+<p>A replenishment can range from:</p>
+<ul>
+<li><strong>Minimum</strong>: A single layer</li>
+<li><strong>Maximum</strong>: An entire pallet</li>
+</ul>
 <p>Replenishment quantities are determined automatically by InnoPick's algorithms unless manually overridden. See <a href="#products-page">Products Page</a> for manual configuration options.</p>
 <h3 id="replenishments-page-columns">Replenishments Page Columns<a class="headerlink" href="#replenishments-page-columns" title="Permanent link">&para;</a></h3>
 <h4 id="id">Id<a class="headerlink" href="#id" title="Permanent link">&para;</a></h4>
@@ -2570,11 +2561,15 @@
 <h4 id="quantity-to-induct">Quantity to Induct<a class="headerlink" href="#quantity-to-induct" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Actual number of cases being sent from depalletizer to InnoPick</li>
-<li>May be less than Desired Quantity if:</li>
+<li>
+<p>May be less than Desired Quantity if:</p>
+<ul>
 <li>Source pallet has fewer layers than requested</li>
 <li>Replenishment was shorted by 1 or more layers during depalletization</li>
 <li>Cases were rejected at inbound QC station</li>
 <li>If quantity is insufficient to fulfill the client orders, another replenishment is automatically created</li>
+</ul>
+</li>
 </ul>
 <h4 id="inducted-quantity">Inducted Quantity<a class="headerlink" href="#inducted-quantity" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2595,8 +2590,12 @@
 <p><img src="../images/inventory/image24.png" width="300" alt="Induct Confirmation"></p>
 <ul>
 <li>Changes status from <strong>In Progress</strong> to <strong>Inducting</strong></li>
-<li>Only works if:</li>
-<li>Replenishment is already in "In Progress" state</li>
+<li>
+<p>Only works if:</p>
+</li>
+<li>
+<p>Replenishment is already in "In Progress" state</p>
+</li>
 <li>No other replenishment is currently "Inducting" on that level</li>
 <li>Use if there was a communication problem with MixMaster.</li>
 </ul>
@@ -2700,17 +2699,21 @@
 </ul>
 <h3 id="editing-products">Editing Products<a class="headerlink" href="#editing-products" title="Permanent link">&para;</a></h3>
 <p><img src="../images/inventory/editprod.png" width="500" alt="Product Edit Panel"></p>
-<p>To edit a product:<br />
-1. Click on the product row in the table<br />
-2. Edit panel appears on the right side of the screen<br />
-3. Modify desired parameters<br />
-4. Save changes (button at the bottom of the sidebar)</p>
+<p>To edit a product:</p>
+<ol>
+<li>Click on the product row in the table</li>
+<li>Edit panel appears on the right side of the screen</li>
+<li>Modify desired parameters</li>
+<li>Save changes (button at the bottom of the sidebar)</li>
+</ol>
 <h4 id="example-manual-level-assignment">Example: Manual Level Assignment<a class="headerlink" href="#example-manual-level-assignment" title="Permanent link">&para;</a></h4>
 <p><img src="../images/inventory/image28.png" width="1000" alt="Manual Level Assignment"></p>
-<p>When <strong>Auto Assign</strong> is disabled, you can manually assign the product to specific levels:<br />
-1. Uncheck "Auto Assign Levels"<br />
-2. Select which levels can store this product<br />
-3. Save the configuration</p>
+<p>When <strong>Auto Assign</strong> is disabled, you can manually assign the product to specific levels:</p>
+<ol>
+<li>Uncheck "Auto Assign Levels"</li>
+<li>Select which levels can store this product</li>
+<li>Save the configuration</li>
+</ol>
 <p><strong>Note:</strong> It is possible to change the level assignment(s) when a Auto Assign is still enabled. This temporarily overrides the algorithm</p>
 <hr />
 <h2 id="lane-inventory-page">Lane Inventory Page<a class="headerlink" href="#lane-inventory-page" title="Permanent link">&para;</a></h2>
@@ -2741,8 +2744,12 @@
 </ul>
 <h4 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Indicates how cases entered the lane:</li>
-<li><strong>Replenishment</strong>: Normal replenishment process</li>
+<li>
+<p>Indicates how cases entered the lane:</p>
+</li>
+<li>
+<p><strong>Replenishment</strong>: Normal replenishment process</p>
+</li>
 <li><strong>Manual Replenishment</strong>: Manually created replenishment</li>
 <li><strong>Change Quantity Operation</strong>: Manually added by operator</li>
 </ul>
@@ -2761,10 +2768,14 @@
 <h4 id="disable-enable-lane-toggle">Disable / Enable Lane Toggle<a class="headerlink" href="#disable-enable-lane-toggle" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Controls whether a specific lane can be used in production</li>
-<li><strong>Warning</strong>: Disabling a lane during production may require manual intervention if:</li>
+<li>
+<p><strong>Warning</strong>: Disabling a lane during production may require manual intervention if:</p>
+<ul>
 <li>Products were already scheduled to store in that lane</li>
 <li>Products need to be dispensed from that lane</li>
 <li>See the <strong><a href="../troubleshooting/disabledlane.html">Disabled Lane Troubleshooting Guide</a></strong> for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.</li>
+</ul>
+</li>
 </ul>
 <h4 id="ignore-sensors">Ignore Sensors<a class="headerlink" href="#ignore-sensors" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2779,21 +2790,29 @@
 <h3 id="editing-lane-inventory">Editing Lane Inventory<a class="headerlink" href="#editing-lane-inventory" title="Permanent link">&para;</a></h3>
 <p><img src="../images/inventory/image33.png" width="600" alt="Edit Lane Inventory"></p>
 <h4 id="prerequisites-for-editing">Prerequisites for Editing<a class="headerlink" href="#prerequisites-for-editing" title="Permanent link">&para;</a></h4>
-<p>You can only edit lane contents when the system is in <strong>Manual mode</strong> because:<br />
-- Lane contents may be changing in Automatic mode<br />
-- Editing during Automatic could cause synchronization issues</p>
-<p><strong>If you try to edit in Automatic mode:</strong><br />
-- Error message appears: "No modifications are allowed during automatic mode. Please switch to manual mode to update lane inventories."</p>
+<p>You can only edit lane contents when the system is in <strong>Manual mode</strong> because:</p>
+<ul>
+<li>Lane contents may be changing in Automatic mode</li>
+<li>Editing during Automatic could cause synchronization issues</li>
+</ul>
+<p><strong>If you try to edit in Automatic mode:</strong></p>
+<ul>
+<li>Error message appears: "No modifications are allowed during automatic mode. Please switch to manual mode to update lane inventories."</li>
+</ul>
 <h4 id="edit-lane-dialog">Edit Lane Dialog<a class="headerlink" href="#edit-lane-dialog" title="Permanent link">&para;</a></h4>
 <p>When editing a lane, you can:</p>
-<p><strong>Change Product Type:</strong><br />
-- Use the drop-down menu at top to select different product</p>
-<p><strong>Manage Individual Cases:</strong><br />
-- Each case shown as a horizontal entry<br />
-- Icons on right allow you to:<br />
-  - Move case up in sequence<br />
-  - Move case down in sequence<br />
-  - Remove case from lane</p>
+<p><strong>Change Product Type:</strong></p>
+<ul>
+<li>Use the drop-down menu at top to select different product</li>
+</ul>
+<p><strong>Manage Individual Cases:</strong></p>
+<ul>
+<li>Each case shown as a horizontal entry</li>
+<li>Icons on right allow you to:</li>
+<li>Move case up in sequence</li>
+<li>Move case down in sequence</li>
+<li>Remove case from lane</li>
+</ul>
 <p><strong>Add Cases:</strong></p>
 <p><img src="../images/inventory/image34.png" width="600" alt="Add Case Button"></p>
 <ul>
@@ -2808,20 +2827,24 @@
 <li>Confirm the changes in the pop-up dialog</li>
 </ul>
 <h4 id="important-considerations">Important Considerations<a class="headerlink" href="#important-considerations" title="Permanent link">&para;</a></h4>
-<p><strong>Use caution when changing lane contents during production:</strong><br />
-- Inventory may already be committed to the case sequence<br />
-- InnoPick may not always accommodate sudden changes<br />
-- Inventory changes can trigger a <a href="../troubleshooting/deadlocks.html">Deadlock -- see here for a troubleshooting guide</a>.</p>
+<p><strong>Use caution when changing lane contents during production:</strong></p>
+<ul>
+<li>Inventory may already be committed to the case sequence</li>
+<li>InnoPick may not always accommodate sudden changes</li>
+<li>Inventory changes can trigger a <a href="../troubleshooting/deadlocks.html">Deadlock -- see here for a troubleshooting guide</a>.</li>
+</ul>
 <hr />
 <h2 id="outbound-accumulations-page">Outbound Accumulations Page<a class="headerlink" href="#outbound-accumulations-page" title="Permanent link">&para;</a></h2>
 <p><a href="#overview">Back to Top - Inventory Pages Overview</a></p>
 <p><img src="../images/inventory/accums.png" width="600" alt="Accumulations Page"></p>
 <p>The Accumulations page displays values related to InnoPick's management of the space between InnoPick's exit and the downstream merge point (Merges or equivalent).</p>
 <h3 id="how-accumulation-works">How Accumulation Works<a class="headerlink" href="#how-accumulation-works" title="Permanent link">&para;</a></h3>
-<p>InnoPick tracks:<br />
-- How many millimeters of cases it has released (if using low-pressure accumulation) or the number of cases (if using zone accumulation)<br />
-- Cases exiting the downstream merge point (Merges)<br />
-- Available accumulation space remaining</p>
+<p>InnoPick tracks:</p>
+<ul>
+<li>How many millimeters of cases it has released (if using low-pressure accumulation) or the number of cases (if using zone accumulation)</li>
+<li>Cases exiting the downstream merge point (Merges)</li>
+<li>Available accumulation space remaining</li>
+</ul>
 <p>Based on these factors, InnoPick decides whether to schedule more output cases.</p>
 <h3 id="accumulations-page-columns">Accumulations Page Columns<a class="headerlink" href="#accumulations-page-columns" title="Permanent link">&para;</a></h3>
 <h4 id="level_1">Level<a class="headerlink" href="#level_1" title="Permanent link">&para;</a></h4>
@@ -2848,7 +2871,6 @@
 <ul>
 <li>How many cases are currently scheduled to be released compared to the number of accumulation zones.</li>
 </ul>
-<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <h4 id="clear">Clear<a class="headerlink" href="#clear" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Button to clear the accumulation tracking</li>
@@ -2928,12 +2950,16 @@ For more information on the Build Inventory Mode, see <a href="administration/se
 <li>Still needed to complete active orders</li>
 </ul>
 <h3 id="using-product-statistics">Using Product Statistics<a class="headerlink" href="#using-product-statistics" title="Permanent link">&para;</a></h3>
-<p><strong>For Inventory Management:</strong><br />
-- Find slow-moving products (old Oldest Case Date)<br />
-- Track high-volume products (high Completed Case Percentage)</p>
-<p><strong>For Optimization:</strong><br />
-- Products with high CCC should have adequate lane assignments<br />
-- Products with frequent replenishments may need quantity adjustments</p>
+<p><strong>For Inventory Management:</strong></p>
+<ul>
+<li>Find slow-moving products (old Oldest Case Date)</li>
+<li>Track high-volume products (high Completed Case Percentage)</li>
+</ul>
+<p><strong>For Optimization:</strong></p>
+<ul>
+<li>Products with high CCC should have adequate lane assignments</li>
+<li>Products with frequent replenishments may need quantity adjustments</li>
+</ul>
 <hr />
 <h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
 <ul>
