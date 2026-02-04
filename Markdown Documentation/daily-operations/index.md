@@ -170,10 +170,15 @@ test block3
 <hr>
 
 test block 4
-<hr style="border: 2px solid #ccc; margin: 2em 0;">
+<hr style="border: 1px solid #3d3d3d; margin: 3em 0;">
 test block 5
 
-<hr style="border: 2px solid #ccc; margin: 2em 0;">
+<hr style="border: 1px solid #999; margin: 2em 0;">
+<hr style="border: 3px solid #666; margin: 3em 0;">
+<hr style="border: 1px solid #ccc; margin: 1.5em 0;">
+<hr style="border: 3px solid #d32f2f; margin: 2em 0;">
+
+
 
 test block 6
 
