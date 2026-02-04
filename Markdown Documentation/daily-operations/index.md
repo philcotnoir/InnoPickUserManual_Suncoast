@@ -147,11 +147,11 @@ Check that there are no:
 - Allow system to finish current work before proceeding
 - Document any incomplete work for the next shift
 
----
+------
 
-***
+******
 
-___
+______
 
 
 ### 2. Put InnoPick into Manual Mode
@@ -160,7 +160,7 @@ ___
 
    <img src="../images/home/image10.png" width="200" alt="Manual Mode Button">
 
-- Verify all level indicators turn **Yellow** (Manual mode)
+- Hey Verify all level indicators turn **Yellow** (Manual mode)
 
 **Why Manual Mode?**
 
