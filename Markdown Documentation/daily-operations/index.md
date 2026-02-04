@@ -151,11 +151,11 @@ Check that there are no:
 
 ### 2. Put InnoPick into Manual Mode
 
-1. On the [Home Page](../main-screens/home-page.md), click the **Manual** button
+- On the [Home Page](../main-screens/home-page.md), click the **Manual** button
 
    <img src="../images/home/image10.png" width="200" alt="Manual Mode Button">
 
-2. Verify all level indicators turn **Yellow** (Manual mode)
+- Verify all level indicators turn **Yellow** (Manual mode)
 
 **Why Manual Mode?**
 
@@ -218,7 +218,7 @@ To effectively operate InnoPick, you should be familiar with:
 
 3. **Replenishments Awareness**
 
-   - Understanding replenishment status
+    - Understanding replenishment status
 
 ---
 
