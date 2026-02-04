@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > Manual Motion Control**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <img src="../../images/administration/image42.png" width="800" alt="Manual motion control page">
 
@@ -105,6 +105,6 @@ Primarily used by:
 - Advanced maintenance personnel
 - During commissioning and testing
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Administration](index.md) | [Setup InnoPick →](setup-innopick.md)

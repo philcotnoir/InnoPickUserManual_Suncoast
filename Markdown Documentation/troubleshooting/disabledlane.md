@@ -1,6 +1,6 @@
 **[Home](../index.md) > [Troubleshooting](index.md) > Disabled Lane**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 If a mechanical issue renders a lane inoperable during production, it may be necessary to disable a lane that InnoPick is expecting to be able to use. This troubleshooting guide covers these scenarios.
@@ -16,7 +16,7 @@ If a mechanical issue renders a lane inoperable during production, it may be nec
 - Failure to remove these cases by hand will certainly cause subsequent issues
 <img src="../images/inventory/disabledlane1.png" width="700" alt="Inbound Cases">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 ## Outbound Cases
 - Similarly, once an outbound case has been scheduled on the sequence conveyor (appearing as an empty square), the lane cannot be re-assigned.
 - If the source lane suffers a mechanical breakdown, the operator must:

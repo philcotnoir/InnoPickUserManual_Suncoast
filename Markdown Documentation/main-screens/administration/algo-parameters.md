@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > Algorithm Parameters**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <img src="../../images/administration/image49.png" width="1400" alt="Algo Parameters Page 1">
 
@@ -27,6 +27,6 @@ Each parameter includes a description on the page explaining its purpose and eff
 
 **Note**: Changes to algorithm parameters can significantly affect system behavior. 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Setup InnoPick](setup-innopick.md) | [User Manager →](user-manager.md)

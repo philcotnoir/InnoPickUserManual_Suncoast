@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Main Screens](index.md) > Home Page**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
@@ -10,7 +10,7 @@ The Home Page is your primary dashboard for monitoring InnoPick operations. It p
 
 <img src="../images/home/homepage.png" width="1600" alt="InnoPick Manager Home Page">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Accessing the Home Page
 
@@ -18,7 +18,7 @@ The Home Page is your primary dashboard for monitoring InnoPick operations. It p
 - The Home Page appears automatically after logging in
 - Available from any screen in InnoPick Manager
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Home Page Components
 
@@ -30,7 +30,7 @@ The Home Page displays the following key information:
 4. [Lane Inventory](#lane-inventory) - Storage lane contents by level
 5. [Production Graph](#production-graph) - Progress of current production run
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Inventory Graph
 
@@ -175,7 +175,7 @@ For outbound cases (squares), you can click on the case and see between 2 and 3 
     - **View in Case Sequence**: This will redirect the user to the Case Sequece page in InnoPick Manager, with a filter applied so only this case appears.
       - Tip: Right-click and "Open in New Tab" to keep this page open. You may need to login again in the new tab.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Level Statuses & Auto / Manual Controls
 
@@ -221,7 +221,7 @@ When InnoPick has an alarm, the affected level automatically enters Manual (Yell
 - Clear the alarm
 - Resume production
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Alerts List
 
@@ -263,7 +263,7 @@ There is also a **Clear Alerts** button always visible just above the Auto and M
 
 For a full list of all current and past alerts with search and filtering capabilities, see the [Alerts Page](alerts-page.md).
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Lane Inventory
 
@@ -297,7 +297,7 @@ Hover your cursor over any lane to see:
 
 For more detailed lane inventory information and editing capabilities, see the [Lane Inventory Page](inventory-section.md#lane-inventory-page).
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Production Graph
 
@@ -328,7 +328,7 @@ The Production Graph on the far left of the Home Page shows the current state of
     - This counter resets periodically as routes/truckloads are completed
     - Hover to see exact count
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Using the Home Page Effectively
 
@@ -363,7 +363,7 @@ When an alert occurs:
     - Use left sidebar navigation buttons
     - See [Main Screens Index](index.md) for all available screens
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -372,6 +372,6 @@ When an alert occurs:
 - [Alert Guidelines](../troubleshooting/alert-guidelines.md) - How to resolve alerts
 - [Lane Inventory Page](inventory-section.md#lane-inventory-page) - Detailed lane management
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Main Screens](index.md) | [Alerts Page →](alerts-page.md)

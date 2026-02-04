@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > Setup InnoPick**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <img src="../../images/administration/image46.png" width="800" alt="Setup InnoPick Page">
 
@@ -19,7 +19,7 @@
 
 The Setup InnoPick page contains configuration settings for InnoPick's internal operation. Access is typically restricted to Admin users and system integrators.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Site Settings
 
@@ -93,7 +93,7 @@ Other settings visible on this page are for:
 
 **Warning**: Do not change these without consulting system integrators.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Site Levels
 
@@ -127,7 +127,7 @@ This page contains level-specific configuration settings:
 
 **Send variables to Galil**
 - Press this after making a change to one of the variables in this section, followed by the 'Submit' button at the top of the page.
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Packages
 
@@ -137,7 +137,7 @@ Product configuration page for system setup.
 
 **Access**: System integrators during initial setup
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Masking
 
@@ -147,7 +147,7 @@ Configuration for masking certain system moves.
 
 **Access**: System integrators during initial setup
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Motion Controller
 
@@ -157,7 +157,7 @@ Connection and configuration for the motion controller.
 
 **Access**: System integrators during initial setup
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Buffer
 
@@ -251,7 +251,7 @@ These settings teach InnoPick about various accumulation zones for its algorithm
 **Level 1 to 5: Zone Accumulation (# of zones)**
 - This setting teaches InnoPick how many individual cases can be accumulated between the exit of InnoPick and the merge. 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Simulator Setup
 
@@ -261,7 +261,7 @@ Configuration page for developers and system testing.
 
 **Access**: System integrators and developers
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Core Setup
 
@@ -271,6 +271,6 @@ Core system parameters for developers.
 
 **Access**: System integrators and developers
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Manual Motion Control](manual-motion-control.md) | [Algorithm Parameters →](algo-parameters.md)

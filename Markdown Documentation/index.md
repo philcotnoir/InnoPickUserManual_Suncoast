@@ -4,10 +4,10 @@
 
 <img src="images/logos/image1.png" width="800" alt="InnoPick Logo">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 *Manual Revision 3.0: Published February 2026*
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Welcome
 
@@ -15,7 +15,7 @@ Welcome to the InnoPick Manager Technical Manual, designed to provide you with a
 
 This manual has been prepared to guide users of all levels through the setup, operation, and optimization of the InnoPick Manager software.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Documentation Sections
 
@@ -34,7 +34,7 @@ Alert resolution procedures and problem-solving guidance.
 ### [Quick Reference](reference/index.md)
 Quick lookup tables for alert codes and system status indicators.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## User Roles
 
@@ -47,7 +47,7 @@ Access to certain features depends on your user role:
 
 See [User Manager](main-screens/administration/user-manager.md) for more information.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## System Overview
 
@@ -59,7 +59,7 @@ InnoPick Manager (IPM) is a web-based software interface for controlling and mon
 - Real-time inventory management
 - Alert monitoring and resolution
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Getting Help
 
@@ -67,6 +67,6 @@ InnoPick Manager (IPM) is a web-based software interface for controlling and mon
 - For alert resolution, see the [Alert Reference Page](troubleshooting/alert-guidelines.md)
 - For system configuration, see [Administration Pages](main-screens/administration/index.md)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [Next: Getting Started →](getting-started/index.md)

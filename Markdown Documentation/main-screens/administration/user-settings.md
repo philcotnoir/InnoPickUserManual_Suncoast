@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > User Settings**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <img src="../../images/administration/usersettings.png" width="600" alt="User Settings Page">
 
@@ -19,7 +19,7 @@ Settings include:
 - Click **User Settings** in the left navigation menu
 - Settings are specific to your user account
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -27,6 +27,6 @@ Settings include:
 - [Troubleshooting](../../troubleshooting/index.md) - When to use recovery actions
 - [Products Page](../inventory-section.md#products-page) - Product configuration
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Operations](operations.md) | [Troubleshooting →](../../troubleshooting/index.md)

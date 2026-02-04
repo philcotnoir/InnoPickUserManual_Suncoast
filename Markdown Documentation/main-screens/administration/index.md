@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > Administration**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
@@ -10,7 +10,7 @@ The Administration section contains system configuration, advanced troubleshooti
 
 <img src="../../images/administration/image41.png" width="1000" alt="Administration Menu">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Administration Pages
 
@@ -22,6 +22,6 @@ The Administration section contains system configuration, advanced troubleshooti
 6. **[Operations](operations.md)** - Level and Merge statuses / controls
 7. **[User Settings](user-settings.md)** - Personal preferences
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Case Sequence](../case-sequence.md) | [Manual Motion Control →](manual-motion-control.md)

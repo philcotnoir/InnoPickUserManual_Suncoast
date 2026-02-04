@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Troubleshooting](index.md) > Deadlocks**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
@@ -10,7 +10,7 @@ This section provides guidance for resolving deadlock situations.
 A deadlock is when InnoPick is not able to fit all the cases that are due to enter the infeed, and it cannot make room by outputting cases because the next case needed for the sequence is coming after those cases which cannot fit. 
 In other words, a deadlock is when a level of InnoPick is too full and becomes stuck. 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Types of Deadlocks
 
@@ -18,7 +18,7 @@ There are two types of deadlocks:
 1. Preview deadlock (forecast) - warns the operator that a deadlock will occur unless something is done to avert it.
 2. Just-in-Time deadlock - the system is in a deadlock state and cannot proceed without an operator intervention.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Preview Deadlock
 

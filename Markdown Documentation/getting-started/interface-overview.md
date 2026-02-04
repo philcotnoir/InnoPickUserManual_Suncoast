@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Getting Started](index.md) > Interface Overview**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Main Navigation
 
@@ -51,7 +51,7 @@ Six main navigation buttons are always accessible on the left side:
     - Personal preferences
     - Account settings
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Screen Layout
 
@@ -79,7 +79,7 @@ Each screen in InnoPick Manager follows a consistent layout:
 - Action buttons (Clear Alerts, Save, Cancel, etc.)
 - Status indicators
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Common Interface Elements
 
@@ -108,7 +108,7 @@ Each screen in InnoPick Manager follows a consistent layout:
 - Search bars filter table contents
 - Action columns contain buttons for specific operations
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Navigation Tips
 
@@ -126,7 +126,7 @@ Each screen in InnoPick Manager follows a consistent layout:
 - Use the Home Page for at-a-glance system overview
 - Reference this manual's index for specific topics
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Understanding Access Restrictions
 
@@ -139,7 +139,7 @@ Based on your user role, you may see some menu options grayed out or missing ent
 
 If you need access to a restricted feature, contact your supervisor or system administrator.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Next Steps
 
@@ -151,6 +151,6 @@ Now that you understand the interface layout, you're ready to:
 
 For routine operation, proceed to [Daily Operations: Startup](../daily-operations/index.md#startup).
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Logging In](login.md) | [Daily Operations →](../daily-operations/index.md)

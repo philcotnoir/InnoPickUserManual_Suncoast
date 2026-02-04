@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > [Troubleshooting](index.md) > Alert Reference**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This page provides detailed information about every InnoPick alert code, including explanations, common causes, and step-by-step resolution procedures.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## How to Use This Reference
 
@@ -18,7 +18,7 @@ This page provides detailed information about every InnoPick alert code, includi
 4. **Follow the solution steps** to resolve the issue
 5. **Verify resolution** before clearing the alert
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Alert Code Format
 
@@ -28,7 +28,7 @@ Each alert entry follows this format:
 - **Explanation & Causes**
 - **Solution**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 98 - ServoDrive Faulted while Moving (Sys_Flt)
 
@@ -50,7 +50,7 @@ The servo drive faulted during a motion operation.
 5. Contact maintenance if drive hardware fault suspected
 6. Clear alert after resolving issue
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 99 - ServoDrive Time-out Fault occurred during Start-up (Sys_Flt)
 
@@ -68,7 +68,7 @@ The servo drive did not respond in time during system start-up.
 3. If fault persists or repeats, contact maintenance
 4. Notify supervisors for maintenance follow-up even if it clears
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 109 - Photocell above lane was still blocked after the end of the storing move
 
@@ -95,7 +95,7 @@ After storing a case into a buffer lane, the photocell remained blocked when it 
 6. Clear the alert
 7. Resume operation
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 113 / 117 - Buffer lane tried to dispense a case but the case was too far back
 
@@ -126,7 +126,7 @@ InnoPick tried to dispense a case from buffer lane, but no case blocked the phot
 4. Verify position on Inventory Graph
 5. Clear alert
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 115 - Buffer lane tried to dispense a case but the case was too close to the front
 
@@ -145,7 +145,7 @@ Dispense case was detected earlier than expected (case seen too early).
 4. Verify case dimensions match product configuration
 5. Clear alert once position is correct
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 119 - Photocell still blocked after dispensing
 
@@ -175,7 +175,7 @@ The photocell for that lane remained blocked at the end of the dispense move.
 7. Clear alert
 8. Monitor next few dispenses from this lane
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 121 - Photocell above lane never detected the case during a storing move
 
@@ -212,7 +212,7 @@ InnoPick attempted to store a case, but the photocell was never blocked during t
 
 **Important:** See [Alert Guidelines](alert-guidelines.md#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom) - this is often a symptom of improper previous recovery.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 123 / 124 - Photocell above lane never detected the case during a dispense move
 
@@ -237,7 +237,7 @@ No case detected during dispense move when one was expected.
 
 **Important:** See [Alert Guidelines](alert-guidelines.md#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom) - often indicates inventory tracking issue.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 130 - Could not Execute a Sequence Conveyor Move. Timed Out Waiting for a previous Dispense Move to Finish
 
@@ -263,7 +263,7 @@ The sequence conveyor was ready to move but had to wait too long for a buffer la
 6. Monitor lane performance
 7. Contact maintenance if issue persists
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 152 - PopUp stayed down during store (300)
 
@@ -294,7 +294,7 @@ Pop-up assembly was detected in incorrect position (down) when it should have be
 6. Clear alert and test
 7. Contact maintenance if issue persists
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 153 - PopUp stayed down during dispense (301)
 
@@ -304,7 +304,7 @@ Pop-up assembly was detected in incorrect position during dispense operation.
 **Common Causes & Solution:**
 See alert 152 above - same troubleshooting applies.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 154 - PopUp stayed up after dispense (301)
 
@@ -314,7 +314,7 @@ Pop-up assembly did not retract after completing dispense operation.
 **Common Causes & Solution:**
 See alert 152 above - same troubleshooting applies, but focus on retraction mechanism and down position sensor.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 155 - PopUp never went down before store (300)
 
@@ -327,7 +327,7 @@ See alert 152 above - same troubleshooting applies, with emphasis on:
 - Solenoid valve operation
 - Down position sensor verification
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 156 - PopUp never went down before dispense (301)
 
@@ -337,7 +337,7 @@ Pop-up assembly failed to retract before dispense operation.
 **Common Causes & Solution:**
 See alert 152 above - same troubleshooting applies.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 310 - Clutch Fault: Mechanical engagement was not successfully completed after 15 attempts
 
@@ -366,7 +366,7 @@ The clutch assembly failed to engage properly after multiple attempts.
 8. Resume production on other lanes
 9. Contact maintenance
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 320 - Clutch Fault: Calculation Error in Mechanical Engagement Position
 
@@ -390,7 +390,7 @@ The system calculated an incorrect position for clutch mechanical engagement, in
 7. System parameters may need adjustment
 8. Clear alert after issue resolved
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 333 - Warning: Actual sensor transition was not seen, but system is assuming clutch was engaged properly
 
@@ -405,7 +405,7 @@ Proximity sensor did not detect expected transition, but system continued based 
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 334 - Clutch Fault: Prox sensor off after mechanical transition. Probably clutch mechanism bounce
 
@@ -425,7 +425,7 @@ Proximity sensor turned off after mechanical transition, likely due to clutch me
 4. Contact maintenance if repeats
 5. Clear alert
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 340 - Clutch Fault: Mechanical disengagement was not successfully completed after 15 attempts
 
@@ -441,7 +441,7 @@ Similar to alert 310, but focus on disengagement mechanism:
 5. Contact maintenance
 6. May need to deactivate lane
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 345 - Warning: Clutch Disengaged the Mechanism but the Prox Sensor is still Off
 
@@ -457,7 +457,7 @@ Clutch successfully disengaged mechanically, but the proximity sensor still indi
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 350 - Warning: Clutch Prox Sensor Changed Status in the Middle of a Buffer Lane Move
 
@@ -473,7 +473,7 @@ The clutch proximity sensor unexpectedly changed state during a buffer lane oper
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 371 - Auxiliary Encoders (at Outfeed & Infeed) are not Aligned to each other on the Buffer Shaft
 
@@ -495,7 +495,7 @@ The two auxiliary encoders that monitor the buffer shaft position are showing mi
 5. Contact maintenance - this indicates potential mechanical problem
 6. Clear alert after mechanical verification
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 372 - Auxiliary Encoder C (Infeed side) is not Aligned to Motor Encoder on Buffer Shaft
 
@@ -516,7 +516,7 @@ The auxiliary encoder on the infeed side of the buffer shaft is out of alignment
 5. Check for any slip indicators on coupling
 6. Clear alert after inspection and correction
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 373 - Auxiliary Encoder D (Outfeed side) is not Aligned to Motor Encoder on Buffer Shaft
 
@@ -526,7 +526,7 @@ The auxiliary encoder on the outfeed side of the buffer shaft is out of alignmen
 **Common Causes & Solution:**
 Same as alert 372, but for outfeed-side encoder.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 374 - Auxiliary Encoders Offsets have reached the Cumulative threshold
 
@@ -544,7 +544,7 @@ The cumulative offset errors between encoders have exceeded acceptable threshold
 - It is safe to clear and resume operation
 - If the fault returns soon after, a mechanical inspection of shaft couplings and encoder attachment hardware will be necessary.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 375 - Auxiliary Encoder C (Infeed side) Coupling Slip was Detected on Buffer Shaft
 
@@ -569,7 +569,7 @@ Actual slippage detected in the coupling connecting the infeed-side auxiliary en
 4. Clear alert after mechanical repair
 5. Monitor closely after resuming
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 376 - Auxiliary Encoder D (Outfeed side) Coupling Slip was Detected on Buffer Shaft
 
@@ -579,7 +579,7 @@ Actual slippage detected in the coupling connecting the outfeed-side auxiliary e
 **Common Causes & Solution:**
 Same as alert 375, but for outfeed-side encoder coupling.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 377 - Buffer Motor Gearbox / Shaft Slip Detected. Critical Fault. Inspect Mechanics.
 
@@ -602,7 +602,7 @@ Slippage detected between the buffer motor gearbox and the shaft - a critical me
     - Any signs of mechanical failure
 5. Clear alert only after repairs completed and verified
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 378 - Buffer Motor Gearbox / Shaft and Coupling Slip Detected. Critical Fault. Inspect Mechanics.
 
@@ -628,7 +628,7 @@ Multiple slip points detected simultaneously - gearbox, shaft, and coupling - in
     - Drive components
 5. Clear alert only after complete repairs and testing
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 400 & 401 - Communication loopback timeout (Sys_Flt)
 
@@ -645,7 +645,7 @@ Communication timeout in system loopback check.
 2. If it happens repeatedly, contact support
 3. Most likely indicates network infrastructure issue
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 402 - Timeout Clutch Fault - Waiting for Clutch to be Disengaged to Resume (Sys_Flt)
 
@@ -663,7 +663,7 @@ System timed out while waiting for a clutch to fully disengage before resuming o
 3. Contact maintenance if issue persists
 4. Clear alert after clutch verified disengaged
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 512 - Infeed middle photocell was not blocked during an infeed case move
 
@@ -689,7 +689,7 @@ The infeed cycle started and initial photocell was blocked by incoming case, but
 
 **See [Alert Guidelines](alert-guidelines.md#guideline-3-check-replenishment-status-after-any-infeed-alarm)** for additional infeed troubleshooting steps.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 515 - Unexpected case entering onto the infeed belts
 
@@ -720,7 +720,7 @@ The first infeed photocell was blocked when InnoPick was not expecting to receiv
 
 **See [Alert Guidelines](alert-guidelines.md#guideline-3-check-replenishment-status-after-any-infeed-alarm)** for complete infeed procedures.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 516 - Infeed Case's Length Too Long
 
@@ -753,7 +753,7 @@ The measured case length was greater than expected length plus tolerance during 
 
 **See [Alert Guidelines](alert-guidelines.md#guideline-3-check-replenishment-status-after-any-infeed-alarm)**.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 517 - Infeed Case's Length Too Short
 
@@ -785,7 +785,7 @@ The measured case length was less than expected length minus tolerance during in
 
 **See [Alert Guidelines](alert-guidelines.md#guideline-3-check-replenishment-status-after-any-infeed-alarm)**.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 518 - Infeed Case (on position 0) is too far downstream
 
@@ -811,13 +811,13 @@ The infeed case on position 0 (first sequence conveyor position) is positioned t
 6. Monitor subsequent cases for repeat
 7. Contact maintenance if issue recurs
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 519 - Infeed Case (on position 0) is too far upstream
 
 See Fault 518 above.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 520 - Infeed Fault: Previous Length Check was not Completed
 
@@ -835,7 +835,7 @@ A new infeed case arrived before the previous case's length measurement was comp
 7. Monitor subsequent infeed moves
 8. Contact maintenance if alert re-occurs
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 525 - Pop-up shaft reached final upper limit - probably did not engage the pop-up mechanism
 
@@ -860,7 +860,7 @@ The steel finger measuring pop-up height tripped the uppermost limit photocell, 
 5. Contact maintenance for pneumatic system tuning
 6. Clear alert after resolving
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 555 - E-Stop condition active - safety is disarmed (door opened or E-Stop pressed)
 
@@ -907,7 +907,7 @@ A safety device is not in the proper 'safe' condition. This puts all levels into
 
 **Safety Note:** Never bypass E-Stop or safety interlocks. If safety device seems to be malfunctioning, resolve the issue properly or contact maintenance.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 556 - Open Door Preventing return to RUN Status (Door# 1-4)
 
@@ -930,7 +930,7 @@ A specific safety door (numbered 1-4) is open and preventing the system from ret
 6. Clear alert after door is secured
 7. If door repeatedly shows open when closed, contact maintenance
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 570 - UPS power supply on battery (power loss)
 
@@ -949,7 +949,7 @@ Loss of main power. InnoPick PC is now running on UPS battery backup.
 4. If power not restored quickly, perform orderly shutdown
 5. Contact facility maintenance
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 571 - Mico Circuit Tripped (24V Short-Circuit)
 
@@ -979,7 +979,7 @@ The Mico circuit breaker has tripped, indicating a short circuit in the 24V syst
 6. Contact maintenance if cause not obvious
 7. **Never bypass** Mico protection
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 572 - Air pressure switch off - no air in system
 
@@ -1005,7 +1005,7 @@ Loss of air pressure in the pneumatic system.
     - Contact maintenance if issue not obvious
 4. Clear alert once air pressure is restored
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 573 - Input/Output Murr module fault (read variable Murr_Flt)
 
@@ -1030,7 +1030,7 @@ Loss of communication with Murr Modules (electrical modules mounted on front of 
 5. Contact system expert if issue continues
 6. Document specific module or level affected
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 575 - 12-Volt Power Supply for Auxiliary Encoders Not OK
 
@@ -1054,7 +1054,7 @@ The 12V power supply that powers the auxiliary encoders is not functioning prope
 7. May need power supply replacement
 8. Clear alert after power restored and verified
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 576 - Warning: UPS Battery Faulted
 
@@ -1078,7 +1078,7 @@ The UPS (Uninterruptible Power Supply) battery has a fault condition, indicating
 7. Document battery age and fault details
 8. Clear alert after battery replaced and tested
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 577 - Warning: UPS Battery Low
 
@@ -1104,7 +1104,7 @@ The UPS battery charge level is low, reducing available backup runtime.
 6. Consider battery replacement if issue persists
 7. Alert may clear automatically after battery recharges
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 660 - Motion Control Following Error - Critical Fault
 
@@ -1128,7 +1128,7 @@ A motion control following error has occurred, meaning the actual position of a 
 6. Contact maintenance - inspection suggested before restarting
 7. Clear alert
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 661 - Motion Control Following Error - Axis A (Infeed Conveyor) - Critical Fault
 
@@ -1142,7 +1142,7 @@ See alert 660 above, with specific focus on:
 - Mechanical binding at infeed
 - Encoder on infeed axis
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 662 - Motion Control Following Error - Axis B (Sequence Conveyor) - Critical Fault
 
@@ -1156,7 +1156,7 @@ See alert 660 above, with specific focus on:
 - Mechanical binding on sequence conveyor
 - Encoder on sequence conveyor axis
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 663 - Motion Control Following Error - Axis C (Buffer Conveyor) - Critical Fault
 
@@ -1170,7 +1170,7 @@ See alert 660 above, with specific focus on:
 - Mechanical binding in buffer lanes
 - Encoder on buffer axis
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 667 - Motion Control Following Error - Axis A B & C (All) - Critical Fault
 
@@ -1193,7 +1193,7 @@ Following error on all axes simultaneously (Infeed, Sequence, and Buffer conveyo
 5. Verify all mechanical systems after restoration
 6. Clear alert only after full system verification
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 671 - Galil Program Thread Command Error
 
@@ -1219,7 +1219,7 @@ An error occurred in the Galil motion controller program thread, indicating a co
 7. Clear alert after program issue corrected
 8. Test operation carefully after program changes
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 701 - Clutch Prox / Sensor Not On Before Starting Routine I/O Check
 
@@ -1244,7 +1244,7 @@ Before starting the routine I/O check, the clutch proximity sensor was not in th
 8. Clear alert after clutch position verified
 9. Contact maintenance if sensor or clutch issue persists
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 702 - Clutch Prox Not Off after Clutch Activation - Routine I/O Check
 
@@ -1268,7 +1268,7 @@ During routine I/O check, after the clutch was activated (engaged), the proximit
 7. Contact maintenance
 8. Clear alert after verification
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 703 - Clutch Prox Not On after clutch De-activation - Routine I/O Check
 
@@ -1292,7 +1292,7 @@ During routine I/O check, after the clutch was deactivated (disengaged), the pro
 7. Contact maintenance
 8. Clear alert after clutch verified returning properly
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 706 - Missing Y Pop-Up Flag (H) after Lift - Routine I/O Check
 
@@ -1316,7 +1316,7 @@ During routine I/O check, after the pop-up lifted, the "Y" flag sensor (H - inte
 7. Contact maintenance
 8. Clear alert after pop-up verified reaching proper height
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 707 - Z Pop-Up Flag (HH) Present after Lift - Routine I/O Check
 
@@ -1340,7 +1340,7 @@ During routine I/O check, after pop-up lift, the "Z" flag sensor (HH - upper lim
 7. Contact maintenance
 8. Clear alert after pop-up height verified correct
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 708 - Missing W Pop-Up Flag (LL) After Pop-Up De-activation - I/O Check
 
@@ -1364,7 +1364,7 @@ During routine I/O check, after the pop-up was deactivated (lowered), the "W" fl
 7. Contact maintenance
 8. Clear alert after pop-up verified retracting fully
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 709 - Buffer Lane Photocell Blocked during Routine I/O Check
 
@@ -1398,7 +1398,7 @@ InnoPick continuously monitors every lane's photocell and clutch proximity senso
 6. Monitor to ensure issue doesn't recur
 7. If the issue cannot be resolved quickly, it is possible to [disable the lane](../main-screens/inventory-section.md#disable--enable-lane-toggle) and ignore its sensors. This allows the fault to be cleared and production to resume.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 715 - Case Detected at Far Back of Buffer Lane
 
@@ -1418,7 +1418,7 @@ A case has been detected at the far back position of a buffer lane, which may in
 4. Clear alert
 5. Monitor lane operation
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 719 - Clutch Prox Sensor Off during Routine I/O Check
 
@@ -1428,7 +1428,7 @@ During routine I/O monitoring, the clutch proximity sensor is in the "off" state
 **Common Causes & Solution:**
 See alert 709 above - same troubleshooting applies for clutch proximity sensors.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 725 - Photocell above Lane was Blocked on Activated Lane
 
@@ -1453,7 +1453,7 @@ When a lane was activated (clutch engaged, ready to operate), the photocell abov
 8. Clear alert
 9. Monitor subsequent operations on this lane
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 781 - Infeed Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
 
@@ -1474,7 +1474,7 @@ The infeed motion control thread took too long to complete, exceeding the timeou
 4. Clear alert
 5. Monitor for recurrence
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 782 - Sequence Conveyor Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
 
@@ -1484,7 +1484,7 @@ The sequence conveyor motion control thread took too long to complete, exceeding
 **Common Causes & Solution:**
 See alert 781 above - same troubleshooting applies for sequence conveyor axis.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 783 - Buffer Motion Control (Galil) Thread Running too Long (Timeout) - Critical Fault
 
@@ -1494,7 +1494,7 @@ The buffer lane motion control thread took too long to complete, exceeding the t
 **Common Causes & Solution:**
 See alert 781 above - same troubleshooting applies for buffer/lane axis.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 791 - Motion control (Galil) thread crashed while main thread was waiting - critical fault
 
@@ -1535,7 +1535,7 @@ The motion controller instruction thread has crashed on the indicated level. Thi
     - May have extra or missing case
 7. **Monitor closely** for several cycles
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 900 - Warning: Back Edge of Case was Adjusted after the Case Stored
 
@@ -1550,7 +1550,7 @@ After a case was stored in a lane, the system detected the back edge position wa
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 901 - Warning: Back Edge of Case was Adjusted Outward after Case Dispense (Back Edge not Seen)
 
@@ -1565,7 +1565,7 @@ After dispensing a case, the back edge was not detected where expected, and the 
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 902 - Warning: Back Edge of Case was Adjusted Outward after Case Dispensed
 
@@ -1577,7 +1577,7 @@ Similar to alert 901 - normal system adjustment.
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 903 - Warning: Back Edge of Case was Adjusted Inward after Case Dispensed
 
@@ -1592,7 +1592,7 @@ After dispensing a case, the system adjusted the tracked position of the back ed
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 904 - Warning: Pulled Buffer Lane Cases Inward after Case Store (Photocell was Blocked)
 
@@ -1607,7 +1607,7 @@ After storing a case, the photocell was blocked (indicating insufficient gap to 
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 905 - Warning: Pulled Buffer Lane Cases Inward after Case Dispense (Photocell was Blocked)
 
@@ -1622,7 +1622,7 @@ After dispensing a case, the photocell was still blocked, indicating the next ca
 
 **Monitor and Inspect Clutch Assembly if it occurs repeatedly on the same lane** 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Outfeed Alerts
 
@@ -1660,7 +1660,7 @@ InnoPick expects a case on the last sequence conveyor position, but no case is d
 
 **Important:** See [Alert Guidelines](alert-guidelines.md#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom) - this usually indicates a tracking issue.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Not expecting a case but there is a case at the outfeed
 
@@ -1707,7 +1707,7 @@ A case is detected at the last position when InnoPick was not expecting one ther
 
 **Important:** See [Alert Guidelines](alert-guidelines.md#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom) - usually caused by improper infeed issue resolution.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -1716,6 +1716,6 @@ A case is detected at the last position when InnoPick was not expecting one ther
 - [Common Issues](common-issues.md) - Frequently encountered problems
 - [Case Replacement](case-replacement.md) - Procedures for replacing cases
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Alert Guidelines](alert-guidelines.md) | [Next: Common Issues →](common-issues.md)

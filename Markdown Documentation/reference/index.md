@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > Reference**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This page provides quick reference information for InnoPick Manager, including status indicators, alert code summaries, and other frequently-needed reference data.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Reference Pages
 
@@ -98,7 +98,7 @@ Condensed summary of all alert codes for quick lookup:
 | [904](../troubleshooting/alert-reference.md#904---warning-pulled-buffer-lane-cases-inward-after-case-store-photocell-was-blocked) | Warning: Pulled Buffer Lane Cases Inward after Case Store (Photocell was Blocked) |
 | [905](../troubleshooting/alert-reference.md#905---warning-pulled-buffer-lane-cases-inward-after-case-dispense-photocell-was-blocked) | Warning: Pulled Buffer Lane Cases Inward after Case Dispense (Photocell was Blocked) |
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Quick Reference Tables
 
@@ -112,7 +112,7 @@ Condensed summary of all alert codes for quick lookup:
 | **Dark Red** | E-Stop | Safety system engaged | Clear E-Stop condition |
 | **Blue** | Manual | Communication Loss | Re-establish communications |
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Alert Severity Levels
 
@@ -122,7 +122,7 @@ Condensed summary of all alert codes for quick lookup:
 | **Error** | Standard Alert | Production stopped on that level, buzzer sounds, requires attention.
 | **Critical** | Major issue | Production stopped on all levels, buzzer sounds, requires immediate attention |
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Common Alert Categories
 
@@ -139,7 +139,7 @@ Condensed summary of all alert codes for quick lookup:
 
 See [Alert Reference](../troubleshooting/alert-reference.md) for complete list with detailed explanations.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## User Roles and Permissions
 
@@ -152,7 +152,7 @@ See [Alert Reference](../troubleshooting/alert-reference.md) for complete list w
 
 See [User Manager](../main-screens/administration/user-manager.md) for details.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Common Tasks Quick Reference
 
@@ -167,7 +167,7 @@ See [User Manager](../main-screens/administration/user-manager.md) for details.
 | Resolve an alert | [Troubleshooting > Alert Reference](../troubleshooting/alert-reference.md) |
 | Replace a case | [Troubleshooting > Case Replacement](../troubleshooting/case-replacement.md) |
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## InnoPick Terminology
 
@@ -187,7 +187,7 @@ See [User Manager](../main-screens/administration/user-manager.md) for details.
 | **Sequence Conveyor** | Main conveyor that indexes cases position by position |
 | **SKU** | Stock Keeping Unit (product code) |
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## System Architecture Summary
 
@@ -200,7 +200,7 @@ See [User Manager](../main-screens/administration/user-manager.md) for details.
 6. Cases advance to **Outfeed**
 7. Cases exit to downstream palletizer
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -209,6 +209,6 @@ See [User Manager](../main-screens/administration/user-manager.md) for details.
 - [Main Screens](../main-screens/index.md) - Detailed feature reference
 - [Troubleshooting](../troubleshooting/index.md) - Problem resolution
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Disabled Lane](../troubleshooting/disabledlane.md) | [Home →](../index.md)

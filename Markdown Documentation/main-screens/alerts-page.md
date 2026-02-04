@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Main Screens](index.md) > Alerts Page**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
@@ -12,14 +12,14 @@ The Alerts page provides a comprehensive view of current and historical alerts, 
 
 <img src="../images/alerts/image20.png" width="1600" alt="Alerts Page">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Accessing the Alerts Page
 
 - Click the **Alerts** button in the left navigation menu
 - Available from any screen in InnoPick Manager
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Default Display
 
@@ -28,7 +28,7 @@ When the Alerts page first loads:
     - **Only uncleared alerts** are displayed by default
     - Alerts are shown in chronological order (most recent first)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Alerts Page Columns
 
@@ -82,7 +82,7 @@ Alerts are categorized by severity level:
 - Examples:
 <img src="../images/alerts/message1.png" width="800" alt="Alerts Page">
 <img src="../images/alerts/message2.png" width="800" alt="Alerts Page">
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Using Search and Filters
 
@@ -114,7 +114,7 @@ Use the search bar to find specific alerts by:
     - Search for the alert code or key message terms
     - Review the pattern and frequency
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Viewing All Alerts
 
@@ -132,7 +132,7 @@ To see all alerts:
 - Troubleshoot intermittent problems
 - Document issues for maintenance review
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Common Alert Codes
 
@@ -166,7 +166,7 @@ Here are some frequently encountered alerts (see [Alert Reference](../troublesho
 - Photocell unexpectedly blocked during routine monitoring
 - Check for debris, damaged cases, or sensor malfunction
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Working with Alerts
 
@@ -217,7 +217,7 @@ Some alerts cannot be cleared until specific conditions are met:
 
 See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for best Alert resolution practices.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Alert Troubleshooting Strategy
 
@@ -255,7 +255,7 @@ If multiple alert types occur in sequence:
 4. Verify physical conditions match the inventory graph
 5. May indicate a larger system issue requiring maintenance
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Best Practices
 
@@ -273,7 +273,7 @@ If multiple alert types occur in sequence:
 - Check if alerts correlate with specific products or lanes
 - Share alert history with maintenance personnel
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -282,6 +282,6 @@ If multiple alert types occur in sequence:
 - [Home Page Alerts](home-page.md#alerts-list) - Quick alert overview
 - [Troubleshooting](../troubleshooting/index.md) - General problem-solving guidance
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Home Page](home-page.md) | [Inventory Section →](inventory-section.md)

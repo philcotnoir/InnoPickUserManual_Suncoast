@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > User Manager**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <img src="../../images/administration/image51.png" width="800" alt="User Manager Page">
 
@@ -66,6 +66,6 @@ From the User Manager page, you can:
 - Use strong passwords
 - Change default passwords immediately
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Algorithm Parameters](algo-parameters.md) | [Recovery Actions →](recovery-actions.md)

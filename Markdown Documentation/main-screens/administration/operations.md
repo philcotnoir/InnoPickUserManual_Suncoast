@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > Operations**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Level status
 
@@ -50,6 +50,6 @@ There are two possible settings for the destination assignment mode:
 - InnoPick may change the destination when the first case of a pallet gets scheduled, based on the remaining accumulation available to load balance assignments "Just-in-Time"
 - In this mode, InnoPick responds dynamically to current accumulation levels and assigns pallets to the destination with the most capacity. 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Recovery Actions](recovery-actions.md) | [User Settings →](user-settings.md)

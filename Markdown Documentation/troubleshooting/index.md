@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > Troubleshooting**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This section provides guidance for resolving alerts, troubleshooting common issues, and recovering from problems during InnoPick operation.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Troubleshooting Resources
 
@@ -45,7 +45,7 @@ Explanations of and guidance for resolving deadlock situations.
 ### [Disabling an Active Lane](disabledlane.md)
 Guidance on how to handle disabling a lane that has incoming replenishment cases or already-scheduled output cases.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Quick Reference by Symptom
 
@@ -75,7 +75,7 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 **Infeed problem:**
 → See [Alert Reference](alert-reference.md) codes 512, 515, 517
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Troubleshooting Approach
 
@@ -106,7 +106,7 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 2. **Monitor closely** for recurrence
 3. **Report persistent problems** to maintenance
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Safety Reminders
 
@@ -116,7 +116,7 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 - **Follow lockout/tagout procedures** for maintenance work
 - **Report safety concerns** immediately to supervision
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Prevention Tips
 
@@ -137,7 +137,7 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 - Follow scheduled maintenance procedures
 - Address root causes, not just symptoms
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -146,6 +146,6 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 - [Home Page](../main-screens/home-page.md) - Monitoring system status
 - [Administration](../main-screens/administration/index.md) - Recovery actions for advanced issues
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← User Settings](../main-screens/administration/user-settings.md) | [Alert Guidelines →](alert-guidelines.md)

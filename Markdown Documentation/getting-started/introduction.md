@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > [Getting Started](index.md) > Introduction**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## About InnoPick Manager
 
 InnoPick Manager is a web-based software interface designed to control and monitor the InnoPick automated case picking system. This powerful system manages the storage, retrieval, and sequencing of cases across multiple levels to efficiently fulfill orders.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## What InnoPick Manager Does
 
@@ -21,7 +21,7 @@ InnoPick Manager provides operators with tools to:
 - Monitor case sequences, inventory, and production progress
 - Configure system parameters (for authorized users)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## About This Manual
 
@@ -39,7 +39,7 @@ The manual is organized into logical sections that match how you'll actually use
 
 Within each section, content is arranged by the menu structure in InnoPick Manager, making it easy to follow along as you learn the system.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Who Should Use This Manual
 
@@ -52,7 +52,7 @@ This manual is designed for:
 
 Different sections will be relevant depending on your role and access level.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## System Architecture Overview
 
@@ -65,7 +65,7 @@ InnoPick consists of:
 - **Outfeed System**: Releases sequenced cases to downstream conveyor system and palletizers
 - **InnoPick Manager**: The software interface you'll use to control it all
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Getting the Most from This Manual
 
@@ -87,12 +87,12 @@ InnoPick consists of:
 - Review security and access control features
 - Understand the implications of configuration changes
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Next Steps
 
 Now that you understand what InnoPick Manager does, proceed to [Logging In](login.md) to access the system.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Getting Started](index.md) | [Logging In →](login.md)

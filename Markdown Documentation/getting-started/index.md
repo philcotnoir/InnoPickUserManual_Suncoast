@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > Getting Started**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This section will guide you through your first interactions with InnoPick Manager, from logging in to understanding the basic interface layout.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## What You'll Learn
 
@@ -16,7 +16,7 @@ This section will guide you through your first interactions with InnoPick Manage
 - [Logging In](login.md) - How to access InnoPick Manager at your terminal
 - [Interface Overview](interface-overview.md) - Understanding the main navigation and screen layout
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Before you begin:
 - You need a valid username and password for InnoPick Manager
 - The system must be accessible via your facility's network
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Quick Start
 
@@ -33,7 +33,7 @@ Before you begin:
 2. **Want to understand the interface?** See [Interface Overview](interface-overview.md)
 3. **Ready to operate the system?** Move to [Daily Operations](../daily-operations/index.md)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Access Levels
 
@@ -46,6 +46,6 @@ Your user account will have one of the following roles, which determines what yo
 
 If you're unsure of your access level, ask your supervisor or system administrator.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Home ](../index.md) | [Introduction →](introduction.md)

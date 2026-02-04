@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Main Screens](index.md) > Case Sequence**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
@@ -10,7 +10,7 @@ The Case Sequence page displays the order in which cases will exit InnoPick and 
 
 <img src="../images/case-sequence/image39.png" width="1600" alt="Case Sequence Page">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Understanding the Case Sequence
 
@@ -26,7 +26,7 @@ This information is critical for:
 - Troubleshooting sequencing issues
 - Monitoring production progress
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Case Sequence Columns
 
@@ -85,7 +85,7 @@ The only action available on this page is:
   - **Warning**: During normal operations, it should not be necessary to cancel cases from the case sequence. This should only be done as part of a larger recovery effort in coordination with system experts or remote support. 
 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Using Search and Filters
 
@@ -128,7 +128,7 @@ Use the search bar to quickly find cases by:
 1. Filter by Destination (Merge A, Merge B, etc.)
 2. Verify routing is correct
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Using Case Sequence for Troubleshooting
 
@@ -175,13 +175,13 @@ If cases are arriving in wrong order:
     - Cancelled cases affecting sequence
 4. **Correct the sequence** if sequence is incorrect.
 5. *If InnoPick appears to be building an incorrect sequence, or the sequence in InnoPick does not match that of MixMaster, contact support.*
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
 - [Home Page Inventory Graph](home-page.md#inventory-graph) - Visual representation of In Progress cases
 - [Replenishments](inventory-section.md#replenishments-page) - Source of cases entering sequence
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Inventory Section](inventory-section.md) | [Administration →](administration/index.md)

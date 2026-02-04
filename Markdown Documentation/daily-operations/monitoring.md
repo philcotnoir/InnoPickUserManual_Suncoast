@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > [Daily Operations](index.md) > Monitoring**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 During production, operators should actively monitor InnoPick Manager to ensure smooth operation, catch problems early, and maintain production efficiency.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Primary Monitoring Dashboard
 
@@ -46,7 +46,7 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
     - Hover over lanes for detailed inventory info
     - Monitor for abnormal low inventory levels
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## What to Watch During Production
 
@@ -66,7 +66,7 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
 - Watch for stopped or hesitating conveyors
 - Be aware of downstream system status
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Recognizing Normal Operation
 
@@ -80,7 +80,7 @@ When InnoPick is operating correctly:
 - Replenishments are being inducted as needed
 - Output cases are feeding downstream without backing up
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Recognizing Problems Early
 
@@ -99,7 +99,7 @@ When InnoPick is operating correctly:
 - Replenishments not arriving as scheduled
 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Responding to Alerts
 
@@ -122,7 +122,7 @@ When an alert occurs:
 
 See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for detailed alert resolution procedures.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Monitoring Replenishments
 
@@ -147,7 +147,7 @@ Access the [Replenishments Page](../main-screens/inventory-section.md#replenishm
 
 **Action**: Coordinate with upstream depalletizing operations or see [Troubleshooting](../troubleshooting/index.md)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Understanding System Settings That Affect Operations
 
@@ -160,7 +160,7 @@ Be aware of these settings and their effects:
 **[Pause Infeed / Pause Outfeed](../main-screens/home-page.md#pause--resume-infeed)**
 - Controls whether cases enter or exit InnoPick
 - Check: [Home Page](../main-screens/home-page.md)
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Shift Handoff Checklist
 
@@ -173,7 +173,7 @@ When ending your shift, review with the next operator:
 - [ ] Upcoming scheduled maintenance or system changes
 - [ ] Any instructions from supervision
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 
 

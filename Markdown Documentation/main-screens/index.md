@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > Main Screens**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This section provides detailed documentation for each screen and feature in InnoPick Manager. Use this as a reference guide to understand what information is available and how to use each feature.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Screen Reference Guide
 
@@ -58,7 +58,7 @@ System configuration and advanced features (authorized users only):
 - **[Operations](administration/operations.md)**: Level and Merge statuses / controls
 - **[User Settings](administration/user-settings.md)**: Personal preferences
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## How to Use This Section
 
@@ -84,7 +84,7 @@ Authorized users should understand:
 - [Setup InnoPick](administration/setup-innopick.md) - System configuration
 - [Recovery Actions](administration/recovery-actions.md) - Advanced tools
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Screen Navigation Tips
 
@@ -106,6 +106,6 @@ Authorized users should understand:
 - Hover tooltips provide additional information
 - Blue hyperlinks navigate to related pages
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Monitoring Production](../daily-operations/monitoring.md) | [Home Page →](home-page.md)

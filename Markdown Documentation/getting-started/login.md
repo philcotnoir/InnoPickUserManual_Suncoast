@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Getting Started](index.md) > Logging In**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Accessing InnoPick Manager
 
@@ -27,7 +27,7 @@ InnoPick Manager is accessed through a standard web browser at your operator ter
 
 5. **Click the **Sign In** button**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## After Logging In
 
@@ -41,7 +41,7 @@ Once you successfully log in:
 
 If this is your first time logging in, you'll see the [Home Page](../main-screens/home-page.md) with the main interface. Take a moment to familiarize yourself with the layout described in [Interface Overview](interface-overview.md).
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Access Levels
 
@@ -54,7 +54,7 @@ Depending on your assigned user role, some menu options may not be accessible:
 
 If you need different access permissions, contact your supervisor or system administrator.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Session Management
 
@@ -76,7 +76,7 @@ To manually log out:
 
 **Best Practice**: Always log out when leaving your workstation, especially if you have elevated access privileges.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Troubleshooting Login Issues
 
@@ -97,12 +97,12 @@ To manually log out:
 - After multiple failed login attempts, your account may be locked for security
 - Contact your supervisor or system administrator to unlock it
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Next Steps
 
 Now that you're logged in, proceed to [Interface Overview](interface-overview.md) to learn about the main navigation and screen layout.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Introduction](introduction.md) | [Interface Overview →](interface-overview.md)

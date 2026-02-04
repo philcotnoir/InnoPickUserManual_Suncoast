@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > [Troubleshooting](index.md) > Case Replacement**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This page provides procedures for replacing broken, missing, or incorrect cases during InnoPick operation. Proper case replacement is critical to maintaining accurate inventory tracking and preventing cascading faults.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## When Case Replacement is Needed
 
@@ -20,7 +20,7 @@ Common scenarios requiring case replacement:
 - **Quality issue**: Case rejected for damage or defects
 - **Operator error**: Case removed during troubleshooting
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## General Principles
 
@@ -40,7 +40,7 @@ Common scenarios requiring case replacement:
     - Sequence conveyor vs. storage lane
     - Specific position on conveyor
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Scenario 1: Replace Case Currently Being Inducted
 
@@ -74,7 +74,7 @@ Common scenarios requiring case replacement:
     - Verify the case stores correctly
     - Monitor the transition to the next replenishment
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Scenario 2: Damaged Inbound Case on Sequence Conveyor is Not Needed for Client Pallet
 
@@ -110,7 +110,7 @@ Common scenarios requiring case replacement:
 4. **Clear alerts and resume**
 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Scenario 3: Replace Missing Outfeed Case
 
@@ -151,7 +151,7 @@ Common scenarios requiring case replacement:
     - Verify subsequent cases are tracking correctly
     - Watch for signs of offset sequence conveyor
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Special Considerations
 
@@ -170,7 +170,7 @@ After any replacement:
 - Confirm [Replenishments Page](../main-screens/inventory-section.md#replenishments-page) quantities
 - Ensure [Inventory Graph](../main-screens/home-page.md#inventory-graph) matches reality
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Preventing Case Replacement Needs
 
@@ -188,7 +188,7 @@ After any replacement:
 - Always follow [Alert Guidelines](alert-guidelines.md)
 - Verify Inventory Graph after every alert
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -197,6 +197,6 @@ After any replacement:
 - [Lane Inventory](../main-screens/inventory-section.md#lane-inventory-page) - Updating lane contents
 - [Replenishments Page](../main-screens/inventory-section.md#replenishments-page) - Adjusting quantities
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Deadlocks](deadlocks.md) | [Case Centering →](casecentering.md)

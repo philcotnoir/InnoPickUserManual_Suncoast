@@ -2,7 +2,7 @@
 
 **[Home](../../index.md) > [Main Screens](../index.md) > [Administration](index.md) > Recovery Actions**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <img src="../../images/administration/image53.png" width="1600" alt="Recovery Actions Page">
 
@@ -70,6 +70,6 @@ This recovery action sends a 'clear alarm' signal to the motion controller for a
 This recovery action clears internal processor errors and restarts the level processor for a given level. 
 - This is used after certain critical faults whose descriptions indicate to the operator that the level processor has been stopped. 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← User Manager](user-manager.md) | [Operations →](operations.md)

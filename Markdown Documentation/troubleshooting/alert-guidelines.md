@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > [Troubleshooting](index.md) > Alert Guidelines**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This page provides general principles and best practices for successfully resolving InnoPick alerts. Following these guidelines will help you avoid cascading faults and minimize downtime.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Understanding Level Status Colors
 
@@ -36,7 +36,7 @@ When alerts occur, InnoPick changes the level status indicators to show the seve
 2. Operator can verify conditions are correct
 3. Level can be put back into Automatic mode (Green)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Six General Guidelines for Operating InnoPick Successfully
 
@@ -54,7 +54,7 @@ The [Inventory Graph](../main-screens/home-page.md#inventory-graph) is the gold 
 - This is the absolute best way to avoid knock-on faults from incorrect recoveries
 - Most cascading faults occur because this step was skipped
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Guideline 2: After Store/Dispense Alerts, Check Physical Case Position
 
@@ -74,7 +74,7 @@ The [Inventory Graph](../main-screens/home-page.md#inventory-graph) is the gold 
 
 This is a general guideline, but remember Guideline #1 - the Inventory Graph is your ultimate reference.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Guideline 3: Check Replenishment Status After Any Infeed Alarm
 
@@ -102,7 +102,7 @@ Infeed alarms are confusing because they occur where two different systems conne
     - Verify case placement on sequence conveyor
     - Ensure inventory graph matches physical reality
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Guideline 4: Determine if Alert is Stand-Alone or a Symptom
 
@@ -133,7 +133,7 @@ These faults typically show up when someone has not followed Guideline #1.
 4. Verify that the inventory graph matches physical reality
 5. Correct any discrepancies before clearing alert and resuming production
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Guideline 5: Be Aware of InnoPick Settings
 
@@ -157,7 +157,7 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 - If a Merge is disabled, all cases route to other destination(s)
 - Check: [Administration > Setup InnoPick > Merges](../main-screens/administration/setup-innopick.md#merges-state)
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Guideline 6: Be Aware of Other System Settings
 
@@ -189,7 +189,7 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 3. **Coordinate with other system operators** to understand full picture
 4. **Verify communication** between systems is working
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Clearing Alerts
 
@@ -225,7 +225,7 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
      - Use the [Recovery Action: Send Clear Alarm on Level](../main-screens/administration/recovery-actions.md#most-commonly-used-recovery-actions)
 5. See [Alert Reference](alert-reference.md) for specific alert resolution steps
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Recognizing Symptoms of Bigger Issues
 
@@ -251,7 +251,7 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 - Verify inventory graph accuracy
 - May need to stop and reset entire level
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Best Practices Summary
 
@@ -263,7 +263,7 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 6. **Check Connected Systems** - Upstream and downstream affect InnoPick
 7. **When in Doubt, Ask** - Better to escalate than cause more problems
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -271,6 +271,6 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 - [Home Page Inventory Graph](../main-screens/home-page.md#inventory-graph) - Understanding the visual display
 - [Monitoring Production](../daily-operations/index.md#monitoring-production) - Catching issues early
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Troubleshooting](index.md) | [Alert Reference →](alert-reference.md)

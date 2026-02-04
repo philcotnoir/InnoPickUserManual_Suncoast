@@ -2,13 +2,13 @@
 
 **[Home](../index.md) > Daily Operations**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This section covers the standard procedures for operating InnoPick Manager on a daily basis, including startup, monitoring, and shutdown procedures.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Startup
 
@@ -29,7 +29,7 @@ Before powering up or enabling the system, conduct a thorough visual inspection 
 
 **Action**: Remove any foreign objects and correct any unsafe conditions before proceeding.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Startup Procedure
 
@@ -41,7 +41,7 @@ Before powering up or enabling the system, conduct a thorough visual inspection 
 
 See [Logging In](../getting-started/login.md) for detailed instructions if needed.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 #### 2. Review System Status
 
@@ -64,7 +64,7 @@ Once logged in, you'll see the [Home Page](../main-screens/home-page.md):
     - Check for disabled lanes on all levels
     - Check with maintenance staff if any disabled lanes can be put re-enabled following maintenance work.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 #### 3. Put InnoPick into Automatic Mode
 
@@ -84,7 +84,7 @@ Once you've verified the system is ready:
 - Nobody is inside the InnoPick safety fence
 - You're ready to begin production
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 #### 4. Monitor Initial Operation
 
@@ -97,7 +97,7 @@ After enabling Automatic mode:
 
 See [Monitoring Production](index.md#monitoring-production) for ongoing monitoring procedures.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Startup After Extended Downtime
 
@@ -110,7 +110,7 @@ If the system has been shut down for more than 24 hours:
 5. Allow a few moments for systems to initialize
 6. Test one level in Automatic mode before enabling all levels
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Troubleshooting Startup Issues
 
@@ -126,7 +126,7 @@ If the system has been shut down for more than 24 hours:
 
 **Solution:** Check the [Alerts Page](../main-screens/alerts-page.md) for details
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Shutdown
 
@@ -147,40 +147,7 @@ Check that there are no:
 - Allow system to finish current work before proceeding
 - Document any incomplete work for the next shift
 
-
-------
-
-
-******
-
-______
-
-[test](/extra.css)
-
-test block
-
-
-<hr>
-
-
-test block2
-
-<hr>
-test block3
-<hr>
-
-test block 4
-<hr style="border: 1px solid #3d3d3d; margin: 3em 0;">
-test block 5
-
-<hr style="border: 1px solid #999; margin: 2em 0;">
-<hr style="border: 3px solid #666; margin: 3em 0;">
-<hr style="border: 1px solid #ccc; margin: 1.5em 0;">
-<hr style="border: 3px solid #d32f2f; margin: 2em 0;">
-
-
-
-test block 6
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 2. Put InnoPick into Manual Mode
 
@@ -196,7 +163,7 @@ test block 6
 - Allows safe inspection and shutdown
 - Ensures system won't start unexpectedly
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 3. Conduct Visual Inspection
 
@@ -213,7 +180,7 @@ Perform a walk-around inspection of InnoPick:
 
 - Report safety concerns or mechanical issues to supervision
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 4. Log Out
 
@@ -223,7 +190,7 @@ Perform a walk-around inspection of InnoPick:
 
 **Security Note**: Always log out when leaving your workstation to prevent unauthorized access.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### 5. Suggested: Open an InnoPick Door
 
@@ -231,7 +198,7 @@ Perform a walk-around inspection of InnoPick:
 - This puts the system into a state equivalent to E-Stop
 - Reduces wear on certain components
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Essential Skills for Operators
 
@@ -253,7 +220,7 @@ To effectively operate InnoPick, you should be familiar with:
 
     - Understanding replenishment status
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Safety Reminders
 
@@ -262,6 +229,6 @@ To effectively operate InnoPick, you should be familiar with:
 - Ensure all personnel are clear before resuming automatic operation
 - Report any unsafe conditions to your supervisor
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Interface Overview](../getting-started/interface-overview.md) | [Monitoring Production →](monitoring.md)

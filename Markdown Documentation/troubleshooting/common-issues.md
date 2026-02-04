@@ -2,17 +2,17 @@
 
 **[Home](../index.md) > [Troubleshooting](index.md) > Common Issues**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
 This page addresses frequently encountered issues that may not have specific alert codes but require operator attention and intervention.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Outfeed Issues
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Cases Not Exiting InnoPick
 
@@ -49,7 +49,7 @@ This page addresses frequently encountered issues that may not have specific ale
 5. **If issue persists:**
     - If no explanation can be found for the stoppage, contact support
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 ### Next Outfeed Case Data is not in Outbound Conveyor System
 **Symptoms:**
 - The case at the outfeed position of InnoPick is waiting for the "Ok to Receive" signal from the downstream conveyor system
@@ -76,7 +76,7 @@ The steps for each case transfer are as follows:
 
 **Note: This recovery action re-sends the case data to the outbound PLC. If the data was already there, the downstream system will have a duplicate data which can cause serious tracking issues. Use with caution and monitor downstream system for any issues after using.**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Next Outfeed Case not advancing despite all conditions met
 **Symptoms:**
@@ -90,7 +90,7 @@ The steps for each case transfer are as follows:
 
 **Note: This recovery action will force the sequence conveyor to move forward. If it is used incorrectly or in the wrong scenario, it will make the situation worse. Use with caution.**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Infeed Issues
 
@@ -131,7 +131,7 @@ The steps for each case transfer are as follows:
 5. **If a system or motion controller reboot occured recently:**
     - Use the recovery action [Set InCasLen](../main-screens/administration/recovery-actions.md#set-incaslen) for the level in question.
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Wrong Product Being Inducted
 
@@ -169,7 +169,7 @@ The steps for each case transfer are as follows:
 5. **Resume InnoPick production**
     - Pay close attention to the first transitions between replenishments 
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Inventory Tracking Not Matching Physical Reality
 
@@ -213,7 +213,7 @@ The steps for each case transfer are as follows:
     - Never assume - always check
     - Train operators on proper procedures
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ### Frequent Alerts on Specific Products
 
@@ -243,7 +243,7 @@ The steps for each case transfer are as follows:
 
 5. **Consider removing product from InnoPick**
     - If the product is very problematic such that it is slowing down the entire production and the problems cannot be resolved by parameter changes, it may be better to remove the product from automation.
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
@@ -252,6 +252,6 @@ The steps for each case transfer are as follows:
 - [Monitoring Production](../daily-operations/index.md#monitoring-production) - Catching issues early
 - [Case Replacement](case-replacement.md) - Replacing problem cases
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Alert Reference](alert-reference.md) | [Deadlocks →](deadlocks.md)

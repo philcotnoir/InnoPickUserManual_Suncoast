@@ -2,7 +2,7 @@
 
 **[Home](../index.md) > [Main Screens](index.md) > Inventory Section**
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
 
@@ -10,7 +10,7 @@ The Inventory section provides comprehensive tools for managing product replenis
 
 <img src="../images/inventory/image21.png" width="1600" alt="Inventory Menu">
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Inventory Section Pages
 
@@ -22,7 +22,7 @@ The Inventory section contains five pages:
 4. [Outbound Accumulations](#outbound-accumulations-page) - Monitor outfeed accumulation space
 5. [Product Statistics](#product-statistics-page) - Analyze product usage
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Replenishments Page
 [Back to Top - Inventory Pages Overview](#overview)
@@ -131,7 +131,7 @@ Click the three vertical dots (⋮) on the right side of any replenishment to ac
 - Use when cases need to be manually removed before reaching InnoPick
 - **Note**: Cases rejected at Inbound QC are automatically deducted
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Products Page
 [Back to Top - Inventory Pages Overview](#overview)
@@ -234,7 +234,7 @@ When **Auto Assign** is disabled, you can manually assign the product to specifi
 
 **Note:** It is possible to change the level assignment(s) when a Auto Assign is still enabled. This temporarily overrides the algorithm
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Lane Inventory Page
 [Back to Top - Inventory Pages Overview](#overview)
@@ -350,7 +350,7 @@ When editing a lane, you can:
 - InnoPick may not always accommodate sudden changes
 - Inventory changes can trigger a [Deadlock -- see here for a troubleshooting guide](../troubleshooting/deadlocks.md).
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Outbound Accumulations Page
 [Back to Top - Inventory Pages Overview](#overview)
@@ -401,7 +401,7 @@ Based on these factors, InnoPick decides whether to schedule more output cases.
 **Note: The degree to which InnoPick schedules output cases is affected by, among other things, whether the *Build Inventory Mode* is active or not.**
 For more information on the Build Inventory Mode, see [Setup InnoPick > Buffer](administration/setup-innopick.md#buffer) section
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Product Statistics Page
 [Back to Top - Inventory Pages Overview](#overview)
@@ -473,13 +473,13 @@ The Product Statistics page provides detailed information about how InnoPick use
 - Products with high CCC should have adequate lane assignments
 - Products with frequent replenishments may need quantity adjustments
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics
 
 - [Home Page Lane Inventory](home-page.md#lane-inventory) - Quick lane overview
 - [Monitoring Production](../daily-operations/index.md#monitoring-production) - Using inventory data during operations
 
----
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 **Navigation:** [← Alerts Page](alerts-page.md) | [Case Sequence →](case-sequence.md)
