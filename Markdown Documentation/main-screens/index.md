@@ -14,6 +14,7 @@ This section provides detailed documentation for each screen and feature in Inno
 
 ### [Home Page](home-page.md)
 The main dashboard showing system status at a glance, including:
+
 - Inventory graph with real-time case positions
 - Level status indicators and mode controls
 - Current alerts listing
@@ -22,6 +23,7 @@ The main dashboard showing system status at a glance, including:
 
 ### [Alerts Page](alerts-page.md)
 Comprehensive alert monitoring and history, including:
+
 - Current and past alerts
 - Alert filtering and search
 - Alert details and severity levels
@@ -29,6 +31,7 @@ Comprehensive alert monitoring and history, including:
 
 ### [Inventory Section](inventory-section.md)
 Complete inventory management tools:
+
 - **Replenishments Page**: Track & manage incoming replenishments
 - **Products Page**: Configure product settings and parameters
 - **Lane Inventory Page**: View and edit storage lane contents
@@ -37,6 +40,7 @@ Complete inventory management tools:
 
 ### [Case Sequence Page](case-sequence.md)
 View the sequence of outgoing cases:
+
 - Current case sequence
 - Case status
 - Case information (HUID, level, case #, etc)
@@ -45,6 +49,7 @@ View the sequence of outgoing cases:
 
 ### [Administration Pages](administration/index.md)
 System configuration and advanced features (authorized users only):
+
 - **[Manual Motion Control](administration/manual-motion-control.md)**: Manual jog controls
 - **[Setup InnoPick](administration/setup-innopick.md)**: System configuration parameters
 - **[Algorithm Parameters](administration/algo-parameters.md)**: Algorithm tuning and optimization
@@ -59,12 +64,14 @@ System configuration and advanced features (authorized users only):
 
 ### For Daily Operation
 Focus on these screens:
+
 - [Home Page](home-page.md) - Your primary monitoring dashboard
 - [Alerts Page](alerts-page.md) - When issues occur
 - [Replenishments Page](inventory-section.md#replenishments-page) - Monitor replenishment statuses
 
 ### For Troubleshooting
 Refer to these screens:
+
 - [Alerts Page](alerts-page.md) - Identify problems
 - [Lane Inventory](inventory-section.md#lane-inventory-page) - Adjust lane counts
 - [Case Sequence Page](case-sequence.md) - Track specific output cases
@@ -73,6 +80,7 @@ Refer to these screens:
 
 ### For Administration
 Authorized users should understand:
+
 - [Setup InnoPick](administration/setup-innopick.md) - System configuration
 - [Recovery Actions](administration/recovery-actions.md) - Advanced tools
 
@@ -81,15 +89,19 @@ Authorized users should understand:
 ## Screen Navigation Tips
 
 **Getting to Screens:**
+
 - Click the navigation buttons on the left sidebar
 - Use browser bookmarks for frequently-accessed pages
 - Some screens have sub-sections accessed via tabs
 
 **Working with Data Tables:**
+
+- Click column headers to sort
 - Use search boxes to filter results
 - Look for action menus (three dots ⋮) for additional options
 
 **Understanding Visual Elements:**
+
 - Green/Yellow/Red color coding indicates status
 - Hover tooltips provide additional information
 - Blue hyperlinks navigate to related pages
