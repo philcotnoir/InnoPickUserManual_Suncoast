@@ -66,6 +66,8 @@ nav:
 plugins:
   - search
 
+extra_css: - stylesheets/extra.css
+
 # Markdown extensions for better formatting
 markdown_extensions:
   - tables

@@ -155,6 +155,7 @@ Check that there are no:
 
 ______
 
+[test](/extra.css)
 
 test block
 
