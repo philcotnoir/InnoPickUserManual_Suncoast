@@ -149,6 +149,11 @@ Check that there are no:
 
 ---
 
+***
+
+___
+
+
 ### 2. Put InnoPick into Manual Mode
 
 - On the [Home Page](../main-screens/home-page.md), click the **Manual** button

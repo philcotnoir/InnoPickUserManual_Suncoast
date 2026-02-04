@@ -71,6 +71,7 @@ markdown_extensions:
   - tables
   - nl2br
   - admonition
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
   - toc:
