@@ -1992,11 +1992,12 @@
 </code></pre>
 <hr />
 <h2 id="viewing-all-alerts">Viewing All Alerts<a class="headerlink" href="#viewing-all-alerts" title="Permanent link">&para;</a></h2>
-<p>To see all alerts:<br />
-- Remove all filters:<br />
-<img src="../images/alerts/filterall.png" width="400" alt="Alerts Page"><br />
-- This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.<br />
-- This can be useful when a level seems to be faulted but there is no obvious reason why.</p>
+<p>To see all alerts:</p>
+<pre><code>- Remove all filters:
+</code></pre>
+<p><img src="../images/alerts/filterall.png" width="400" alt="Alerts Page"><br />
+    - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.<br />
+    - This can be useful when a level seems to be faulted but there is no obvious reason why.</p>
 <h3 id="why-view-historical-alerts">Why View Historical Alerts?<a class="headerlink" href="#why-view-historical-alerts" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Identify patterns of recurring issues</li>
@@ -2045,26 +2046,30 @@
 <hr />
 <h2 id="working-with-alerts">Working with Alerts<a class="headerlink" href="#working-with-alerts" title="Permanent link">&para;</a></h2>
 <h3 id="understanding-alert-progression">Understanding Alert Progression<a class="headerlink" href="#understanding-alert-progression" title="Permanent link">&para;</a></h3>
-<p><strong>Typical Alert Lifecycle:</strong><br />
-1. Issue occurs (sensor detects problem)<br />
-2. Alert generated and logged<br />
-3. System puts affected level in Manual or Fault mode<br />
-4. Alert appears on Home Page and Alerts Page<br />
-5. Operator resolves underlying issue<br />
-6. Operator clears alert<br />
-7. System resumes operation</p>
+<p><strong>Typical Alert Lifecycle:</strong></p>
+<ol>
+<li>Issue occurs (sensor detects problem)</li>
+<li>Alert generated and logged</li>
+<li>System puts affected level in Manual or Fault mode</li>
+<li>Alert appears on Home Page and Alerts Page</li>
+<li>Operator resolves underlying issue</li>
+<li>Operator clears alert</li>
+<li>System resumes operation</li>
+</ol>
 <h3 id="when-to-clear-alerts">When to Clear Alerts<a class="headerlink" href="#when-to-clear-alerts" title="Permanent link">&para;</a></h3>
-<p><strong>You should clear alerts only when:</strong><br />
-- The underlying physical issue has been resolved<br />
-- Cases are in correct positions<br />
-- Sensors are unblocked<br />
-- Mechanical issues are fixed<br />
-- Safety devices are reset</p>
-<p><strong>Do not clear alerts if:</strong><br />
-- The problem still exists<br />
-- You're unsure what caused the alert<br />
-- Physical conditions don't match expectations<br />
-- Multiple related alerts are occurring</p>
+<p><strong>You should clear alerts only when:</strong></p>
+<pre><code>- The underlying physical issue has been resolved
+- Cases are in correct positions
+- Sensors are unblocked
+- Mechanical issues are fixed
+- Safety devices are reset
+</code></pre>
+<p><strong>Do not clear alerts if:</strong></p>
+<pre><code>- The problem still exists
+- You're unsure what caused the alert
+- Physical conditions don't match expectations
+- Multiple related alerts are occurring
+</code></pre>
 <h3 id="if-alerts-wont-clear">If Alerts Won't Clear<a class="headerlink" href="#if-alerts-wont-clear" title="Permanent link">&para;</a></h3>
 <p>Some alerts cannot be cleared until specific conditions are met:</p>
 <ol>
@@ -2090,28 +2095,40 @@
 <hr />
 <h2 id="alert-troubleshooting-strategy">Alert Troubleshooting Strategy<a class="headerlink" href="#alert-troubleshooting-strategy" title="Permanent link">&para;</a></h2>
 <h3 id="for-single-alerts">For Single Alerts<a class="headerlink" href="#for-single-alerts" title="Permanent link">&para;</a></h3>
-<p>If an alert occurs once:<br />
-1. Note the alert type and details<br />
-2. Resolve the issue<br />
-3. Clear the alert<br />
-4. Monitor to ensure it doesn't recur</p>
+<p>If an alert occurs once:</p>
+<ol>
+<li>Note the alert type and details</li>
+<li>Resolve the issue</li>
+<li>Clear the alert</li>
+<li>Monitor to ensure it doesn't recur</li>
+</ol>
 <h3 id="for-repeated-alerts">For Repeated Alerts<a class="headerlink" href="#for-repeated-alerts" title="Permanent link">&para;</a></h3>
-<p>If the same alert occurs multiple times:<br />
-1. <strong>There's likely an underlying problem</strong> that wasn't fully resolved<br />
-2. Check for:<br />
-    - Damaged cases causing repeated issues<br />
-    - Incorrect inventory quantities<br />
-    - Mechanical problems<br />
-    - Configuration issues<br />
-3. Resolve the root cause, not just the symptom<br />
-4. Document the issue for maintenance review</p>
+<p>If the same alert occurs multiple times:</p>
+<ol>
+<li><strong>There's likely an underlying problem</strong> that wasn't fully resolved</li>
+<li>
+<p>Check for:</p>
+<ul>
+<li>Damaged cases causing repeated issues</li>
+<li>Incorrect inventory quantities</li>
+<li>Mechanical problems</li>
+<li>Configuration issues</li>
+</ul>
+</li>
+<li>
+<p>Resolve the root cause, not just the symptom</p>
+</li>
+<li>Document the issue for maintenance review</li>
+</ol>
 <h3 id="for-multiple-different-alerts">For Multiple Different Alerts<a class="headerlink" href="#for-multiple-different-alerts" title="Permanent link">&para;</a></h3>
-<p>If multiple alert types occur in sequence:<br />
-1. <strong>They may be related</strong> - one issue causing cascading effects<br />
-2. Review the <a href="../troubleshooting/alert-guidelines.html">Alert Guidelines</a><br />
-3. Focus on resolving the earliest alert first<br />
-4. Verify physical conditions match the inventory graph<br />
-5. May indicate a larger system issue requiring maintenance</p>
+<p>If multiple alert types occur in sequence:</p>
+<ol>
+<li><strong>They may be related</strong> - one issue causing cascading effects</li>
+<li>Review the <a href="../troubleshooting/alert-guidelines.html">Alert Guidelines</a></li>
+<li>Focus on resolving the earliest alert first</li>
+<li>Verify physical conditions match the inventory graph</li>
+<li>May indicate a larger system issue requiring maintenance</li>
+</ol>
 <hr />
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <h3 id="during-production">During Production<a class="headerlink" href="#during-production" title="Permanent link">&para;</a></h3>

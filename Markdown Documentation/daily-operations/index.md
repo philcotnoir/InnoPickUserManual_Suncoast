@@ -10,15 +10,11 @@ This section covers the standard procedures for operating InnoPick Manager on a 
 
 ---
 
-## Daily Procedures
-
-### Startup
+## Startup
 
 Complete checklist for beginning operations each day, including visual inspection, login, and enabling automatic mode.
 
-#### Pre-Startup Checklist
-
-##### Visual Inspection
+### Pre-Startup Visual Inspection:
 
 Before powering up or enabling the system, conduct a thorough visual inspection of InnoPick:
 
@@ -35,9 +31,9 @@ Before powering up or enabling the system, conduct a thorough visual inspection 
 
 ---
 
-#### Startup Procedure
+### Startup Procedure
 
-##### 1. Access InnoPick Manager
+#### Access InnoPick Manager
 
 1. Open a web browser at your operator terminal
 2. Navigate to the InnoPick Manager web address
@@ -47,7 +43,7 @@ See [Logging In](../getting-started/login.md) for detailed instructions if neede
 
 ---
 
-##### 2. Review System Status
+#### 2. Review System Status
 
 Once logged in, you'll see the [Home Page](../main-screens/home-page.md):
 
@@ -70,7 +66,7 @@ Once logged in, you'll see the [Home Page](../main-screens/home-page.md):
 
 ---
 
-##### 3. Put InnoPick into Automatic Mode
+#### 3. Put InnoPick into Automatic Mode
 
 Once you've verified the system is ready:
 
@@ -90,7 +86,7 @@ Once you've verified the system is ready:
 
 ---
 
-##### 4. Monitor Initial Operation
+#### 4. Monitor Initial Operation
 
 After enabling Automatic mode:
 
@@ -103,7 +99,7 @@ See [Monitoring Production](index.md#monitoring-production) for ongoing monitori
 
 ---
 
-#### Startup After Extended Downtime
+### Startup After Extended Downtime
 
 If the system has been shut down for more than 24 hours:
 
@@ -116,9 +112,9 @@ If the system has been shut down for more than 24 hours:
 
 ---
 
-#### Troubleshooting Startup Issues
+### Troubleshooting Startup Issues
 
-##### System Won't Enter Automatic Mode
+#### System Won't Enter Automatic Mode
 
 **Possible Causes:**
 
@@ -132,11 +128,11 @@ If the system has been shut down for more than 24 hours:
 
 ---
 
-### Shutdown
+## Shutdown
 
 Proper procedures for ending the shift and securing the system.
 
-#### 1. Verify Production is Complete
+### 1. Verify Production is Complete
 
 Check that there are no:
 
@@ -153,7 +149,7 @@ Check that there are no:
 
 ---
 
-#### 2. Put InnoPick into Manual Mode
+### 2. Put InnoPick into Manual Mode
 
 1. On the [Home Page](../main-screens/home-page.md), click the **Manual** button
 
@@ -169,7 +165,7 @@ Check that there are no:
 
 ---
 
-#### 3. Conduct Visual Inspection
+### 3. Conduct Visual Inspection
 
 Perform a walk-around inspection of InnoPick:
 
@@ -186,7 +182,7 @@ Perform a walk-around inspection of InnoPick:
 
 ---
 
-#### 4. Log Out
+### 4. Log Out
 
 1. Click on your username or logout button
 2. Confirm logout
@@ -196,7 +192,7 @@ Perform a walk-around inspection of InnoPick:
 
 ---
 
-#### 5. Suggested: Open an InnoPick Door
+### 5. Suggested: Open an InnoPick Door
 
 - It is recommended to request access to an InnoPick door, as this removes all latent electrical and pneumatic energy from the system
 - This puts the system into a state equivalent to E-Stop
@@ -223,6 +219,7 @@ To effectively operate InnoPick, you should be familiar with:
 3. **Replenishments Awareness**
 
    - Understanding replenishment status
+
 ---
 
 ## Safety Reminders
