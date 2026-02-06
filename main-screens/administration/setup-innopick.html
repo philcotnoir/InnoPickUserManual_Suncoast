@@ -1094,8 +1094,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build Inventory">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#normal-operation-mode" class="md-nav__link">
@@ -1116,11 +1115,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1855,14 +1849,14 @@
 - Simpler but may cause downstream congestion issues</p>
 <h4 id="build-inventory">Build Inventory<a class="headerlink" href="#build-inventory" title="Permanent link">&para;</a></h4>
 <p>InnoPick can operate in two modes regarding accumulation:</p>
-<h5 id="normal-operation-mode">Normal Operation Mode<a class="headerlink" href="#normal-operation-mode" title="Permanent link">&para;</a></h5>
+<h4 id="normal-operation-mode">Normal Operation Mode<a class="headerlink" href="#normal-operation-mode" title="Permanent link">&para;</a></h4>
 <ul>
 <li>IPM schedules as many output cases as possible, using Buffer logic if that option (see above) is enabled</li>
 <li>Assumes downstream conveyors advance at nominal rate</li>
 <li>Maximizes throughput</li>
 <li>May occasionally have to stop if outbound flow stops unexpectedly</li>
 </ul>
-<h5 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h5>
+<h4 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h4>
 <ul>
 <li>IPM prioritizes building lane inventory over outputting cases</li>
 <li>Only schedules output cases that will definitely fit in current accumulation space </li>
