@@ -25,8 +25,8 @@ The Alerts page provides a comprehensive view of current and historical alerts, 
 
 When the Alerts page first loads:
 
-    - **Only uncleared alerts** are displayed by default
-    - Alerts are shown in chronological order (most recent first)
+  - **Only uncleared alerts** are displayed by default
+  - Alerts are shown in chronological order (most recent first)
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
@@ -50,20 +50,20 @@ Alerts are categorized by severity level:
 
 **Warning**: Minor alert that may not require immediate action
 
-    - System can often continue operating
-    - Should be monitored for patterns
-    - No audible sound
+  - System can often continue operating
+  - Should be monitored for patterns
+  - No audible sound
   
 **Error**: A standard Alert which stops the affected level and puts it into Manual (Faulted/Red) mode.
-    
-    - Other levels continue operating
-    - The panel Buzzer will sound to alert the operator
+   
+  - Other levels continue operating
+  - The panel Buzzer will sound to alert the operator
   
 **Critical**: Major system alert requiring attention
 
-    - Production on all levels may be stopped
-    - Requires operator intervention
-    - The panel Buzzer will sound to alert the operator
+  - Production on all levels may be stopped
+  - Requires operator intervention
+  - The panel Buzzer will sound to alert the operator
 
 ### Raw Code
 - The numeric code associated with the alert
@@ -92,27 +92,27 @@ Alerts are categorized by severity level:
 
 Use the search bar to find specific alerts by:
 
-    - Alert code (e.g., "555")
-    - Keywords in message text (e.g., "photocell", "clutch")
-    - Level number
-    - Date/time information
+  - Alert code (e.g., "555")
+  - Keywords in message text (e.g., "photocell", "clutch")
+  - Level number
+  - Date/time information
 
 ### Common Filtering Strategies
 
 **To find all alerts for a specific level:**
 
-    - Sort by the Level column
-    - All alerts for each level will be grouped together
+  - Sort by the Level column
+  - All alerts for each level will be grouped together
 
 **To find recent critical alerts:**
 
-    - Filter by Severity = Critical
-    - Sort by Date (most recent first)
+  - Filter by Severity = Critical
+  - Sort by Date (most recent first)
 
 **To track a specific type of fault:**
 
-    - Search for the alert code or key message terms
-    - Review the pattern and frequency
+  - Search for the alert code or key message terms
+  - Review the pattern and frequency
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
@@ -120,10 +120,10 @@ Use the search bar to find specific alerts by:
 
 To see all alerts:
 
-    - Remove all filters:
+  - Remove all filters:
 <img src="../images/alerts/filterall.png" width="400" alt="Alerts Page">
-    - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
-    - This can be useful when a level seems to be faulted but there is no obvious reason why.
+  - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
+  - This can be useful when a level seems to be faulted but there is no obvious reason why.
 
 ### Why View Historical Alerts?
 
@@ -186,18 +186,18 @@ Here are some frequently encountered alerts (see [Alert Reference](../troublesho
 
 **You should clear alerts only when:**
 
-    - The underlying physical issue has been resolved
-    - Cases are in correct positions
-    - Sensors are unblocked
-    - Mechanical issues are fixed
-    - Safety devices are reset
+  - The underlying physical issue has been resolved
+  - Cases are in correct positions
+  - Sensors are unblocked
+  - Mechanical issues are fixed
+  - Safety devices are reset
 
 **Do not clear alerts if:**
 
-    - The problem still exists
-    - You're unsure what caused the alert
-    - Physical conditions don't match expectations
-    - Multiple related alerts are occurring
+  - The problem still exists
+  - You're unsure what caused the alert
+  - Physical conditions don't match expectations
+  - Multiple related alerts are occurring
 
 ### If Alerts Won't Clear
 
@@ -210,9 +210,9 @@ Some alerts cannot be cleared until specific conditions are met:
     - Is a case in the wrong position?
 3. **Resolve the root cause**
 4. **Try clearing again**
-     - Use the [Recovery Action: Send Clear Alarm on Level](../main-screens/administration/recovery-actions.md#clear-alarm-on-level)   
+    - Use the [Recovery Action: Send Clear Alarm on Level](../main-screens/administration/recovery-actions.md#clear-alarm-on-level)   
 5. The Alert in question is being filtered (not visible).
-     - [See how to View All Alerts](../main-screens/alerts-page.md#viewing-all-alerts)
+    - [See how to View All Alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 6. **Consult troubleshooting guide** if issue persists
 
 See [Alert Guidelines](../troubleshooting/alert-guidelines.md) for best Alert resolution practices.

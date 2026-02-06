@@ -67,15 +67,18 @@ Next, place a perfectly centered case in front of the first lane, and manually j
 ### 6. Apply the Correction
 
 Adjust the **"Lane Pitch in Millimeters"** parameter by the result of your calculation in Step 5.
+
 **Important Note:** 
-    - If the adjustment is towards the upstream, subtract the value from the current Lane Pitch distance. This will reduce the size of the standard move and result in the case moving a smaller distance, ending up more upstream.
-    - If the adjustment is towards the downstream, add the value to the current Lane Pitch distance. This will increase the size of the standard move and result in the case moving a greater distance, ending up further downstream.
+
+- If the adjustment is towards the upstream, subtract the value from the current Lane Pitch distance. This will reduce the size of the standard move and result in the case moving a smaller distance, ending up more upstream.
+- If the adjustment is towards the downstream, add the value to the current Lane Pitch distance. This will increase the size of the standard move and result in the case moving a greater distance, ending up further downstream.
 
 **Example (continued):**
+
 - If our calculation resulted in a value of 0.17mm
 - And the Lane Pitch parameter is currently at **558.80mm**
 - We will subtract the calculated value from the parameter value:
-- **558.80 - 0.17 = 558.63mm**
+  - **558.80 - 0.17 = 558.63mm**
 
 
 

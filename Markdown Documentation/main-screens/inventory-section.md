@@ -91,10 +91,10 @@ Replenishments can also be **Canceled**
 - Actual number of cases being sent from depalletizer to InnoPick
 - May be less than Desired Quantity if:
 
-    - Source pallet has fewer layers than requested
-    - Replenishment was shorted by 1 or more layers during depalletization
-    - Cases were rejected at inbound QC station
-    - If quantity is insufficient to fulfill the client orders, another replenishment is automatically created
+  - Source pallet has fewer layers than requested
+  - Replenishment was shorted by 1 or more layers during depalletization
+  - Cases were rejected at inbound QC station
+  - If quantity is insufficient to fulfill the client orders, another replenishment is automatically created
 
 #### Inducted Quantity
 - Number of cases successfully inducted to date
@@ -283,9 +283,9 @@ The Lane Inventory page is an expanded version of the lane display available on 
 - Controls whether a specific lane can be used in production
 - **Warning**: Disabling a lane during production may require manual intervention if:
 
-    - Products were already scheduled to store in that lane
-    - Products need to be dispensed from that lane
-    - See the **[Disabled Lane Troubleshooting Guide](../troubleshooting/disabledlane.md)** for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.
+  - Products were already scheduled to store in that lane
+  - Products need to be dispensed from that lane
+  - See the **[Disabled Lane Troubleshooting Guide](../troubleshooting/disabledlane.md)** for information on how to deal with with disabling a lane that has scheduled inbound or outbound cases.
 
 #### Ignore Sensors 
 - This option can be enabled only on a disabled lane. 

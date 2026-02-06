@@ -53,15 +53,18 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
 ### Continuous Monitoring Tasks
 
 **Every 15-30 Minutes:**
+
 - Glance at level status indicators (all should be green)
 - Check for new alerts
 - Verify production progress is advancing
 
 **Every 1-2 Hours:**
+
 - Check replenishment status
 - Monitor case sequence progress
 
 **Throughout the Shift:**
+
 - Listen for unusual mechanical sounds
 - Watch for stopped or hesitating conveyors
 - Be aware of downstream system status
@@ -87,6 +90,7 @@ When InnoPick is operating correctly:
 ### Warning Signs to Watch For
 
 **Immediate Attention Required:**
+
 - Any level turns **Red** (fault condition)
 - E-Stop condition (all levels **Dark Red**)
 - Critical alerts appear
@@ -94,6 +98,7 @@ When InnoPick is operating correctly:
 - Unusual sounds or movements
 
 **Monitor Closely:**
+
 - Repeated alerts of the same type
 - Accumulation building up at outfeed
 - Replenishments not arriving as scheduled
@@ -142,6 +147,7 @@ Access the [Replenishments Page](../main-screens/inventory-section.md#replenishm
 **Normal**: Replenishments progress from Pending → In Progress → Inducting → Completed
 
 **Problem Indicators:**
+
 - Inducted Quantity doesn't match expected quantity
 - Replenishments backing up at infeed
 
@@ -154,10 +160,12 @@ Access the [Replenishments Page](../main-screens/inventory-section.md#replenishm
 Be aware of these settings and their effects:
 
 **[Build Inventory Mode](../main-screens/administration/setup-innopick.md#build-inventory)**
+
 - When ON: Prioritizes storing replenishment cases over outputting cases
 - When OFF: Balances input and output for maximum throughput
 
 **[Pause Infeed / Pause Outfeed](../main-screens/home-page.md#pause--resume-infeed)**
+
 - Controls whether cases enter or exit InnoPick
 - Check: [Home Page](../main-screens/home-page.md)
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
@@ -166,12 +174,12 @@ Be aware of these settings and their effects:
 
 When ending your shift, review with the next operator:
 
-- [ ] Current system status and any active alerts
-- [ ] Any recurring issues or unusual behavior observed
-- [ ] Replenishments in progress or pending
-- [ ] Any lanes disabled or products having problems
-- [ ] Upcoming scheduled maintenance or system changes
-- [ ] Any instructions from supervision
+- Current system status and any active alerts
+- Any recurring issues or unusual behavior observed
+- Replenishments in progress or pending
+- Any lanes disabled or products having problems
+- Upcoming scheduled maintenance or system changes
+- Any instructions from supervision
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 

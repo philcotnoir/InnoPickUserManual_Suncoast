@@ -197,13 +197,13 @@ When enabled, InnoPick keeps track of the cases in the outbound accumulation to 
 
 InnoPick can operate in two modes regarding accumulation:
 
-##### Normal Operation Mode
+#### Normal Operation Mode
 - IPM schedules as many output cases as possible, using Buffer logic if that option (see above) is enabled
 - Assumes downstream conveyors advance at nominal rate
 - Maximizes throughput
 - May occasionally have to stop if outbound flow stops unexpectedly
 
-##### Build Inventory Mode
+#### Build Inventory Mode
 - IPM prioritizes building lane inventory over outputting cases
 - Only schedules output cases that will definitely fit in current accumulation space 
 - More conservative approach

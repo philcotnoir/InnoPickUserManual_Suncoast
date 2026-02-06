@@ -139,7 +139,7 @@ If a case doesn't arrive at the palletizer when expected:
 1. **Search for the case** by Pallet ID or Case Ref
 2. **Check the State:**
     - Pending: Still waiting to be processed (or was somehow missed because of a system glitch)
-     - Often, a pending case indicates the system is still waiting for a replenishment to provide that case
+      - Often, a pending case indicates the system is still waiting for a replenishment to provide that case
     - In Progress: On conveyor or in lane - check [Home Page Inventory Graph](home-page.md#inventory-graph)
     - Completed: InnoPick released it - check downstream tracking
     - Cancelled: Was removed - determine why

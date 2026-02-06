@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1649,10 +1651,12 @@
 
 <h1 id="monitoring-production">Monitoring Production<a class="headerlink" href="#monitoring-production" title="Permanent link">&para;</a></h1>
 <p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Daily Operations</a> &gt; Monitoring</strong></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>During production, operators should actively monitor InnoPick Manager to ensure smooth operation, catch problems early, and maintain production efficiency.</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="primary-monitoring-dashboard">Primary Monitoring Dashboard<a class="headerlink" href="#primary-monitoring-dashboard" title="Permanent link">&para;</a></h2>
 <p>The <a href="../main-screens/home-page.html">Home Page</a> provides all essential information for monitoring production at a glance.</p>
 <h3 id="key-elements-to-monitor">Key Elements to Monitor<a class="headerlink" href="#key-elements-to-monitor" title="Permanent link">&para;</a></h3>
@@ -1703,21 +1707,29 @@
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="what-to-watch-during-production">What to Watch During Production<a class="headerlink" href="#what-to-watch-during-production" title="Permanent link">&para;</a></h2>
 <h3 id="continuous-monitoring-tasks">Continuous Monitoring Tasks<a class="headerlink" href="#continuous-monitoring-tasks" title="Permanent link">&para;</a></h3>
-<p><strong>Every 15-30 Minutes:</strong><br />
-- Glance at level status indicators (all should be green)<br />
-- Check for new alerts<br />
-- Verify production progress is advancing</p>
-<p><strong>Every 1-2 Hours:</strong><br />
-- Check replenishment status<br />
-- Monitor case sequence progress</p>
-<p><strong>Throughout the Shift:</strong><br />
-- Listen for unusual mechanical sounds<br />
-- Watch for stopped or hesitating conveyors<br />
-- Be aware of downstream system status</p>
-<hr />
+<p><strong>Every 15-30 Minutes:</strong></p>
+<ul>
+<li>Glance at level status indicators (all should be green)</li>
+<li>Check for new alerts</li>
+<li>Verify production progress is advancing</li>
+</ul>
+<p><strong>Every 1-2 Hours:</strong></p>
+<ul>
+<li>Check replenishment status</li>
+<li>Monitor case sequence progress</li>
+</ul>
+<p><strong>Throughout the Shift:</strong></p>
+<ul>
+<li>Listen for unusual mechanical sounds</li>
+<li>Watch for stopped or hesitating conveyors</li>
+<li>Be aware of downstream system status</li>
+</ul>
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="recognizing-normal-operation">Recognizing Normal Operation<a class="headerlink" href="#recognizing-normal-operation" title="Permanent link">&para;</a></h2>
 <p>When InnoPick is operating correctly:</p>
 <ul>
@@ -1729,20 +1741,26 @@
 <li>Replenishments are being inducted as needed</li>
 <li>Output cases are feeding downstream without backing up</li>
 </ul>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="recognizing-problems-early">Recognizing Problems Early<a class="headerlink" href="#recognizing-problems-early" title="Permanent link">&para;</a></h2>
 <h3 id="warning-signs-to-watch-for">Warning Signs to Watch For<a class="headerlink" href="#warning-signs-to-watch-for" title="Permanent link">&para;</a></h3>
-<p><strong>Immediate Attention Required:</strong><br />
-- Any level turns <strong>Red</strong> (fault condition)<br />
-- E-Stop condition (all levels <strong>Dark Red</strong>)<br />
-- Critical alerts appear<br />
-- Cases stopped on conveyors<br />
-- Unusual sounds or movements</p>
-<p><strong>Monitor Closely:</strong><br />
-- Repeated alerts of the same type<br />
-- Accumulation building up at outfeed<br />
-- Replenishments not arriving as scheduled</p>
-<hr />
+<p><strong>Immediate Attention Required:</strong></p>
+<ul>
+<li>Any level turns <strong>Red</strong> (fault condition)</li>
+<li>E-Stop condition (all levels <strong>Dark Red</strong>)</li>
+<li>Critical alerts appear</li>
+<li>Cases stopped on conveyors</li>
+<li>Unusual sounds or movements</li>
+</ul>
+<p><strong>Monitor Closely:</strong></p>
+<ul>
+<li>Repeated alerts of the same type</li>
+<li>Accumulation building up at outfeed</li>
+<li>Replenishments not arriving as scheduled</li>
+</ul>
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="responding-to-alerts">Responding to Alerts<a class="headerlink" href="#responding-to-alerts" title="Permanent link">&para;</a></h2>
 <p>When an alert occurs:</p>
 <ol>
@@ -1771,7 +1789,8 @@
 </li>
 </ol>
 <p>See <a href="../troubleshooting/alert-guidelines.html">Alert Guidelines</a> for detailed alert resolution procedures.</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="monitoring-replenishments">Monitoring Replenishments<a class="headerlink" href="#monitoring-replenishments" title="Permanent link">&para;</a></h2>
 <p>Replenishments ensure InnoPick has adequate inventory to fulfill orders.</p>
 <h3 id="what-to-monitor">What to Monitor<a class="headerlink" href="#what-to-monitor" title="Permanent link">&para;</a></h3>
@@ -1784,31 +1803,40 @@
 </ul>
 <h3 id="when-to-take-action">When to Take Action<a class="headerlink" href="#when-to-take-action" title="Permanent link">&para;</a></h3>
 <p><strong>Normal</strong>: Replenishments progress from Pending → In Progress → Inducting → Completed</p>
-<p><strong>Problem Indicators:</strong><br />
-- Inducted Quantity doesn't match expected quantity<br />
-- Replenishments backing up at infeed</p>
+<p><strong>Problem Indicators:</strong></p>
+<ul>
+<li>Inducted Quantity doesn't match expected quantity</li>
+<li>Replenishments backing up at infeed</li>
+</ul>
 <p><strong>Action</strong>: Coordinate with upstream depalletizing operations or see <a href="../troubleshooting/index.html">Troubleshooting</a></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="understanding-system-settings-that-affect-operations">Understanding System Settings That Affect Operations<a class="headerlink" href="#understanding-system-settings-that-affect-operations" title="Permanent link">&para;</a></h2>
 <p>Be aware of these settings and their effects:</p>
-<p><strong><a href="../main-screens/administration/setup-innopick.html#build-inventory">Build Inventory Mode</a></strong><br />
-- When ON: Prioritizes storing replenishment cases over outputting cases<br />
-- When OFF: Balances input and output for maximum throughput</p>
-<p><strong><a href="../main-screens/home-page.html#pause--resume-infeed">Pause Infeed / Pause Outfeed</a></strong><br />
-- Controls whether cases enter or exit InnoPick<br />
-- Check: <a href="../main-screens/home-page.html">Home Page</a></p>
-<hr />
+<p><strong><a href="../main-screens/administration/setup-innopick.html#build-inventory">Build Inventory Mode</a></strong></p>
+<ul>
+<li>When ON: Prioritizes storing replenishment cases over outputting cases</li>
+<li>When OFF: Balances input and output for maximum throughput</li>
+</ul>
+<p><strong><a href="../main-screens/home-page.html#pause--resume-infeed">Pause Infeed / Pause Outfeed</a></strong></p>
+<ul>
+<li>Controls whether cases enter or exit InnoPick</li>
+<li>Check: <a href="../main-screens/home-page.html">Home Page</a></li>
+</ul>
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="shift-handoff-checklist">Shift Handoff Checklist<a class="headerlink" href="#shift-handoff-checklist" title="Permanent link">&para;</a></h2>
 <p>When ending your shift, review with the next operator:</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Current system status and any active alerts</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Any recurring issues or unusual behavior observed</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Replenishments in progress or pending</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Any lanes disabled or products having problems</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Upcoming scheduled maintenance or system changes</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Any instructions from supervision</li>
+<ul>
+<li>Current system status and any active alerts</li>
+<li>Any recurring issues or unusual behavior observed</li>
+<li>Replenishments in progress or pending</li>
+<li>Any lanes disabled or products having problems</li>
+<li>Upcoming scheduled maintenance or system changes</li>
+<li>Any instructions from supervision</li>
 </ul>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <p><strong>Navigation:</strong> <a href="index.html">← Daily Operations</a> | <a href="../main-screens/index.html">Main Screens →</a></p>
 
 

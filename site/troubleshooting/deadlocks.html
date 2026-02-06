@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1515,17 +1517,20 @@
 
 <h1 id="deadlocks">Deadlocks<a class="headerlink" href="#deadlocks" title="Permanent link">&para;</a></h1>
 <p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Troubleshooting</a> &gt; Deadlocks</strong></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This section provides guidance for resolving deadlock situations.<br />
 A deadlock is when InnoPick is not able to fit all the cases that are due to enter the infeed, and it cannot make room by outputting cases because the next case needed for the sequence is coming after those cases which cannot fit. <br />
 In other words, a deadlock is when a level of InnoPick is too full and becomes stuck. </p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="types-of-deadlocks">Types of Deadlocks<a class="headerlink" href="#types-of-deadlocks" title="Permanent link">&para;</a></h2>
 <p>There are two types of deadlocks:<br />
 1. Preview deadlock (forecast) - warns the operator that a deadlock will occur unless something is done to avert it.<br />
 2. Just-in-Time deadlock - the system is in a deadlock state and cannot proceed without an operator intervention.</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="preview-deadlock">Preview Deadlock<a class="headerlink" href="#preview-deadlock" title="Permanent link">&para;</a></h2>
 <p><img src="../images/alerts/deadlock1.png" width="1000" alt="Deadlock1"></p>
 <p>"Level 2. Deadlock detected with given sequence after processing 940 output cases, 850 input cases."</p>

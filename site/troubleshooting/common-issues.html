@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1604,12 +1606,15 @@
 
 <h1 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h1>
 <p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Troubleshooting</a> &gt; Common Issues</strong></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This page addresses frequently encountered issues that may not have specific alert codes but require operator attention and intervention.</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="outfeed-issues">Outfeed Issues<a class="headerlink" href="#outfeed-issues" title="Permanent link">&para;</a></h2>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="cases-not-exiting-innopick">Cases Not Exiting InnoPick<a class="headerlink" href="#cases-not-exiting-innopick" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
 - Cases stuck at outfeed position<br />
@@ -1655,7 +1660,7 @@
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 <h3 id="next-outfeed-case-data-is-not-in-outbound-conveyor-system">Next Outfeed Case Data is not in Outbound Conveyor System<a class="headerlink" href="#next-outfeed-case-data-is-not-in-outbound-conveyor-system" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
 - The case at the outfeed position of InnoPick is waiting for the "Ok to Receive" signal from the downstream conveyor system<br />
@@ -1679,7 +1684,8 @@ The steps for each case transfer are as follows:<br />
 <li>Therefore, if the outbound PLC does not have the case data, the operator can use the recovery action <strong><a href="../main-screens/administration/recovery-actions.html#set-case-pending-completion">"Set case pending completion"</a></strong></li>
 </ul>
 <p><strong>Note: This recovery action re-sends the case data to the outbound PLC. If the data was already there, the downstream system will have a duplicate data which can cause serious tracking issues. Use with caution and monitor downstream system for any issues after using.</strong></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="next-outfeed-case-not-advancing-despite-all-conditions-met">Next Outfeed Case not advancing despite all conditions met<a class="headerlink" href="#next-outfeed-case-not-advancing-despite-all-conditions-met" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
 - If the outbound PLC does have case data for the next outfeed case<br />
@@ -1689,7 +1695,8 @@ The steps for each case transfer are as follows:<br />
 <p><strong>Solution:</strong><br />
 - It may be necessary to force the case forward using the recovery action called <strong><a href="../main-screens/administration/recovery-actions.html#set-ouxfena1-for-level">"Set OuXfEna=1 for level"</a></strong></p>
 <p><strong>Note: This recovery action will force the sequence conveyor to move forward. If it is used incorrectly or in the wrong scenario, it will make the situation worse. Use with caution.</strong></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="infeed-issues">Infeed Issues<a class="headerlink" href="#infeed-issues" title="Permanent link">&para;</a></h2>
 <h3 id="cases-not-being-inducted">Cases Not Being Inducted<a class="headerlink" href="#cases-not-being-inducted" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
@@ -1737,7 +1744,8 @@ The steps for each case transfer are as follows:<br />
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="wrong-product-being-inducted">Wrong Product Being Inducted<a class="headerlink" href="#wrong-product-being-inducted" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
 - <a href="alert-reference.html#517---infeed-cases-length-too-short">Alert 517</a> (incorrect case length)<br />
@@ -1784,7 +1792,8 @@ The steps for each case transfer are as follows:<br />
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="inventory-tracking-not-matching-physical-reality">Inventory Tracking Not Matching Physical Reality<a class="headerlink" href="#inventory-tracking-not-matching-physical-reality" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
 - <a href="alert-reference.html#121---photocell-above-lane-never-detected-the-case-during-a-storing-move">Alert 121</a> or <a href="alert-reference.html#123--124---photocell-above-lane-never-detected-the-case-during-a-dispense-move">Alert 123</a> (cases not found where expected)<br />
@@ -1841,7 +1850,8 @@ The steps for each case transfer are as follows:<br />
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="frequent-alerts-on-specific-products">Frequent Alerts on Specific Products<a class="headerlink" href="#frequent-alerts-on-specific-products" title="Permanent link">&para;</a></h3>
 <p><strong>Symptoms:</strong><br />
 - Certain SKUs causing repeated alerts<br />
@@ -1882,7 +1892,8 @@ The steps for each case transfer are as follows:<br />
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="alert-reference.html">Alert Reference</a> - Specific alert code resolutions</li>
@@ -1890,7 +1901,8 @@ The steps for each case transfer are as follows:<br />
 <li><a href="../daily-operations/index.html#monitoring-production">Monitoring Production</a> - Catching issues early</li>
 <li><a href="case-replacement.html">Case Replacement</a> - Replacing problem cases</li>
 </ul>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <p><strong>Navigation:</strong> <a href="alert-reference.html">← Alert Reference</a> | <a href="deadlocks.html">Deadlocks →</a></p>
 
 

@@ -143,16 +143,16 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 
 #### Key Settings to Monitor:
 
-##### Pause Infeed / Pause Outfeed
+#### Pause Infeed / Pause Outfeed
 - Controls whether cases enter or exit InnoPick
 - Check: [Home Page](../main-screens/home-page.md)
 
-##### Build Inventory Mode
+#### Build Inventory Mode
 - When ON: Prioritizes storing replenishments over outputting cases
 - When OFF: Balances input and output for maximum throughput
 - Check: [Build Inventory](../main-screens/administration/setup-innopick.md#build-inventory)
 
-##### Destination (Merge) A or B Enabled / Disabled
+#### Destination (Merge) A or B Enabled / Disabled
 - Controls which downstream destinations are active
 - If a Merge is disabled, all cases route to other destination(s)
 - Check: [Administration > Setup InnoPick > Merges](../main-screens/administration/setup-innopick.md#merges-state)
@@ -165,18 +165,18 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 
 #### Systems That Affect InnoPick:
 
-##### MixMaster (or equivalent WMS/WCS)
+#### MixMaster (or equivalent WMS/WCS)
 **Impact Examples:**
 - **HOLD on a pallet**: InnoPick won't schedule output cases for it or subsequent pallets
 - **Order changes**: May affect case sequence and replenishment needs
 
-##### Inbound Conveyor System (Pre-InnoPick)
+#### Inbound Conveyor System (Pre-InnoPick)
 **Impact Examples:**
 - **HOLD enabled**: Cases won't be released to InnoPick
 - **Tracking errors**: Wrong cases or quantities arrive
 - **Photocell issues**: Cases arrive unexpectedly
 
-##### Outbound Conveyor System (Post-InnoPick)
+#### Outbound Conveyor System (Post-InnoPick)
 **Impact Examples:**
 - **HOLD or fault active**: InnoPick cannot release cases at outfeed
 - **Accumulation full**: Output stops even if InnoPick is ready
@@ -218,6 +218,7 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
   - [See how to View All Alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 
 **What to do:**
+
 1. Read the alert message carefully
 2. Inspect physical conditions
 3. Resolve the actual problem
@@ -232,11 +233,13 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 ### Single Occurrence vs. Pattern
 
 **If an alert occurs once:**
+
 - Likely an isolated incident
 - Resolve and monitor
 - Document but may not indicate systemic issue
 
 **If same alert repeats:**
+
 - Indicates underlying problem not fully resolved
 - Stop and reassess
 - Don't just keep clearing and restarting
@@ -245,6 +248,7 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 ### Multiple Related Alerts
 
 **If different but related alerts occur in sequence:**
+
 - May be cascading effects from one root cause
 - Example: Infeed issue → Storage fault → Dispense fault
 - Address the earliest/root issue first
