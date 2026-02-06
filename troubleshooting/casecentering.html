@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1595,7 +1597,6 @@
   <h1>Case Centering</h1>
 
 <p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Troubleshooting</a> &gt; Case Centering Adjustments</strong></p>
-<hr />
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>InnoPick requires precise parameterization in order for cases to be accurately centered all the way from the infeed to the last buffer lane.</p>
 <p>This page walks through the proper process for ensuring good case centering.</p>
@@ -1605,7 +1606,6 @@
 <li>It's not uncommon to have to adjust the case centering parameters after tensionning sequence conveyor chains.</li>
 <li>Therefore, if it is needed, it's best to do that first.</li>
 </ul>
-<hr />
 <h3 id="2-adjust-the-center-placement-in-millimeters-parameter">2. Adjust the "Center Placement in Millimeters" Parameter<a class="headerlink" href="#2-adjust-the-center-placement-in-millimeters-parameter" title="Permanent link">&para;</a></h3>
 <p><img src="../images/administration/sitelevels.png" width="900" alt="Site Levels Configuration"></p>
 <p>On the <strong>Administration &gt; Setup InnoPick &gt; <a href="../main-screens/administration/setup-innopick.html#site-levels">Site Levels</a></strong> page, adjust the <strong>"Center placement in millimeters"</strong> parameter so that cases are properly centered in front of the first buffer lane (the one closest to the infeed).</p>
@@ -1622,13 +1622,11 @@
 </li>
 <li>Continue until cases are properly centered in front of the first lane</li>
 </ol>
-<hr />
 <h3 id="3-test-alignment-along-the-entire-length-of-innopick">3. Test Alignment Along the Entire Length of InnoPick<a class="headerlink" href="#3-test-alignment-along-the-entire-length-of-innopick" title="Permanent link">&para;</a></h3>
 <p>Next, place a perfectly centered case in front of the first lane, and manually jog the sequence conveyor until the case is in front of the last lane (nearest the outfeed).</p>
 <p><a href="../main-screens/administration/manual-motion-control.html#level-operations">Click here for information on manually jogging InnoPick</a></p>
 <p><strong>Important</strong>: When you jog, make sure that the value used for the jogging (on the Manual Motion Controls page) is the same as the <strong>"Lane Pitch in Millimeters"</strong> parameter on the Site Levels page.<br />
 - It is usually necessary to input the correct distance from the Lane Pitch paramater for this exercise, in order to recreate the actual movement distances seen in production.</p>
-<hr />
 <h3 id="4-measure-the-necessary-adjustment">4. Measure the Necessary Adjustment<a class="headerlink" href="#4-measure-the-necessary-adjustment" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Go to the case stopped in front of the last buffer lane.</li>
@@ -1636,7 +1634,6 @@
 </ul>
 <p><img src="../images/administration/positions.png" width="200" alt="Site Levels Configuration"><br />
 - In the example above, there are 71 positions.</p>
-<hr />
 <h3 id="5-calculate-the-lane-pitch-correction">5. Calculate the Lane Pitch Correction<a class="headerlink" href="#5-calculate-the-lane-pitch-correction" title="Permanent link">&para;</a></h3>
 <p><strong>Example:</strong></p>
 <ul>
@@ -1644,7 +1641,6 @@
 <li>The InnoPick has <strong>71 positions</strong></li>
 <li>Calculation: <strong>12mm ÷ 71 positions = 0.17mm</strong></li>
 </ul>
-<hr />
 <h3 id="6-apply-the-correction">6. Apply the Correction<a class="headerlink" href="#6-apply-the-correction" title="Permanent link">&para;</a></h3>
 <p>Adjust the <strong>"Lane Pitch in Millimeters"</strong> parameter by the result of your calculation in Step 5.<br />
 <strong>Important Note:</strong> <br />
@@ -1655,10 +1651,8 @@
 - And the Lane Pitch parameter is currently at <strong>558.80mm</strong><br />
 - We will subtract the calculated value from the parameter value:<br />
 - <strong>558.80 - 0.17 = 558.63mm</strong></p>
-<hr />
 <h3 id="7-final-validation">7. Final Validation<a class="headerlink" href="#7-final-validation" title="Permanent link">&para;</a></h3>
 <p>Validate the new value by repeating the test and ensuring that the case ends up properly centered in front of the last lane (near the outfeed).</p>
-<hr />
 <h2 id="parameter-summary">Parameter Summary<a class="headerlink" href="#parameter-summary" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1681,7 +1675,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="calculation-formula">Calculation Formula<a class="headerlink" href="#calculation-formula" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>Lane Pitch Adjustment = Total Error (mm) ÷ Number of Positions
 </code></pre></div>

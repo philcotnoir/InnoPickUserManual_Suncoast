@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1443,8 +1445,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Key Settings to Monitor:">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#pause-infeed-pause-outfeed" class="md-nav__link">
@@ -1484,11 +1485,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#guideline-6-be-aware-of-other-system-settings" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1510,8 +1506,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Systems That Affect InnoPick:">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#mixmaster-or-equivalent-wmswcs" class="md-nav__link">
@@ -1543,11 +1538,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1939,10 +1929,12 @@
 
 <h1 id="alert-guidelines">Alert Guidelines<a class="headerlink" href="#alert-guidelines" title="Permanent link">&para;</a></h1>
 <p><strong><a href="../index.html">Home</a> &gt; <a href="index.html">Troubleshooting</a> &gt; Alert Guidelines</strong></p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This page provides general principles and best practices for successfully resolving InnoPick alerts. Following these guidelines will help you avoid cascading faults and minimize downtime.</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="understanding-level-status-colors">Understanding Level Status Colors<a class="headerlink" href="#understanding-level-status-colors" title="Permanent link">&para;</a></h2>
 <p>When alerts occur, InnoPick changes the level status indicators to show the severity and type of issue.</p>
 <h3 id="level-color-meanings">Level Color Meanings<a class="headerlink" href="#level-color-meanings" title="Permanent link">&para;</a></h3>
@@ -1963,7 +1955,8 @@
 1. Level goes to Manual mode (Yellow)<br />
 2. Operator can verify conditions are correct<br />
 3. Level can be put back into Automatic mode (Green)</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="six-general-guidelines-for-operating-innopick-successfully">Six General Guidelines for Operating InnoPick Successfully<a class="headerlink" href="#six-general-guidelines-for-operating-innopick-successfully" title="Permanent link">&para;</a></h2>
 <p>Following these guidelines will prevent most cascading faults and reduce troubleshooting time.</p>
 <h3 id="guideline-1-always-compare-physical-reality-to-the-inventory-graph">Guideline 1: Always Compare Physical Reality to the Inventory Graph<a class="headerlink" href="#guideline-1-always-compare-physical-reality-to-the-inventory-graph" title="Permanent link">&para;</a></h3>
@@ -1975,7 +1968,8 @@
 <li>This is the absolute best way to avoid knock-on faults from incorrect recoveries</li>
 <li>Most cascading faults occur because this step was skipped</li>
 </ul>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="guideline-2-after-storedispense-alerts-check-physical-case-position">Guideline 2: After Store/Dispense Alerts, Check Physical Case Position<a class="headerlink" href="#guideline-2-after-storedispense-alerts-check-physical-case-position" title="Permanent link">&para;</a></h3>
 <p><strong>Always verify where the case actually ended up.</strong></p>
 <h4 id="after-a-store-fault">After a Store Fault:<a class="headerlink" href="#after-a-store-fault" title="Permanent link">&para;</a></h4>
@@ -1992,7 +1986,8 @@
 </ul>
 <h4 id="if-in-doubt-check-the-lane-case-count-inventory">If in doubt, check the lane case count (inventory).<a class="headerlink" href="#if-in-doubt-check-the-lane-case-count-inventory" title="Permanent link">&para;</a></h4>
 <p>This is a general guideline, but remember Guideline #1 - the Inventory Graph is your ultimate reference.</p>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="guideline-3-check-replenishment-status-after-any-infeed-alarm">Guideline 3: Check Replenishment Status After Any Infeed Alarm<a class="headerlink" href="#guideline-3-check-replenishment-status-after-any-infeed-alarm" title="Permanent link">&para;</a></h3>
 <p><strong>Infeed alarms require extra vigilance about several details.</strong></p>
 <p>Infeed alarms are confusing because they occur where two different systems connect. Problems can originate on either side, and if not properly identified and corrected, more issues will follow.</p>
@@ -2029,7 +2024,8 @@
 </ul>
 </li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="guideline-4-determine-if-alert-is-stand-alone-or-a-symptom">Guideline 4: Determine if Alert is Stand-Alone or a Symptom<a class="headerlink" href="#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom" title="Permanent link">&para;</a></h3>
 <p><strong>Consider whether the alert is an isolated incident or indicates a bigger issue.</strong></p>
 <h4 id="symptom-alerts">Symptom Alerts<a class="headerlink" href="#symptom-alerts" title="Permanent link">&para;</a></h4>
@@ -2053,42 +2049,44 @@
 <li>Verify that the inventory graph matches physical reality</li>
 <li>Correct any discrepancies before clearing alert and resuming production</li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="guideline-5-be-aware-of-innopick-settings">Guideline 5: Be Aware of InnoPick Settings<a class="headerlink" href="#guideline-5-be-aware-of-innopick-settings" title="Permanent link">&para;</a></h3>
 <p><strong>Always understand current system settings and their implications.</strong></p>
 <p>A good operator is aware of settings that affect InnoPick's behavior. Failing to understand current settings leads to serious operator mistakes.</p>
 <h4 id="key-settings-to-monitor">Key Settings to Monitor:<a class="headerlink" href="#key-settings-to-monitor" title="Permanent link">&para;</a></h4>
-<h5 id="pause-infeed-pause-outfeed">Pause Infeed / Pause Outfeed<a class="headerlink" href="#pause-infeed-pause-outfeed" title="Permanent link">&para;</a></h5>
+<h4 id="pause-infeed-pause-outfeed">Pause Infeed / Pause Outfeed<a class="headerlink" href="#pause-infeed-pause-outfeed" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Controls whether cases enter or exit InnoPick</li>
 <li>Check: <a href="../main-screens/home-page.html">Home Page</a></li>
 </ul>
-<h5 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h5>
+<h4 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h4>
 <ul>
 <li>When ON: Prioritizes storing replenishments over outputting cases</li>
 <li>When OFF: Balances input and output for maximum throughput</li>
 <li>Check: <a href="../main-screens/administration/setup-innopick.html#build-inventory">Build Inventory</a></li>
 </ul>
-<h5 id="destination-merge-a-or-b-enabled-disabled">Destination (Merge) A or B Enabled / Disabled<a class="headerlink" href="#destination-merge-a-or-b-enabled-disabled" title="Permanent link">&para;</a></h5>
+<h4 id="destination-merge-a-or-b-enabled-disabled">Destination (Merge) A or B Enabled / Disabled<a class="headerlink" href="#destination-merge-a-or-b-enabled-disabled" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Controls which downstream destinations are active</li>
 <li>If a Merge is disabled, all cases route to other destination(s)</li>
 <li>Check: <a href="../main-screens/administration/setup-innopick.html#merges-state">Administration &gt; Setup InnoPick &gt; Merges</a></li>
 </ul>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h3 id="guideline-6-be-aware-of-other-system-settings">Guideline 6: Be Aware of Other System Settings<a class="headerlink" href="#guideline-6-be-aware-of-other-system-settings" title="Permanent link">&para;</a></h3>
 <p><strong>InnoPick is connected to other systems that directly affect its behavior.</strong></p>
 <h4 id="systems-that-affect-innopick">Systems That Affect InnoPick:<a class="headerlink" href="#systems-that-affect-innopick" title="Permanent link">&para;</a></h4>
-<h5 id="mixmaster-or-equivalent-wmswcs">MixMaster (or equivalent WMS/WCS)<a class="headerlink" href="#mixmaster-or-equivalent-wmswcs" title="Permanent link">&para;</a></h5>
+<h4 id="mixmaster-or-equivalent-wmswcs">MixMaster (or equivalent WMS/WCS)<a class="headerlink" href="#mixmaster-or-equivalent-wmswcs" title="Permanent link">&para;</a></h4>
 <p><strong>Impact Examples:</strong><br />
 - <strong>HOLD on a pallet</strong>: InnoPick won't schedule output cases for it or subsequent pallets<br />
 - <strong>Order changes</strong>: May affect case sequence and replenishment needs</p>
-<h5 id="inbound-conveyor-system-pre-innopick">Inbound Conveyor System (Pre-InnoPick)<a class="headerlink" href="#inbound-conveyor-system-pre-innopick" title="Permanent link">&para;</a></h5>
+<h4 id="inbound-conveyor-system-pre-innopick">Inbound Conveyor System (Pre-InnoPick)<a class="headerlink" href="#inbound-conveyor-system-pre-innopick" title="Permanent link">&para;</a></h4>
 <p><strong>Impact Examples:</strong><br />
 - <strong>HOLD enabled</strong>: Cases won't be released to InnoPick<br />
 - <strong>Tracking errors</strong>: Wrong cases or quantities arrive<br />
 - <strong>Photocell issues</strong>: Cases arrive unexpectedly</p>
-<h5 id="outbound-conveyor-system-post-innopick">Outbound Conveyor System (Post-InnoPick)<a class="headerlink" href="#outbound-conveyor-system-post-innopick" title="Permanent link">&para;</a></h5>
+<h4 id="outbound-conveyor-system-post-innopick">Outbound Conveyor System (Post-InnoPick)<a class="headerlink" href="#outbound-conveyor-system-post-innopick" title="Permanent link">&para;</a></h4>
 <p><strong>Impact Examples:</strong><br />
 - <strong>HOLD or fault active</strong>: InnoPick cannot release cases at outfeed<br />
 - <strong>Accumulation full</strong>: Output stops even if InnoPick is ready<br />
@@ -2100,7 +2098,8 @@
 <li><strong>Coordinate with other system operators</strong> to understand full picture</li>
 <li><strong>Verify communication</strong> between systems is working</li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="clearing-alerts">Clearing Alerts<a class="headerlink" href="#clearing-alerts" title="Permanent link">&para;</a></h2>
 <h3 id="when-to-clear-alerts">When to Clear Alerts<a class="headerlink" href="#when-to-clear-alerts" title="Permanent link">&para;</a></h3>
 <p>Clear alerts only when:<br />
@@ -2122,33 +2121,45 @@
 <li>The Alert in question is being filtered (not visible).</li>
 <li><a href="../main-screens/alerts-page.html#viewing-all-alerts">See how to View All Alerts</a></li>
 </ul>
-<p><strong>What to do:</strong><br />
-1. Read the alert message carefully<br />
-2. Inspect physical conditions<br />
-3. Resolve the actual problem<br />
-4. Try clearing again<br />
-     - Use the <a href="../main-screens/administration/recovery-actions.html#most-commonly-used-recovery-actions">Recovery Action: Send Clear Alarm on Level</a><br />
-5. See <a href="alert-reference.html">Alert Reference</a> for specific alert resolution steps</p>
-<hr />
+<p><strong>What to do:</strong></p>
+<ol>
+<li>Read the alert message carefully</li>
+<li>Inspect physical conditions</li>
+<li>Resolve the actual problem</li>
+<li>Try clearing again<ul>
+<li>Use the <a href="../main-screens/administration/recovery-actions.html#most-commonly-used-recovery-actions">Recovery Action: Send Clear Alarm on Level</a></li>
+</ul>
+</li>
+<li>See <a href="alert-reference.html">Alert Reference</a> for specific alert resolution steps</li>
+</ol>
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="recognizing-symptoms-of-bigger-issues">Recognizing Symptoms of Bigger Issues<a class="headerlink" href="#recognizing-symptoms-of-bigger-issues" title="Permanent link">&para;</a></h2>
 <h3 id="single-occurrence-vs-pattern">Single Occurrence vs. Pattern<a class="headerlink" href="#single-occurrence-vs-pattern" title="Permanent link">&para;</a></h3>
-<p><strong>If an alert occurs once:</strong><br />
-- Likely an isolated incident<br />
-- Resolve and monitor<br />
-- Document but may not indicate systemic issue</p>
-<p><strong>If same alert repeats:</strong><br />
-- Indicates underlying problem not fully resolved<br />
-- Stop and reassess<br />
-- Don't just keep clearing and restarting<br />
-- Look for root cause</p>
+<p><strong>If an alert occurs once:</strong></p>
+<ul>
+<li>Likely an isolated incident</li>
+<li>Resolve and monitor</li>
+<li>Document but may not indicate systemic issue</li>
+</ul>
+<p><strong>If same alert repeats:</strong></p>
+<ul>
+<li>Indicates underlying problem not fully resolved</li>
+<li>Stop and reassess</li>
+<li>Don't just keep clearing and restarting</li>
+<li>Look for root cause</li>
+</ul>
 <h3 id="multiple-related-alerts">Multiple Related Alerts<a class="headerlink" href="#multiple-related-alerts" title="Permanent link">&para;</a></h3>
-<p><strong>If different but related alerts occur in sequence:</strong><br />
-- May be cascading effects from one root cause<br />
-- Example: Infeed issue → Storage fault → Dispense fault<br />
-- Address the earliest/root issue first<br />
-- Verify inventory graph accuracy<br />
-- May need to stop and reset entire level</p>
-<hr />
+<p><strong>If different but related alerts occur in sequence:</strong></p>
+<ul>
+<li>May be cascading effects from one root cause</li>
+<li>Example: Infeed issue → Storage fault → Dispense fault</li>
+<li>Address the earliest/root issue first</li>
+<li>Verify inventory graph accuracy</li>
+<li>May need to stop and reset entire level</li>
+</ul>
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="best-practices-summary">Best Practices Summary<a class="headerlink" href="#best-practices-summary" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Inventory Graph is Truth</strong> - Always verify physical matches visual</li>
@@ -2159,14 +2170,16 @@
 <li><strong>Check Connected Systems</strong> - Upstream and downstream affect InnoPick</li>
 <li><strong>When in Doubt, Ask</strong> - Better to escalate than cause more problems</li>
 </ol>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="alert-reference.html">Alert Reference</a> - Specific resolution procedures for each alert code</li>
 <li><a href="../main-screens/home-page.html#inventory-graph">Home Page Inventory Graph</a> - Understanding the visual display</li>
 <li><a href="../daily-operations/index.html#monitoring-production">Monitoring Production</a> - Catching issues early</li>
 </ul>
-<hr />
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 <p><strong>Navigation:</strong> <a href="index.html">← Troubleshooting</a> | <a href="alert-reference.html">Alert Reference →</a></p>
 
 
