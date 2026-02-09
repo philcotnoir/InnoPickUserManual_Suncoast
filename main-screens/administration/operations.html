@@ -1525,39 +1525,55 @@
 <p><strong><a href="../../index.html">Home</a> &gt; <a href="../index.html">Main Screens</a> &gt; <a href="index.html">Administration</a> &gt; Operations</strong></p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="level-status">Level status<a class="headerlink" href="#level-status" title="Permanent link">&para;</a></h3>
+<h2 id="level-status">Level status<a class="headerlink" href="#level-status" title="Permanent link">&para;</a></h2>
 <p><img src="../../images/administration/levelstatus.png" width="1000" alt="Level status"></p>
 <ul>
 <li>This page provides an overview of each level's various statuses as well as:</li>
 <li>Last case data sent (CaseRef #)</li>
 <li>Last pending completion (CaseRef #)</li>
 </ul>
-<h3 id="merges-state">Merges state<a class="headerlink" href="#merges-state" title="Permanent link">&para;</a></h3>
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
+<h2 id="merges-state">Merges state<a class="headerlink" href="#merges-state" title="Permanent link">&para;</a></h2>
 <p><img src="../../images/administration/mergesstate1.png" width="400" alt="Merge Settings"></p>
 <p>Configuration for downstream merge points (where the different levels combine to a single conveyor that feeds one of the palletizers).</p>
-<h4 id="merge-a-b-enabled">Merge A / B Enabled<a class="headerlink" href="#merge-a-b-enabled" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="merge-a-b-enabled">Merge A / B Enabled<a class="headerlink" href="#merge-a-b-enabled" title="Permanent link">&para;</a></h3>
 <p>Enable or disable individual downstream destinations.</p>
-<p><strong>Purpose:</strong><br />
-- Route all cases to operational Merge if one fails<br />
-- Handle downstream equipment failures<br />
-- Temporary operational adjustments</p>
-<p><strong>Usage:</strong><br />
-- Last resort when downstream fault cannot be resolved<br />
-- Will not affect cases already on sequence conveyors -- those cases that are already scheduled for a certain destination will retain their destination.<br />
-- High likelihood that remote support interventions will be required if this is changed during production.</p>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li>Route all cases to operational Merge if one fails</li>
+<li>Handle downstream equipment failures</li>
+<li>Temporary operational adjustments</li>
+</ul>
+<p><strong>Usage:</strong></p>
+<ul>
+<li>Last resort when downstream fault cannot be resolved</li>
+<li>Will not affect cases already on sequence conveyors -- those cases that are already scheduled for a certain destination will retain their destination.</li>
+<li>High likelihood that remote support interventions will be required if this is changed during production.</li>
+</ul>
 <p><strong>Caution</strong>: <em>Only use when absolutely necessary and coordinate with support. Can have unintended effects and complications.</em></p>
-<h4 id="destination-assignment-mode">Destination assignment mode<a class="headerlink" href="#destination-assignment-mode" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="destination-assignment-mode">Destination assignment mode<a class="headerlink" href="#destination-assignment-mode" title="Permanent link">&para;</a></h3>
 <p><img src="../../images/administration/mergesstate2.png" width="400" alt="Merge Settings"></p>
-<p>There are two possible settings for the destination assignment mode:<br />
-1. None<br />
-2. Just-in-time</p>
-<p><strong>None:</strong> This is the regular destination mode:<br />
-- InnoPick will initially load balance pallet assignment when receiving a new case sequence<br />
-- Will never change a destination unless a destination is disabled</p>
-<p><strong>Just in time:</strong> <br />
-- InnoPick will initially load balance pallet assignment when receiving a new case sequence (like normal)<br />
-- InnoPick may change the destination when the first case of a pallet gets scheduled, based on the remaining accumulation available to load balance assignments "Just-in-Time"<br />
-- In this mode, InnoPick responds dynamically to current accumulation levels and assigns pallets to the destination with the most capacity. </p>
+<p>There are two possible settings for the destination assignment mode:</p>
+<ol>
+<li>None</li>
+<li>Just-in-time</li>
+</ol>
+<p><strong>None:</strong> This is the regular destination mode:</p>
+<ul>
+<li>InnoPick will initially load balance pallet assignment when receiving a new case sequence</li>
+<li>Will never change a destination unless a destination is disabled</li>
+</ul>
+<p><strong>Just in time:</strong> </p>
+<ul>
+<li>InnoPick will initially load balance pallet assignment when receiving a new case sequence (like normal)</li>
+<li>InnoPick may change the destination when the first case of a pallet gets scheduled, based on the remaining accumulation available to load balance assignments "Just-in-Time"</li>
+<li>In this mode, InnoPick responds dynamically to current accumulation levels and assigns pallets to the destination with the most capacity. </li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <p><strong>Navigation:</strong> <a href="recovery-actions.html">← Recovery Actions</a> | <a href="user-settings.html">User Settings →</a></p>
