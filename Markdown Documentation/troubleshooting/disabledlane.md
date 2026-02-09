@@ -3,11 +3,16 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Overview
+
 If a mechanical issue renders a lane inoperable during production, it may be necessary to disable a lane that InnoPick is expecting to be able to use. This troubleshooting guide covers these scenarios.
 
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 ## Inbound Cases
+
 - Once replenishment cases are on the sequence conveyor, they are assigned to a particular buffer lane, and this destination cannot be changed.
 - If that lane suffers a mechanical breakdown and cannot store those cases, then the operator must:
+
 1. Disable the lane in question
 2. Manually remove the cases on the sequence conveyor that are destined for that lane.
 
@@ -17,11 +22,13 @@ If a mechanical issue renders a lane inoperable during production, it may be nec
 <img src="../images/inventory/disabledlane1.png" width="700" alt="Inbound Cases">
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
 ## Outbound Cases
+
 - Similarly, once an outbound case has been scheduled on the sequence conveyor (appearing as an empty square), the lane cannot be re-assigned.
 - If the source lane suffers a mechanical breakdown, the operator must:
-1. Disable the lane in question
-2. Manually place the scheduled outbound cases on the correct sequence conveyor positions
+  1. Disable the lane in question
+  2. Manually place the scheduled outbound cases on the correct sequence conveyor positions
 
 - Failure to place the scheduled outbound cases on the correct sequence conveyor positions will result in faults when those cases are not detected as expected on the last position of InnoPick
 

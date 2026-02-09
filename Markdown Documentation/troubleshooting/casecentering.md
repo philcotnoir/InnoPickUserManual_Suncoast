@@ -3,9 +3,12 @@
 
 
 ## Overview
+
 InnoPick requires precise parameterization in order for cases to be accurately centered all the way from the infeed to the last buffer lane.
 
 This page walks through the proper process for ensuring good case centering.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ## Step-by-Step Sequence for Proper Case Centering
 
@@ -80,13 +83,11 @@ Adjust the **"Lane Pitch in Millimeters"** parameter by the result of your calcu
 - We will subtract the calculated value from the parameter value:
   - **558.80 - 0.17 = 558.63mm**
 
-
-
 ### 7. Final Validation
 
 Validate the new value by repeating the test and ensuring that the case ends up properly centered in front of the last lane (near the outfeed).
 
-
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ## Parameter Summary
 
@@ -95,7 +96,7 @@ Validate the new value by repeating the test and ensuring that the case ends up 
 | **Center Placement in Millimeters** | Administration > Setup InnoPick > Site Levels | Used to set initial center position, which is validated in front of the **first** lane |
 | **Lane Pitch in Millimeters** | Administration > Setup InnoPick > Site Settings | Defines the standard sequence conveyor move distance, used for maintaining centering along the **entire length** of InnoPick, and validated in front of the **last** lane |
 
-
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ## Calculation Formula
 ```

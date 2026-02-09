@@ -13,7 +13,9 @@ This page provides quick reference information for InnoPick Manager, including s
 ## Reference Pages
 
 ### Alert Codes Quick Reference
+
 Condensed summary of all alert codes for quick lookup:
+
 - Alert code number
 - Brief description
 - Link to detailed resolution in Alert Reference
@@ -192,6 +194,7 @@ See [User Manager](../main-screens/administration/user-manager.md) for details.
 ## System Architecture Summary
 
 ### Case Flow
+
 1. Cases arrive at **Infeed** from depalletizer
 2. Cases advance on **Sequence Conveyor**
 3. Cases **Store** into **Storage Lanes** via pop-up and clutch

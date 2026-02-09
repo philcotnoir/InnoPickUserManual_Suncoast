@@ -52,10 +52,12 @@ This page addresses frequently encountered issues that may not have specific ale
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 ### Next Outfeed Case Data is not in Outbound Conveyor System
 **Symptoms:**
+
 - The case at the outfeed position of InnoPick is waiting for the "Ok to Receive" signal from the downstream conveyor system
 - It is determined that the case's data has not been received by that system
 
 **Solution:**
+
 - Check the details of the transfer sequence by hovering over the case on the Inventory Graph:
 <img src="../images/home/outfeedcase6.png" width="1000" alt="Outfeed hover">
 The steps for each case transfer are as follows:
@@ -69,6 +71,7 @@ The steps for each case transfer are as follows:
 5. InnoPick advances the case and transfers it to the outbound conveyor system.
 
 **Additional Info:**
+
 - The pop-up which appears when the cursor hovers over the case on the outfeed position shows what steps have been completed to date for this case.
 
 - If step 3 has a checkmark next to it (as in the screenshot above), then MixMaster has already sent the case data to the outbound PLC, and it will not re-send it unless a recovery action is used.
@@ -80,12 +83,14 @@ The steps for each case transfer are as follows:
 
 ### Next Outfeed Case not advancing despite all conditions met
 **Symptoms:**
+
 - If the outbound PLC does have case data for the next outfeed case
 - And the Inventory Graph shows that all steps have been completed for the case transfer
 - And all other likely causes have been ruled out (system is not in manual, not faulted, downstream conveyor is not full, faulted, or held, etc)
 - But the case still does not advance
  
 **Solution:**
+
 - It may be necessary to force the case forward using the recovery action called **["Set OuXfEna=1 for level"](../main-screens/administration/recovery-actions.md#set-ouxfena1-for-level)**
 
 **Note: This recovery action will force the sequence conveyor to move forward. If it is used incorrectly or in the wrong scenario, it will make the situation worse. Use with caution.**
@@ -97,10 +102,12 @@ The steps for each case transfer are as follows:
 ### Cases Not Being Inducted
 
 **Symptoms:**
+
 - Replenishments show "Inducting" but cases not entering InnoPick infeed
 - Upstream conveyor has cases but won't release them
 
 **Common Causes:**
+
 - HOLD active on inbound conveyor system
 - No Replenishment in the **Inducting** status
 - InnoPick at capacity (all lanes full) on that level
@@ -109,6 +116,7 @@ The steps for each case transfer are as follows:
 - If following a system reboot, a recovery action is needed
 
 **Solution:**
+
 1. **Check upstream conveyor system:**
     - Verify no HOLD is active
     - Check HMI for faults or stopped conditions
@@ -128,6 +136,7 @@ The steps for each case transfer are as follows:
     - Make sure the replenishment associated with the cases at the infeed is in the state **Inducting**
     - If not, investigate why, and then manually set the replenishment to **Inducting**
     - [See here for more info on the Replenishments Page](../main-screens/inventory-section.md#replenishments-page)
+
 5. **If a system or motion controller reboot occured recently:**
     - Use the recovery action [Set InCasLen](../main-screens/administration/recovery-actions.md#set-incaslen) for the level in question.
 
@@ -136,17 +145,20 @@ The steps for each case transfer are as follows:
 ### Wrong Product Being Inducted
 
 **Symptoms:**
+
 - [Alert 517](alert-reference.md#517---infeed-cases-length-too-short) (incorrect case length)
 - Cases don't match expected replenishment
 - Lane contains mixed products
 
 **Common Causes:**
+
 - Operator error in selecting pallet
 - Tracking data mismatch in inbound conveyor system
 - Upstream case routing mixup
 - Cases were removed without updating upstream conveyor system or the InnoPick replenishment
 
 **Solution:**
+
 1. **Stop induction immediately:**
     - Put level in Manual mode
     - Prevent more wrong cases from entering
@@ -174,11 +186,13 @@ The steps for each case transfer are as follows:
 ### Inventory Tracking Not Matching Physical Reality
 
 **Symptoms:**
+
 - [Alert 121](alert-reference.md#121---photocell-above-lane-never-detected-the-case-during-a-storing-move) or [Alert 123](alert-reference.md#123--124---photocell-above-lane-never-detected-the-case-during-a-dispense-move) (cases not found where expected)
 - Outfeed alerts (expecting case but none present, or vice versa)
 - Lane inventory counts don't match physical count
 
 **Common Causes:**
+
 - Improper alert recovery
 - Skipped verification after clearing alerts
 - Cases manually moved without updating system
@@ -218,16 +232,19 @@ The steps for each case transfer are as follows:
 ### Frequent Alerts on Specific Products
 
 **Symptoms:**
+
 - Certain SKUs causing repeated alerts
 - Same product repeatedly has storage/dispense issues
 - Product-specific fault patterns
 
 **Common Causes:**
+
 - Case dimensions incorrectly configured
 - Case quality issues (weak, damaged, irregular)
 - Acceleration settings too aggressive for product
 
 **Solution:**
+
 1. **Review product configuration:**
     - Check acceleration settings in the [Products Page](../main-screens/inventory-section.md#products-page)
     - Verify dimensions are correct in MixMaster product configurations (length, width, height)
@@ -238,11 +255,13 @@ The steps for each case transfer are as follows:
 3. **Adjust settings:**
     - Lower acceleration if cases are unstable
     - This is modified in the **[Products Page](../main-screens/inventory-section.md#products-page)**
+
 4. **Test and monitor:**
     - Monitor results over several cycles
 
 5. **Consider removing product from InnoPick**
     - If the product is very problematic such that it is slowing down the entire production and the problems cannot be resolved by parameter changes, it may be better to remove the product from automation.
+
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics

@@ -8,33 +8,37 @@
 
 The User Manager page allows Admin-level users to create and manage user accounts for InnoPick Manager.
 
-### User Roles
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## User Roles
 
 Each user account is assigned one of these roles:
 
-#### Admin
+### Admin
 - Full access to all controls and options
 - Can create and manage other user accounts
 - Can modify system configuration
 - Can access all pages and features
 
-#### Manager
+### Manager
 - Access to all operational settings
 - Cannot modify site settings or core configuration
 - Can manage production operations
 - Can resolve alerts and manage inventory
 
-#### Clerk
+### Clerk
 - Access necessary to operate system for production
 - Cannot change configuration settings
 - Can monitor status and clear alerts
 - Limited administrative access
 
-#### Terminal User
+### Terminal User
 - Access only to MixMaster Terminals
 - There are no Terminals within InnoPick Manager, but since User Accounts are shared between the systems, the option appears here.
 
-### Creating a New User
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Creating a New User
 
 <img src="../../images/administration/image52.png" width="800" alt="Create User Dialog">
 
@@ -49,16 +53,21 @@ To create a new user account:
     - **Role**: Select from Admin, Manager, Clerk, Terminal User
 3. Save the new user
 
-### Managing Existing Users
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Managing Existing Users
 
 From the User Manager page, you can:
+
 - View all user accounts
 - Edit user information
 - Change user roles
 - Disable or delete accounts
 - Reset passwords
 
-### Security Best Practices
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Security Best Practices
 
 - Assign the minimum necessary role for each user
 - Review user accounts periodically

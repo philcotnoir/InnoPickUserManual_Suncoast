@@ -14,6 +14,8 @@ This page provides general principles and best practices for successfully resolv
 
 When alerts occur, InnoPick changes the level status indicators to show the severity and type of issue.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Level Color Meanings
 
 <img src="../images/home/image10.png" width="200" alt="Level Status Colors">
@@ -24,14 +26,18 @@ When alerts occur, InnoPick changes the level status indicators to show the seve
 - **Dark Red**: E-Stop active - safety system engaged (door open or E-Stop pressed)
 - **Blue**: Communication Loss
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Alert Progression
 
 **When an alarm occurs:**
+
 1. InnoPick stops the affected level
 2. Level enters Fault mode (Red) or E-Stop status (Dark Red)
 3. Alert appears on [Home Page](../main-screens/home-page.md) and [Alerts Page](../main-screens/alerts-page.md)
 
 **After clearing the alarm:**
+
 1. Level goes to Manual mode (Yellow)
 2. Operator can verify conditions are correct
 3. Level can be put back into Automatic mode (Green)
@@ -41,6 +47,8 @@ When alerts occur, InnoPick changes the level status indicators to show the seve
 ## Six General Guidelines for Operating InnoPick Successfully
 
 Following these guidelines will prevent most cascading faults and reduce troubleshooting time.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Guideline 1: Always Compare Physical Reality to the Inventory Graph
 
@@ -61,11 +69,13 @@ The [Inventory Graph](../main-screens/home-page.md#inventory-graph) is the gold 
 **Always verify where the case actually ended up.**
 
 #### After a Store Fault:
+
 - Case should be in the storage lane
 - Verify it's not blocking the photocell
 - Confirm it's properly positioned
 
 #### After a Dispense Fault:
+
 - Case should be on the sequence conveyor
 - Verify it cleared the photocell
 - Confirm proper spacing to adjacent cases
@@ -111,6 +121,7 @@ Infeed alarms are confusing because they occur where two different systems conne
 #### Symptom Alerts
 
 Certain alerts are **rarely stand-alone problems** and usually indicate previously mishandled faults or bigger issues. Correctly identifying this makes **the difference between:**
+
 - One 4-minute stoppage (properly handled)
 - Five stoppages costing 25 minutes (symptom not recognized)
 
@@ -167,17 +178,20 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 
 #### MixMaster (or equivalent WMS/WCS)
 **Impact Examples:**
+
 - **HOLD on a pallet**: InnoPick won't schedule output cases for it or subsequent pallets
 - **Order changes**: May affect case sequence and replenishment needs
 
 #### Inbound Conveyor System (Pre-InnoPick)
 **Impact Examples:**
+
 - **HOLD enabled**: Cases won't be released to InnoPick
 - **Tracking errors**: Wrong cases or quantities arrive
 - **Photocell issues**: Cases arrive unexpectedly
 
 #### Outbound Conveyor System (Post-InnoPick)
 **Impact Examples:**
+
 - **HOLD or fault active**: InnoPick cannot release cases at outfeed
 - **Accumulation full**: Output stops even if InnoPick is ready
 - **Downstream equipment down**: Cases back up into InnoPick
@@ -196,12 +210,15 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 ### When to Clear Alerts
 
 Clear alerts only when:
+
 - ✓ Underlying physical issue is resolved
 - ✓ Cases are in correct positions
 - ✓ Inventory graph matches reality
 - ✓ Sensors are unblocked
 - ✓ Mechanical issues are fixed
 - ✓ Safety devices are reset
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### When Alerts Won't Clear
 
@@ -244,6 +261,8 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 - Stop and reassess
 - Don't just keep clearing and restarting
 - Look for root cause
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Multiple Related Alerts
 

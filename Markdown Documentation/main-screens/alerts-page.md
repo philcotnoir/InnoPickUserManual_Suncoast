@@ -34,14 +34,20 @@ When the Alerts page first loads:
 
 The Alerts page displays detailed information about each alert:
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Date
 - The date and time when the alert first occurred
 - Useful for tracking when issues began
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Source
 - Indicates which portion of the software generated the alert
 - Examples: Motion Controller, PLC, Core Logic, Buffer Management
 - Helps identify which system component detected the issue and what aspect of InnoPick is the problem
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Severity
 Alerts are categorized by severity level:
@@ -65,15 +71,21 @@ Alerts are categorized by severity level:
   - Requires operator intervention
   - The panel Buzzer will sound to alert the operator
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Raw Code
 - The numeric code associated with the alert
 - Used to identify specific alert types
 - Reference these codes in the [Alert Reference Page](../troubleshooting/alert-reference.md)
 - Examples: 119, 121, 515, 555, 709
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Level
 - The InnoPick level where the alert occurred
 - May be blank for system-wide alerts
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Message
 - Descriptive text explaining the nature of the alert
@@ -96,6 +108,8 @@ Use the search bar to find specific alerts by:
   - Keywords in message text (e.g., "photocell", "clutch")
   - Level number
   - Date/time information
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Common Filtering Strategies
 
@@ -124,6 +138,8 @@ To see all alerts:
 <img src="../images/alerts/filterall.png" width="400" alt="Alerts Page">
   - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.
   - This can be useful when a level seems to be faulted but there is no obvious reason why.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Why View Historical Alerts?
 
@@ -182,6 +198,8 @@ Here are some frequently encountered alerts (see [Alert Reference](../troublesho
 6. Operator clears alert
 7. System resumes operation
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### When to Clear Alerts
 
 **You should clear alerts only when:**
@@ -198,6 +216,8 @@ Here are some frequently encountered alerts (see [Alert Reference](../troublesho
   - You're unsure what caused the alert
   - Physical conditions don't match expectations
   - Multiple related alerts are occurring
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### If Alerts Won't Clear
 
@@ -230,6 +250,8 @@ If an alert occurs once:
 3. Clear the alert
 4. Monitor to ensure it doesn't recur
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### For Repeated Alerts
 
 If the same alert occurs multiple times:
@@ -244,6 +266,8 @@ If the same alert occurs multiple times:
 
 3. Resolve the root cause, not just the symptom
 4. Document the issue for maintenance review
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### For Multiple Different Alerts
 

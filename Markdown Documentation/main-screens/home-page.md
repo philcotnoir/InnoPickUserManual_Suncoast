@@ -40,24 +40,26 @@ The main visual grid in the center-right of the Home Page provides a quick summa
 
 ### Understanding the Symbols
 
-**Shapes:**
+#### Shapes:
 
 - **Squares** = Outbound cases (scheduled for customer pallets)
 - **Triangles** = Inbound cases (replenishments being stored in lanes)
 
-**Fill Status:**
+#### Fill Status:
 
 - **Filled shapes** = Physical case is present at that position
 - **Hollow shapes** = Position is empty or case is expected
   - If a triangle, it means the case has been stored
    - If a square, it means the case is scheduled to be dispensed on this position
 
-**"Gender Bender" cases:** 
+#### "Gender Bender" cases:
 <img src="../images/home/genderbender.png" width="300" alt="Inventory Graph">
 
 - Some Inbound case positions can be re-used as Outbound case positions when the system determines that the inbound case will be stored in a lane upstream of the outbound case's lane.
 - This is shown via a special border around the inbound case on the Inventory graph (see screenshot above - cases highlighted in blue rectangle)
 - When this case is stored, the triangle will be replaced with a square.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Operational Controls on the Inventory Graph
 #### Build Inventory Mode
@@ -85,6 +87,8 @@ The main visual grid in the center-right of the Home Page provides a quick summa
 <img src="../images/home/pauseoutfeed6.png" width="200" alt="Pause Infeed Button Location">
 
 - Click the **Resume Outfeed** button to resume outgoing cases.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 
 ### Interpreting the Display
@@ -127,6 +131,8 @@ The inventory graph shows:
 - Hover over the stop logo to get more information:
 <img src="../images/home/outfeedcase6.png" width="800" alt="Outfeed Cases">
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 
 ### Getting More Information
 
@@ -153,6 +159,8 @@ Information includes:
   - Client Order PalletID
   - Case reference number
   - Source lane (where the case was dispensed from)
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 #### Quick Links
 Users can click on: 
@@ -185,6 +193,8 @@ For outbound cases (squares), you can click on the case and see between 2 and 3 
 
 The numbered squares in the top left corner indicate the operational status of each InnoPick level.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Status Color Meanings
 
 - **Green**: Automatic mode - level is running or ready for production
@@ -192,6 +202,8 @@ The numbered squares in the top left corner indicate the operational status of e
 - **Red**: Fault mode - level has an active alert
 - **Dark Red**: E-Stop active - safety system engaged
 - **Blue**: Communication Loss
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Controlling Level Modes
 
@@ -212,6 +224,8 @@ The numbered squares in the top left corner indicate the operational status of e
   - Used for troubleshooting and maintenance
   - Required in order to jog lanes (manual control) or change certain settings, such as the inventory of a lane.  
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### When Levels Are in Manual Mode
 
 <img src="../images/home/manualmode.png" width="200" alt="Levels in Manual Mode">
@@ -230,6 +244,8 @@ When InnoPick has an alarm, the affected level automatically enters Manual (Yell
 <img src="../images/home/image12.png" width="1600" alt="Alerts Display">
 
 The Alerts section shows current system alerts that require attention.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Clear All Alerts Button
 
@@ -261,6 +277,8 @@ There is also a **Clear Alerts** button always visible just above the Auto and M
 6. Open the [Alerts Page](../main-screens/alerts-page.md) and remove all filters to see if some other alert could be affecting the system. 
     - Sometimes the system filters out an alert that is still active and cannot be cleared until the underlying issue has been fixed.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Viewing Complete Alert History
 
 For a full list of all current and past alerts with search and filtering capabilities, see the [Alerts Page](alerts-page.md).
@@ -271,11 +289,15 @@ For a full list of all current and past alerts with search and filtering capabil
 
 The Lane Inventory display shows the contents of storage lanes for each level.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Selecting a Level
 
 <img src="../images/home/image14.png" width="300" alt="Level Selection">
 
 Click on a level number to view its lane inventory.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Lane Display
 
@@ -286,6 +308,8 @@ Each storage lane is shown as a horizontal bar:
   - Bar length represents relative fullness
   - The display adjusts automatically to show all lanes for that level
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Getting Lane Details
 
 <img src="../images/home/image16.png" width="300" alt="Lane Hover Details">
@@ -294,6 +318,8 @@ Hover your cursor over any lane to see:
 
   - Quantity of cases
   - Product stored (SKU and description)
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Complete Lane Management
 
@@ -306,6 +332,8 @@ For more detailed lane inventory information and editing capabilities, see the [
 <img src="../images/home/progressbar.png" width="150" alt="Production Graph">
 
 The Production Graph on the far left of the Home Page shows the current state of the production run.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Understanding the Graph
 
@@ -334,6 +362,8 @@ The Production Graph on the far left of the Home Page shows the current state of
 
 ## Using the Home Page Effectively
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### For Daily Monitoring
 
 The Home Page should be your primary screen during production:
@@ -341,6 +371,8 @@ The Home Page should be your primary screen during production:
 1. **Glance regularly at level statuses** - All should be green during production
 2. **Watch for new alerts** - Address immediately when they appear
 3. **Monitor production progress** - Verify steady advancement
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Quick Troubleshooting
 
@@ -351,6 +383,8 @@ When an alert occurs:
 3. **Look at the inventory graph** - does it match physical reality?
 4. **Address the issue** per the [Troubleshooting Guidelines](../troubleshooting/alert-guidelines.md)
 5. **Clear the alert** once resolved
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Navigation from Home Page
 

@@ -45,6 +45,7 @@ Common scenarios requiring case replacement:
 ## Scenario 1: Replace Case Currently Being Inducted
 
 **Situation:**
+
 - Case is currently part of an active replenishment
 - Case is already in InnoPick
 - Case is broken, too damaged, or wrong product
@@ -79,12 +80,14 @@ Common scenarios requiring case replacement:
 ## Scenario 2: Damaged Inbound Case on Sequence Conveyor is Not Needed for Client Pallet
 
 **Situation:**
+
 - Case is on the sequence conveyor and is going to be stored
 - No replacement cases are readily available
 - Case will NOT be needed for upcoming orders
   - This can be determined if: There are no additional replenishment scheduled for this product (filter for this product & level in the Replenishments page to determine this).
 
 **If no other replenishment scheduled:**
+
 - InnoPick can function without this case
 - Case can be shorted rather than replaced
 - **Replacement is optional**
@@ -115,6 +118,7 @@ Common scenarios requiring case replacement:
 ## Scenario 3: Replace Missing Outfeed Case
 
 **Situation:**
+
 - Alert: "Expecting a case but there is no case present at the outfeed"
 - Case should be at last InnoPick position but is missing
 - See [Alert Reference](alert-reference.md#expecting-a-case-but-there-is-no-case-present-at-the-outfeed) for detailed alert resolution
@@ -158,6 +162,7 @@ Common scenarios requiring case replacement:
 ### Quality Control
 
 If replacing due to quality issue:
+
 - Note the specific problem
 - Report pattern of defects to supervision
 - May indicate supplier issue
@@ -165,6 +170,7 @@ If replacing due to quality issue:
 ### Inventory Accuracy
 
 After any replacement:
+
 - Verify all counts are correct
 - Check [Lane Inventory](../main-screens/inventory-section.md#lane-inventory-page)
 - Confirm [Replenishments Page](../main-screens/inventory-section.md#replenishments-page) quantities
@@ -177,14 +183,17 @@ After any replacement:
 ### Best Practices
 
 **Visual Inspections:**
+
 - Check case quality of the cases in InnoPick
 - Monitor cases as they induct
 
 **Proper Handling:**
+
 - Ensure upstream handling doesn't damage cases
 - Ensure upstream handling properly identifies and rejects damaged or turned cases
 
 **Maintain Tracking Accuracy:**
+
 - Always follow [Alert Guidelines](alert-guidelines.md)
 - Verify Inventory Graph after every alert
 

@@ -8,13 +8,18 @@
 
 The User Settings page contains personal preferences that individual users can configure.
 
-### Available Settings
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Available Settings
 
 Settings include:
+
 - Language preferences (if applicable)
 - System of units (metric vs imperial)
 
-### Accessing User Settings
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Accessing User Settings
 
 - Click **User Settings** in the left navigation menu
 - Settings are specific to your user account

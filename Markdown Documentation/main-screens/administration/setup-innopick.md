@@ -6,7 +6,7 @@
 
 <img src="../../images/administration/image46.png" width="800" alt="Setup InnoPick Page">
 
-### Setup InnoPick Sub-Sections:
+## Setup InnoPick Sub-Sections:
 - [Site Settings](#site-settings)
 - [Site Levels](#site-levels)
 - [Packages](#packages)
@@ -21,7 +21,7 @@ The Setup InnoPick page contains configuration settings for InnoPick's internal 
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Site Settings
+## Site Settings
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
@@ -29,64 +29,83 @@ The Setup InnoPick page contains configuration settings for InnoPick's internal 
 
 Critical system-wide configuration parameters.
 
-#### Gap Between Cases in Millimeters
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Gap Between Cases in Millimeters
 
 The gap InnoPick maintains between cases stored in buffer lanes.
 
-**Purpose:**
+Purpose:
+
 - Prevents cases from pressing together
 - Allows smooth dispensing
 - Accommodates case size variations
 - **Note:** Do not change this parameter unless directed to system expert / remote support.
 
-#### Manual Replenishment Empty Lanes Threshold
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Manual Replenishment Empty Lanes Threshold
 
 Minimum number of empty lanes required before IPM allows manual replenishment creation.
 
-**Purpose:**
+Purpose:
+
 - Ensures sufficient space for manual replenishments
 - Prevents overfilling storage capacity
 
-#### Use Dynamic Replenishment Quantities
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Use Dynamic Replenishment Quantities
 
 Enable/disable IPM's ability to dynamically adjust replenishment quantities based on demand patterns.
 
-**When enabled:**
+When enabled:
+
 - IPM analyzes usage patterns
 - Adjusts quantities automatically
 - Optimizes inventory levels
 
-**When disabled:**
+When disabled:
+
 - Uses static configured quantities
 - More predictable but less adaptive
 
 **Note**: Should be managed by system integrators.
 
-#### Max Consecutive Output Cases Per Destination
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Max Consecutive Output Cases Per Destination
 
 Limits consecutive cases sent to a single destination (Merge A, B, etc.).
 
-**Purpose:**
+Purpose:
+
 - Balances output across destinations
 - Prevents overwhelming single destination
 - Contingent on other function being enabled
 
 **Note**: Should be managed by system integrators.
 
-#### Sequence Conveyor Acceleration / Deceleration in Gs
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Sequence Conveyor Acceleration / Deceleration in Gs
 
 Acceleration rate for sequence conveyor indexing moves.
 
 **Measured in:** g's (gravitational force)
 
-**Considerations:**
+Considerations:
+
 - Higher = faster moves but more case disturbance
 - Lower = gentler but slower throughput
 - Balance between speed and stability
 
-#### Additional Configuration Options
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Additional Configuration Options
 
 Other settings visible on this page are for:
+
 - Initial system setup
 - System integration
 - Advanced configuration
@@ -95,41 +114,55 @@ Other settings visible on this page are for:
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Site Levels
+## Site Levels
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
 <img src="../../images/administration/sitelevels.png" width="800" alt="Site Levels Configuration">
 
 This page contains level-specific configuration settings:
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 **Lane Pitch in Millimeters**
   - Value (in mm) representing the standard distance between storage lanes
   - **Note**: Values may differ slightly per level due to:
+
     - Chain stretch over time
     - Tensioning adjustments
     - Mechanical variations
   - **See the [Lane Pitch Adjustment Guide](../../troubleshooting/casecentering.md) for guidance on how to adjust these parameters to ensure good centering on all lanes** 
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 **Center Placement in millimeters**
   - Controls the initial positioning of a case as it first enters InnoPick infeed.
   - **See the [Lane Pitch Adjustment Guide](../../troubleshooting/casecentering.md) for guidance on how to adjust these parameters to ensure good centering on all lanes** 
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 **Center offset in millimeters**
   - Adjusts the expected centerpoint of infeed cases.
   - If there are midpoint alarms being generated despite the cases looking nicely centered, then this parameter needs to be adjusted. 
   - Contact system integrators if adjustment is needed.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 **Length offset in millimeters**
   - Adjusts the expected length by this amount
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 **Target offset in millimeters**
   - Adjusts the final case placement when dispensing a case
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 **Send variables to Galil**
 - Press this after making a change to one of the variables in this section, followed by the 'Submit' button at the top of the page.
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Packages
+## Packages
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
@@ -139,7 +172,7 @@ Product configuration page for system setup.
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Masking
+## Masking
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
@@ -149,7 +182,7 @@ Configuration for masking certain system moves.
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Motion Controller
+## Motion Controller
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
@@ -159,7 +192,7 @@ Connection and configuration for the motion controller.
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Buffer
+## Buffer
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
@@ -167,18 +200,21 @@ Connection and configuration for the motion controller.
 
 Configuration for accumulation management and output buffering.
 
-#### Number Of Cases To Exit Merge In The Accumulation LookAhead
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Number Of Cases To Exit Merge In The Accumulation LookAhead
 How many cases IPM considers when forecasting and scheduling output.
 
 Impact:
 - **Higher number**: More aggressive scheduling, uses more accumulation
 - **Lower number**: More conservative, leaves accumulation space unused
-
-*Too high*: Risk of misjudging available space, may block output more often
-*Too low*: Underutilizes accumulation, reduces throughput
+- **Too high**: Risk of misjudging available space, may block output more often
+- **Too low**: Underutilizes accumulation, reduces throughput
 *Recommendation*: Determine empirically based on system performance
 
-#### Buffer Enabled
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Buffer Enabled
 (Default = On)
 
 When enabled, InnoPick keeps track of the cases in the outbound accumulation to optimize outbound scheduling when space is available and pause outbound scheduling to allow inbound to keep entering when the outbound is full.
@@ -192,8 +228,9 @@ When enabled, InnoPick keeps track of the cases in the outbound accumulation to 
 - IPM schedules output independently of accumulation status
 - Simpler but may cause downstream congestion issues
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
-#### Build Inventory
+### Build Inventory
 
 InnoPick can operate in two modes regarding accumulation:
 
@@ -211,11 +248,13 @@ InnoPick can operate in two modes regarding accumulation:
 - Allows continuous replenishment induction
 
 **When to enable:**
+
 - Starting production with low inventory
 - Recovering from downstream stoppage
 - Building to nominal inventory levels
 
 **When to disable:**
+
 - Normal production operations
 - When inventory is at nominal or above
 - To maximize throughput
@@ -223,37 +262,48 @@ InnoPick can operate in two modes regarding accumulation:
 **Note: Build Inventory Mode can be turned on and off directly from the set of controls that are always visible in the top left corner of the InnoPick Manager screen:**
 <img src="../../images/administration/buildinventory2.png" width="250" alt="Build Inventory Mode">
 
-**Destination Decoupling Mode Enabled**
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Destination Decoupling Modes
+
+#### Enabled
+
 - Allows InnoPick to schedule cases for multiple destinations in parallel based on downstream accumulation availability and inventory. 
 - If InnoPick cannot schedule the next outbound case for the next priority pallet, it is allowed to look for pallets further down the sequence for other destinations and attempt scheduling them if accumulation and inventory allows it.
 - This mode is affected by the two parameters below:
 
 **Destination decoupling mode max pallet offset**
+
 - This is configuration parameter for the "Destination Decoupling Mode Enabled" above.
 - See the description beneath the setting.
   
 **Destination decoupling mode max case offset**
+
 - This is configuration parameter for the "Destination Decoupling Mode Enabled" above.
 - See the description beneath the setting.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
-#### Destination A / B Accumulation
+### Destination A / B Accumulation
 <img src="../../images/administration/buffer2.png" width="500" alt="Buffer Settings">
 
 These settings teach InnoPick about various accumulation zones for its algorithmic calculations. 
 
 **Shared zone accumulation (# of zones)**
+
 - This setting teaches InnoPick how many cases can fit between the exit of the merge and the palletizer. 
 
 **Level 1 to 5: Accumulation Length in Mm**
+
 - This setting teaches InnoPick the length of low pressure accumulation where cases are accumulated in a way that they bunch up together with no gaps. 
 
 **Level 1 to 5: Zone Accumulation (# of zones)**
+
 - This setting teaches InnoPick how many individual cases can be accumulated between the exit of InnoPick and the merge. 
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Simulator Setup
+## Simulator Setup
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 
@@ -263,7 +313,7 @@ Configuration page for developers and system testing.
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Core Setup
+## Core Setup
 
 [Back to Setup InnoPick Sub-Sections](#setup-innopick-sub-sections)
 

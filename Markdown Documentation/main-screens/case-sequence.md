@@ -15,12 +15,14 @@ The Case Sequence page displays the order in which cases will exit InnoPick and 
 ## Understanding the Case Sequence
 
 The case sequence represents:
+
 - The exact order cases will exit InnoPick (per level)
 - Which cases belong to which customer pallets
 - Current status of each case (pending, in progress, completed, cancelled)
 - Which downstream destination each case is destined to
 
 This information is critical for:
+
 - Verifying correct order fulfillment
 - Tracking specific cases or pallets
 - Troubleshooting sequencing issues
@@ -93,14 +95,19 @@ The only action available on this page is:
 
 The Case Sequence page becomes particularly powerful when filters are applied.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Search Bar
 
 Use the search bar to quickly find cases by:
+
 - Case reference number
 - Pallet ID
 - Product SKU
 - Product description
 - Any keyword in the displayed fields
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Common Filtering Scenarios
 
@@ -152,6 +159,8 @@ If a case doesn't arrive at the palletizer when expected:
 4. **Take appropriate action** based on findings. 
     - If a case is stuck in pending mode and no replenishment for that product is on its way, contact support.
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Verifying Pallet Completion
 
 To confirm all cases for a pallet have been output:
@@ -162,6 +171,8 @@ To confirm all cases for a pallet have been output:
     - If any are Pending or In Progress, pallet is not complete
     - A pending case usually indicates the system is still waiting for a replenishment to provide that case
     - Note any Cancelled cases
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Investigating Sequencing Problems
 
@@ -175,6 +186,8 @@ If cases are arriving in wrong order:
     - Cancelled cases affecting sequence
 4. **Correct the sequence** if sequence is incorrect.
 5. *If InnoPick appears to be building an incorrect sequence, or the sequence in InnoPick does not match that of MixMaster, contact support.*
+
+
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 ## Related Topics

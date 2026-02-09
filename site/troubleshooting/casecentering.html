@@ -1642,15 +1642,19 @@
 <li>Calculation: <strong>12mm ÷ 71 positions = 0.17mm</strong></li>
 </ul>
 <h3 id="6-apply-the-correction">6. Apply the Correction<a class="headerlink" href="#6-apply-the-correction" title="Permanent link">&para;</a></h3>
-<p>Adjust the <strong>"Lane Pitch in Millimeters"</strong> parameter by the result of your calculation in Step 5.<br />
-<strong>Important Note:</strong> <br />
-    - If the adjustment is towards the upstream, subtract the value from the current Lane Pitch distance. This will reduce the size of the standard move and result in the case moving a smaller distance, ending up more upstream.<br />
-    - If the adjustment is towards the downstream, add the value to the current Lane Pitch distance. This will increase the size of the standard move and result in the case moving a greater distance, ending up further downstream.</p>
-<p><strong>Example (continued):</strong><br />
-- If our calculation resulted in a value of 0.17mm<br />
-- And the Lane Pitch parameter is currently at <strong>558.80mm</strong><br />
-- We will subtract the calculated value from the parameter value:<br />
-- <strong>558.80 - 0.17 = 558.63mm</strong></p>
+<p>Adjust the <strong>"Lane Pitch in Millimeters"</strong> parameter by the result of your calculation in Step 5.</p>
+<p><strong>Important Note:</strong> </p>
+<ul>
+<li>If the adjustment is towards the upstream, subtract the value from the current Lane Pitch distance. This will reduce the size of the standard move and result in the case moving a smaller distance, ending up more upstream.</li>
+<li>If the adjustment is towards the downstream, add the value to the current Lane Pitch distance. This will increase the size of the standard move and result in the case moving a greater distance, ending up further downstream.</li>
+</ul>
+<p><strong>Example (continued):</strong></p>
+<ul>
+<li>If our calculation resulted in a value of 0.17mm</li>
+<li>And the Lane Pitch parameter is currently at <strong>558.80mm</strong></li>
+<li>We will subtract the calculated value from the parameter value:</li>
+<li><strong>558.80 - 0.17 = 558.63mm</strong></li>
+</ul>
 <h3 id="7-final-validation">7. Final Validation<a class="headerlink" href="#7-final-validation" title="Permanent link">&para;</a></h3>
 <p>Validate the new value by repeating the test and ensuring that the case ends up properly centered in front of the last lane (near the outfeed).</p>
 <h2 id="parameter-summary">Parameter Summary<a class="headerlink" href="#parameter-summary" title="Permanent link">&para;</a></h2>

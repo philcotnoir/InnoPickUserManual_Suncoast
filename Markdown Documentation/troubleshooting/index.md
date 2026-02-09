@@ -14,33 +14,48 @@ This section provides guidance for resolving alerts, troubleshooting common issu
 
 ### [Guidelines for Resolving Alerts](alert-guidelines.md)
 General principles and best practices for resolving alerts successfully, including:
+
 - Understanding level status colors
 - General guidelines for operating InnoPick
 - When alerts indicate bigger issues
 - Important system settings that affect behavior
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### [Alerts Reference](alert-reference.md)
 Complete listing of all InnoPick alerts with:
+
 - Alert code and description organized by ranges
 - Explanation and common causes
 - Step-by-step resolution procedures
 - Quick navigation by alert code ranges
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### [Common Issues](common-issues.md)
 Frequently encountered problems and their solutions:
+
 - Outfeed faults
 - Infeed issues
 - Sequencing problems
 - Performance issues
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### [Case Replacement](case-replacement.md)
 Procedures for replacing broken, missing, or incorrect cases during operation.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### [Case Centering Adjustments](casecentering.md)
 Procedures for adjusting the centering of cases on a given level. 
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### [Deadlocks](deadlocks.md)
 Explanations of and guidance for resolving deadlock situations.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### [Disabling an Active Lane](disabledlane.md)
 Guidance on how to handle disabling a lane that has incoming replenishment cases or already-scheduled output cases.
@@ -50,29 +65,36 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 ## Quick Reference by Symptom
 
 **System won't start:**
+
 → Check for [E-Stop condition](alert-reference.md#555---e-stop-condition-active---safety-is-disarmed-door-opened-or-e-stop-pressed)
 → Verify no [unresolved or hidden alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 
 **Alert won't clear:**
+
 → See [Alert Guidelines](alert-guidelines.md#when-alerts-wont-clear)
 → Verify physical issue is resolved
 → Use [Recovery Action](../main-screens/administration/recovery-actions.md) to send a clear alarm to the motion controller. 
 
 **Case missing from sequence:**
+
 → See [Case Replacement](case-replacement.md)
 → Check [Case Sequence Page](../main-screens/case-sequence.md)
 
 **Repeated same alert:**
+
 → See [Alert Guidelines](alert-guidelines.md#recognizing-symptoms-of-bigger-issues)
 → Check for underlying issues
 
 **Photocell fault:**
+
 → See [Alert Reference](alert-reference.md) codes 109, 119, 121, 123, 709
 
 **Clutch fault:**
+
 → See [Alert Reference](alert-reference.md) codes 310, 333, 334, 340
 
 **Infeed problem:**
+
 → See [Alert Reference](alert-reference.md) codes 512, 515, 517
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">

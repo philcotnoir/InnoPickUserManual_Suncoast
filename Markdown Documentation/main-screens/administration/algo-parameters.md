@@ -8,20 +8,27 @@
 
 The Algo Parameters page lists parameters that control various elements of InnoPick's embedded algorithms.
 
-#### Purpose
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Purpose
 
 - Fine-tune system performance
 - Adjust algorithm behavior
 - Optimize for specific products or operations
 
-#### Access Level
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Access Level
 
 Parameters are meant to be altered by:
+
 - System architects
 - System administrators
 - Personnel with deep understanding of InnoPick operation
 
-#### Documentation
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+## Documentation
 
 Each parameter includes a description on the page explaining its purpose and effect.
 

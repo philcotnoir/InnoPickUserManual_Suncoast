@@ -38,6 +38,8 @@ Replenishments occur when InnoPick doesn't have sufficient inventory for a parti
 3. The pallet is depalletized
 4. Cases are inducted into InnoPick
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Replenishment Quantities
 
 A replenishment can range from:
@@ -46,6 +48,8 @@ A replenishment can range from:
 - **Maximum**: An entire pallet
 
 Replenishment quantities are determined automatically by InnoPick's algorithms unless manually overridden. See [Products Page](#products-page) for manual configuration options.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Replenishments Page Columns
 
@@ -100,6 +104,8 @@ Replenishments can also be **Canceled**
 - Number of cases successfully inducted to date
 - Updates in real-time during induction
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Replenishment Actions
 
 <img src="../images/inventory/image23.png" width="500" alt="Replenishment Actions Menu">
@@ -139,6 +145,8 @@ Click the three vertical dots (⋮) on the right side of any replenishment to ac
 <img src="../images/inventory/productspage.png" width="1600" alt="Products Page">
 
 The Products page displays all products in the InnoPick Manager database with their configuration settings.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Main Products Page Columns
 
@@ -211,6 +219,8 @@ The Products page displays all products in the InnoPick Manager database with th
 - Last time this product was present in InnoPick
 - Useful for identifying inactive products
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Editing Products
 
 <img src="../images/inventory/editprod.png" width="500" alt="Product Edit Panel">
@@ -241,6 +251,8 @@ When **Auto Assign** is disabled, you can manually assign the product to specifi
 <img src="../images/inventory/laneinventory1.png" width="1600" alt="Lane Inventory Page">
 
 The Lane Inventory page is an expanded version of the lane display available on the [Home Page](home-page.md#lane-inventory).
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Main Lane Inventory Page Columns
 
@@ -275,6 +287,8 @@ The Lane Inventory page is an expanded version of the lane display available on 
 - Click the icon to edit lane contents
 - Only available in Manual mode
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### Enable/Disable Controls
 
 <img src="../images/inventory/disablelane.png" width="300" alt="Disable Lanes">
@@ -295,6 +309,8 @@ The Lane Inventory page is an expanded version of the lane display available on 
 <img src="../images/inventory/ignoresensor.png" width="400" alt="Ignore Sensors">
 
 - This option should be used in coordination with maintenance staff responsible for mechanical interventions. 
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Editing Lane Inventory
 
@@ -359,6 +375,8 @@ When editing a lane, you can:
 
 The Accumulations page displays values related to InnoPick's management of the space between InnoPick's exit and the downstream merge point (Merges or equivalent).
 
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 ### How Accumulation Works
 
 InnoPick tracks:
@@ -368,6 +386,8 @@ InnoPick tracks:
 - Available accumulation space remaining
 
 Based on these factors, InnoPick decides whether to schedule more output cases.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Accumulations Page Columns
 
@@ -409,6 +429,8 @@ For more information on the Build Inventory Mode, see [Setup InnoPick > Buffer](
 <img src="../images/inventory/productstats1.png" width="1600" alt="Product Statistics Page">
 
 The Product Statistics page provides detailed information about how InnoPick uses various products.
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Product Statistics Columns
 
@@ -460,6 +482,8 @@ The Product Statistics page provides detailed information about how InnoPick use
 #### Case Seq Total
 - How many cases of this product remain in the current case sequence
 - Still needed to complete active orders
+
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Using Product Statistics
 

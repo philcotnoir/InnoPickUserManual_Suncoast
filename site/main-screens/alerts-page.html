@@ -1917,9 +1917,10 @@
 
 <h2 id="default-display">Default Display<a class="headerlink" href="#default-display" title="Permanent link">&para;</a></h2>
 <p>When the Alerts page first loads:</p>
-<pre><code>- **Only uncleared alerts** are displayed by default
-- Alerts are shown in chronological order (most recent first)
-</code></pre>
+<ul>
+<li><strong>Only uncleared alerts</strong> are displayed by default</li>
+<li>Alerts are shown in chronological order (most recent first)</li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="alerts-page-columns">Alerts Page Columns<a class="headerlink" href="#alerts-page-columns" title="Permanent link">&para;</a></h2>
@@ -1939,19 +1940,22 @@
 <p>Alerts are categorized by severity level:<br />
 <img src="../images/alerts/severity.png" width="150" alt="Alerts Page"></p>
 <p><strong>Warning</strong>: Minor alert that may not require immediate action</p>
-<pre><code>- System can often continue operating
-- Should be monitored for patterns
-- No audible sound
-</code></pre>
+<ul>
+<li>System can often continue operating</li>
+<li>Should be monitored for patterns</li>
+<li>No audible sound</li>
+</ul>
 <p><strong>Error</strong>: A standard Alert which stops the affected level and puts it into Manual (Faulted/Red) mode.</p>
-<pre><code>- Other levels continue operating
-- The panel Buzzer will sound to alert the operator
-</code></pre>
+<ul>
+<li>Other levels continue operating</li>
+<li>The panel Buzzer will sound to alert the operator</li>
+</ul>
 <p><strong>Critical</strong>: Major system alert requiring attention</p>
-<pre><code>- Production on all levels may be stopped
-- Requires operator intervention
-- The panel Buzzer will sound to alert the operator
-</code></pre>
+<ul>
+<li>Production on all levels may be stopped</li>
+<li>Requires operator intervention</li>
+<li>The panel Buzzer will sound to alert the operator</li>
+</ul>
 <h3 id="raw-code">Raw Code<a class="headerlink" href="#raw-code" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The numeric code associated with the alert</li>
@@ -1979,33 +1983,38 @@
 <p><img src="../images/alerts/filteralarm.png" width="400" alt="Alerts Page"></p>
 <h3 id="searching-alerts">Searching Alerts<a class="headerlink" href="#searching-alerts" title="Permanent link">&para;</a></h3>
 <p>Use the search bar to find specific alerts by:</p>
-<pre><code>- Alert code (e.g., "555")
-- Keywords in message text (e.g., "photocell", "clutch")
-- Level number
-- Date/time information
-</code></pre>
+<ul>
+<li>Alert code (e.g., "555")</li>
+<li>Keywords in message text (e.g., "photocell", "clutch")</li>
+<li>Level number</li>
+<li>Date/time information</li>
+</ul>
 <h3 id="common-filtering-strategies">Common Filtering Strategies<a class="headerlink" href="#common-filtering-strategies" title="Permanent link">&para;</a></h3>
 <p><strong>To find all alerts for a specific level:</strong></p>
-<pre><code>- Sort by the Level column
-- All alerts for each level will be grouped together
-</code></pre>
+<ul>
+<li>Sort by the Level column</li>
+<li>All alerts for each level will be grouped together</li>
+</ul>
 <p><strong>To find recent critical alerts:</strong></p>
-<pre><code>- Filter by Severity = Critical
-- Sort by Date (most recent first)
-</code></pre>
+<ul>
+<li>Filter by Severity = Critical</li>
+<li>Sort by Date (most recent first)</li>
+</ul>
 <p><strong>To track a specific type of fault:</strong></p>
-<pre><code>- Search for the alert code or key message terms
-- Review the pattern and frequency
-</code></pre>
+<ul>
+<li>Search for the alert code or key message terms</li>
+<li>Review the pattern and frequency</li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="viewing-all-alerts">Viewing All Alerts<a class="headerlink" href="#viewing-all-alerts" title="Permanent link">&para;</a></h2>
 <p>To see all alerts:</p>
-<pre><code>- Remove all filters:
-</code></pre>
-<p><img src="../images/alerts/filterall.png" width="400" alt="Alerts Page"><br />
-    - This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.<br />
-    - This can be useful when a level seems to be faulted but there is no obvious reason why.</p>
+<ul>
+<li>Remove all filters:<br />
+<img src="../images/alerts/filterall.png" width="400" alt="Alerts Page"></li>
+<li>This shows all alerts, including some Warnings and "Not Initial" alerts that are filtered out by default.</li>
+<li>This can be useful when a level seems to be faulted but there is no obvious reason why.</li>
+</ul>
 <h3 id="why-view-historical-alerts">Why View Historical Alerts?<a class="headerlink" href="#why-view-historical-alerts" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Identify patterns of recurring issues</li>
@@ -2068,18 +2077,20 @@
 </ol>
 <h3 id="when-to-clear-alerts">When to Clear Alerts<a class="headerlink" href="#when-to-clear-alerts" title="Permanent link">&para;</a></h3>
 <p><strong>You should clear alerts only when:</strong></p>
-<pre><code>- The underlying physical issue has been resolved
-- Cases are in correct positions
-- Sensors are unblocked
-- Mechanical issues are fixed
-- Safety devices are reset
-</code></pre>
+<ul>
+<li>The underlying physical issue has been resolved</li>
+<li>Cases are in correct positions</li>
+<li>Sensors are unblocked</li>
+<li>Mechanical issues are fixed</li>
+<li>Safety devices are reset</li>
+</ul>
 <p><strong>Do not clear alerts if:</strong></p>
-<pre><code>- The problem still exists
-- You're unsure what caused the alert
-- Physical conditions don't match expectations
-- Multiple related alerts are occurring
-</code></pre>
+<ul>
+<li>The problem still exists</li>
+<li>You're unsure what caused the alert</li>
+<li>Physical conditions don't match expectations</li>
+<li>Multiple related alerts are occurring</li>
+</ul>
 <h3 id="if-alerts-wont-clear">If Alerts Won't Clear<a class="headerlink" href="#if-alerts-wont-clear" title="Permanent link">&para;</a></h3>
 <p>Some alerts cannot be cleared until specific conditions are met:</p>
 <ol>

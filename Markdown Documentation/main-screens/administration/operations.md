@@ -4,7 +4,7 @@
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-### Level status
+## Level status
 
 <img src="../../images/administration/levelstatus.png" width="1000" alt="Level status">
 
@@ -12,40 +12,51 @@
   - Last case data sent (CaseRef #)
   - Last pending completion (CaseRef #)
 
-### Merges state
+<hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
+
+## Merges state
 
 <img src="../../images/administration/mergesstate1.png" width="400" alt="Merge Settings">
 
 Configuration for downstream merge points (where the different levels combine to a single conveyor that feeds one of the palletizers).
 
-#### Merge A / B Enabled
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Merge A / B Enabled
 
 Enable or disable individual downstream destinations.
 
 **Purpose:**
+
 - Route all cases to operational Merge if one fails
 - Handle downstream equipment failures
 - Temporary operational adjustments
 
 **Usage:**
+
 - Last resort when downstream fault cannot be resolved
 - Will not affect cases already on sequence conveyors -- those cases that are already scheduled for a certain destination will retain their destination.
 - High likelihood that remote support interventions will be required if this is changed during production.
 
 **Caution**: *Only use when absolutely necessary and coordinate with support. Can have unintended effects and complications.*
 
-#### Destination assignment mode
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+### Destination assignment mode
 <img src="../../images/administration/mergesstate2.png" width="400" alt="Merge Settings">
 
 There are two possible settings for the destination assignment mode:
+
 1. None
 2. Just-in-time
 
 **None:** This is the regular destination mode:
+
 - InnoPick will initially load balance pallet assignment when receiving a new case sequence
 - Will never change a destination unless a destination is disabled
 
 **Just in time:** 
+
 - InnoPick will initially load balance pallet assignment when receiving a new case sequence (like normal)
 - InnoPick may change the destination when the first case of a pallet gets scheduled, based on the remaining accumulation available to load balance assignments "Just-in-Time"
 - In this mode, InnoPick responds dynamically to current accumulation levels and assigns pallets to the destination with the most capacity. 
