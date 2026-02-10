@@ -1937,6 +1937,8 @@
 
 <h2 id="understanding-level-status-colors">Understanding Level Status Colors<a class="headerlink" href="#understanding-level-status-colors" title="Permanent link">&para;</a></h2>
 <p>When alerts occur, InnoPick changes the level status indicators to show the severity and type of issue.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="level-color-meanings">Level Color Meanings<a class="headerlink" href="#level-color-meanings" title="Permanent link">&para;</a></h3>
 <p><img src="../images/home/image10.png" width="200" alt="Level Status Colors"></p>
 <ul>
@@ -1946,19 +1948,27 @@
 <li><strong>Dark Red</strong>: E-Stop active - safety system engaged (door open or E-Stop pressed)</li>
 <li><strong>Blue</strong>: Communication Loss</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="alert-progression">Alert Progression<a class="headerlink" href="#alert-progression" title="Permanent link">&para;</a></h3>
-<p><strong>When an alarm occurs:</strong><br />
-1. InnoPick stops the affected level<br />
-2. Level enters Fault mode (Red) or E-Stop status (Dark Red)<br />
-3. Alert appears on <a href="../main-screens/home-page.html">Home Page</a> and <a href="../main-screens/alerts-page.html">Alerts Page</a></p>
-<p><strong>After clearing the alarm:</strong><br />
-1. Level goes to Manual mode (Yellow)<br />
-2. Operator can verify conditions are correct<br />
-3. Level can be put back into Automatic mode (Green)</p>
+<p><strong>When an alarm occurs:</strong></p>
+<ol>
+<li>InnoPick stops the affected level</li>
+<li>Level enters Fault mode (Red) or E-Stop status (Dark Red)</li>
+<li>Alert appears on <a href="../main-screens/home-page.html">Home Page</a> and <a href="../main-screens/alerts-page.html">Alerts Page</a></li>
+</ol>
+<p><strong>After clearing the alarm:</strong></p>
+<ol>
+<li>Level goes to Manual mode (Yellow)</li>
+<li>Operator can verify conditions are correct</li>
+<li>Level can be put back into Automatic mode (Green)</li>
+</ol>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="six-general-guidelines-for-operating-innopick-successfully">Six General Guidelines for Operating InnoPick Successfully<a class="headerlink" href="#six-general-guidelines-for-operating-innopick-successfully" title="Permanent link">&para;</a></h2>
 <p>Following these guidelines will prevent most cascading faults and reduce troubleshooting time.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="guideline-1-always-compare-physical-reality-to-the-inventory-graph">Guideline 1: Always Compare Physical Reality to the Inventory Graph<a class="headerlink" href="#guideline-1-always-compare-physical-reality-to-the-inventory-graph" title="Permanent link">&para;</a></h3>
 <p><strong>When responding to an Alert, always verify physical cases match their position on the Inventory Graph.</strong></p>
 <p>The <a href="../main-screens/home-page.html#inventory-graph">Inventory Graph</a> is the gold standard for what should be where. Physical cases should ALWAYS match the graph.</p>
@@ -2029,9 +2039,11 @@
 <h3 id="guideline-4-determine-if-alert-is-stand-alone-or-a-symptom">Guideline 4: Determine if Alert is Stand-Alone or a Symptom<a class="headerlink" href="#guideline-4-determine-if-alert-is-stand-alone-or-a-symptom" title="Permanent link">&para;</a></h3>
 <p><strong>Consider whether the alert is an isolated incident or indicates a bigger issue.</strong></p>
 <h4 id="symptom-alerts">Symptom Alerts<a class="headerlink" href="#symptom-alerts" title="Permanent link">&para;</a></h4>
-<p>Certain alerts are <strong>rarely stand-alone problems</strong> and usually indicate previously mishandled faults or bigger issues. Correctly identifying this makes <strong>the difference between:</strong><br />
-- One 4-minute stoppage (properly handled)<br />
-- Five stoppages costing 25 minutes (symptom not recognized)</p>
+<p>Certain alerts are <strong>rarely stand-alone problems</strong> and usually indicate previously mishandled faults or bigger issues. Correctly identifying this makes <strong>the difference between:</strong></p>
+<ul>
+<li>One 4-minute stoppage (properly handled)</li>
+<li>Five stoppages costing 25 minutes (symptom not recognized)</li>
+</ul>
 <h4 id="common-symptom-alerts">Common Symptom Alerts:<a class="headerlink" href="#common-symptom-alerts" title="Permanent link">&para;</a></h4>
 <p>These typically indicate inventory graph doesn't match physical reality:</p>
 <ul>
@@ -2078,19 +2090,25 @@
 <p><strong>InnoPick is connected to other systems that directly affect its behavior.</strong></p>
 <h4 id="systems-that-affect-innopick">Systems That Affect InnoPick:<a class="headerlink" href="#systems-that-affect-innopick" title="Permanent link">&para;</a></h4>
 <h4 id="mixmaster-or-equivalent-wmswcs">MixMaster (or equivalent WMS/WCS)<a class="headerlink" href="#mixmaster-or-equivalent-wmswcs" title="Permanent link">&para;</a></h4>
-<p><strong>Impact Examples:</strong><br />
-- <strong>HOLD on a pallet</strong>: InnoPick won't schedule output cases for it or subsequent pallets<br />
-- <strong>Order changes</strong>: May affect case sequence and replenishment needs</p>
+<p><strong>Impact Examples:</strong></p>
+<ul>
+<li><strong>HOLD on a pallet</strong>: InnoPick won't schedule output cases for it or subsequent pallets</li>
+<li><strong>Order changes</strong>: May affect case sequence and replenishment needs</li>
+</ul>
 <h4 id="inbound-conveyor-system-pre-innopick">Inbound Conveyor System (Pre-InnoPick)<a class="headerlink" href="#inbound-conveyor-system-pre-innopick" title="Permanent link">&para;</a></h4>
-<p><strong>Impact Examples:</strong><br />
-- <strong>HOLD enabled</strong>: Cases won't be released to InnoPick<br />
-- <strong>Tracking errors</strong>: Wrong cases or quantities arrive<br />
-- <strong>Photocell issues</strong>: Cases arrive unexpectedly</p>
+<p><strong>Impact Examples:</strong></p>
+<ul>
+<li><strong>HOLD enabled</strong>: Cases won't be released to InnoPick</li>
+<li><strong>Tracking errors</strong>: Wrong cases or quantities arrive</li>
+<li><strong>Photocell issues</strong>: Cases arrive unexpectedly</li>
+</ul>
 <h4 id="outbound-conveyor-system-post-innopick">Outbound Conveyor System (Post-InnoPick)<a class="headerlink" href="#outbound-conveyor-system-post-innopick" title="Permanent link">&para;</a></h4>
-<p><strong>Impact Examples:</strong><br />
-- <strong>HOLD or fault active</strong>: InnoPick cannot release cases at outfeed<br />
-- <strong>Accumulation full</strong>: Output stops even if InnoPick is ready<br />
-- <strong>Downstream equipment down</strong>: Cases back up into InnoPick</p>
+<p><strong>Impact Examples:</strong></p>
+<ul>
+<li><strong>HOLD or fault active</strong>: InnoPick cannot release cases at outfeed</li>
+<li><strong>Accumulation full</strong>: Output stops even if InnoPick is ready</li>
+<li><strong>Downstream equipment down</strong>: Cases back up into InnoPick</li>
+</ul>
 <h4 id="when-troubleshooting">When Troubleshooting:<a class="headerlink" href="#when-troubleshooting" title="Permanent link">&para;</a></h4>
 <ol>
 <li><strong>Check downstream first</strong> if output issues occur</li>
@@ -2102,13 +2120,17 @@
 
 <h2 id="clearing-alerts">Clearing Alerts<a class="headerlink" href="#clearing-alerts" title="Permanent link">&para;</a></h2>
 <h3 id="when-to-clear-alerts">When to Clear Alerts<a class="headerlink" href="#when-to-clear-alerts" title="Permanent link">&para;</a></h3>
-<p>Clear alerts only when:<br />
-- ✓ Underlying physical issue is resolved<br />
-- ✓ Cases are in correct positions<br />
-- ✓ Inventory graph matches reality<br />
-- ✓ Sensors are unblocked<br />
-- ✓ Mechanical issues are fixed<br />
-- ✓ Safety devices are reset</p>
+<p>Clear alerts only when:</p>
+<ul>
+<li>✓ Underlying physical issue is resolved</li>
+<li>✓ Cases are in correct positions</li>
+<li>✓ Inventory graph matches reality</li>
+<li>✓ Sensors are unblocked</li>
+<li>✓ Mechanical issues are fixed</li>
+<li>✓ Safety devices are reset</li>
+</ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="when-alerts-wont-clear">When Alerts Won't Clear<a class="headerlink" href="#when-alerts-wont-clear" title="Permanent link">&para;</a></h3>
 <p>If alerts cannot be cleared, it usually means the underlying issue has not been resolved. </p>
 <p><strong>Common reasons alerts won't clear:</strong></p>
@@ -2149,6 +2171,8 @@
 <li>Don't just keep clearing and restarting</li>
 <li>Look for root cause</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="multiple-related-alerts">Multiple Related Alerts<a class="headerlink" href="#multiple-related-alerts" title="Permanent link">&para;</a></h3>
 <p><strong>If different but related alerts occur in sequence:</strong></p>
 <ul>

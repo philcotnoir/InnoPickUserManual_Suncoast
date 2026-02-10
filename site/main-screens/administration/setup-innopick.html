@@ -1094,7 +1094,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Build Inventory">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#normal-operation-mode" class="md-nav__link">
@@ -1115,6 +1116,39 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-decoupling-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destination Decoupling Modes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Destination Decoupling Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1719,7 +1753,7 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <p><img src="../../images/administration/image46.png" width="800" alt="Setup InnoPick Page"></p>
-<h3 id="setup-innopick-sub-sections">Setup InnoPick Sub-Sections:<a class="headerlink" href="#setup-innopick-sub-sections" title="Permanent link">&para;</a></h3>
+<h2 id="setup-innopick-sub-sections">Setup InnoPick Sub-Sections:<a class="headerlink" href="#setup-innopick-sub-sections" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#site-settings">Site Settings</a></li>
 <li><a href="#site-levels">Site Levels</a></li>
@@ -1733,111 +1767,156 @@
 <p>The Setup InnoPick page contains configuration settings for InnoPick's internal operation. Access is typically restricted to Admin users and system integrators.</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="site-settings">Site Settings<a class="headerlink" href="#site-settings" title="Permanent link">&para;</a></h3>
+<h2 id="site-settings">Site Settings<a class="headerlink" href="#site-settings" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p><img src="../../images/administration/image46.png" width="800" alt="Site Settings"></p>
 <p>Critical system-wide configuration parameters.</p>
-<h4 id="gap-between-cases-in-millimeters">Gap Between Cases in Millimeters<a class="headerlink" href="#gap-between-cases-in-millimeters" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="gap-between-cases-in-millimeters">Gap Between Cases in Millimeters<a class="headerlink" href="#gap-between-cases-in-millimeters" title="Permanent link">&para;</a></h3>
 <p>The gap InnoPick maintains between cases stored in buffer lanes.</p>
-<p><strong>Purpose:</strong><br />
-- Prevents cases from pressing together<br />
-- Allows smooth dispensing<br />
-- Accommodates case size variations<br />
-- <strong>Note:</strong> Do not change this parameter unless directed to system expert / remote support.</p>
-<h4 id="manual-replenishment-empty-lanes-threshold">Manual Replenishment Empty Lanes Threshold<a class="headerlink" href="#manual-replenishment-empty-lanes-threshold" title="Permanent link">&para;</a></h4>
+<p>Purpose:</p>
+<ul>
+<li>Prevents cases from pressing together</li>
+<li>Allows smooth dispensing</li>
+<li>Accommodates case size variations</li>
+<li><strong>Note:</strong> Do not change this parameter unless directed to system expert / remote support.</li>
+</ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="manual-replenishment-empty-lanes-threshold">Manual Replenishment Empty Lanes Threshold<a class="headerlink" href="#manual-replenishment-empty-lanes-threshold" title="Permanent link">&para;</a></h3>
 <p>Minimum number of empty lanes required before IPM allows manual replenishment creation.</p>
-<p><strong>Purpose:</strong><br />
-- Ensures sufficient space for manual replenishments<br />
-- Prevents overfilling storage capacity</p>
-<h4 id="use-dynamic-replenishment-quantities">Use Dynamic Replenishment Quantities<a class="headerlink" href="#use-dynamic-replenishment-quantities" title="Permanent link">&para;</a></h4>
+<p>Purpose:</p>
+<ul>
+<li>Ensures sufficient space for manual replenishments</li>
+<li>Prevents overfilling storage capacity</li>
+</ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="use-dynamic-replenishment-quantities">Use Dynamic Replenishment Quantities<a class="headerlink" href="#use-dynamic-replenishment-quantities" title="Permanent link">&para;</a></h3>
 <p>Enable/disable IPM's ability to dynamically adjust replenishment quantities based on demand patterns.</p>
-<p><strong>When enabled:</strong><br />
-- IPM analyzes usage patterns<br />
-- Adjusts quantities automatically<br />
-- Optimizes inventory levels</p>
-<p><strong>When disabled:</strong><br />
-- Uses static configured quantities<br />
-- More predictable but less adaptive</p>
+<p>When enabled:</p>
+<ul>
+<li>IPM analyzes usage patterns</li>
+<li>Adjusts quantities automatically</li>
+<li>Optimizes inventory levels</li>
+</ul>
+<p>When disabled:</p>
+<ul>
+<li>Uses static configured quantities</li>
+<li>More predictable but less adaptive</li>
+</ul>
 <p><strong>Note</strong>: Should be managed by system integrators.</p>
-<h4 id="max-consecutive-output-cases-per-destination">Max Consecutive Output Cases Per Destination<a class="headerlink" href="#max-consecutive-output-cases-per-destination" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="max-consecutive-output-cases-per-destination">Max Consecutive Output Cases Per Destination<a class="headerlink" href="#max-consecutive-output-cases-per-destination" title="Permanent link">&para;</a></h3>
 <p>Limits consecutive cases sent to a single destination (Merge A, B, etc.).</p>
-<p><strong>Purpose:</strong><br />
-- Balances output across destinations<br />
-- Prevents overwhelming single destination<br />
-- Contingent on other function being enabled</p>
+<p>Purpose:</p>
+<ul>
+<li>Balances output across destinations</li>
+<li>Prevents overwhelming single destination</li>
+<li>Contingent on other function being enabled</li>
+</ul>
 <p><strong>Note</strong>: Should be managed by system integrators.</p>
-<h4 id="sequence-conveyor-acceleration-deceleration-in-gs">Sequence Conveyor Acceleration / Deceleration in Gs<a class="headerlink" href="#sequence-conveyor-acceleration-deceleration-in-gs" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="sequence-conveyor-acceleration-deceleration-in-gs">Sequence Conveyor Acceleration / Deceleration in Gs<a class="headerlink" href="#sequence-conveyor-acceleration-deceleration-in-gs" title="Permanent link">&para;</a></h3>
 <p>Acceleration rate for sequence conveyor indexing moves.</p>
 <p><strong>Measured in:</strong> g's (gravitational force)</p>
-<p><strong>Considerations:</strong><br />
-- Higher = faster moves but more case disturbance<br />
-- Lower = gentler but slower throughput<br />
-- Balance between speed and stability</p>
-<h4 id="additional-configuration-options">Additional Configuration Options<a class="headerlink" href="#additional-configuration-options" title="Permanent link">&para;</a></h4>
-<p>Other settings visible on this page are for:<br />
-- Initial system setup<br />
-- System integration<br />
-- Advanced configuration</p>
+<p>Considerations:</p>
+<ul>
+<li>Higher = faster moves but more case disturbance</li>
+<li>Lower = gentler but slower throughput</li>
+<li>Balance between speed and stability</li>
+</ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="additional-configuration-options">Additional Configuration Options<a class="headerlink" href="#additional-configuration-options" title="Permanent link">&para;</a></h3>
+<p>Other settings visible on this page are for:</p>
+<ul>
+<li>Initial system setup</li>
+<li>System integration</li>
+<li>Advanced configuration</li>
+</ul>
 <p><strong>Warning</strong>: Do not change these without consulting system integrators.</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="site-levels">Site Levels<a class="headerlink" href="#site-levels" title="Permanent link">&para;</a></h3>
+<h2 id="site-levels">Site Levels<a class="headerlink" href="#site-levels" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p><img src="../../images/administration/sitelevels.png" width="800" alt="Site Levels Configuration"></p>
-<p>This page contains level-specific configuration settings:<br />
-<strong>Lane Pitch in Millimeters</strong><br />
+<p>This page contains level-specific configuration settings:</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<p><strong>Lane Pitch in Millimeters</strong><br />
   - Value (in mm) representing the standard distance between storage lanes<br />
-  - <strong>Note</strong>: Values may differ slightly per level due to:<br />
-    - Chain stretch over time<br />
-    - Tensioning adjustments<br />
-    - Mechanical variations<br />
-  - <strong>See the <a href="../../troubleshooting/casecentering.html">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </p>
+  - <strong>Note</strong>: Values may differ slightly per level due to:</p>
+<pre><code>- Chain stretch over time
+- Tensioning adjustments
+- Mechanical variations
+</code></pre>
+<ul>
+<li><strong>See the <a href="../../troubleshooting/casecentering.html">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </li>
+</ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <p><strong>Center Placement in millimeters</strong><br />
   - Controls the initial positioning of a case as it first enters InnoPick infeed.<br />
   - <strong>See the <a href="../../troubleshooting/casecentering.html">Lane Pitch Adjustment Guide</a> for guidance on how to adjust these parameters to ensure good centering on all lanes</strong> </p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <p><strong>Center offset in millimeters</strong><br />
   - Adjusts the expected centerpoint of infeed cases.<br />
   - If there are midpoint alarms being generated despite the cases looking nicely centered, then this parameter needs to be adjusted. <br />
   - Contact system integrators if adjustment is needed.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <p><strong>Length offset in millimeters</strong><br />
   - Adjusts the expected length by this amount</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <p><strong>Target offset in millimeters</strong><br />
   - Adjusts the final case placement when dispensing a case</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <p><strong>Send variables to Galil</strong><br />
 - Press this after making a change to one of the variables in this section, followed by the 'Submit' button at the top of the page.</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h3>
+<h2 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p>Product configuration page for system setup.</p>
 <p><strong>Access</strong>: System integrators during initial setup</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="masking">Masking<a class="headerlink" href="#masking" title="Permanent link">&para;</a></h3>
+<h2 id="masking">Masking<a class="headerlink" href="#masking" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p>Configuration for masking certain system moves.</p>
 <p><strong>Access</strong>: System integrators during initial setup</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="motion-controller">Motion Controller<a class="headerlink" href="#motion-controller" title="Permanent link">&para;</a></h3>
+<h2 id="motion-controller">Motion Controller<a class="headerlink" href="#motion-controller" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p>Connection and configuration for the motion controller.</p>
 <p><strong>Access</strong>: System integrators during initial setup</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="buffer">Buffer<a class="headerlink" href="#buffer" title="Permanent link">&para;</a></h3>
+<h2 id="buffer">Buffer<a class="headerlink" href="#buffer" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p><img src="../../images/administration/image47.png" width="800" alt="Buffer Settings"></p>
 <p>Configuration for accumulation management and output buffering.</p>
-<h4 id="number-of-cases-to-exit-merge-in-the-accumulation-lookahead">Number Of Cases To Exit Merge In The Accumulation LookAhead<a class="headerlink" href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="number-of-cases-to-exit-merge-in-the-accumulation-lookahead">Number Of Cases To Exit Merge In The Accumulation LookAhead<a class="headerlink" href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" title="Permanent link">&para;</a></h3>
 <p>How many cases IPM considers when forecasting and scheduling output.</p>
 <p>Impact:<br />
 - <strong>Higher number</strong>: More aggressive scheduling, uses more accumulation<br />
-- <strong>Lower number</strong>: More conservative, leaves accumulation space unused</p>
-<p><em>Too high</em>: Risk of misjudging available space, may block output more often<br />
-<em>Too low</em>: Underutilizes accumulation, reduces throughput<br />
+- <strong>Lower number</strong>: More conservative, leaves accumulation space unused<br />
+- <strong>Too high</strong>: Risk of misjudging available space, may block output more often<br />
+- <strong>Too low</strong>: Underutilizes accumulation, reduces throughput<br />
 <em>Recommendation</em>: Determine empirically based on system performance</p>
-<h4 id="buffer-enabled">Buffer Enabled<a class="headerlink" href="#buffer-enabled" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="buffer-enabled">Buffer Enabled<a class="headerlink" href="#buffer-enabled" title="Permanent link">&para;</a></h3>
 <p>(Default = On)</p>
 <p>When enabled, InnoPick keeps track of the cases in the outbound accumulation to optimize outbound scheduling when space is available and pause outbound scheduling to allow inbound to keep entering when the outbound is full.</p>
 <p><strong>When enabled:</strong><br />
@@ -1847,7 +1926,9 @@
 <p><strong>When disabled:</strong><br />
 - IPM schedules output independently of accumulation status<br />
 - Simpler but may cause downstream congestion issues</p>
-<h4 id="build-inventory">Build Inventory<a class="headerlink" href="#build-inventory" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="build-inventory">Build Inventory<a class="headerlink" href="#build-inventory" title="Permanent link">&para;</a></h3>
 <p>InnoPick can operate in two modes regarding accumulation:</p>
 <h4 id="normal-operation-mode">Normal Operation Mode<a class="headerlink" href="#normal-operation-mode" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1864,44 +1945,65 @@
 <li>Level should not have to stop due to full accumulation</li>
 <li>Allows continuous replenishment induction</li>
 </ul>
-<p><strong>When to enable:</strong><br />
-- Starting production with low inventory<br />
-- Recovering from downstream stoppage<br />
-- Building to nominal inventory levels</p>
-<p><strong>When to disable:</strong><br />
-- Normal production operations<br />
-- When inventory is at nominal or above<br />
-- To maximize throughput</p>
+<p><strong>When to enable:</strong></p>
+<ul>
+<li>Starting production with low inventory</li>
+<li>Recovering from downstream stoppage</li>
+<li>Building to nominal inventory levels</li>
+</ul>
+<p><strong>When to disable:</strong></p>
+<ul>
+<li>Normal production operations</li>
+<li>When inventory is at nominal or above</li>
+<li>To maximize throughput</li>
+</ul>
 <p><strong>Note: Build Inventory Mode can be turned on and off directly from the set of controls that are always visible in the top left corner of the InnoPick Manager screen:</strong><br />
 <img src="../../images/administration/buildinventory2.png" width="250" alt="Build Inventory Mode"></p>
-<p><strong>Destination Decoupling Mode Enabled</strong><br />
-- Allows InnoPick to schedule cases for multiple destinations in parallel based on downstream accumulation availability and inventory. <br />
-- If InnoPick cannot schedule the next outbound case for the next priority pallet, it is allowed to look for pallets further down the sequence for other destinations and attempt scheduling them if accumulation and inventory allows it.<br />
-- This mode is affected by the two parameters below:</p>
-<p><strong>Destination decoupling mode max pallet offset</strong><br />
-- This is configuration parameter for the "Destination Decoupling Mode Enabled" above.<br />
-- See the description beneath the setting.</p>
-<p><strong>Destination decoupling mode max case offset</strong><br />
-- This is configuration parameter for the "Destination Decoupling Mode Enabled" above.<br />
-- See the description beneath the setting.</p>
-<h4 id="destination-a-b-accumulation">Destination A / B Accumulation<a class="headerlink" href="#destination-a-b-accumulation" title="Permanent link">&para;</a></h4>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="destination-decoupling-modes">Destination Decoupling Modes<a class="headerlink" href="#destination-decoupling-modes" title="Permanent link">&para;</a></h3>
+<h4 id="enabled">Enabled<a class="headerlink" href="#enabled" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Allows InnoPick to schedule cases for multiple destinations in parallel based on downstream accumulation availability and inventory. </li>
+<li>If InnoPick cannot schedule the next outbound case for the next priority pallet, it is allowed to look for pallets further down the sequence for other destinations and attempt scheduling them if accumulation and inventory allows it.</li>
+<li>This mode is affected by the two parameters below:</li>
+</ul>
+<p><strong>Destination decoupling mode max pallet offset</strong></p>
+<ul>
+<li>This is configuration parameter for the "Destination Decoupling Mode Enabled" above.</li>
+<li>See the description beneath the setting.</li>
+</ul>
+<p><strong>Destination decoupling mode max case offset</strong></p>
+<ul>
+<li>This is configuration parameter for the "Destination Decoupling Mode Enabled" above.</li>
+<li>See the description beneath the setting.</li>
+</ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
+<h3 id="destination-a-b-accumulation">Destination A / B Accumulation<a class="headerlink" href="#destination-a-b-accumulation" title="Permanent link">&para;</a></h3>
 <p><img src="../../images/administration/buffer2.png" width="500" alt="Buffer Settings"></p>
 <p>These settings teach InnoPick about various accumulation zones for its algorithmic calculations. </p>
-<p><strong>Shared zone accumulation (# of zones)</strong><br />
-- This setting teaches InnoPick how many cases can fit between the exit of the merge and the palletizer. </p>
-<p><strong>Level 1 to 5: Accumulation Length in Mm</strong><br />
-- This setting teaches InnoPick the length of low pressure accumulation where cases are accumulated in a way that they bunch up together with no gaps. </p>
-<p><strong>Level 1 to 5: Zone Accumulation (# of zones)</strong><br />
-- This setting teaches InnoPick how many individual cases can be accumulated between the exit of InnoPick and the merge. </p>
+<p><strong>Shared zone accumulation (# of zones)</strong></p>
+<ul>
+<li>This setting teaches InnoPick how many cases can fit between the exit of the merge and the palletizer. </li>
+</ul>
+<p><strong>Level 1 to 5: Accumulation Length in Mm</strong></p>
+<ul>
+<li>This setting teaches InnoPick the length of low pressure accumulation where cases are accumulated in a way that they bunch up together with no gaps. </li>
+</ul>
+<p><strong>Level 1 to 5: Zone Accumulation (# of zones)</strong></p>
+<ul>
+<li>This setting teaches InnoPick how many individual cases can be accumulated between the exit of InnoPick and the merge. </li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="simulator-setup">Simulator Setup<a class="headerlink" href="#simulator-setup" title="Permanent link">&para;</a></h3>
+<h2 id="simulator-setup">Simulator Setup<a class="headerlink" href="#simulator-setup" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p>Configuration page for developers and system testing.</p>
 <p><strong>Access</strong>: System integrators and developers</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
-<h3 id="core-setup">Core Setup<a class="headerlink" href="#core-setup" title="Permanent link">&para;</a></h3>
+<h2 id="core-setup">Core Setup<a class="headerlink" href="#core-setup" title="Permanent link">&para;</a></h2>
 <p><a href="#setup-innopick-sub-sections">Back to Setup InnoPick Sub-Sections</a></p>
 <p>Core system parameters for developers.</p>
 <p><strong>Access</strong>: System integrators and developers</p>

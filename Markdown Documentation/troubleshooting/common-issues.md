@@ -17,12 +17,14 @@ This page addresses frequently encountered issues that may not have specific ale
 ### Cases Not Exiting InnoPick
 
 **Symptoms:**
+
 - Cases stuck at outfeed position
 - Output has stopped
 - Accumulation showing as full
 - Levels remain in Auto but no output
 
 **Common Causes:**
+
 - Downstream conveyor system stopped or faulted
 - Accumulation space completely full
 - HOLD active on outbound conveyor system
@@ -30,6 +32,7 @@ This page addresses frequently encountered issues that may not have specific ale
 - Photocell at exit blocked
 
 **Solution:**
+
 1. **Check downstream equipment status:**
     - Check for faults on outbound conveyor HMI
     - Look for HOLDs or stopped conditions
@@ -51,6 +54,7 @@ This page addresses frequently encountered issues that may not have specific ale
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 ### Next Outfeed Case Data is not in Outbound Conveyor System
+
 **Symptoms:**
 
 - The case at the outfeed position of InnoPick is waiting for the "Ok to Receive" signal from the downstream conveyor system
@@ -60,7 +64,9 @@ This page addresses frequently encountered issues that may not have specific ale
 
 - Check the details of the transfer sequence by hovering over the case on the Inventory Graph:
 <img src="../images/home/outfeedcase6.png" width="1000" alt="Outfeed hover">
+
 The steps for each case transfer are as follows:
+
 1. Send case to MixMaster
     - This is done automatically when the case arrives at the last InnoPick position
 2. Outbound PLC ready to receive data
@@ -73,7 +79,6 @@ The steps for each case transfer are as follows:
 **Additional Info:**
 
 - The pop-up which appears when the cursor hovers over the case on the outfeed position shows what steps have been completed to date for this case.
-
 - If step 3 has a checkmark next to it (as in the screenshot above), then MixMaster has already sent the case data to the outbound PLC, and it will not re-send it unless a recovery action is used.
 - Therefore, if the outbound PLC does not have the case data, the operator can use the recovery action **["Set case pending completion"](../main-screens/administration/recovery-actions.md#set-case-pending-completion)**
 

@@ -748,6 +748,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Understanding the Symbols">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shapes:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fill-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fill Status:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gender-bender-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Gender Bender" cases:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2008,25 +2047,27 @@
 <p><img src="../images/home/image7.png" width="1600" alt="Inventory Graph"></p>
 <p>The main visual grid in the center-right of the Home Page provides a quick summary of case positions on InnoPick sequence conveyors.</p>
 <h3 id="understanding-the-symbols">Understanding the Symbols<a class="headerlink" href="#understanding-the-symbols" title="Permanent link">&para;</a></h3>
-<p><strong>Shapes:</strong></p>
+<h4 id="shapes">Shapes:<a class="headerlink" href="#shapes" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Squares</strong> = Outbound cases (scheduled for customer pallets)</li>
 <li><strong>Triangles</strong> = Inbound cases (replenishments being stored in lanes)</li>
 </ul>
-<p><strong>Fill Status:</strong></p>
+<h4 id="fill-status">Fill Status:<a class="headerlink" href="#fill-status" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Filled shapes</strong> = Physical case is present at that position</li>
 <li><strong>Hollow shapes</strong> = Position is empty or case is expected</li>
 <li>If a triangle, it means the case has been stored</li>
 <li>If a square, it means the case is scheduled to be dispensed on this position</li>
 </ul>
-<p><strong>"Gender Bender" cases:</strong> <br />
-<img src="../images/home/genderbender.png" width="300" alt="Inventory Graph"></p>
+<h4 id="gender-bender-cases">"Gender Bender" cases:<a class="headerlink" href="#gender-bender-cases" title="Permanent link">&para;</a></h4>
+<p><img src="../images/home/genderbender.png" width="300" alt="Inventory Graph"></p>
 <ul>
 <li>Some Inbound case positions can be re-used as Outbound case positions when the system determines that the inbound case will be stored in a lane upstream of the outbound case's lane.</li>
 <li>This is shown via a special border around the inbound case on the Inventory graph (see screenshot above - cases highlighted in blue rectangle)</li>
 <li>When this case is stored, the triangle will be replaced with a square.</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="operational-controls-on-the-inventory-graph">Operational Controls on the Inventory Graph<a class="headerlink" href="#operational-controls-on-the-inventory-graph" title="Permanent link">&para;</a></h3>
 <h4 id="build-inventory-mode">Build Inventory Mode<a class="headerlink" href="#build-inventory-mode" title="Permanent link">&para;</a></h4>
 <p><img src="../main-screens/image-1.png" width="200" alt="Pause Infeed Button Location"></p>
@@ -2056,6 +2097,8 @@
 <ul>
 <li>Click the <strong>Resume Outfeed</strong> button to resume outgoing cases.</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="interpreting-the-display">Interpreting the Display<a class="headerlink" href="#interpreting-the-display" title="Permanent link">&para;</a></h3>
 <p>The inventory graph shows:</p>
 <ul>
@@ -2094,6 +2137,8 @@
 <li>Hover over the stop logo to get more information:<br />
 <img src="../images/home/outfeedcase6.png" width="800" alt="Outfeed Cases"></li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="getting-more-information">Getting More Information<a class="headerlink" href="#getting-more-information" title="Permanent link">&para;</a></h3>
 <h4 id="hover-for-details">Hover for Details:<a class="headerlink" href="#hover-for-details" title="Permanent link">&para;</a></h4>
 <p>Hover your cursor over any case icon to see additional information:</p>
@@ -2118,6 +2163,8 @@
 <li>Case reference number</li>
 <li>Source lane (where the case was dispensed from)</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h4 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Permanent link">&para;</a></h4>
 <p>Users can click on: </p>
 <h4 id="1-replenishment-links">1. Replenishment Links:<a class="headerlink" href="#1-replenishment-links" title="Permanent link">&para;</a></h4>
@@ -2140,6 +2187,8 @@
 <h2 id="level-statuses-auto-manual-controls">Level Statuses &amp; Auto / Manual Controls<a class="headerlink" href="#level-statuses-auto-manual-controls" title="Permanent link">&para;</a></h2>
 <p><img src="../images/home/automode.png" width="200" alt="Level Status Controls"></p>
 <p>The numbered squares in the top left corner indicate the operational status of each InnoPick level.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="status-color-meanings">Status Color Meanings<a class="headerlink" href="#status-color-meanings" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Green</strong>: Automatic mode - level is running or ready for production</li>
@@ -2148,6 +2197,8 @@
 <li><strong>Dark Red</strong>: E-Stop active - safety system engaged</li>
 <li><strong>Blue</strong>: Communication Loss</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="controlling-level-modes">Controlling Level Modes<a class="headerlink" href="#controlling-level-modes" title="Permanent link">&para;</a></h3>
 <p><strong>To change a level's mode:</strong></p>
 <ol>
@@ -2169,6 +2220,8 @@
 <li>Used for troubleshooting and maintenance</li>
 <li>Required in order to jog lanes (manual control) or change certain settings, such as the inventory of a lane.  </li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="when-levels-are-in-manual-mode">When Levels Are in Manual Mode<a class="headerlink" href="#when-levels-are-in-manual-mode" title="Permanent link">&para;</a></h3>
 <p><img src="../images/home/manualmode.png" width="200" alt="Levels in Manual Mode"></p>
 <p>When InnoPick has an alarm, the affected level automatically enters Manual (Yellow) or Fault (Red) mode. This pauses production and allows the operator to:</p>
@@ -2183,6 +2236,8 @@
 <h2 id="alerts-list">Alerts List<a class="headerlink" href="#alerts-list" title="Permanent link">&para;</a></h2>
 <p><img src="../images/home/image12.png" width="1600" alt="Alerts Display"></p>
 <p>The Alerts section shows current system alerts that require attention.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="clear-all-alerts-button">Clear All Alerts Button<a class="headerlink" href="#clear-all-alerts-button" title="Permanent link">&para;</a></h3>
 <p><img src="../images/home/image13.png" width="200" alt="Clear Alerts Button"></p>
 <p>The <strong>Clear All Alerts</strong> button (bottom right of the inventory graph) attempts to clear all current alerts in the system.</p>
@@ -2209,15 +2264,21 @@
 </ul>
 </li>
 </ol>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="viewing-complete-alert-history">Viewing Complete Alert History<a class="headerlink" href="#viewing-complete-alert-history" title="Permanent link">&para;</a></h3>
 <p>For a full list of all current and past alerts with search and filtering capabilities, see the <a href="alerts-page.html">Alerts Page</a>.</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="lane-inventory">Lane Inventory<a class="headerlink" href="#lane-inventory" title="Permanent link">&para;</a></h2>
 <p>The Lane Inventory display shows the contents of storage lanes for each level.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="selecting-a-level">Selecting a Level<a class="headerlink" href="#selecting-a-level" title="Permanent link">&para;</a></h3>
 <p><img src="../images/home/image14.png" width="300" alt="Level Selection"></p>
 <p>Click on a level number to view its lane inventory.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="lane-display">Lane Display<a class="headerlink" href="#lane-display" title="Permanent link">&para;</a></h3>
 <p><img src="../images/home/image15.png" width="1600" alt="Lane Inventory Display"></p>
 <p>Each storage lane is shown as a horizontal bar:</p>
@@ -2225,6 +2286,8 @@
 <li>Bar length represents relative fullness</li>
 <li>The display adjusts automatically to show all lanes for that level</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="getting-lane-details">Getting Lane Details<a class="headerlink" href="#getting-lane-details" title="Permanent link">&para;</a></h3>
 <p><img src="../images/home/image16.png" width="300" alt="Lane Hover Details"></p>
 <p>Hover your cursor over any lane to see:</p>
@@ -2232,6 +2295,8 @@
 <li>Quantity of cases</li>
 <li>Product stored (SKU and description)</li>
 </ul>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="complete-lane-management">Complete Lane Management<a class="headerlink" href="#complete-lane-management" title="Permanent link">&para;</a></h3>
 <p>For more detailed lane inventory information and editing capabilities, see the <a href="inventory-section.html#lane-inventory-page">Lane Inventory Page</a>.</p>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
@@ -2239,6 +2304,8 @@
 <h2 id="production-graph">Production Graph<a class="headerlink" href="#production-graph" title="Permanent link">&para;</a></h2>
 <p><img src="../images/home/progressbar.png" width="150" alt="Production Graph"></p>
 <p>The Production Graph on the far left of the Home Page shows the current state of the production run.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="understanding-the-graph">Understanding the Graph<a class="headerlink" href="#understanding-the-graph" title="Permanent link">&para;</a></h3>
 <p><strong>Red Line at Top:</strong></p>
 <ul>
@@ -2264,6 +2331,8 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="using-the-home-page-effectively">Using the Home Page Effectively<a class="headerlink" href="#using-the-home-page-effectively" title="Permanent link">&para;</a></h2>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="for-daily-monitoring">For Daily Monitoring<a class="headerlink" href="#for-daily-monitoring" title="Permanent link">&para;</a></h3>
 <p>The Home Page should be your primary screen during production:</p>
 <ol>
@@ -2271,6 +2340,8 @@
 <li><strong>Watch for new alerts</strong> - Address immediately when they appear</li>
 <li><strong>Monitor production progress</strong> - Verify steady advancement</li>
 </ol>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="quick-troubleshooting">Quick Troubleshooting<a class="headerlink" href="#quick-troubleshooting" title="Permanent link">&para;</a></h3>
 <p>When an alert occurs:</p>
 <ol>
@@ -2280,6 +2351,8 @@
 <li><strong>Address the issue</strong> per the <a href="../troubleshooting/alert-guidelines.html">Troubleshooting Guidelines</a></li>
 <li><strong>Clear the alert</strong> once resolved</li>
 </ol>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="navigation-from-home-page">Navigation from Home Page<a class="headerlink" href="#navigation-from-home-page" title="Permanent link">&para;</a></h3>
 <p><strong>To investigate issues further:</strong></p>
 <ul>

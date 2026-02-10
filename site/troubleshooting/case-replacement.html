@@ -1749,10 +1749,12 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="scenario-1-replace-case-currently-being-inducted">Scenario 1: Replace Case Currently Being Inducted<a class="headerlink" href="#scenario-1-replace-case-currently-being-inducted" title="Permanent link">&para;</a></h2>
-<p><strong>Situation:</strong><br />
-- Case is currently part of an active replenishment<br />
-- Case is already in InnoPick<br />
-- Case is broken, too damaged, or wrong product</p>
+<p><strong>Situation:</strong></p>
+<ul>
+<li>Case is currently part of an active replenishment</li>
+<li>Case is already in InnoPick</li>
+<li>Case is broken, too damaged, or wrong product</li>
+</ul>
 <h3 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -1797,15 +1799,19 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="scenario-2-damaged-inbound-case-on-sequence-conveyor-is-not-needed-for-client-pallet">Scenario 2: Damaged Inbound Case on Sequence Conveyor is Not Needed for Client Pallet<a class="headerlink" href="#scenario-2-damaged-inbound-case-on-sequence-conveyor-is-not-needed-for-client-pallet" title="Permanent link">&para;</a></h2>
-<p><strong>Situation:</strong><br />
-- Case is on the sequence conveyor and is going to be stored<br />
-- No replacement cases are readily available<br />
-- Case will NOT be needed for upcoming orders<br />
-  - This can be determined if: There are no additional replenishment scheduled for this product (filter for this product &amp; level in the Replenishments page to determine this).</p>
-<p><strong>If no other replenishment scheduled:</strong><br />
-- InnoPick can function without this case<br />
-- Case can be shorted rather than replaced<br />
-- <strong>Replacement is optional</strong></p>
+<p><strong>Situation:</strong></p>
+<ul>
+<li>Case is on the sequence conveyor and is going to be stored</li>
+<li>No replacement cases are readily available</li>
+<li>Case will NOT be needed for upcoming orders</li>
+<li>This can be determined if: There are no additional replenishment scheduled for this product (filter for this product &amp; level in the Replenishments page to determine this).</li>
+</ul>
+<p><strong>If no other replenishment scheduled:</strong></p>
+<ul>
+<li>InnoPick can function without this case</li>
+<li>Case can be shorted rather than replaced</li>
+<li><strong>Replacement is optional</strong></li>
+</ul>
 <h3 id="procedure_1">Procedure<a class="headerlink" href="#procedure_1" title="Permanent link">&para;</a></h3>
 <h4 id="short-the-case">Short the Case<a class="headerlink" href="#short-the-case" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1839,10 +1845,12 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="scenario-3-replace-missing-outfeed-case">Scenario 3: Replace Missing Outfeed Case<a class="headerlink" href="#scenario-3-replace-missing-outfeed-case" title="Permanent link">&para;</a></h2>
-<p><strong>Situation:</strong><br />
-- Alert: "Expecting a case but there is no case present at the outfeed"<br />
-- Case should be at last InnoPick position but is missing<br />
-- See <a href="alert-reference.html#expecting-a-case-but-there-is-no-case-present-at-the-outfeed">Alert Reference</a> for detailed alert resolution</p>
+<p><strong>Situation:</strong></p>
+<ul>
+<li>Alert: "Expecting a case but there is no case present at the outfeed"</li>
+<li>Case should be at last InnoPick position but is missing</li>
+<li>See <a href="alert-reference.html#expecting-a-case-but-there-is-no-case-present-at-the-outfeed">Alert Reference</a> for detailed alert resolution</li>
+</ul>
 <h3 id="procedure_2">Procedure<a class="headerlink" href="#procedure_2" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
@@ -1899,29 +1907,39 @@
 
 <h2 id="special-considerations">Special Considerations<a class="headerlink" href="#special-considerations" title="Permanent link">&para;</a></h2>
 <h3 id="quality-control">Quality Control<a class="headerlink" href="#quality-control" title="Permanent link">&para;</a></h3>
-<p>If replacing due to quality issue:<br />
-- Note the specific problem<br />
-- Report pattern of defects to supervision<br />
-- May indicate supplier issue</p>
+<p>If replacing due to quality issue:</p>
+<ul>
+<li>Note the specific problem</li>
+<li>Report pattern of defects to supervision</li>
+<li>May indicate supplier issue</li>
+</ul>
 <h3 id="inventory-accuracy">Inventory Accuracy<a class="headerlink" href="#inventory-accuracy" title="Permanent link">&para;</a></h3>
-<p>After any replacement:<br />
-- Verify all counts are correct<br />
-- Check <a href="../main-screens/inventory-section.html#lane-inventory-page">Lane Inventory</a><br />
-- Confirm <a href="../main-screens/inventory-section.html#replenishments-page">Replenishments Page</a> quantities<br />
-- Ensure <a href="../main-screens/home-page.html#inventory-graph">Inventory Graph</a> matches reality</p>
+<p>After any replacement:</p>
+<ul>
+<li>Verify all counts are correct</li>
+<li>Check <a href="../main-screens/inventory-section.html#lane-inventory-page">Lane Inventory</a></li>
+<li>Confirm <a href="../main-screens/inventory-section.html#replenishments-page">Replenishments Page</a> quantities</li>
+<li>Ensure <a href="../main-screens/home-page.html#inventory-graph">Inventory Graph</a> matches reality</li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="preventing-case-replacement-needs">Preventing Case Replacement Needs<a class="headerlink" href="#preventing-case-replacement-needs" title="Permanent link">&para;</a></h2>
 <h3 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h3>
-<p><strong>Visual Inspections:</strong><br />
-- Check case quality of the cases in InnoPick<br />
-- Monitor cases as they induct</p>
-<p><strong>Proper Handling:</strong><br />
-- Ensure upstream handling doesn't damage cases<br />
-- Ensure upstream handling properly identifies and rejects damaged or turned cases</p>
-<p><strong>Maintain Tracking Accuracy:</strong><br />
-- Always follow <a href="alert-guidelines.html">Alert Guidelines</a><br />
-- Verify Inventory Graph after every alert</p>
+<p><strong>Visual Inspections:</strong></p>
+<ul>
+<li>Check case quality of the cases in InnoPick</li>
+<li>Monitor cases as they induct</li>
+</ul>
+<p><strong>Proper Handling:</strong></p>
+<ul>
+<li>Ensure upstream handling doesn't damage cases</li>
+<li>Ensure upstream handling properly identifies and rejects damaged or turned cases</li>
+</ul>
+<p><strong>Maintain Tracking Accuracy:</strong></p>
+<ul>
+<li>Always follow <a href="alert-guidelines.html">Alert Guidelines</a></li>
+<li>Verify Inventory Graph after every alert</li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h2 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h2>

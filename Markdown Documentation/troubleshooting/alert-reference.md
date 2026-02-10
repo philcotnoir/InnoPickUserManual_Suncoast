@@ -360,6 +360,7 @@ Pop-up assembly failed to fully retract before a store operation was attempted.
 **Common Causes & Solution:**
 
 See alert 152 above - same troubleshooting applies, with emphasis on:
+
 - Air cylinder air release adjustment
 - Solenoid valve operation
 - Down position sensor verification
@@ -1282,6 +1283,7 @@ Following error on Axis A (Infeed Conveyor), indicating loss of position control
 **Common Causes & Solution:**
 
 See alert 660 above, with specific focus on:
+
 - Infeed conveyor belt condition
 - Infeed motor and drive
 - Mechanical binding at infeed
@@ -1298,6 +1300,7 @@ Following error on Axis B (Sequence Conveyor), indicating loss of position contr
 **Common Causes & Solution:**
 
 See alert 660 above, with specific focus on:
+
 - Sequence conveyor chain condition
 - Sequence conveyor motor and drive
 - Mechanical binding on sequence conveyor
@@ -1314,6 +1317,7 @@ Following error on Axis C (Buffer/Lane Conveyor), indicating loss of position co
 **Common Causes & Solution:**
 
 See alert 660 above, with specific focus on:
+
 - Buffer lane belt/chain condition
 - Buffer motor and drive
 - Mechanical binding in buffer lanes

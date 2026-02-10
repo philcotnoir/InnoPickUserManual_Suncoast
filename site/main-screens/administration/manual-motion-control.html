@@ -1605,6 +1605,8 @@
 
 <p><img src="../../images/administration/image42.png" width="800" alt="Manual motion control page"></p>
 <p>The Manual motion control page provides manual control of InnoPick conveyors for troubleshooting and maintenance purposes.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="four-main-sections">Four Main Sections<a class="headerlink" href="#four-main-sections" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Level Operations - Control sequence conveyors</li>
@@ -1612,22 +1614,32 @@
 <li>Level Saga Operations - Pre-program multiple sequence conveyor moves</li>
 <li>Lane Saga Operations - Pre-program multiple buffer lane moves</li>
 </ol>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="level-operations">Level Operations<a class="headerlink" href="#level-operations" title="Permanent link">&para;</a></h3>
 <p><img src="../../images/administration/image43.png" width="500" alt="Level Operations"></p>
 <p>Manually jog the sequence conveyor of a selected level.</p>
 <h4 id="controls">Controls<a class="headerlink" href="#controls" title="Permanent link">&para;</a></h4>
-<p><strong>Select Level:</strong><br />
-- Choose which level to control</p>
-<p><strong>Jog Distance:</strong><br />
-- Default: 558mm (22 inches) - standard move<br />
-- Can be customized as needed<br />
-- Measured in millimeters</p>
-<p><strong>Acceleration:</strong><br />
-- Set in g's (gravitational force)<br />
-- Controls how quickly the conveyor accelerates and decelerates</p>
-<p><strong>Direction:</strong><br />
-- Forward or reverse<br />
-- Typically moves toward outfeed (forward)</p>
+<p><strong>Select Level:</strong></p>
+<ul>
+<li>Choose which level to control</li>
+</ul>
+<p><strong>Jog Distance:</strong></p>
+<ul>
+<li>Default: 558mm (22 inches) - standard move</li>
+<li>Can be customized as needed</li>
+<li>Measured in millimeters</li>
+</ul>
+<p><strong>Acceleration:</strong></p>
+<ul>
+<li>Set in g's (gravitational force)</li>
+<li>Controls how quickly the conveyor accelerates and decelerates</li>
+</ul>
+<p><strong>Direction:</strong></p>
+<ul>
+<li>Forward or reverse</li>
+<li>Typically moves toward outfeed (forward)</li>
+</ul>
 <h4 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Troubleshooting positioning issues</li>
@@ -1636,21 +1648,31 @@
 <li>Maintenance and setup</li>
 </ul>
 <p><strong>Important</strong>: Only use in Manual mode when production is stopped.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="lane-operations">Lane Operations<a class="headerlink" href="#lane-operations" title="Permanent link">&para;</a></h3>
 <p><img src="../../images/administration/image44.png" width="500" alt="Lane Operations"></p>
 <p>Manually control individual storage lanes and clutch assemblies.</p>
 <h4 id="controls_1">Controls<a class="headerlink" href="#controls_1" title="Permanent link">&para;</a></h4>
-<p><strong>Level and Lane Selection:</strong><br />
-- Drop-down menus to select specific lane</p>
-<p><strong>Pop Up / Down:</strong><br />
-- Forces the lane's pop-up assembly to move up or down<br />
-- Used for manual case handling</p>
-<p><strong>Distance:</strong><br />
-- Default: Width of product in lane (if present), otherwise 0mm<br />
-- If "Fix Distance" option is unchecked, the system will automatically set the Jog lane distance to according to the product in the lane (if applicable)</p>
-<p><strong>Directions:</strong><br />
-- <strong>Storage</strong>: Move into the lane (backward)<br />
-- <strong>Dispense</strong>: Move toward sequence conveyor (forward)</p>
+<p><strong>Level and Lane Selection:</strong></p>
+<ul>
+<li>Drop-down menus to select specific lane</li>
+</ul>
+<p><strong>Pop Up / Down:</strong></p>
+<ul>
+<li>Forces the lane's pop-up assembly to move up or down</li>
+<li>Used for manual case handling</li>
+</ul>
+<p><strong>Distance:</strong></p>
+<ul>
+<li>Default: Width of product in lane (if present), otherwise 0mm</li>
+<li>If "Fix Distance" option is unchecked, the system will automatically set the Jog lane distance to according to the product in the lane (if applicable)</li>
+</ul>
+<p><strong>Directions:</strong></p>
+<ul>
+<li><strong>Storage</strong>: Move into the lane (backward)</li>
+<li><strong>Dispense</strong>: Move toward sequence conveyor (forward)</li>
+</ul>
 <h4 id="when-to-use_1">When to Use<a class="headerlink" href="#when-to-use_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Clearing jammed cases</li>
@@ -1659,14 +1681,18 @@
 <li>Maintenance procedures</li>
 </ul>
 <p><strong>Caution</strong>: Be aware of case positions before jogging lanes.</p>
+<hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
+
 <h3 id="level-lane-saga-operations">Level &amp; Lane Saga Operations<a class="headerlink" href="#level-lane-saga-operations" title="Permanent link">&para;</a></h3>
 <p><img src="../../images/administration/image45.png" width="500" alt="Saga Operations"></p>
-<p>These interfaces allow pre-programming multiple moves in sequence.<br />
-To use these controls,<br />
-- Enter in the # of iterations and specify the level(s) &amp; lane(s), as well as a delay.<br />
-- The delay is necessary to allow the system to complete the manual move before the next move in the sequence is commanded.<br />
-- While the manual moves are being executed, the page will display something like this:<br />
-<img src="../../images/administration/jogging1.png" width="400" alt="Saga Operations"></p>
+<p>These interfaces allow pre-programming multiple moves in sequence.</p>
+<p>To use these controls:</p>
+<ul>
+<li>Enter in the # of iterations and specify the level(s) &amp; lane(s), as well as a delay.</li>
+<li>The delay is necessary to allow the system to complete the manual move before the next move in the sequence is commanded.</li>
+<li>While the manual moves are being executed, the page will display something like this:<br />
+<img src="../../images/administration/jogging1.png" width="400" alt="Saga Operations"></li>
+</ul>
 <h4 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Execute a series of moves</li>
@@ -1675,10 +1701,12 @@ To use these controls,<br />
 <li>Advanced troubleshooting scenarios</li>
 </ul>
 <h4 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h4>
-<p>Primarily used by:<br />
-- System integrators<br />
-- Advanced maintenance personnel<br />
-- During commissioning and testing</p>
+<p>Primarily used by:</p>
+<ul>
+<li>System integrators</li>
+<li>Advanced maintenance personnel</li>
+<li>During commissioning and testing</li>
+</ul>
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <p><strong>Navigation:</strong> <a href="index.html">← Administration</a> | <a href="setup-innopick.html">Setup InnoPick →</a></p>

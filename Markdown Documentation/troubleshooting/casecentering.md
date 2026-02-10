@@ -42,6 +42,7 @@ Next, place a perfectly centered case in front of the first lane, and manually j
 [Click here for information on manually jogging InnoPick](../main-screens/administration/manual-motion-control.md#level-operations)
 
 **Important**: When you jog, make sure that the value used for the jogging (on the Manual Motion Controls page) is the same as the **"Lane Pitch in Millimeters"** parameter on the Site Levels page.
+
 - It is usually necessary to input the correct distance from the Lane Pitch paramater for this exercise, in order to recreate the actual movement distances seen in production.
 
 
@@ -104,6 +105,7 @@ Lane Pitch Adjustment = Total Error (mm) ÷ Number of Positions
 ```
 
 **Direction of adjustments:**
+
 - Case too far **downstream** → **Negative** (-) adjustment
 - Case too far **upstream** → **Positive** (+) adjustment
 
