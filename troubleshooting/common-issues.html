@@ -1616,22 +1616,30 @@
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
 <h3 id="cases-not-exiting-innopick">Cases Not Exiting InnoPick<a class="headerlink" href="#cases-not-exiting-innopick" title="Permanent link">&para;</a></h3>
-<p><strong>Symptoms:</strong><br />
-- Cases stuck at outfeed position<br />
-- Output has stopped<br />
-- Accumulation showing as full<br />
-- Levels remain in Auto but no output</p>
-<p><strong>Common Causes:</strong><br />
-- Downstream conveyor system stopped or faulted<br />
-- Accumulation space completely full<br />
-- HOLD active on outbound conveyor system<br />
-- Communication error with downstream equipment<br />
-- Photocell at exit blocked</p>
-<p><strong>Solution:</strong><br />
-1. <strong>Check downstream equipment status:</strong><br />
-    - Check for faults on outbound conveyor HMI<br />
-    - Look for HOLDs or stopped conditions</p>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Cases stuck at outfeed position</li>
+<li>Output has stopped</li>
+<li>Accumulation showing as full</li>
+<li>Levels remain in Auto but no output</li>
+</ul>
+<p><strong>Common Causes:</strong></p>
+<ul>
+<li>Downstream conveyor system stopped or faulted</li>
+<li>Accumulation space completely full</li>
+<li>HOLD active on outbound conveyor system</li>
+<li>Communication error with downstream equipment</li>
+<li>Photocell at exit blocked</li>
+</ul>
+<p><strong>Solution:</strong></p>
 <ol>
+<li>
+<p><strong>Check downstream equipment status:</strong></p>
+<ul>
+<li>Check for faults on outbound conveyor HMI</li>
+<li>Look for HOLDs or stopped conditions</li>
+</ul>
+</li>
 <li>
 <p><strong>Check Inventory Graph Outfeed statuses:</strong></p>
 <ul>
@@ -1670,8 +1678,10 @@
 <p><strong>Solution:</strong></p>
 <ul>
 <li>Check the details of the transfer sequence by hovering over the case on the Inventory Graph:<br />
-<img src="../images/home/outfeedcase6.png" width="1000" alt="Outfeed hover"><br />
-The steps for each case transfer are as follows:</li>
+<img src="../images/home/outfeedcase6.png" width="1000" alt="Outfeed hover"></li>
+</ul>
+<p>The steps for each case transfer are as follows:</p>
+<ol>
 <li>Send case to MixMaster<ul>
 <li>This is done automatically when the case arrives at the last InnoPick position</li>
 </ul>
@@ -1686,15 +1696,11 @@ The steps for each case transfer are as follows:</li>
 </li>
 <li>Outbound PLC sends the "Ok to Receive" signal to InnoPick</li>
 <li>InnoPick advances the case and transfers it to the outbound conveyor system.</li>
-</ul>
+</ol>
 <p><strong>Additional Info:</strong></p>
 <ul>
-<li>
-<p>The pop-up which appears when the cursor hovers over the case on the outfeed position shows what steps have been completed to date for this case.</p>
-</li>
-<li>
-<p>If step 3 has a checkmark next to it (as in the screenshot above), then MixMaster has already sent the case data to the outbound PLC, and it will not re-send it unless a recovery action is used.</p>
-</li>
+<li>The pop-up which appears when the cursor hovers over the case on the outfeed position shows what steps have been completed to date for this case.</li>
+<li>If step 3 has a checkmark next to it (as in the screenshot above), then MixMaster has already sent the case data to the outbound PLC, and it will not re-send it unless a recovery action is used.</li>
 <li>Therefore, if the outbound PLC does not have the case data, the operator can use the recovery action <strong><a href="../main-screens/administration/recovery-actions.html#set-case-pending-completion">"Set case pending completion"</a></strong></li>
 </ul>
 <p><strong>Note: This recovery action re-sends the case data to the outbound PLC. If the data was already there, the downstream system will have a duplicate data which can cause serious tracking issues. Use with caution and monitor downstream system for any issues after using.</strong></p>
