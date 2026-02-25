@@ -97,7 +97,7 @@ Each screen in InnoPick Manager follows a consistent layout:
 
 **Clickable Icons and Buttons**:
 
-- Colored level numbers can be clicked to change mode
+- [Colored level numbers can be clicked to change mode](../main-screens/home-page.md#controlling-level-modes)
 - Three-dot menus (⋮) reveal additional actions
 - Blue hyperlinks navigate to related information
 - Hover tooltips provide additional details

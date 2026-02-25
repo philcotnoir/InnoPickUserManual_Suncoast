@@ -207,10 +207,10 @@ The numbered squares in the top left corner indicate the operational status of e
 
 ### Controlling Level Modes
 
-**To change a level's mode:**
+**To change a level's mode between Auto and Manual:**
 
-1. Click on the colored level number
-2. A pop-up may appear to confirm the mode change
+1. Click on the colored level number. If it is in Auto, it will go to Manual; and if it is in Manual, it will go to Auto.
+2. A pop-up may appear to confirm the mode change (if it is from Manual to Auto)
 3. The color will change to reflect the new mode
 
 **Mode Control Buttons:**
