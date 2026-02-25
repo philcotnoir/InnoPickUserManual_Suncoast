@@ -29,7 +29,7 @@ There are two types of deadlocks:
 
 The following is an example alarm message for a preview deadlock:
 
-- *[Level 5] Level 5: Caught deadlock 'Level 5: DeadLock detected with given sequence after processing 111 output cases, 166 input cases. The product that is needed to service the next output case '0aa249a6-d163-4bb2-bfe9-9da964345d38|000000006500247839|119003120537|129563670' is '47692'. Last input case attempted to process was '0aa249a6-d163-4bb2-bfe9-9da964345d38|000000006500247839|119003120537|129563670' with product reference '47692'. If this happens during preview, we still have a chance to avoid the deadlock by manually reassigning this product to a different level than 5. Aborting!': Unable to auto-resolve. This is critical. Halting system. (RunInSimulationMode = False)*
+- *[Level 5] Level 5: Caught deadlock 'Level 5: DeadLock detected with given sequence after processing 111 output cases, 166 input cases. The product that is needed to service the next output case '0aa249a6-d163-4bb2-bfe9-9da964345d38|000000006500247839|119003120537|129563670' is '47692'. Last input case attempted to process was '0aa249a6-d163-4bb2-bfe9-9da964345d38|000000006500247839|119003120537|129563670' with product reference '47692'. If this happens during preview, we still have a chance to avoid the deadlock by manually reassigning this product to a different level than 5. Aborting!': Unable to auto-resolve. This is critical. Halting system. (RunInSimulationMode = True)*
 
 <hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
