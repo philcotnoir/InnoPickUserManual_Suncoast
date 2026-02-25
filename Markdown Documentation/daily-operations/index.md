@@ -95,7 +95,7 @@ After enabling Automatic mode:
 3. **Check the Inventory Graph** to verify cases are moving as expected on all levels
 4. **Monitor for new alerts** 
 
-See [Monitoring Production](index.md#monitoring-production) for ongoing monitoring procedures.
+See [Monitoring Production](monitoring.md) for ongoing monitoring procedures.
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 

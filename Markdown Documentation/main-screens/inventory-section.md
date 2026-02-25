@@ -502,7 +502,7 @@ The Product Statistics page provides detailed information about how InnoPick use
 ## Related Topics
 
 - [Home Page Lane Inventory](home-page.md#lane-inventory) - Quick lane overview
-- [Monitoring Production](../daily-operations/index.md#monitoring-production) - Using inventory data during operations
+- [Monitoring Production](../daily-operations/monitoring.md) - Using inventory data during operations
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 

@@ -1404,7 +1404,7 @@ Before starting the routine I/O check, the clutch proximity sensor was not in th
 4. Test sensor operation
 5. May need to manually cycle clutch to home position
 6. Verify clutch returns properly after moves
-7. If the issue cannot be resolved quickly, it is possible to [disable the lane](../main-screens/inventory-section.md#disable--enable-lane-toggle) and ignore its sensors. This allows the fault to be cleared and production to resume.
+7. If the issue cannot be resolved quickly, it is possible to [disable the lane](../main-screens/inventory-section.md#disable-enable-lane-toggle) and ignore its sensors. This allows the fault to be cleared and production to resume.
 8. Clear alert after clutch position verified
 9. Contact maintenance if sensor or clutch issue persists
 
@@ -1579,7 +1579,7 @@ InnoPick continuously monitors every lane's photocell and clutch proximity senso
 4. Verify sensor is now in correct state
 5. Clear alert
 6. Monitor to ensure issue doesn't recur
-7. If the issue cannot be resolved quickly, it is possible to [disable the lane](../main-screens/inventory-section.md#disable--enable-lane-toggle) and ignore its sensors. This allows the fault to be cleared and production to resume.
+7. If the issue cannot be resolved quickly, it is possible to [disable the lane](../main-screens/inventory-section.md#disable-enable-lane-toggle) and ignore its sensors. This allows the fault to be cleared and production to resume.
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 

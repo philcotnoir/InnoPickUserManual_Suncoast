@@ -66,7 +66,7 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 
 **System won't start:**
 
-→ Check for [E-Stop condition](alert-reference.md#555---e-stop-condition-active---safety-is-disarmed-door-opened-or-e-stop-pressed)
+→ Check for [E-Stop condition](alert-reference.md#555-e-stop-condition-active-safety-is-disarmed-door-opened-or-e-stop-pressed)
 → Verify no [unresolved or hidden alerts](../main-screens/alerts-page.md#viewing-all-alerts)
 
 **Alert won't clear:**
@@ -145,7 +145,7 @@ Guidance on how to handle disabling a lane that has incoming replenishment cases
 ### Reduce Alerts Through Good Practices
 
 - Perform visual inspections during [startup](../daily-operations/index.md#startup)
-- Monitor production actively as described in [Monitoring](../daily-operations/index.md#monitoring-production)
+- Monitor production actively as described in [Monitoring](../daily-operations/monitoring.md)
 - Address minor warnings before they become critical
 - Keep inventory graphs matched to physical reality
 - Maintain clear communication during shifts

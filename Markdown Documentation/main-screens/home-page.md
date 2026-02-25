@@ -25,7 +25,7 @@ The Home Page is your primary dashboard for monitoring InnoPick operations. It p
 The Home Page displays the following key information:
 
 1. [Inventory Graph](#inventory-graph) - Visual representation of cases on sequence conveyors
-2. [Level Statuses & Controls](#level-statuses--auto--manual-controls) - Mode indicators and control buttons
+2. [Level Statuses & Controls](#level-statuses-auto-manual-controls) - Mode indicators and control buttons
 3. [Alerts List](#alerts-list) - Current system alerts
 4. [Lane Inventory](#lane-inventory) - Storage lane contents by level
 5. [Production Graph](#production-graph) - Progress of current production run
@@ -118,7 +118,7 @@ The inventory graph shows:
 
 
 #### Infeed paused
-- [See above](#pause--resume-infeed)
+- [See above](#pause-resume-infeed)
 
 #### Statuses at the Outfeed
 <img src="../images/home/outfeedstatus5.png" width="200" alt="Outfeed Statuses">
@@ -403,7 +403,7 @@ When an alert occurs:
 
 ## Related Topics
 
-- [Monitoring Production](../daily-operations/index.md#monitoring-production) - How to use the Home Page during operation
+- [Monitoring Production](../daily-operations/monitoring.md) - How to use the Home Page during operation
 - [Alerts Page](alerts-page.md) - Detailed alert information and history
 - [Alert Guidelines](../troubleshooting/alert-guidelines.md) - How to resolve alerts
 - [Lane Inventory Page](inventory-section.md#lane-inventory-page) - Detailed lane management

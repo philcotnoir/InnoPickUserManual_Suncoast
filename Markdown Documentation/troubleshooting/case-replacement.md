@@ -97,7 +97,7 @@ Common scenarios requiring case replacement:
 #### Short the Case
 
 1. **Allow the storage move to fault:**
-    - **[Alert 121 (photocell never detected case)](../troubleshooting/alert-reference.md#121---photocell-above-lane-never-detected-the-case-during-a-storing-move)** will occur
+    - **[Alert 121 (photocell never detected case)](../troubleshooting/alert-reference.md#121-photocell-above-lane-never-detected-the-case-during-a-storing-move)** will occur
     - System expects to store a case but finds none
 
 2. **Jog lane so it is ready to dispense**

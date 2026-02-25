@@ -28,7 +28,7 @@ Settings include:
 
 ## Related Topics
 
-- [Monitoring Production](../../daily-operations/index.md#monitoring-production) - Using admin tools during operation
+- [Monitoring Production](../../daily-operations/monitoring.md) - Using admin tools during operation
 - [Troubleshooting](../../troubleshooting/index.md) - When to use recovery actions
 - [Products Page](../inventory-section.md#products-page) - Product configuration
 

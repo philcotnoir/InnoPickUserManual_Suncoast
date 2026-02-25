@@ -46,7 +46,7 @@ This page addresses frequently encountered issues that may not have specific ale
     - May need to wait for accumulation to clear
 
 4. **Check InnoPick settings:**
-    - Check if [Pause Outfeed](../main-screens/home-page.md#pause--resume-outfeed) is active
+    - Check if [Pause Outfeed](../main-screens/home-page.md#pause-resume-outfeed) is active
     - Verify [Buffer settings](../main-screens/administration/setup-innopick.md#buffer)
 
 5. **If issue persists:**
@@ -151,7 +151,7 @@ The steps for each case transfer are as follows:
 
 **Symptoms:**
 
-- [Alert 517](alert-reference.md#517---infeed-cases-length-too-short) (incorrect case length)
+- [Alert 517](alert-reference.md#517-infeed-cases-length-too-short) (incorrect case length)
 - Cases don't match expected replenishment
 - Lane contains mixed products
 
@@ -192,7 +192,7 @@ The steps for each case transfer are as follows:
 
 **Symptoms:**
 
-- [Alert 121](alert-reference.md#121---photocell-above-lane-never-detected-the-case-during-a-storing-move) or [Alert 123](alert-reference.md#123--124---photocell-above-lane-never-detected-the-case-during-a-dispense-move) (cases not found where expected)
+- [Alert 121](alert-reference.md#121-photocell-above-lane-never-detected-the-case-during-a-storing-move) or [Alert 123](alert-reference.md#123-124-photocell-above-lane-never-detected-the-case-during-a-dispense-move) (cases not found where expected)
 - Outfeed alerts (expecting case but none present, or vice versa)
 - Lane inventory counts don't match physical count
 
@@ -201,7 +201,7 @@ The steps for each case transfer are as follows:
 - Improper alert recovery
 - Skipped verification after clearing alerts
 - Cases manually moved without updating system
-- Motion controller thread crash ([Alert 791](alert-reference.md#517---infeed-cases-length-too-short))
+- Motion controller thread crash ([Alert 791](alert-reference.md#517-infeed-cases-length-too-short))
   
 **Solution:**
 1. **Put level in Manual mode**
@@ -273,7 +273,7 @@ The steps for each case transfer are as follows:
 
 - [Alert Reference](alert-reference.md) - Specific alert code resolutions
 - [Alert Guidelines](alert-guidelines.md) - General troubleshooting principles
-- [Monitoring Production](../daily-operations/index.md#monitoring-production) - Catching issues early
+- [Monitoring Production](../daily-operations/monitoring.md) - Catching issues early
 - [Case Replacement](case-replacement.md) - Replacing problem cases
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">

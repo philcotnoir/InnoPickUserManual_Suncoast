@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
@@ -1907,7 +1907,7 @@
 <hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 <h3 id="number-of-cases-to-exit-merge-in-the-accumulation-lookahead">Number Of Cases To Exit Merge In The Accumulation LookAhead<a class="headerlink" href="#number-of-cases-to-exit-merge-in-the-accumulation-lookahead" title="Permanent link">&para;</a></h3>
-<p>How many cases IPM considers when forecasting and scheduling output.</p>
+<p>How many cases IPM considers when forecasting and scheduling output. This is only applicable if Destination Decoupling is Disabled. This # is meant to reprensent how many cases can exit the Merge during the time it takes a case to travel the entire length of InnoPick.</p>
 <p>Impact:<br />
 - <strong>Higher number</strong>: More aggressive scheduling, uses more accumulation<br />
 - <strong>Lower number</strong>: More conservative, leaves accumulation space unused<br />
@@ -1971,12 +1971,14 @@
 <p><strong>Destination decoupling mode max pallet offset</strong></p>
 <ul>
 <li>This is configuration parameter for the "Destination Decoupling Mode Enabled" above.</li>
-<li>See the description beneath the setting.</li>
+<li>See the description beneath the setting. </li>
+<li>Note: The decoupling level is limited by whichever limit is reached first: # of pallets or # of cases.</li>
 </ul>
 <p><strong>Destination decoupling mode max case offset</strong></p>
 <ul>
 <li>This is configuration parameter for the "Destination Decoupling Mode Enabled" above.</li>
 <li>See the description beneath the setting.</li>
+<li>Note: The decoupling level is limited by whichever limit is reached first: # of pallets or # of cases.</li>
 </ul>
 <hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 

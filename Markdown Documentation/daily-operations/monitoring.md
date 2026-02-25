@@ -16,7 +16,7 @@ The [Home Page](../main-screens/home-page.md) provides all essential information
 
 ### Key Elements to Monitor
 
-1. **[Level Status Indicators](../main-screens/home-page.md#level-statuses--auto--manual-controls)**
+1. **[Level Status Indicators](../main-screens/home-page.md#level-statuses-auto-manual-controls)**
     - **Green**: Level is in Automatic mode and operating normally
     - **Yellow**: Level is in Manual mode (paused)
     - **Red**: Level has an active fault
@@ -164,7 +164,7 @@ Be aware of these settings and their effects:
 - When ON: Prioritizes storing replenishment cases over outputting cases
 - When OFF: Balances input and output for maximum throughput
 
-**[Pause Infeed / Pause Outfeed](../main-screens/home-page.md#pause--resume-infeed)**
+**[Pause Infeed / Pause Outfeed](../main-screens/home-page.md#pause-resume-infeed)**
 
 - Controls whether cases enter or exit InnoPick
 - Check: [Home Page](../main-screens/home-page.md)

@@ -129,8 +129,8 @@ Certain alerts are **rarely stand-alone problems** and usually indicate previous
 
 These typically indicate inventory graph doesn't match physical reality:
 
-- **[Fault Code 121](alert-reference.md#121---photocell-above-lane-never-detected-the-case-during-a-storing-move)**: *Photocell above lane never detected case during storing move*
-- **[Fault Code 123](alert-reference.md#123---photocell-above-lane-never-detected-the-case-during-a-dispense-move)**: *Photocell never detected case during dispense move*
+- **[Fault Code 121](alert-reference.md#121-photocell-above-lane-never-detected-the-case-during-a-storing-move)**: *Photocell above lane never detected case during storing move*
+- **[Fault Code 123](alert-reference.md#123-124-photocell-above-lane-never-detected-the-case-during-a-dispense-move)**: *Photocell never detected case during dispense move*
 - ***[Expecting a case but there is no case present at the outfeed](alert-reference.md#expecting-a-case-but-there-is-no-case-present-at-the-outfeed)***
 - ***[Not expecting a case but there is a case at the outfeed](alert-reference.md#not-expecting-a-case-but-there-is-a-case-at-the-outfeed)***
 
@@ -166,7 +166,7 @@ A good operator is aware of settings that affect InnoPick's behavior. Failing to
 #### Destination (Merge) A or B Enabled / Disabled
 - Controls which downstream destinations are active
 - If a Merge is disabled, all cases route to other destination(s)
-- Check: [Administration > Setup InnoPick > Merges](../main-screens/administration/setup-innopick.md#merges-state)
+- Check: [Administration > Setup InnoPick > Merges](../main-screens/administration/setup-innopick.md#buffer)
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 
@@ -292,7 +292,7 @@ If alerts cannot be cleared, it usually means the underlying issue has not been 
 
 - [Alert Reference](alert-reference.md) - Specific resolution procedures for each alert code
 - [Home Page Inventory Graph](../main-screens/home-page.md#inventory-graph) - Understanding the visual display
-- [Monitoring Production](../daily-operations/index.md#monitoring-production) - Catching issues early
+- [Monitoring Production](../daily-operations/monitoring.md) - Catching issues early
 
 <hr style="border: none; height: 3px; background-color: #747474; margin: 2em 0;">
 

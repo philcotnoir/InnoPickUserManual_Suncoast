@@ -2,6 +2,7 @@ site_name: InnoPick Manager Operations Manual
 site_description: Automated Order Preparation Solutions - Operator Documentation
 site_url: https://philcotnoir.github.io/InnoPickUserManual_Suncoast/
 repo_url: https://github.com/philcotnoir/InnoPickUserManual_Suncoast/
+copyright: "© 2026 DRL Systems"
 
 # This tells MkDocs where your markdown files are
 docs_dir: Markdown Documentation
@@ -69,6 +70,22 @@ nav:
 # Enable search
 plugins:
   - search
+  - to-pdf:
+      author: "Phil Cotnoir - DRL Systems"
+      cover: true
+      cover_title: "InnoPick Manager Operations Manual"
+      cover_subtitle: "Automated Case Picking System"
+      toc_title: "Table of Contents"
+      toc_level: 3
+      ordered_chapter_level: 2
+      output_path: pdf/InnoPickManual.pdf  
+#  - exporter:
+#      formats:
+#        pdf:
+#          enabled: true
+#          aggregator:
+#            enabled: true
+#            output: pdf/full-manual.pdf
 
 # Markdown extensions for better formatting
 markdown_extensions:

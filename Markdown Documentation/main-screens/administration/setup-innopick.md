@@ -203,7 +203,7 @@ Configuration for accumulation management and output buffering.
 <hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
 ### Number Of Cases To Exit Merge In The Accumulation LookAhead
-How many cases IPM considers when forecasting and scheduling output.
+How many cases IPM considers when forecasting and scheduling output. This is only applicable if Destination Decoupling is Disabled. This # is meant to reprensent how many cases can exit the Merge during the time it takes a case to travel the entire length of InnoPick.
 
 Impact:
 - **Higher number**: More aggressive scheduling, uses more accumulation
@@ -275,12 +275,14 @@ InnoPick can operate in two modes regarding accumulation:
 **Destination decoupling mode max pallet offset**
 
 - This is configuration parameter for the "Destination Decoupling Mode Enabled" above.
-- See the description beneath the setting.
+- See the description beneath the setting. 
+- Note: The decoupling level is limited by whichever limit is reached first: # of pallets or # of cases.
   
 **Destination decoupling mode max case offset**
 
 - This is configuration parameter for the "Destination Decoupling Mode Enabled" above.
 - See the description beneath the setting.
+- Note: The decoupling level is limited by whichever limit is reached first: # of pallets or # of cases.
 
 <hr style="border: none; height: 2px; background-color: #a8a8a8; margin: 2em 0;">
 
