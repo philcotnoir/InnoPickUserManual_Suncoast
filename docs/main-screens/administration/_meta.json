@@ -1,11 +1,6 @@
 [
   {
     "type": "file",
-    "label": "Overview",
-    "name": "index"
-  },
-  {
-    "type": "file",
     "label": "Manual Motion Control",
     "name": "manual-motion-control"
   },

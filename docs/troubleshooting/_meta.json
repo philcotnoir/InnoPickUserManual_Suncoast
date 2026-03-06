@@ -1,11 +1,6 @@
 [
   {
     "type": "file",
-    "label": "Overview",
-    "name": "index"
-  },
-  {
-    "type": "file",
     "label": "Common Issues",
     "name": "common-issues"
   },

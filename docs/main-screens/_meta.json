@@ -1,5 +1,4 @@
 [
-  { "type": "file", "name": "index",  "label": "Overview"  },
   { "type": "file", "name": "home-page",  "label": "Home Page"  },
   { "type": "file", "name": "alerts-page",  "label": "Alerts Page"  },
   { "type": "file", "name": "inventory-section",  "label": "Inventory Section"  },
